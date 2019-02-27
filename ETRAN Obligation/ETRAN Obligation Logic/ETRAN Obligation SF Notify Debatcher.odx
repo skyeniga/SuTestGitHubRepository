@@ -1,0 +1,721 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="2c8e9fb5-ffc7-420f-a1e8-938fb1a16009" LowerBound="1.1" HigherBound="192.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="SBA.ETRANObligation.Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="d7e9c173-2127-4200-91c2-7bdcf0dc30e5" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SFNotificationFullPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="100cf346-55af-4328-9cd0-93f2999fbba7" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Notify" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="8fbfdafa-03f1-429b-9775-f80669899c3a" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.38">
+                    <om:Property Name="Ref" Value="SBA.ETRANObligation.Logic.SFNotificationFullMsgType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="a80a2d1a-889b-423c-8713-ed39f67e03fe" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.40" HigherBound="16.64">
+                    <om:Property Name="Ref" Value="SBA.ETRANObligation.Logic.SFNotificationAckMsgType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="a277d2a1-e09f-4c3f-817f-b060154e4f14" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SFNotificationAckMsgType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="c06af24a-b32f-460a-a4b3-ee073042411a" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_soap_sforce_com_2005_09_outbound.notificationsResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="cbd62613-1440-4981-a917-d7434a70378a" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SFNotificationFullMsgType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="f9f8336e-f8cf-45d7-a16b-db780baed94c" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_soap_sforce_com_2005_09_outbound.notifications" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="2be9f148-8e51-44a2-aab3-d7d1b284b904" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="191.1">
+            <om:Property Name="InitializedTransactionType" Value="True" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ETRANObligationSFNotifyDebatcher" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="8a01d631-e8be-4ee8-b5e4-18881a6533c0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Exception" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TempEx" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8a9def50-c953-4c33-bc3d-c6b7cf298e5b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="InitialValue" Value="1" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Index" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="dfb022d1-cd1b-4be5-9e9d-6f5e18b241e8" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="SBA.BizTalk.Shared.MessageHelper.CustomTypes.StringList" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ErrorMessages" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="106b86a1-4601-4379-9d22-f1a0d2f9090c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="33.1" HigherBound="34.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SingleNotifyApplicationNumber" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="54027c6e-50a4-425b-b840-d4837887e293" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SingleNotifyLoanId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="eda063cd-200f-4bcb-9297-c6c044b84af7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="35.1" HigherBound="36.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Guid" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OrchestrationId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="afec27b6-6455-4c28-8289-db78c7764cbc" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="36.1" HigherBound="37.1">
+                <om:Property Name="InitialValue" Value="&quot;Loan__c&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceObjectName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="91d664db-3ec9-46bf-882d-a265923d7cc7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="37.1" HigherBound="38.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceObjectId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ae05dab5-6bb5-49bd-9053-1ac7e280a111" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="38.1" HigherBound="39.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ApplicationNumber" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4f23c1bb-30af-4d17-a027-9093f703ad86" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="39.1" HigherBound="40.1">
+                <om:Property Name="InitialValue" Value="&quot;Loan Obligated&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Stage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2c2d0494-920e-4136-b2c1-f87caa487b72" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="40.1" HigherBound="41.1">
+                <om:Property Name="InitialValue" Value="&quot;Error&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Status" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="234c0efa-89e6-4e21-bcd7-93c255fdddf3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="41.1" HigherBound="42.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5e9a0e66-e5a9-407a-8ab0-5f6a4534da8d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="42.1" HigherBound="43.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TempOrchestrationId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="805f6357-d8db-4c72-986b-d55f274aa72e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="43.1" HigherBound="44.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AutoDeclineReason" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="eee24873-5653-4419-bd1d-4e6e8c03888d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="44.1" HigherBound="45.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="SBA.BizTalk.Shared.MessageHelper.CustomTypes.XmlDocumentList" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="NotificationXmlDocs" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="39c463a6-a179-4699-b692-b97e4aea5484" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="Type" Value="SBA.ETRANObligation.Logic.SFNotificationAckMsgType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SFNotificationAckMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="00cfb5f1-bcee-440d-aa0a-1697db03ea77" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="Type" Value="SBA.ETRANObligation.Logic.SFNotificationFullMsgType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SFNotificationFullMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1c758b47-8d9b-4427-ab96-e23a9dc3241f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="Type" Value="SBA.ETRANObligation.Logic.SFNotificationSingleMsgType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SFNotificationSingleMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="3e8236f7-62dc-40a7-b8f8-793e6050daf6" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="66af9bab-3c4d-428b-bd22-740a188c8352" ParentLink="ServiceBody_Statement" LowerBound="47.1" HigherBound="63.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="SF_Notify_Full_Receive" />
+                    <om:Property Name="MessageName" Value="SFNotificationFullMsg" />
+                    <om:Property Name="OperationName" Value="Notify" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Get SF Notify" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="19324fcf-a9e3-434b-8246-a2dc6ba00b12" ParentLink="ServiceBody_Statement" LowerBound="63.1" HigherBound="79.1">
+                    <om:Property Name="Expression" Value="&#xD;&#xA;// Get this Orchestration's instance Id. &#xD;&#xA;TempOrchestrationId = System.Convert.ToString(ETRANObligationSFNotifyDebatcher(Microsoft.XLANGs.BaseTypes.InstanceId));&#xD;&#xA;OrchestrationId = System.Guid.Empty;&#xD;&#xA;if (!System.Guid.TryParse(TempOrchestrationId, out OrchestrationId)) {&#xD;&#xA;    TempEx = new System.Exception(&quot;Unable to get Orchestration Instance GUID!&quot;); &#xD;&#xA;    TempEx.Data.Add(&quot;TempOrchestrationId&quot;, TempOrchestrationId); &#xD;&#xA;    throw TempEx;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;Index = 0;&#xD;&#xA;NotificationXmlDocs = null; &#xD;&#xA;&#xD;&#xA;// Initialize StringBuilder for holding any error information in case any are encountered. &#xD;&#xA;ErrorMessages = new SBA.BizTalk.Shared.MessageHelper.CustomTypes.StringList(); &#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Init Constants" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Scope" OID="2c14ba47-147d-421a-8f46-9fea0fb1f552" ParentLink="ServiceBody_Statement" LowerBound="79.1" HigherBound="164.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Main Scope" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Task" OID="6313a80d-c678-412c-95a7-c28f5d9f9057" ParentLink="ComplexStatement_Statement" LowerBound="84.1" HigherBound="92.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="SF Notify Ack" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="8b060fb1-285d-4790-a783-4682a59a211b" ParentLink="ComplexStatement_Statement" LowerBound="84.1" HigherBound="90.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Create SF Notify Ack Msg" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="e1e0ae8d-7fe7-4297-b3b4-c736a05e7089" ParentLink="ComplexStatement_Statement" LowerBound="87.1" HigherBound="89.1">
+                                <om:Property Name="ClassName" Value="SBA.ETRANObligation.Logic.Notification.MapNotificationAckResponse" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Map SF Notify Ack" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="9fcbe804-50ac-449a-99bf-1e53cd35f1fa" ParentLink="Transform_InputMessagePartRef" LowerBound="88.139" HigherBound="88.172">
+                                    <om:Property Name="MessageRef" Value="SFNotificationFullMsg" />
+                                    <om:Property Name="PartRef" Value="MessagePart" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="6e192fc9-924c-4956-913f-a5d76c1eff9c" ParentLink="Transform_OutputMessagePartRef" LowerBound="88.36" HigherBound="88.68">
+                                    <om:Property Name="MessageRef" Value="SFNotificationAckMsg" />
+                                    <om:Property Name="PartRef" Value="MessagePart" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="2fd38dde-b564-48ba-9c10-bf871d72b8f4" ParentLink="Construct_MessageRef" LowerBound="85.31" HigherBound="85.51">
+                                <om:Property Name="Ref" Value="SFNotificationAckMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="8a985857-435a-4323-bdcd-f9f2e1e888b9" ParentLink="ComplexStatement_Statement" LowerBound="90.1" HigherBound="92.1">
+                            <om:Property Name="PortName" Value="SF_Notify_Full_Receive" />
+                            <om:Property Name="MessageName" Value="SFNotificationAckMsg" />
+                            <om:Property Name="OperationName" Value="Notify" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send SF Ack" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Task" OID="cc292401-f71b-49dd-b62c-7dea0a9f22a9" ParentLink="ComplexStatement_Statement" LowerBound="92.1" HigherBound="151.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Debatch &amp; Send Single Notify" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="05203bf6-12fc-4819-a292-3feadc1dbe1e" ParentLink="ComplexStatement_Statement" LowerBound="92.1" HigherBound="95.1">
+                            <om:Property Name="Expression" Value="NotificationXmlDocs = SBA.BizTalk.Shared.MessageHelper.Specialized.NotificationHelper.Instance.GetSingleNotificationXmlDocs(SFNotificationFullMsg, &#xD;&#xA;                                                                                    &quot;http://SBA.gov/ETRANObligation/Salesforce/NotificationSingle/&quot;); " />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Get Notifies" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="While" OID="4db43a9c-a659-4a35-856e-9f6942736305" ParentLink="ComplexStatement_Statement" LowerBound="95.1" HigherBound="151.1">
+                            <om:Property Name="Expression" Value="Index &lt; NotificationXmlDocs.Length" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Loop Notifications" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Scope" OID="f31b279b-ba7f-4f50-8f2b-b3cd5bf04dab" ParentLink="ComplexStatement_Statement" LowerBound="98.1" HigherBound="140.1">
+                                <om:Property Name="InitializedTransactionType" Value="True" />
+                                <om:Property Name="IsSynchronized" Value="False" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Single Notify Scope" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="8c02f4cf-c20b-43d9-9006-faae19fcad21" ParentLink="ComplexStatement_Statement" LowerBound="103.1" HigherBound="110.1">
+                                    <om:Property Name="Expression" Value="&#xD;&#xA;// Reset these to defaults. &#xD;&#xA;SingleNotifyApplicationNumber = System.String.Empty; &#xD;&#xA;SingleNotifyLoanId = System.String.Empty; &#xD;&#xA;&#xD;&#xA; " />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Init for Single Notify" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Construct" OID="10780c16-53c6-4d61-9562-b87679ca3009" ParentLink="ComplexStatement_Statement" LowerBound="110.1" HigherBound="121.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Initial Single Notify" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageAssignment" OID="0f6d35c6-68ac-4e11-90cc-4364c87d8e2b" ParentLink="ComplexStatement_Statement" LowerBound="113.1" HigherBound="120.1">
+                                        <om:Property Name="Expression" Value="&#xD;&#xA;// Create the single SF notify message using the XmlDocument for content &#xD;&#xA;// and the original full SF notify message's context properties. &#xD;&#xA;SFNotificationSingleMsg.MessagePart = null; &#xD;&#xA;SFNotificationSingleMsg.MessagePart = NotificationXmlDocs[Index]; &#xD;&#xA;SFNotificationSingleMsg(*) = SFNotificationFullMsg(*); " />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Make Next Single" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="08a30c03-6e49-4ed5-bbfa-29f149331c7f" ParentLink="Construct_MessageRef" LowerBound="111.43" HigherBound="111.66">
+                                        <om:Property Name="Ref" Value="SFNotificationSingleMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="c03b66df-f76e-4bb5-993a-cc432461254e" ParentLink="ComplexStatement_Statement" LowerBound="121.1" HigherBound="125.1">
+                                    <om:Property Name="Expression" Value="  &#xD;&#xA;SingleNotifyApplicationNumber = SFNotificationSingleMsg.MessagePart.sObject.Application_Number__c;&#xD;&#xA;SingleNotifyLoanId = SFNotificationSingleMsg.MessagePart.sObject.SObject_ID__c;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Get Loan/App Id" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Send" OID="18850a29-9e81-40c1-9ada-d4a8f81217a9" ParentLink="ComplexStatement_Statement" LowerBound="125.1" HigherBound="127.1">
+                                    <om:Property Name="PortName" Value="SF_Single_Send" />
+                                    <om:Property Name="MessageName" Value="SFNotificationSingleMsg" />
+                                    <om:Property Name="OperationName" Value="NotifySingle" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send Single Notify" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Catch" OID="65da83e3-4db7-475e-a6d6-feb48d0431a2" ParentLink="Scope_Catch" LowerBound="130.1" HigherBound="138.1">
+                                    <om:Property Name="ExceptionName" Value="exSingleNotify" />
+                                    <om:Property Name="ExceptionType" Value="System.Exception" />
+                                    <om:Property Name="IsFaultMessage" Value="False" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Catch Exception (Single Notify)" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="VariableAssignment" OID="2fb69e4d-0d9e-46bd-bc94-5a333bcbcbb6" ParentLink="Catch_Statement" LowerBound="133.1" HigherBound="137.1">
+                                        <om:Property Name="Expression" Value="&#xD;&#xA;ErrorMessages.Add(SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.GetExceptionString(exSingleNotify));&#xD;&#xA;  " />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Handle Error (Single)" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="216a1546-7b9d-4b2b-85fc-18b53b4df1fc" ParentLink="ComplexStatement_Statement" LowerBound="140.1" HigherBound="150.1">
+                                <om:Property Name="Expression" Value="&#xD;&#xA;// Increment the Index - this is used to grab the next single SF notify message.  &#xD;&#xA;Index = Index + 1; &#xD;&#xA; &#xD;&#xA;// Reset single notify related values to defaults. &#xD;&#xA;SingleNotifyApplicationNumber = System.String.Empty; &#xD;&#xA;SingleNotifyLoanId = System.String.Empty; &#xD;&#xA; &#xD;&#xA; " />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Count &amp; Re-Init" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Catch" OID="9d45e875-da51-41a3-8afb-73de5120e21f" ParentLink="Scope_Catch" LowerBound="154.1" HigherBound="162.1">
+                        <om:Property Name="ExceptionName" Value="exMain" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Catch Exception (Main)" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="7ee04bb6-1725-4422-bc68-2c25e6354497" ParentLink="Catch_Statement" LowerBound="157.1" HigherBound="161.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;ErrorMessages.Add(SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.GetExceptionString(exMain)); &#xD;&#xA;  " />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Handle Error (Main)" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Decision" OID="35c367d3-f004-4c24-b41f-530a9cb78410" ParentLink="ServiceBody_Statement" LowerBound="164.1" HigherBound="189.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Errors? " />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="b9939fe3-2614-4b99-bce0-6caac8150856" ParentLink="ReallyComplexStatement_Branch" LowerBound="165.13" HigherBound="189.1">
+                        <om:Property Name="Expression" Value="ErrorMessages.Length &gt; 0" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Yes" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="d9a48671-6340-4d18-b7a6-75f772f3858e" ParentLink="ComplexStatement_Statement" LowerBound="167.1" HigherBound="175.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;Status = &quot;Error&quot;; &#xD;&#xA;Message = System.String.Format(&quot;One or more failures occurred during Salesforce Notification Debatching. \r\n\r\n&quot; + &#xD;&#xA;                               &quot;Exceptions: \r\n\r\n{0} \r\n\r\n&quot; + &#xD;&#xA;                               &quot;SF Full Notify Msg: \r\n\r\n{1}&quot;, &#xD;&#xA;                               ErrorMessages.ToString(&quot; \r\n\r\n&quot;), &#xD;&#xA;                               SBA.BizTalk.Shared.MessageHelper.XLANGMessageHelper.Instance.GetXLANGMessageXmlText(SFNotificationFullMsg)); " />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Prep Error Info" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="52d46472-1648-4cc1-9f0c-6d714bac545a" ParentLink="ComplexStatement_Statement" LowerBound="175.1" HigherBound="186.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Have App Num? " />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="f6eb0f3c-a648-4ffb-b3d7-961041b01ab3" ParentLink="ReallyComplexStatement_Branch" LowerBound="176.17" HigherBound="181.1">
+                                <om:Property Name="Expression" Value="!System.String.IsNullOrWhiteSpace(SingleNotifyApplicationNumber)" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Call" OID="8c1bd063-f595-47cb-a351-0515ebb4e199" ParentLink="ComplexStatement_Statement" LowerBound="178.1" HigherBound="180.1">
+                                    <om:Property Name="Identifier" Value="Call_Event_Request" />
+                                    <om:Property Name="Invokee" Value="SBA.BizTalk.Shared.Salesforce.EventLogging.Logic.SendEventToSalesForce" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Event Request" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Parameter" OID="0ac802ff-1506-47da-b3a8-8d2d439ce3b6" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="OrchestrationId" />
+                                        <om:Property Name="Type" Value="System.Guid" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Parameter" OID="1ce05490-d77e-4c6d-9a0f-18f6ebd07c13" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="Status" />
+                                        <om:Property Name="Type" Value="System.String" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Parameter" OID="e76ff520-734a-41e1-b83b-796888f51c02" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="Stage" />
+                                        <om:Property Name="Type" Value="System.String" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Parameter" OID="46f19606-56f9-4512-bebd-0cdaeb08de22" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="ApplicationNumber" />
+                                        <om:Property Name="Type" Value="System.String" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Parameter" OID="1f22a564-2b55-4857-a7f3-5c29dd84510d" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="SalesForceObjectName" />
+                                        <om:Property Name="Type" Value="System.String" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Parameter" OID="2a1e0c9d-bfda-4d2e-a272-39d6f3adcf09" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="SalesForceObjectId" />
+                                        <om:Property Name="Type" Value="System.String" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Parameter" OID="af0aa14b-e3e3-443b-9cdc-04922ce8ec8e" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="Message" />
+                                        <om:Property Name="Type" Value="System.String" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Parameter" OID="68a5d7bb-eed6-4f10-9857-1533120e0c36" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="AutoDeclineReason" />
+                                        <om:Property Name="Type" Value="System.String" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="efde8d80-c733-465d-ba95-138737bae5e4" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="14a3bceb-c31f-480e-89ff-597ddff0de1f" ParentLink="ComplexStatement_Statement" LowerBound="183.1" HigherBound="185.1">
+                                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;BizTalk - ETran Obligations&quot;, Message, System.Diagnostics.EventLogEntryType.Error); " />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Event Log" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Terminate" OID="a1a16c04-def2-40fd-8714-dee4e9a8ff03" ParentLink="ComplexStatement_Statement" LowerBound="186.1" HigherBound="188.1">
+                            <om:Property Name="ErrorMessage" Value="Message;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Terminate" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="ec0c36a8-f45f-4efd-a92c-b9b85b8b6071" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="7e9f3ac9-e126-4c9b-9919-c11ea55dcfab" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="10" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="SBA.ETRANObligation.Logic.SFNotificationFullPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SF_Notify_Full_Receive" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="cca4c89b-a8e3-4948-a4c2-70efc4e7c372" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d3f53e42-3d73-4aed-92cb-875589afa576" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="24.1" HigherBound="27.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="73" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="Transmitted" />
+                <om:Property Name="Type" Value="SBA.ETRANObligation.Logic.SFNotificationSinglePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SF_Single_Send" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="6e4b5e92-17fe-4a87-98f2-49664a5078b6" ParentLink="PortDeclaration_CLRAttribute" LowerBound="24.1" HigherBound="25.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module SBA.ETRANObligation.Logic
+{
+    internal messagetype SFNotificationAckMsgType
+    {
+        body SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_soap_sforce_com_2005_09_outbound.notificationsResponse MessagePart;
+    };
+    internal messagetype SFNotificationFullMsgType
+    {
+        body SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_soap_sforce_com_2005_09_outbound.notifications MessagePart;
+    };
+    internal porttype SFNotificationFullPortType
+    {
+        requestresponse Notify
+        {
+            SFNotificationFullMsgType, SFNotificationAckMsgType
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ETRANObligationSFNotifyDebatcher
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements SFNotificationFullPortType SF_Notify_Full_Receive;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        [Microsoft.XLANGs.BaseTypes.DeliveryNotification(Microsoft.XLANGs.BaseTypes.DeliveryNotification.NotificationLevel.Transmitted)]
+        port uses SFNotificationSinglePortType SF_Single_Send;
+        message SFNotificationAckMsgType SFNotificationAckMsg;
+        message SFNotificationFullMsgType SFNotificationFullMsg;
+        message SFNotificationSingleMsgType SFNotificationSingleMsg;
+        System.Exception TempEx;
+        System.Int32 Index;
+        SBA.BizTalk.Shared.MessageHelper.CustomTypes.StringList ErrorMessages;
+        System.String SingleNotifyApplicationNumber;
+        System.String SingleNotifyLoanId;
+        System.Guid OrchestrationId;
+        System.String SalesForceObjectName;
+        System.String SalesForceObjectId;
+        System.String ApplicationNumber;
+        System.String Stage;
+        System.String Status;
+        System.String Message;
+        System.String TempOrchestrationId;
+        System.String AutoDeclineReason;
+        SBA.BizTalk.Shared.MessageHelper.CustomTypes.XmlDocumentList NotificationXmlDocs;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("66af9bab-3c4d-428b-bd22-740a188c8352")]
+            activate receive (SF_Notify_Full_Receive.Notify, SFNotificationFullMsg);
+            TempEx = new System.Exception();
+            Index = 1;
+            ErrorMessages = new SBA.BizTalk.Shared.MessageHelper.CustomTypes.StringList();
+            SingleNotifyApplicationNumber = System.String.Empty;
+            SingleNotifyLoanId = System.String.Empty;
+            SalesForceObjectName = "Loan__c";
+            SalesForceObjectId = System.String.Empty;
+            ApplicationNumber = System.String.Empty;
+            Stage = "Loan Obligated";
+            Status = "Error";
+            Message = System.String.Empty;
+            TempOrchestrationId = System.String.Empty;
+            AutoDeclineReason = System.String.Empty;
+            NotificationXmlDocs = new SBA.BizTalk.Shared.MessageHelper.CustomTypes.XmlDocumentList();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("19324fcf-a9e3-434b-8246-a2dc6ba00b12")]
+            
+            // Get this Orchestration's instance Id. 
+            TempOrchestrationId = System.Convert.ToString(ETRANObligationSFNotifyDebatcher(Microsoft.XLANGs.BaseTypes.InstanceId));
+            OrchestrationId = System.Guid.Empty;
+            if (!System.Guid.TryParse(TempOrchestrationId, out OrchestrationId)) {
+                TempEx = new System.Exception("Unable to get Orchestration Instance GUID!"); 
+                TempEx.Data.Add("TempOrchestrationId", TempOrchestrationId); 
+                throw TempEx;
+            }
+            
+            Index = 0;
+            NotificationXmlDocs = null; 
+            
+            // Initialize StringBuilder for holding any error information in case any are encountered. 
+            ErrorMessages = new SBA.BizTalk.Shared.MessageHelper.CustomTypes.StringList(); 
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2c14ba47-147d-421a-8f46-9fea0fb1f552")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b060fb1-285d-4790-a783-4682a59a211b")]
+                    construct SFNotificationAckMsg
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e1e0ae8d-7fe7-4297-b3b4-c736a05e7089")]
+                        transform (SFNotificationAckMsg.MessagePart) = SBA.ETRANObligation.Logic.Notification.MapNotificationAckResponse (SFNotificationFullMsg.MessagePart);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8a985857-435a-4323-bdcd-f9f2e1e888b9")]
+                    send (SF_Notify_Full_Receive.Notify, SFNotificationAckMsg);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("05203bf6-12fc-4819-a292-3feadc1dbe1e")]
+                    NotificationXmlDocs = SBA.BizTalk.Shared.MessageHelper.Specialized.NotificationHelper.Instance.GetSingleNotificationXmlDocs(SFNotificationFullMsg, 
+                                                                                                        "http://SBA.gov/ETRANObligation/Salesforce/NotificationSingle/"); 
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("4db43a9c-a659-4a35-856e-9f6942736305")]
+                    while (Index < NotificationXmlDocs.Length)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f31b279b-ba7f-4f50-8f2b-b3cd5bf04dab")]
+                        scope
+                        {
+                            body
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("8c02f4cf-c20b-43d9-9006-faae19fcad21")]
+                                
+                                // Reset these to defaults. 
+                                SingleNotifyApplicationNumber = System.String.Empty; 
+                                SingleNotifyLoanId = System.String.Empty; 
+                                
+                                 
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("10780c16-53c6-4d61-9562-b87679ca3009")]
+                                construct SFNotificationSingleMsg
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0f6d35c6-68ac-4e11-90cc-4364c87d8e2b")]
+                                    
+                                    // Create the single SF notify message using the XmlDocument for content 
+                                    // and the original full SF notify message's context properties. 
+                                    SFNotificationSingleMsg.MessagePart = null; 
+                                    SFNotificationSingleMsg.MessagePart = NotificationXmlDocs[Index]; 
+                                    SFNotificationSingleMsg(*) = SFNotificationFullMsg(*); 
+                                }
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c03b66df-f76e-4bb5-993a-cc432461254e")]
+                                  
+                                SingleNotifyApplicationNumber = SFNotificationSingleMsg.MessagePart.sObject.Application_Number__c;
+                                SingleNotifyLoanId = SFNotificationSingleMsg.MessagePart.sObject.SObject_ID__c;
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("18850a29-9e81-40c1-9ada-d4a8f81217a9")]
+                                send (SF_Single_Send.NotifySingle, SFNotificationSingleMsg);
+                            }
+                            exceptions
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("65da83e3-4db7-475e-a6d6-feb48d0431a2")]
+                                catch (System.Exception exSingleNotify)
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("2fb69e4d-0d9e-46bd-bc94-5a333bcbcbb6")]
+                                    
+                                    ErrorMessages.Add(SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.GetExceptionString(exSingleNotify));
+                                      
+                                }
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("216a1546-7b9d-4b2b-85fc-18b53b4df1fc")]
+                        
+                        // Increment the Index - this is used to grab the next single SF notify message.  
+                        Index = Index + 1; 
+                         
+                        // Reset single notify related values to defaults. 
+                        SingleNotifyApplicationNumber = System.String.Empty; 
+                        SingleNotifyLoanId = System.String.Empty; 
+                         
+                         
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9d45e875-da51-41a3-8afb-73de5120e21f")]
+                    catch (System.Exception exMain)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7ee04bb6-1725-4422-bc68-2c25e6354497")]
+                        
+                        ErrorMessages.Add(SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.GetExceptionString(exMain)); 
+                          
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("35c367d3-f004-4c24-b41f-530a9cb78410")]
+            if (ErrorMessages.Length > 0)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d9a48671-6340-4d18-b7a6-75f772f3858e")]
+                
+                Status = "Error"; 
+                Message = System.String.Format("One or more failures occurred during Salesforce Notification Debatching. \r\n\r\n" + 
+                                               "Exceptions: \r\n\r\n{0} \r\n\r\n" + 
+                                               "SF Full Notify Msg: \r\n\r\n{1}", 
+                                               ErrorMessages.ToString(" \r\n\r\n"), 
+                                               SBA.BizTalk.Shared.MessageHelper.XLANGMessageHelper.Instance.GetXLANGMessageXmlText(SFNotificationFullMsg)); 
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("52d46472-1648-4cc1-9f0c-6d714bac545a")]
+                if (!System.String.IsNullOrWhiteSpace(SingleNotifyApplicationNumber))
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8c1bd063-f595-47cb-a351-0515ebb4e199")]
+                    call SBA.BizTalk.Shared.Salesforce.EventLogging.Logic.SendEventToSalesForce (OrchestrationId, Status, Stage, ApplicationNumber, SalesForceObjectName, SalesForceObjectId, Message, AutoDeclineReason);
+                }
+                else 
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("14a3bceb-c31f-480e-89ff-597ddff0de1f")]
+                    System.Diagnostics.EventLog.WriteEntry("BizTalk - ETran Obligations", Message, System.Diagnostics.EventLogEntryType.Error); 
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a1a16c04-def2-40fd-8714-dee4e9a8ff03")]
+                terminate Message;;
+            }
+        }
+    }
+}
+

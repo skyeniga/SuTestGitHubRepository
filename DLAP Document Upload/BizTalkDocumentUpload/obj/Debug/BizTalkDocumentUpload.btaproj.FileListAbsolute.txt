@@ -1,0 +1,17 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\Binding.xml
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\BizTalkServerInventory.json
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\BizTalkDocumentUpload.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\BizTalkDocumentUpload.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\DLAPDocumentUploadDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\DLAPDocumentUploadLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\DLAPDocumentUploadSalesForceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\DLAPDocumentUploadDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\DLAPDocumentUploadLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\bin\Debug\DLAPDocumentUploadSalesForceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\obj\Debug\BizTalkDocumentUpload.btaprojResolveAssemblyReference.cache
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\obj\Debug\BizTalkDocumentUpload.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\BizTalkDocumentUpload\obj\Debug\BizTalkDocumentUpload.pdb

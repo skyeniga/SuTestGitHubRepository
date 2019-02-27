@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="FullyBound" BoundEndpoints="11" TotalEndpoints="11">
+  <Timestamp>2018-09-18T11:01:16.4365943-04:00</Timestamp>
+  <ModuleRefCollection>
+    <ModuleRef Name="[Application:DLAP Document Upload]" Version="" Culture="" PublicKeyToken="" FullName="[Application:DLAP Document Upload], Version=, Culture=, PublicKeyToken=">
+      <Services />
+      <TrackedSchemas>
+        <Schema FullName="DLAPDocumentUploadDefinition.UploadMetaData" RootName="ReceiptMetaData" AssemblyQualifiedName="DLAPDocumentUploadDefinition.UploadMetaData,DLAPDocumentUploadDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.Definition.DocumentUpload" RootName="DOCUMENT" AssemblyQualifiedName="SBA.DLAPDocumentUpload.Definition.DocumentUpload,DLAPDocumentUploadDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.Definition.DocumentUpload" RootName="DOCUMENTRESPONSE" AssemblyQualifiedName="SBA.DLAPDocumentUpload.Definition.DocumentUpload,DLAPDocumentUploadDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.Definition.ContentLinkRequestInfo" RootName="ContentLinkRequestInfo" AssemblyQualifiedName="SBA.DLAPDocumentUpload.Definition.ContentLinkRequestInfo,DLAPDocumentUploadDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.Definition.DocumentUploadFault" RootName="Fault" AssemblyQualifiedName="SBA.DLAPDocumentUpload.Definition.DocumentUploadFault,DLAPDocumentUploadDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestLoanQueryPropertySchema" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestLoanQueryPropertySchema,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestApplicationInfoPropertySchema" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestApplicationInfoPropertySchema,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItemDocumentDetailsPropertySchema" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItemDocumentDetailsPropertySchema,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersionQueryPropertySchema" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersionQueryPropertySchema,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceInsert_ContentDocumentlink" RootName="Request" AssemblyQualifiedName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceInsert_ContentDocumentlink,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceInsert_ContentDocumentlink" RootName="Response" AssemblyQualifiedName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceInsert_ContentDocumentlink,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestLoanQuery" RootName="QueryResult" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestLoanQuery,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestLoanQuery" RootName="Request" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestLoanQuery,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItemDocumentDetails" RootName="QueryResult" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItemDocumentDetails,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItemDocumentDetails" RootName="Request" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItemDocumentDetails,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestApplicationInfo" RootName="QueryResult" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestApplicationInfo,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestApplicationInfo" RootName="Request" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestApplicationInfo,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersionQuery" RootName="QueryResult" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersionQuery,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersionQuery" RootName="Request" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersionQuery,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestReceiptDocument" RootName="results" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestReceiptDocument,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestReceiptDocument" RootName="SaveRequest" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestReceiptDocument,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItem" RootName="results" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItem,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItem" RootName="SaveRequest" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestChecklistItem,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentDocumentLink" RootName="results" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentDocumentLink,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentDocumentLink" RootName="SaveRequest" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentDocumentLink,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersion" RootName="results" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersion,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersion" RootName="SaveRequest" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestContentVersion,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_CheckListItemContentId__c" RootName="Request" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_CheckListItemContentId__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_CheckListItemContentId__c" RootName="Response" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_CheckListItemContentId__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_ReceiptDocument__c" RootName="Request" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_ReceiptDocument__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_ReceiptDocument__c" RootName="Response" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_ReceiptDocument__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.SalesforceUpdate_CheckList_Item__c" RootName="Request" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.SalesforceUpdate_CheckList_Item__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.SalesforceUpdate_CheckList_Item__c" RootName="Response" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.SalesforceUpdate_CheckList_Item__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_Loan__c" RootName="Request" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_Loan__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_Loan__c" RootName="Response" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.SalesforceQuery_Loan__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceQuery_Application__c" RootName="Request" AssemblyQualifiedName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceQuery_Application__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceQuery_Application__c" RootName="Response" AssemblyQualifiedName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceQuery_Application__c,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.SalesForceDefinition.Salesforce_ContentVersion" RootName="Request" AssemblyQualifiedName="SBA.DLAPDocumentUpload.SalesForceDefinition.Salesforce_ContentVersion,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.SalesForceDefinition.Salesforce_ContentVersion" RootName="Response" AssemblyQualifiedName="SBA.DLAPDocumentUpload.SalesForceDefinition.Salesforce_ContentVersion,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceQuery_ContentVersionDocumentId" RootName="Request" AssemblyQualifiedName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceQuery_ContentVersionDocumentId,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceQuery_ContentVersionDocumentId" RootName="Response" AssemblyQualifiedName="SBA.DLAPDocumentUpload.SalesForceDefinition.SalesforceQuery_ContentVersionDocumentId,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestEventRequest" RootName="SaveRequest" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestEventRequest,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="DLAPDocumentUploadSalesForceDefinition.Rest.RestEventResponse" RootName="results" AssemblyQualifiedName="DLAPDocumentUploadSalesForceDefinition.Rest.RestEventResponse,DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+      </TrackedSchemas>
+    </ModuleRef>
+    <ModuleRef Name="DLAPDocumentUploadDefinition" Version="2.0.9.1" Culture="neutral" PublicKeyToken="850f055bfe068d39" FullName="DLAPDocumentUploadDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="DLAPDocumentUploadSalesForceDefinition" Version="2.0.9.1" Culture="neutral" PublicKeyToken="850f055bfe068d39" FullName="DLAPDocumentUploadSalesForceDefinition, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="DLAPDocumentUploadLogic" Version="2.0.9.1" Culture="neutral" PublicKeyToken="850f055bfe068d39" FullName="DLAPDocumentUploadLogic, Version=2.0.9.1, Culture=neutral, PublicKeyToken=850f055bfe068d39">
+      <Services>
+        <Service Name="DLAPDocument.UploadParentLogic" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports>
+            <Port Name="DocumentUploadPort" Modifier="2" BindingOption="1">
+              <SendPortRef xsi:nil="true" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef Name="DLAP Document Upload Webservice" />
+            </Port>
+            <Port Name="RestApplicationIdQueryPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest Application Info Query Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+            <Port Name="RestLoanQueryPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest Loan Query Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+            <Port Name="RestReceiptDocumentInsetPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest Receipt Document Insert Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+            <Port Name="RestCheckListContentDocumentQueryPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest CheckListItem Content Document Query Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+            <Port Name="RestCheckListItemUpdatePort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest Check List Item Update Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="DLAPDocument.UploadUpdatingCheckListItemDocumentProccessingLogic" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports>
+            <Port Name="RestCheckListItemContentVersionInsertPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest Content Version Insert Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="DLAPDocument.UploadChildLogic" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports>
+            <Port Name="RestContentVersionInsertPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest Content Version Insert Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+            <Port Name="RestContentVersionDocumentIdQueryPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest Content Version DocumentId Query Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+            <Port Name="RestContentDocumentlinkInsertPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest Content Documentlink Insert Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="DLAPDocument.UploadEventRequest" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports>
+            <Port Name="RestEventPort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Document Upload Rest Event Request Port" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+      </Services>
+      <TrackedSchemas />
+    </ModuleRef>
+  </ModuleRefCollection>
+  <SendPortCollection>
+    <SendPort Name="DLAP Document Upload Rest Content Version Insert Port" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>{SFRESTADDRESS}</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;&amp;lt;BtsHttpUrlMapping&amp;gt;
+         
+ 
+
+
+&amp;lt;Operation Method="POST" Url="services/data/v43.0/composite/sobjects" /&amp;gt;
+  
+
+
+&amp;lt;/BtsHttpUrlMapping&amp;gt;&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8" /&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;SalesforceRestAuthBehavior /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/xml
+         
+Content-Type: application/xml &lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>0</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="SBA.BizTalk.Shared.PipelineComponents.General.SimpleNamespaceChangeDecoder"&gt;&lt;Properties&gt;&lt;MessageNamespace vt="8"&gt;http://SBA.gov/DLAPDocumentUpload/REST/INSERT/RestContentVersion&lt;/MessageNamespace&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Document Upload Rest Content Documentlink Insert Port" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>{SFRESTADDRESS}</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;&amp;lt;BtsHttpUrlMapping&amp;gt;
+         
+ 
+
+
+&amp;lt;Operation Method="POST" Url="services/data/v43.0/composite/sobjects" /&amp;gt;
+  
+
+
+&amp;lt;/BtsHttpUrlMapping&amp;gt;&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8" /&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;SalesforceRestAuthBehavior /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/xml
+         
+Content-Type: application/xml &lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>0</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="SBA.BizTalk.Shared.PipelineComponents.General.SimpleNamespaceChangeDecoder"&gt;&lt;Properties&gt;&lt;MessageNamespace vt="8"&gt;http://SBA.gov/DLAPDocumentUpload/REST/INSERT/RestContentDocumentLink&lt;/MessageNamespace&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Document Upload Rest Content Version DocumentId Query Port" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>{SFRESTADDRESS}</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;&amp;lt;BtsHttpUrlMapping&amp;gt;
+
+&amp;lt;Operation Method="GET" Url="/services/data/v42.0/query/?q={SOQLQuery}" /&amp;gt;
+
+&amp;lt;/BtsHttpUrlMapping&amp;gt;&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8"&gt;GET&lt;/SuppressMessageBodyForHttpVerbs&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+  &amp;lt;Variable Name="SOQLQUERY" PropertyName="SOQL_ContentDocument_ID_Query" PropertyNamespace="https://SBA.gov/DLAPDocumentUpload/REST/QUERY/RestContentVersionQueryPropertySchema" /&amp;gt;
+&amp;lt;/BtsVariablePropertyMapping&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;SalesforceRestAuthBehavior /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/xml
+         
+Content-Type: application/xml &lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="SBA.BizTalk.Shared.PipelineComponents.General.SimpleNamespaceChangeDecoder"&gt;&lt;Properties&gt;&lt;MessageNamespace vt="8"&gt;http://SBA.gov/DLAPDocumentUpload/REST/QUERY/RestContentVersion&lt;/MessageNamespace&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Document Upload Rest CheckListItem Content Document Query Port" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>{SFRESTADDRESS}</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;&amp;lt;BtsHttpUrlMapping&amp;gt;
+
+&amp;lt;Operation Method="GET" Url="/services/data/v42.0/query/?q={SOQLQuery}" /&amp;gt;
+
+&amp;lt;/BtsHttpUrlMapping&amp;gt;&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8"&gt;GET&lt;/SuppressMessageBodyForHttpVerbs&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+  &amp;lt;Variable Name="SOQLQUERY" PropertyName="SOQL_ContentDocument_Query" PropertyNamespace="https://SBA.gov/DLAPDocumentUpload/REST/QUERY/ChecklistItemDocumentDetailsPropertySchema" /&amp;gt;
+&amp;lt;/BtsVariablePropertyMapping&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;SalesforceRestAuthBehavior /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/xml
+         
+Content-Type: application/xml &lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>0</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="SBA.BizTalk.Shared.PipelineComponents.General.SimpleNamespaceChangeDecoder"&gt;&lt;Properties&gt;&lt;MessageNamespace vt="8"&gt;http://SBA.gov/DLAPDocumentUpload/REST/QUERY/ContentDocument&lt;/MessageNamespace&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>3</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Document Upload Rest Check List Item Update Port" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>{SFRESTADDRESS}</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;&amp;lt;BtsHttpUrlMapping&amp;gt;
+         
+ 
+
+
+&amp;lt;Operation Method="PATCH" Url="services/data/v43.0/composite/sobjects" /&amp;gt;
+  
+
+
+&amp;lt;/BtsHttpUrlMapping&amp;gt;&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8" /&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;SalesforceRestAuthBehavior /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/xml
+         
+Content-Type: application/xml &lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>0</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="SBA.BizTalk.Shared.PipelineComponents.General.SimpleNamespaceChangeDecoder"&gt;&lt;Properties&gt;&lt;MessageNamespace vt="8"&gt;http://SBA.gov/DLAPDocumentUpload/REST/UPDATE/RestChecklistItem&lt;/MessageNamespace&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Document Upload Rest Application Info Query Port" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>{SFRESTADDRESS}</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;&amp;lt;BtsHttpUrlMapping&amp;gt;
+
+&amp;lt;Operation Method="GET" Url="/services/data/v42.0/query/?q={SOQLQuery}" /&amp;gt;
+
+&amp;lt;/BtsHttpUrlMapping&amp;gt;&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8"&gt;GET&lt;/SuppressMessageBodyForHttpVerbs&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+  &amp;lt;Variable Name="SOQLQUERY" PropertyName="SOQL_ApplicationInfo_Query" PropertyNamespace="https://SBA.gov/DLAPDocumentUpload/REST/Query/RestApplicationInfoPropertySchema" /&amp;gt;
+&amp;lt;/BtsVariablePropertyMapping&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;SalesforceRestAuthBehavior /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/xml
+         
+Content-Type: application/xml &lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="SBA.BizTalk.Shared.PipelineComponents.General.SimpleNamespaceChangeDecoder"&gt;&lt;Properties&gt;&lt;MessageNamespace vt="8"&gt;http://SBA.gov/DLAPDocumentUpload/REST/Query/ApplicationInfo&lt;/MessageNamespace&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Document Upload Rest Receipt Document Insert Port" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>{SFRESTADDRESS}</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;&amp;lt;BtsHttpUrlMapping&amp;gt;
+         
+ 
+
+
+&amp;lt;Operation Method="POST" Url="services/data/v43.0/composite/sobjects" /&amp;gt;
+  
+
+
+&amp;lt;/BtsHttpUrlMapping&amp;gt;&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8" /&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;SalesforceRestAuthBehavior /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/xml
+         
+Content-Type: application/xml &lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>0</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="SBA.BizTalk.Shared.PipelineComponents.General.SimpleNamespaceChangeDecoder"&gt;&lt;Properties&gt;&lt;MessageNamespace vt="8"&gt;http://SBA.gov/DLAPDocumentUpload/REST/INSERT/RestReceiptDocument&lt;/MessageNamespace&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Document Upload Rest Loan Query Port" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>{SFRESTADDRESS}</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;&amp;lt;BtsHttpUrlMapping&amp;gt;
+
+&amp;lt;Operation Method="GET" Url="/services/data/v42.0/query/?q={SOQLQuery}" /&amp;gt;
+
+&amp;lt;/BtsHttpUrlMapping&amp;gt;&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8"&gt;GET&lt;/SuppressMessageBodyForHttpVerbs&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+  &amp;lt;Variable Name="SOQLQUERY" PropertyName="SOQL_Loan_Query" PropertyNamespace="https://SBA.gov/DLAPDocumentUpload/REST/QUERY/RestLoanQueryPropertySchema" /&amp;gt;
+&amp;lt;/BtsVariablePropertyMapping&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;SalesforceRestAuthBehavior /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/xml
+         
+Content-Type: application/xml &lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>0</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="SBA.BizTalk.Shared.PipelineComponents.General.SimpleNamespaceChangeDecoder"&gt;&lt;Properties&gt;&lt;MessageNamespace vt="8"&gt;http://SBA.gov/DLAPDocumentUpload/REST/QUERY/Loan&lt;/MessageNamespace&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Document Upload Rest Event Request Port" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>{SFRESTADDRESS}</Address>
+        <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;HttpMethodAndUrl vt="8"&gt;&amp;lt;BtsHttpUrlMapping&amp;gt;
+         
+ 
+
+
+&amp;lt;Operation Method="POST" Url="services/data/v43.0/composite/sobjects" /&amp;gt;
+  
+
+
+&amp;lt;/BtsHttpUrlMapping&amp;gt;&lt;/HttpMethodAndUrl&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;ClientCertificate vt="8" /&gt;&lt;ProxyUserName vt="8" /&gt;&lt;UseAcsAuthentication vt="11"&gt;0&lt;/UseAcsAuthentication&gt;&lt;SuppressMessageBodyForHttpVerbs vt="8" /&gt;&lt;VariablePropertyMapping vt="8"&gt;&amp;lt;BtsVariablePropertyMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&amp;gt;&lt;/VariablePropertyMapping&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;ProxyToUse vt="8"&gt;Default&lt;/ProxyToUse&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior"&amp;gt;&amp;lt;SalesforceRestAuthBehavior /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;UseSasAuthentication vt="11"&gt;0&lt;/UseSasAuthentication&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;HttpHeaders vt="8"&gt;Accept: application/xml
+         
+Content-Type: application/xml &lt;/HttpHeaders&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>0</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-WebHttp" Capabilities="387" ConfigurationClsid="e5b2de81-de67-4559-869b-20925949a1e0" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T04:00:00</FromTime>
+        <ToTime>2000-01-01T03:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="SBA.BizTalk.Shared.PipelineComponents.General.SimpleNamespaceChangeDecoder"&gt;&lt;Properties&gt;&lt;MessageNamespace vt="8"&gt;http://SBA.gov/DLAPDocumentUpload/REST/INSERT/EventResponse&lt;/MessageNamespace&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </SendPort>
+  </SendPortCollection>
+  <DistributionListCollection />
+  <ReceivePortCollection>
+    <ReceivePort Name="DLAP Document Upload Webservice" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <ReceiveLocations>
+        <ReceiveLocation Name="DLAP Document Upload Webservice Location">
+          <Description xsi:nil="true" />
+          <Address>/DCMS2/DLAPDocumentUpload/DocumentUpload.svc</Address>
+          <PublicAddress />
+          <Primary>true</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2000-01-01T00:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2000-01-01T23:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2000-01-01T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2000-01-01T23:59:59</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="WCF-WSHttp" Capabilities="899" ConfigurationClsid="2b219014-ba04-4b70-a66b-a8c418b109fd" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;MessageEncoding vt="8"&gt;Text&lt;/MessageEncoding&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;EnableTransaction vt="11"&gt;0&lt;/EnableTransaction&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;MaxReceivedMessageSize vt="3"&gt;1500000000&lt;/MaxReceivedMessageSize&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;AlgorithmSuite vt="8"&gt;Basic256&lt;/AlgorithmSuite&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;TextEncoding vt="8"&gt;utf-8&lt;/TextEncoding&gt;&lt;NegotiateServiceCredential vt="11"&gt;-1&lt;/NegotiateServiceCredential&gt;&lt;EstablishSecurityContext vt="11"&gt;-1&lt;/EstablishSecurityContext&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;IncludeExceptionDetailInFaults vt="11"&gt;-1&lt;/IncludeExceptionDetailInFaults&gt;&lt;TransportClientCredentialType vt="8"&gt;Basic&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:06:00&lt;/OpenTimeout&gt;&lt;MessageClientCredentialType vt="8"&gt;Windows&lt;/MessageClientCredentialType&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;SuspendMessageOnFailure vt="11"&gt;-1&lt;/SuspendMessageOnFailure&gt;&lt;CloseTimeout vt="8"&gt;00:10:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:06:00&lt;/SendTimeout&gt;&lt;MaxConcurrentCalls vt="3"&gt;200&lt;/MaxConcurrentCalls&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+          <ReceivePipelineData xsi:nil="true" />
+          <SendPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>true</Enable>
+          <ReceiveHandler Name="Isolated" HostTrusted="false">
+            <TransportType Name="WCF-WSHttp" Capabilities="899" ConfigurationClsid="2b219014-ba04-4b70-a66b-a8c418b109fd" />
+          </ReceiveHandler>
+        </ReceiveLocation>
+      </ReceiveLocations>
+      <SendPipelineData xsi:nil="true" />
+      <Authentication>0</Authentication>
+      <Tracking>0</Tracking>
+      <Transforms />
+      <OutboundTransforms />
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>DLAP Document Upload</ApplicationName>
+    </ReceivePort>
+  </ReceivePortCollection>
+  <PartyCollection xsi:nil="true" />
+</BindingInfo>

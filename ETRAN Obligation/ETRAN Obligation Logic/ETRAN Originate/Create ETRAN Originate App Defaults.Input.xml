@@ -1,0 +1,63 @@
+<ns12:Canonical xmlns:ns12="http://SBA.gov/ETRANObligation/Canonical/" xmlns:ns6="http://SBA.gov/ETRANObligation/Salesforce/Query/Disaster__c/" xmlns:ns4="http://SBA.gov/ETRANObligation/Salesforce/Query/Contact/" xmlns:ns11="http://SBA.gov/ETRANObligation/ETRANOriginate/ETRANOriginateAppDefaults/" xmlns:ns13="urn:enterprise.soap.sforce.com" xmlns:ns15="urn:sobject.enterprise.soap.sforce.com" xmlns:ns8="http://SBA.gov/ETRANObligation/Salesforce/Insert/Event_Request__c/" xmlns:ns9="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/" xmlns:ns14="http://soap.sforce.com/2005/09/outbound" xmlns:ns1="http://SBA.gov/ETRANObligation/Salesforce/Query/Application__c/" xmlns:ns2="http://SBA.gov/ETRANObligation/Salesforce/Query/Applicant__c/" xmlns:ns0="http://SBA.gov/ETRANObligation/Salesforce/NotificationSingle/" xmlns:ns5="http://SBA.gov/ETRANObligation/Salesforce/Query/Loan__c/" xmlns:ns10="http://SBA.gov/ETRANObligation/Salesforce/Query/Property__c/" xmlns:ns3="http://SBA.gov/ETRANObligation/Salesforce/Query/Account/" xmlns:ns7="http://ws.elend">
+  <ns12:BusinessTypeMapping>
+    <ns9:BusinessType>
+      <ns9:SalesforceValue>Sole Proprietorship</ns9:SalesforceValue>
+      <ns9:ETranTextValue>Sole Proprietorship</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>1</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:SalesforceValue>Partnership</ns9:SalesforceValue>
+      <ns9:ETranTextValue>Partnership</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>2</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:SalesforceValue>Corporation</ns9:SalesforceValue>
+      <ns9:ETranTextValue>Corporation</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>3</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:SalesforceValue>Limited Liability Company</ns9:SalesforceValue>
+      <ns9:ETranTextValue>Limited Liability Company (LLC)</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>4</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:ETranTextValue>Joint Venture</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>5</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:ETranTextValue>Professional Association</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>6</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:ETranTextValue>Trust</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>7</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:SalesforceValue>Cooperative</ns9:SalesforceValue>
+      <ns9:ETranTextValue>Cooperative</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>8</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:ETranTextValue>Limited Liability Partnership</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>9</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:ETranTextValue>Subchapter S Corporation</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>10</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+    <ns9:BusinessType>
+      <ns9:SalesforceValue>Non-Profit</ns9:SalesforceValue>
+      <ns9:ETranTextValue>Non-Profit Organization</ns9:ETranTextValue>
+      <ns9:ETranCodeValue>11</ns9:ETranCodeValue>
+    </ns9:BusinessType>
+  </ns12:BusinessTypeMapping>
+  <ns0:Notification>
+    <ns14:Id xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema">04lr0000001PYnLAAW</ns14:Id>
+    <ns14:sObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema">
+      <ns15:Id>a0dr0000000IettAAC</ns15:Id>
+      <ns15:Application_Number__c>444111001</ns15:Application_Number__c>
+      <ns15:SObject_ID__c>a0mr0000000Wi4KAAS</ns15:SObject_ID__c>
+    </ns14:sObject>
+  </ns0:Notification>
+  <ns12:Event_Request__c GUID__c="{replace_me}" Application_Number__c="444111001" Log_Message__c="{replace_me}" SObject_ID__c="a0mr0000000Wi4KAAS" SObject_Name__c="Loan__c" Stage__c="Loan Obligated" Status__c="{replace_me}" />
+</ns12:Canonical>

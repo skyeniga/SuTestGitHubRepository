@@ -1,0 +1,16 @@
+SOQL
+
+
+Select Id, ShippingStreet, CreatedDate, CreatedBy.Name from Account order by createddate desc limit 10
+
+
+Select Id, Social_Security_Number__c, AccountId, Name, CreatedBy.Name, CreatedDate from Contact where CreatedBy.Name = 'Brian Loesgen'
+
+
+Annonymous Apex
+
+applicant__c[] myappl=[select Id from Applicant__c where External_ID__c = '999111222333' or External_ID__c ='999888777666555'];
+delete myappl;
+
+contact[] mycontact=[select Id from Contact where Social_Security_Number__c  = '999223333' or Social_Security_Number__c = '999334444'];
+delete mycontact;

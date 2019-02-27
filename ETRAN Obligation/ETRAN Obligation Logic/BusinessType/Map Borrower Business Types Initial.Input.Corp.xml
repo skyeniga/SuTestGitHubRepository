@@ -1,0 +1,162 @@
+<ns0:Canonical xmlns:ns0="http://SBA.gov/ETRANObligation/Canonical/" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/" xmlns:def="http://SBA.gov/ETRANObligation/ETRANOriginate/ETRANOriginateAppDefaults/" xmlns:bbt="http://SBA.gov/ETRANObligation/Definition/Borrower/BorrowerBusinessTypes/" xmlns:ns4="urn:enterprise.soap.sforce.com" xmlns:ns3="urn:sobject.enterprise.soap.sforce.com" xmlns:ns1="http://soap.sforce.com/2005/09/outbound" xmlns:multi="http://SBA.gov/ETRANObligation/Definition/Salesforce/Multi/Query/" xmlns:notify1="http://SBA.gov/ETRANObligation/Salesforce/NotificationSingle/" xmlns:event="http://SBA.gov/ETRANObligation/Definition/Salesforce/Event_Request__c/" xmlns:ns2="http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/" xmlns:etran="http://ws.elend">
+  <notify1:Notification>
+    <ns1:Id xmlns:ns3="urn:enterprise.soap.sforce.com" xmlns:ns2="urn:sobject.enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema">04l35000000QNCMAA4</ns1:Id>
+    <ns1:sObject xmlns:ns3="urn:enterprise.soap.sforce.com" xmlns:ns2="urn:sobject.enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema">
+      <ns2:Id>a0h35000000SJMtAAO</ns2:Id>
+      <ns2:Application_Number__c>2000001418</ns2:Application_Number__c>
+      <ns2:SObject_ID__c>a0t35000000AC7SAAW</ns2:SObject_ID__c>
+    </ns1:sObject>
+  </notify1:Notification>
+  <ns0:Multi>
+    <ns0:Request>
+      <multi:q xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema">SELECT Id, RecordType.Name, Name, Previous_SBA_Loans__c, Loan_Type__c, Org_Type__c, Application_Type__c, Loan_Type2__c, Loss_Type__c, FEMA_Registration_Number__c, (SELECT Id, Interest_Rate__c, Loan_Amount__c, Payment_Amount__c, Secure__c, Servicing_Office__c, Total_Term__c, Disaster_Declaration__c, Disaster_Declaration__r.Name, Disaster_Declaration__r.Disaster_Damaged_Type__c, Disaster_Declaration__r.Physical_Number__c FROM Loans__r WHERE Id=@LoanId), (SELECT Credit_Elsewhere_Test__c, Physical_Allocated_Amount__c, EIDL_Allocated_Amount__c FROM Processing_Application_Review__r), (SELECT Id, Property_Address__c, City__c, State__c, Zip_Code__c FROM Property__r WHERE Active__c=true), (SELECT Id, RecordType.Name, Name, Primary_Applicant__c, Tax_ID__c, Related_Parent__r.Tax_ID__c, Entity_Type__c, Applicant_Relation_Type__c, Ownership_Percent__c, Borrower_Guarantor__c, Account__r.Id, Account__r.Name, Account__r.Business_Type__c, Account__r.Trade_Name__c, Account__r.Phone, Account__r.ShippingStreet, Account__r.ShippingCity, Account__r.ShippingState, Account__r.ShippingPostalCode, Contact__r.Id, Contact__r.Birthdate, Contact__r.Title, Contact__r.FirstName, Contact__r.LastName, Contact__r.MiddleName, Contact__r.Suffix, Contact__r.Phone, Contact__r.MobilePhone, Contact__r.Work_Phone__c, Contact__r.MailingStreet, Contact__r.MailingCity, Contact__r.MailingState, Contact__r.MailingPostalCode FROM Applicants__r WHERE Active__c=true) FROM Application__c WHERE Name=@ApplicationNumber</multi:q>
+      <multi:ApplicationNumber xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema">2000001418</multi:ApplicationNumber>
+      <multi:LoanId xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema">a0t35000000AC7SAAW</multi:LoanId>
+    </ns0:Request>
+    <ns0:QueryResult>
+      <multi:done>true</multi:done>
+      <multi:records type="Application__c" url="/services/data/v42.0/sobjects/Application__c/a0N35000000iE2WEAU">
+        <multi:Id>a0N35000000iE2WEAU</multi:Id>
+        <multi:RecordType type="RecordType" url="/services/data/v42.0/sobjects/RecordType/012350000000Om6AAE">
+          <multi:Name>Business Loan Application</multi:Name>
+        </multi:RecordType>
+        <multi:Name>2000003812</multi:Name>
+        <multi:Loan_Type__c>Business</multi:Loan_Type__c>
+        <multi:Org_Type__c>Corporation</multi:Org_Type__c>
+        <multi:Loan_Type2__c>BUSINESS EIDL</multi:Loan_Type2__c>
+        <multi:Loss_Type__c>Real Property</multi:Loss_Type__c>
+        <multi:Loans__r>
+          <multi:done>true</multi:done>
+          <multi:records type="Loan__c" url="/services/data/v42.0/sobjects/Loan__c/a0t35000000ATCnAAO">
+            <multi:Id>a0t35000000ATCnAAO</multi:Id>
+            <multi:Interest_Rate__c>7.35</multi:Interest_Rate__c>
+            <multi:Loan_Amount__c>20000.0</multi:Loan_Amount__c>
+            <multi:Payment_Amount__c>325.0</multi:Payment_Amount__c>
+            <multi:Secure__c>false</multi:Secure__c>
+            <multi:Servicing_Office__c>9030</multi:Servicing_Office__c>
+            <multi:Total_Term__c>84.0</multi:Total_Term__c>
+            <multi:Disaster_Declaration__c>a0a35000000LXgnAAG</multi:Disaster_Declaration__c>
+            <multi:Disaster_Declaration__r type="Disaster__c" url="/services/data/v42.0/sobjects/Disaster__c/a0a35000000LXgnAAG">
+              <multi:Name>TX-00312</multi:Name>
+              <multi:Disaster_Damaged_Type__c>6 - FLOODS</multi:Disaster_Damaged_Type__c>
+              <multi:Physical_Number__c>12650</multi:Physical_Number__c>
+            </multi:Disaster_Declaration__r>
+          </multi:records>
+          <multi:totalSize>1</multi:totalSize>
+        </multi:Loans__r>
+        <multi:Processing_Application_Review__r>
+          <multi:done>true</multi:done>
+          <multi:records type="Processing_Application_Review__c" url="/services/data/v42.0/sobjects/Processing_Application_Review__c/a1235000000MzPfAAK">
+            <multi:Credit_Elsewhere_Test__c>Market Rate</multi:Credit_Elsewhere_Test__c>
+            <multi:Physical_Allocated_Amount__c>20000.0</multi:Physical_Allocated_Amount__c>
+          </multi:records>
+          <multi:totalSize>1</multi:totalSize>
+        </multi:Processing_Application_Review__r>
+        <multi:Property__r>
+          <multi:done>true</multi:done>
+          <multi:records type="Property__c" url="/services/data/v42.0/sobjects/Property__c/a1335000000CNanAAG">
+            <multi:Id>a1335000000CNanAAG</multi:Id>
+            <multi:Property_Address__c>733 ARDATH</multi:Property_Address__c>
+            <multi:City__c>CAMBRIA</multi:City__c>
+            <multi:State__c>CA</multi:State__c>
+            <multi:Zip_Code__c>93428</multi:Zip_Code__c>
+          </multi:records>
+          <multi:totalSize>1</multi:totalSize>
+        </multi:Property__r>
+        <multi:Applicants__r>
+          <multi:done>true</multi:done>
+          <multi:records type="Applicant__c" url="/services/data/v42.0/sobjects/Applicant__c/a0L35000000daiqEAA">
+            <multi:Id>a0L35000000daiqEAA</multi:Id>
+            <multi:RecordType type="RecordType" url="/services/data/v42.0/sobjects/RecordType/012350000000Om0AAE">
+              <multi:Name>Business Entity</multi:Name>
+            </multi:RecordType>
+            <multi:Name>BARBARA WILLEMSEN</multi:Name>
+            <multi:Primary_Applicant__c>true</multi:Primary_Applicant__c>
+            <multi:Tax_ID__c>0666295782</multi:Tax_ID__c>
+            <multi:Entity_Type__c>Corporation</multi:Entity_Type__c>
+            <multi:Applicant_Relation_Type__c>Applicant</multi:Applicant_Relation_Type__c>
+            <multi:Borrower_Guarantor__c>Borrower</multi:Borrower_Guarantor__c>
+            <multi:Account__r type="Account" url="/services/data/v42.0/sobjects/Account/00135000004RefhAAC">
+              <multi:Id>00135000004RefhAAC</multi:Id>
+              <multi:Name>BARBARA WILLEMSEN</multi:Name>
+              <multi:Business_Type__c>Corporation</multi:Business_Type__c>
+              <multi:Trade_Name__c>WILLEMSEN CORP</multi:Trade_Name__c>
+              <multi:Phone>8059276113</multi:Phone>
+              <multi:ShippingStreet>733 ARDATH</multi:ShippingStreet>
+              <multi:ShippingCity>CAMBRIA</multi:ShippingCity>
+              <multi:ShippingState>CA</multi:ShippingState>
+              <multi:ShippingPostalCode>93428</multi:ShippingPostalCode>
+            </multi:Account__r>
+          </multi:records>
+          <multi:records type="Applicant__c" url="/services/data/v42.0/sobjects/Applicant__c/a0L35000000dairEAA">
+            <multi:Id>a0L35000000dairEAA</multi:Id>
+            <multi:RecordType type="RecordType" url="/services/data/v42.0/sobjects/RecordType/012350000000Om1AAE">
+              <multi:Name>Individual or Sole Proprietor</multi:Name>
+            </multi:RecordType>
+            <multi:Name>BARBARA WILLEMSEN</multi:Name>
+            <multi:Primary_Applicant__c>false</multi:Primary_Applicant__c>
+            <multi:Tax_ID__c>1626295782</multi:Tax_ID__c>
+            <multi:Related_Parent__r type="Applicant__c" url="/services/data/v42.0/sobjects/Applicant__c/a0L35000000daiqEAA">
+              <multi:Tax_ID__c>0666295782</multi:Tax_ID__c>
+            </multi:Related_Parent__r>
+            <multi:Entity_Type__c>Individual - Sole Prop</multi:Entity_Type__c>
+            <multi:Applicant_Relation_Type__c>Owner</multi:Applicant_Relation_Type__c>
+            <multi:Ownership_Percent__c>100.0</multi:Ownership_Percent__c>
+            <multi:Contact__r type="Contact" url="/services/data/v42.0/sobjects/Contact/003350000057IuzAAE">
+              <multi:Id>003350000057IuzAAE</multi:Id>
+              <multi:Birthdate>1932-02-05</multi:Birthdate>
+              <multi:FirstName>BARBARA</multi:FirstName>
+              <multi:LastName>WILLEMSEN</multi:LastName>
+              <multi:Phone>8059276113</multi:Phone>
+              <multi:MailingStreet>733 ARDATH</multi:MailingStreet>
+              <multi:MailingCity>CAMBRIA</multi:MailingCity>
+              <multi:MailingState>CA</multi:MailingState>
+              <multi:MailingPostalCode>93428</multi:MailingPostalCode>
+            </multi:Contact__r>
+          </multi:records>
+          <multi:totalSize>2</multi:totalSize>
+        </multi:Applicants__r>
+      </multi:records>
+      <multi:totalSize>1</multi:totalSize>
+    </ns0:QueryResult>
+  </ns0:Multi>
+  <ns0:ETRAN_Originate_App_Defaults>
+    <def:LoanApplication def:action="insert" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/">
+      <def:InterestStructureCd>F</def:InterestStructureCd>
+      <def:NetEarningsClause>N</def:NetEarningsClause>
+      <def:RevolvingInd>N</def:RevolvingInd>
+    </def:LoanApplication>
+    <def:Interest def:action="insert" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/">
+      <def:BaseRateSourcTypCd>DSR</def:BaseRateSourcTypCd>
+      <def:IntrstTypInd>F</def:IntrstTypInd>
+      <def:Phase>1</def:Phase>
+    </def:Interest>
+    <def:Borrower def:action="insert" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/">
+      <def:CreditScorSourcCd>13</def:CreditScorSourcCd>
+      <def:PhysCountryCd>US</def:PhysCountryCd>
+    </def:Borrower>
+    <def:BorrowerRace def:action="insert" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/">
+      <def:RaceCd>6</def:RaceCd>
+    </def:BorrowerRace>
+    <def:Principal def:action="insert" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/">
+      <def:EthnicCd>UN</def:EthnicCd>
+      <def:ExtrnlCreditScorInd>N</def:ExtrnlCreditScorInd>
+      <def:GndrCd>U</def:GndrCd>
+      <def:GntyInd>N</def:GntyInd>
+      <def:VetCd>5</def:VetCd>
+    </def:Principal>
+    <def:PrincipalRace def:action="insert" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/">
+      <def:RaceCd>6</def:RaceCd>
+    </def:PrincipalRace>
+    <def:SpecialPurpose def:action="insert" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/" />
+    <def:UseOfProceeds_Physical def:action="insert" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/">
+      <def:LoanProceedTypCd>05</def:LoanProceedTypCd>
+      <def:ProceedTypCd>D</def:ProceedTypCd>
+    </def:UseOfProceeds_Physical>
+    <def:UseOfProceeds_EIDL def:action="insert" xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/">
+      <def:LoanProceedTypCd>04</def:LoanProceedTypCd>
+      <def:ProceedTypCd>D</def:ProceedTypCd>
+    </def:UseOfProceeds_EIDL>
+  </ns0:ETRAN_Originate_App_Defaults>
+  <ns0:Event_Request__c GUID__c="" Application_Number__c="2000001418" Log_Message__c="" SObject_ID__c="a0t35000000AC7SAAW" SObject_Name__c="Loan__c" Stage__c="Loan Obligated" Status__c="" />
+</ns0:Canonical>

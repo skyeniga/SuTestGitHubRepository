@@ -1,0 +1,51 @@
+﻿{
+  "$schema": "C:\\Program Files (x86)\\Microsoft BizTalk Server 2016\\Developer Tools\\BizTalkServerAppplicationSchema.json",
+  "BizTalkAssemblies": [
+    {
+      "Name": "SBA.ETRANObligation.Definition",
+      "path": "bin\\SBA.ETRANObligation.Definition.dll"
+    },
+    {
+      "Name": "SBA.ETRANObligation.Definition.ETRAN",
+      "path": "bin\\SBA.ETRANObligation.Definition.ETRAN.dll"
+    },
+    {
+      "Name": "SBA.ETRANObligation.Definition.Rules",
+      "path": "bin\\SBA.ETRANObligation.Definition.Rules.dll"
+    },
+    {
+      "Name": "SBA.ETRANObligation.Definition.Salesforce",
+      "path": "bin\\SBA.ETRANObligation.Definition.Salesforce.dll"
+    },
+    {
+      "Name": "SBA.ETRANObligation.Logic",
+      "path": "bin\\SBA.ETRANObligation.Logic.dll"
+    }
+
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "Binding",
+      "Path": "bindings\\Binding.xml"
+    }
+  ],
+  "Assemblies": [
+  ],
+  "PreProcessingScripts": [
+  ],
+  "PostProcessingScripts": [
+  ],
+  "Files": [
+  ],
+  "DeploymentSequence": [
+    "SBA.ETRANObligation.Definition",
+    "SBA.ETRANObligation.Definition.ETRAN",
+    "SBA.ETRANObligation.Definition.Rules",
+    "SBA.ETRANObligation.Definition.Salesforce",
+    "SBA.ETRANObligation.Logic",
+    "Binding"
+  ]
+
+
+
+}

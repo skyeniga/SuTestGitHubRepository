@@ -1,0 +1,8 @@
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Definition\bin\Debug\DLAPDocumentListDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Definition\bin\Debug\DLAPDocumentListDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Definition\obj\Debug\DLAPDocumentListDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Definition\obj\Debug\DLAPDocumentListDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Definition\bin\Debug\DLAPDocumentListDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Definition\bin\Debug\DLAPDocumentListDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Definition\obj\Debug\DLAPDocumentListDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Definition\obj\Debug\DLAPDocumentListDefinition.pdb

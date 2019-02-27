@@ -1,0 +1,7 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Document Upload Logic\bin\Debug\DLAPApplicationImportDocumentCoordinatorLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Document Upload Logic\bin\Debug\DLAPApplicationImportDocumentCoordinatorLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Document Upload Logic\bin\Debug\DLAPApplicationImportDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Document Upload Logic\bin\Debug\DLAPApplicationImportOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Document Upload Logic\bin\Debug\SBA.BizTalk.Shared.Salesforce.Documents.Logic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Document Upload Logic\obj\Debug\DLAPApplicationImportDocumentCoordinatorLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Document Upload Logic\obj\Debug\DLAPApplicationImportDocumentCoordinatorLogic.pdb

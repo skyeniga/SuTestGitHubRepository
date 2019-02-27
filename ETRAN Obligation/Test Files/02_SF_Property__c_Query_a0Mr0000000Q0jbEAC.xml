@@ -1,0 +1,4 @@
+<ns0:Request xmlns:ns0="http://SBA.gov/Salesforce/Query/Test/">
+	<ns0:SQLCommand>SELECT Id, Property_Address__c, City__c, State__c, Zip_Code__c FROM Property__c WHERE Application__c=@ApplicationId AND Active__c=true</ns0:SQLCommand>
+	<ns0:ApplicationId>a0Mr0000000Q0jbEAC</ns0:ApplicationId>
+</ns0:Request>

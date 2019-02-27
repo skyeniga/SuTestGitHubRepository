@@ -1,0 +1,38 @@
+﻿<ns0:ETRAN_Originate_App_Defaults xmlns:ns0="http://SBA.gov/ETRANObligation/ETRANOriginate/ETRANOriginateAppDefaults/">
+  <ns0:LoanApplication ns0:action="insert">
+    <ns0:InterestStructureCd>F</ns0:InterestStructureCd>
+    <ns0:NetEarningsClause>N</ns0:NetEarningsClause>
+    <ns0:RevolvingInd>N</ns0:RevolvingInd>
+  </ns0:LoanApplication>
+  <ns0:Interest ns0:action="insert">
+    <ns0:BaseRateSourcTypCd>DSR</ns0:BaseRateSourcTypCd>
+    <ns0:IntrstTypInd>F</ns0:IntrstTypInd>
+    <ns0:Phase>1</ns0:Phase>
+  </ns0:Interest>
+  <ns0:Borrower ns0:action="insert">
+    <ns0:CreditScorSourcCd>13</ns0:CreditScorSourcCd>
+    <ns0:PhysCountryCd>US</ns0:PhysCountryCd>
+  </ns0:Borrower>
+  <ns0:BorrowerRace ns0:action="insert">
+    <ns0:RaceCd>6</ns0:RaceCd>
+  </ns0:BorrowerRace>
+  <ns0:Principal ns0:action="insert">
+    <ns0:EthnicCd>UN</ns0:EthnicCd>
+    <ns0:ExtrnlCreditScorInd>N</ns0:ExtrnlCreditScorInd>
+    <ns0:GndrCd>U</ns0:GndrCd>
+    <ns0:GntyInd>N</ns0:GntyInd>
+    <ns0:VetCd>5</ns0:VetCd>
+  </ns0:Principal>
+  <ns0:PrincipalRace ns0:action="insert">
+    <ns0:RaceCd>6</ns0:RaceCd>
+  </ns0:PrincipalRace>
+  <ns0:SpecialPurpose ns0:action="insert" />
+  <ns0:UseOfProceeds_Physical ns0:action="insert">
+    <ns0:LoanProceedTypCd>05</ns0:LoanProceedTypCd>
+    <ns0:ProceedTypCd>D</ns0:ProceedTypCd>
+  </ns0:UseOfProceeds_Physical>
+  <ns0:UseOfProceeds_EIDL ns0:action="insert">
+    <ns0:LoanProceedTypCd>04</ns0:LoanProceedTypCd>
+    <ns0:ProceedTypCd>D</ns0:ProceedTypCd>
+  </ns0:UseOfProceeds_EIDL>
+</ns0:ETRAN_Originate_App_Defaults>

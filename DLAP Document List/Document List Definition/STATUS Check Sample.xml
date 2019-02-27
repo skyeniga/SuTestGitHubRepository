@@ -1,0 +1,14 @@
+<STATUS>
+  <AppData>
+    <App_Nbr>1100000097</App_Nbr>
+    <Loan_Type>Business</Loan_Type>
+    <Disaster_Name>2014 PERFORMANCE TEST DISASTER</Disaster_Name>
+    <Requested_Document_Count>0</Requested_Document_Count>
+    <Disaster_Deadline_Date>29 Sep 2017</Disaster_Deadline_Date>
+  </AppData>
+  <StatusData>
+    <Short_Description>INACTIVE</Short_Description>
+    <Long_Description>We received your SBA disaster loan application; however, our records show that your application is in an inactive status. This could be the result of receiving multiple applications and/or duplicate claims for damages from the same disaster declaration.</Long_Description>
+    <Status_Date>11/14/2017 20:00:37</Status_Date>
+  </StatusData>
+</STATUS>

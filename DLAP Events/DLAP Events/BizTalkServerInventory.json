@@ -1,0 +1,43 @@
+﻿{
+  "$schema": "C:\\Program Files (x86)\\Microsoft BizTalk Server 2016\\Developer Tools\\BizTalkServerAppplicationSchema.json",
+  "BizTalkAssemblies": [
+    {
+      "Name": "DLAPEventsDefinition", 
+      "path": "bin\\DLAPEventsDefinition.dll"
+    },
+    {
+      "Name": "DLAPEventsLogic",
+      "path": "bin\\DLAPEventsLogic.dll"
+    },
+    {
+      "Name": "DLAPEventsOracleDefinition",
+      "path": "bin\\DLAPEventsOracleDefinition.dll"
+    },
+     {
+      "Name": "DLAPEventsSalesforceDefinition", 
+      "path": "bin\\DLAPEventsSalesforceDefinition.dll"
+    }
+
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "DLAPEventsBindingInfo",
+      "Path": "bindings\\DLAPEventsBindingInfo.xml"
+    }
+  ],
+  "Assemblies": [
+  ],
+  "PreProcessingScripts": [
+  ],
+  "PostProcessingScripts": [
+  ],
+  "Files": [
+  ],
+  "DeploymentSequence": [
+    "DLAPEventsDefinition",
+    "DLAPEventsOracleDefinition",
+    "DLAPEventsSalesforceDefinition",
+    "DLAPEventsLogic",
+    "DLAPEventsBindingInfo"
+  ]
+}

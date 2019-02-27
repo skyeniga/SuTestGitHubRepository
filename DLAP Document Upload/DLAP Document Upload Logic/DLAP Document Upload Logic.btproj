@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F6268F8-B737-4DC1-AF63-54FE4D27FBD6}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>DLAPDocumentUploadLogic</RootNamespace>
+    <AssemblyName>DLAPDocumentUploadLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SalesforceDocumentUpload.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SBA.BizTalk.Shared.Salesforce.Documents.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7bf51f5d89236764, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.BizTalk.Shared.Salesforce.Documents.Logic\v4.0_1.0.0.0__7bf51f5d89236764\SBA.BizTalk.Shared.Salesforce.Documents.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="SBA.BizTalk.Shared.Salesforce.EventLogging.Logic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7bf51f5d89236764, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.BizTalk.Shared.Salesforce.EventLogging.Logic\v4.0_1.0.0.0__7bf51f5d89236764\SBA.BizTalk.Shared.Salesforce.EventLogging.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Versioning\AssemblyInfoShared.cs">
+      <Link>Properties\AssemblyInfoShared.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SalesforceDocumentUpload.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Document Logic.odx">
+      <TypeName>Document_Upload_Logic</TypeName>
+      <Namespace>DocumentUploadLogic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeDocumentLinkRequest.btm">
+      <SubType>Task</SubType>
+      <TypeName>MakeDocumentLinkRequest</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+    </Map>
+    <Map Include="MakeSalesforceQueryApplicantIdRequest.btm">
+      <TypeName>MakeSalesforceQueryApplicantIdRequest</TypeName>
+      <Namespace>SBA.DLAPDocumentUpload.Logic</Namespace>
+      <SubType>Designer</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeDocumentUploadResponse.btm">
+      <TypeName>MakeDocumentUploadResponse</TypeName>
+      <Namespace>SBA.DLAPDocumentUpload.Logic</Namespace>
+      <SubType>Designer</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DLAP Document Upload Definition\DLAP Document Upload Definition.btproj">
+      <Project>{ef2f3f23-41ee-4151-943e-4c32aa345416}</Project>
+      <Name>DLAP Document Upload Definition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLAP Document Upload SalesForce Definition\DLAP Document Upload SalesForce Definition.btproj">
+      <Project>{296ffe55-d142-4c93-8175-6137ce146dac}</Project>
+      <Name>DLAP Document Upload SalesForce Definition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeContentVersionRequest.btm">
+      <TypeName>MakeContentVersionRequest</TypeName>
+      <Namespace>SBA.DLAPDocumentUpload.Logic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeContentVersionDocumentIdRequest.btm">
+      <TypeName>MakeContentVersionDocumentIdRequest</TypeName>
+      <Namespace>SBA.DLAPDocumentUpload.Logic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeCheckListItemUpdateRequest.btm">
+      <TypeName>MakeCheckListItemUpdateRequest</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Updating CheckList Item Document Proccessing Logic.odx">
+      <TypeName>UpdatingCheckListItemDocument</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Map Include="MakeTempConentLinkValuesRequest.btm">
+      <TypeName>MakeTempConentLinkValuesRequest</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="MakeReceiptDocumentRequestMsg.btm">
+      <TypeName>MakeReceiptDocumentRequestMsg</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <XLang Include="Documents Processing Logic.odx">
+      <SubType>Task</SubType>
+      <TypeName>Document_Logic_Copy</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+    </XLang>
+    <Map Include="MakeLoanRequestMsg.btm">
+      <TypeName>MakeLoanRequestMsg</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="MakeUpdateCheckListItemDocumentContentVersionRequest.btm">
+      <SubType>Task</SubType>
+      <TypeName>MakeUpdateCheckListItemDocumentContentVersionRequest</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+    </Map>
+    <Map Include="MakeCheckLIstItemDocumentUpdateUploadResponse.btm">
+      <SubType>Task</SubType>
+      <TypeName>MakeCheckLIstItemDocumentUpdateUploadResponse</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+    </Map>
+    <Map Include="MakeDocumentLinkWithoutCheckLitsItemRequest.btm">
+      <SubType>Task</SubType>
+      <TypeName>MakeDocumentLinkWithoutCheckLitsItemRequest</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+    </Map>
+    <Map Include="MakeContentDocumentLinkSelectCheckListItemRequest.btm">
+      <TypeName>MakeContentDocumentLinkSelectCheckListItemRequest</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <XLang Include="UploadEventRequest.odx">
+      <TypeName>Call_Event_Request__c</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="DLAP Document Upload.BindingInfo 2.0.0.8 DEV.xml" />
+    <Map Include="MakeReceiptDocumentRequestMsg - Copy.btm">
+      <SubType>Task</SubType>
+      <TypeName>MakeReceiptDocumentRequestMsg_Copy</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+    </Map>
+    <Content Include="MakeUploadMetadata.xsl" />
+    <Map Include="MakeUploadMetadata.btm">
+      <TypeName>MakeUploadMetadata</TypeName>
+      <Namespace>DLAPDocumentUploadLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

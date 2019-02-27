@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer" elementFormDefault="qualified" targetNamespace="http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">POLLINGSTMTdlap_files_for_transfer</fileNameHint>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:complexType name="POLLINGSTMTRECORD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="APP_DATA_FINAL_XML" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="2147483647" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="POLLINGSTMTRECORD" nillable="true" type="tns:POLLINGSTMTRECORD" />
+  <xs:complexType name="ArrayOfPOLLINGSTMTRECORD">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="POLLINGSTMTRECORD" type="tns:POLLINGSTMTRECORD" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPOLLINGSTMTRECORD" nillable="true" type="tns:ArrayOfPOLLINGSTMTRECORD" />
+  <xs:element name="POLLINGSTMT">
+    <xs:annotation>
+      <xs:documentation>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMT</doc:action>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="POLLINGSTMTRECORD" nillable="true" type="tns:ArrayOfPOLLINGSTMTRECORD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

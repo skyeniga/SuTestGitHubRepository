@@ -1,0 +1,39 @@
+1) Ensure pre-requisites are deployed first. 
+	- SBA.BizTalk.Shared.AuditLogging.Logic v2.0.8.4
+	- SBA.BizTalk.Shared.MessageHelper v2.0.9.0
+	- SBA.BizTalk.Shared.Pipelines v1.0.1.2
+	- SBA.BizTalk.Shared.PipelineComponents v1.0.1.4
+	- SBA.BizTalk.Shared.Salesforce.EventLogging.Logic v2.0.8.4
+	- SBA.BizTalk.Shared.Salesforce.RestApi.Component v2.0.8.4
+	- SBA.BizTalk.Shared.Salesforce.RestApi.Definition v2.0.8.4
+	- SBA.BizTalk.Shared.Salesforce.RestApi.Logic v2.0.8.4
+	- SBA.ETRAN.Shared.Definition v2.0.8.3
+	- SBA.BizTalk.Shared.Salesforce.WcfBehaviors v2.0.4.0
+2) Import and install ETRAN Obligation v2.0.9.8.msi
+3) Modify bindings for environment... 
+	- For Lower Environments: ETRAN Obligation Bindings v2.0.9.8 For Lower Env.xml
+	- For Production: ETRAN Obligation Bindings v2.0.9.8 For Production.xml
+4) Import bindings from ETRAN Obligation Bindings v2.0.9.8.xml
+5) Ensure IIS settings are correct for \DCMS2\ETRANObligation
+	a) App Pool assignment is correct for Salesforce Outbound Notification receive 
+6) Ensure Receive Location is setup properly for SF Outbound receive via Https server cert for environment 
+	a) Security mode - Transport 
+7) Start Send Port: 
+	SBA.ETRANObligation.Logic_2.0.9.8_SBA.ETRANObligation.Logic.ETRANObligationLogic_ETran_Originate3_Port_18227d56be4ceab0
+8) Start Orchestrations: 
+	SBA.ETRANObligation.Logic.ETRANObligationSFNotifyDebatcher
+	SBA.ETRANObligation.Logic.ETRANObligationLogic
+9) Enable Receive Location: 
+	ETRAN Obligation Salesforce Notification Receive
+10) Test via ETRANObligation-soapui-project.xml
+	a) Update Url for project's request to match environment's server cert hostname 
+	b) Requires Application Number (Application__c.Name) and Event Request SFID (Event_Request__c.Id) 
+	c) Set these values under the SObject element of request for example... 
+
+...
+	<ns0:sObject>
+		<ns1:fieldsToNull xmlns:ns1="urn:sobject.enterprise.soap.sforce.com"></ns1:fieldsToNull>
+		<ns1:Id xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">(Event_Request__c.Id)</ns1:Id>
+		<ns1:Application_Number__c xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">(Application__c.Name)</ns1:Application_Number__c>
+	</ns0:sObject>
+...

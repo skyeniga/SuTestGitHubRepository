@@ -1,0 +1,244 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="53dee200-7874-4143-977a-254d2627d396" LowerBound="1.1" HigherBound="48.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="0bfb73bd-78be-468d-b18b-db37e751309a" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CDataServiceSelectAddtional_Contact__c" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="86ac6dfb-ee7a-4b5a-8452-c9456c2fcdaa" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="statement" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="6edda02a-44a4-4c6d-a648-c96e29180039" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.50">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementRequestAdditional_Contact__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="55169e44-3fc0-4625-8c30-26c6dc9c8200" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.52" HigherBound="16.90">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementResponseAdditional_Contact__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="5f976957-9800-4bf1-b2a5-c781b91ab4ae" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="StatementRequestAdditional_Contact__c" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="74c1c45e-bab8-430c-962f-20980c85e51b" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition.CDataService_Additional_Contact__c.parameters" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="5fb07452-6b37-4b73-ac3c-d77ae267fb5d" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="StatementResponseAdditional_Contact__c" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="52f098d2-304e-41e1-8c88-e528ecdc8e3b" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition.CDataService_Additional_Contact__c.table" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="93497369-5592-434a-b6f4-18f68146ce01" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="47.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CallAddtionalContact" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="8bc0e986-d08a-4899-b596-343d91e943a7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AddtionalContactCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4c668de2-2f78-41bc-aff1-badcdc60b018" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementRequestAdditional_Contact__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateAddtionalContactRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="20892050-b313-4cf6-a756-6f4d042cea02" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementResponseAdditional_Contact__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AddtionalConatctResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="5e05efcb-2e6d-4ba1-bf52-f05f1f1d6731" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageDeclaration" OID="1466b11e-fbb7-4bfc-aefb-0682f4aef8f7" ParentLink="ServiceBody_Declaration" LowerBound="27.15" HigherBound="27.110">
+                    <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ApplicationCanonical" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="bc30093c-c967-4ddd-8581-17aea6a86a25" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="45.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Create Addtional Contact" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="734d0e66-22a8-4519-b00b-fa9a7de6ab16" ParentLink="ComplexStatement_Statement" LowerBound="29.1" HigherBound="35.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct Addtional Contact Message" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="f43133c0-0375-4aca-b861-d7079bfe5558" ParentLink="ComplexStatement_Statement" LowerBound="32.1" HigherBound="34.1">
+                            <om:Property Name="ClassName" Value="Application_Import_Logic.MakeAddtionalConatct" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Map Addtional Conatct" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="58162540-c4f5-437b-9930-de6492f4a667" ParentLink="Transform_InputMessagePartRef" LowerBound="33.119" HigherBound="33.139">
+                                <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="b7dd5092-842a-495f-acf8-b634e757363d" ParentLink="Transform_OutputMessagePartRef" LowerBound="33.28" HigherBound="33.68">
+                                <om:Property Name="MessageRef" Value="CreateAddtionalContactRequest" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="0d62dfa3-c665-4b77-8d57-dec0a7090dff" ParentLink="Construct_MessageRef" LowerBound="30.23" HigherBound="30.52">
+                            <om:Property Name="Ref" Value="CreateAddtionalContactRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="5862edf7-dfe7-4c26-91ae-c6afea5f8d64" ParentLink="ComplexStatement_Statement" LowerBound="35.1" HigherBound="37.1">
+                        <om:Property Name="Expression" Value="AddtionalContactCount = xpath(CreateAddtionalContactRequest.parameters,&quot;count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/Additional_Contact__c']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/Additional_Contact__c']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/Additional_Contact__c'])&quot;);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Count Addtional Contact" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="b441f5a3-e5d3-495c-8a42-096a225572a8" ParentLink="ComplexStatement_Statement" LowerBound="37.1" HigherBound="45.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Addtional Contact Exits?" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="e9ce03bb-0a73-4427-8d38-d20ec2beb9b9" ParentLink="ReallyComplexStatement_Branch" LowerBound="38.13" HigherBound="45.1">
+                            <om:Property Name="Expression" Value="AddtionalContactCount &gt; 0" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Addtional Contact" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Send" OID="d535ed20-4689-4d5f-bdac-a36a3f6a548c" ParentLink="ComplexStatement_Statement" LowerBound="40.1" HigherBound="42.1">
+                                <om:Property Name="PortName" Value="CDataServiceSelectAddtional_Contact__cPort" />
+                                <om:Property Name="MessageName" Value="CreateAddtionalContactRequest" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send Addtional Contact" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="7472974d-9c5f-4bb7-90a1-b2b86055e7a5" ParentLink="ComplexStatement_Statement" LowerBound="42.1" HigherBound="44.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="CDataServiceSelectAddtional_Contact__cPort" />
+                                <om:Property Name="MessageName" Value="AddtionalConatctResponse" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Receive Addtional Contact" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="ffc95fa5-4c2a-4642-a1db-55999821b962" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="323cc877-9a07-4853-ab10-523f5e9785a6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.CDataServiceSelectAddtional_Contact__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CDataServiceSelectAddtional_Contact__cPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="DirectBindingAttribute" OID="fc277e0b-d81a-45d1-809b-ed4c555f4b82" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    internal messagetype StatementRequestAdditional_Contact__c
+    {
+        body Salesforce_Application_Import_Definition.CDataService_Additional_Contact__c.parameters parameters;
+    };
+    internal messagetype StatementResponseAdditional_Contact__c
+    {
+        body Salesforce_Application_Import_Definition.CDataService_Additional_Contact__c.table parameters;
+    };
+    internal porttype CDataServiceSelectAddtional_Contact__c
+    {
+        requestresponse statement
+        {
+            StatementRequestAdditional_Contact__c, StatementResponseAdditional_Contact__c
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service CallAddtionalContact
+    {
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses CDataServiceSelectAddtional_Contact__c CDataServiceSelectAddtional_Contact__cPort;
+        message StatementRequestAdditional_Contact__c CreateAddtionalContactRequest;
+        message StatementResponseAdditional_Contact__c AddtionalConatctResponse;
+        System.Int32 AddtionalContactCount;
+        body (message Application_Import_Definition.HomeDisasterLoanApplicationCanonical ApplicationCanonical)
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("734d0e66-22a8-4519-b00b-fa9a7de6ab16")]
+            construct CreateAddtionalContactRequest
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("f43133c0-0375-4aca-b861-d7079bfe5558")]
+                transform (CreateAddtionalContactRequest.parameters) = Application_Import_Logic.MakeAddtionalConatct (ApplicationCanonical);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("5862edf7-dfe7-4c26-91ae-c6afea5f8d64")]
+            AddtionalContactCount = xpath(CreateAddtionalContactRequest.parameters,"count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/Additional_Contact__c']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/Additional_Contact__c']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/Additional_Contact__c'])");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b441f5a3-e5d3-495c-8a42-096a225572a8")]
+            if (AddtionalContactCount > 0)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d535ed20-4689-4d5f-bdac-a36a3f6a548c")]
+                send (CDataServiceSelectAddtional_Contact__cPort.statement, CreateAddtionalContactRequest);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("7472974d-9c5f-4bb7-90a1-b2b86055e7a5")]
+                receive (CDataServiceSelectAddtional_Contact__cPort.statement, AddtionalConatctResponse);
+            }
+        }
+    }
+}
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://www.DLAP.com" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.DLAP.com" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:include schemaLocation="AppData.xsd"/>
+  <xs:include schemaLocation="StatusData.xsd"/>
+  <xs:include schemaLocation="ContactInformation.xsd"/>
+  <xs:element id="STATUS" name="STATUS">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="1">
+        <xs:element name="AppData" type="appdatatype" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="StatusData" type="statusdatatype" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="ContactInformation" type="contactinformationtype" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

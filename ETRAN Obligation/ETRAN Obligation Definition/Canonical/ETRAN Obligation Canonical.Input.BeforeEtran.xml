@@ -1,0 +1,204 @@
+<ns0:Canonical xmlns:ns0="http://SBA.gov/ETRANObligation/Canonical/" 
+               xmlns:ns1="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/"
+               xmlns:ns2="http://SBA.gov/ETRANObligation/Salesforce/NotificationSingle/"
+               xmlns:ns3="http://soap.sforce.com/2005/09/outbound"
+               xmlns:ns4="urn:sobject.enterprise.soap.sforce.com"
+               xmlns:ns5="http://SBA.gov/ETRANObligation/Salesforce/Query/Application__c/"
+               xmlns:ns6="http://SBA.gov/ETRANObligation/Salesforce/Query/Property__c/"
+               xmlns:ns7="http://SBA.gov/ETRANObligation/Salesforce/Query/Applicant__c/"
+               xmlns:ns8="http://SBA.gov/ETRANObligation/Salesforce/Query/Account/"
+               xmlns:ns9="http://SBA.gov/ETRANObligation/Salesforce/Query/Contact/"
+               xmlns:ns10="http://SBA.gov/ETRANObligation/Salesforce/Query/Loan__c/"
+               xmlns:ns11="http://SBA.gov/ETRANObligation/Salesforce/Query/Disaster__c/"
+               xmlns:ns12="http://SBA.gov/ETRANObligation/ETRANOriginate/ETRANOriginateAppDefaults/"
+               xmlns:ns13="http://ws.elend">
+	<ns0:BusinessTypeMapping>
+		<ns1:BusinessType>
+			<ns1:SalesforceValue>Sole Proprietorship</ns1:SalesforceValue>
+			<ns1:ETranTextValue>Sole Proprietorship</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>1</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:SalesforceValue>Partnership</ns1:SalesforceValue>
+			<ns1:ETranTextValue>Partnership</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>2</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:SalesforceValue>Corporation</ns1:SalesforceValue>
+			<ns1:ETranTextValue>Corporation</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>3</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:SalesforceValue>Limited Liability Company</ns1:SalesforceValue>
+			<ns1:ETranTextValue>Limited Liability Company (LLC)</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>4</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:ETranTextValue>Joint Venture</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>5</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:ETranTextValue>Professional Association</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>6</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:ETranTextValue>Trust</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>7</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:SalesforceValue>Cooperative</ns1:SalesforceValue>
+			<ns1:ETranTextValue>Cooperative</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>8</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:ETranTextValue>Limited Liability Partnership</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>9</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:ETranTextValue>Subchapter S Corporation</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>10</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+		<ns1:BusinessType>
+			<ns1:SalesforceValue>Non-Profit</ns1:SalesforceValue>
+			<ns1:ETranTextValue>Non-Profit Organization</ns1:ETranTextValue>
+			<ns1:ETranCodeValue>11</ns1:ETranCodeValue>
+		</ns1:BusinessType>
+	</ns0:BusinessTypeMapping>
+	<ns2:Notification>
+		<ns3:Id>b0Sz0000000Z7gbFEA</ns3:Id>
+		<ns3:sObject>
+			<ns4:Id>e0Gv0000000X6owVFI</ns4:Id>
+			<ns4:Application_Number__c>777111001</ns4:Application_Number__c>
+			<ns4:SObject_ID__c>a0mr0000000W9oPAAS</ns4:SObject_ID__c>
+		</ns3:sObject>
+	</ns2:Notification>
+	<ns0:Application__c>
+		<ns5:Id IsNull="false" >a0Mr0000000Q0jbEAC</ns5:Id>
+		<ns5:Name IsNull="false">777111001</ns5:Name>
+		<ns5:Previous_SBA_Loans__c IsNull="false">777110099</ns5:Previous_SBA_Loans__c>
+		<ns5:Loan_Type__c IsNull="false">Business</ns5:Loan_Type__c>
+	</ns0:Application__c>
+	<ns0:Property__c>
+		<ns6:Id IsNull="false">a16r000000116JDAAY</ns6:Id>
+		<ns6:Property_Address__c IsNull="false">123 Easy St</ns6:Property_Address__c>
+		<ns6:City__c IsNull="false">123 Easy St</ns6:City__c>
+		<ns6:State__c IsNull="false">VA</ns6:State__c>
+		<ns6:Zip_Code__c IsNull="false">22191</ns6:Zip_Code__c>
+	</ns0:Property__c>
+	<ns0:Applicants>
+		<ns0:Applicant__c>
+			<ns7:Id>a0Kr00000021nSuEAI</ns7:Id>
+			<ns7:Account__c>001r00000093WnmAAE</ns7:Account__c>
+			<ns7:Contact__c>003r0000008ygZMAAY</ns7:Contact__c>
+			<ns7:Name>777111001 Business Apl</ns7:Name>
+			<ns7:Primary_Applicant__c>true</ns7:Primary_Applicant__c>
+			<ns7:Entity_Type__c>Corporation</ns7:Entity_Type__c>
+			<ns7:Borrower_Guarantor__c>Borrower</ns7:Borrower_Guarantor__c>
+		</ns0:Applicant__c>
+		<ns0:Applicant__c>
+			<ns7:Id>a0Kr00000021nTEEAY</ns7:Id>
+			<ns7:Account__c>001r00000093WqbAAE</ns7:Account__c>
+			<ns7:Contact__c>003r0000008ygbmAAA</ns7:Contact__c>
+			<ns7:Name>777111001 Owner Apl</ns7:Name>
+			<ns7:Primary_Applicant__c>false</ns7:Primary_Applicant__c>
+			<ns7:Entity_Type__c>Corporation</ns7:Entity_Type__c>
+			<ns7:Ownership_Percent__c>89</ns7:Ownership_Percent__c>
+			<ns7:Borrower_Guarantor__c>Guarantor</ns7:Borrower_Guarantor__c>
+		</ns0:Applicant__c>
+	</ns0:Applicants>
+	<ns0:Accounts>
+		<ns0:Account>
+			<ns8:AccountId>001r00000093WnmAAE</ns8:AccountId>
+			<ns8:ContactId>003r0000008ygZMAAY</ns8:ContactId>
+			<ns8:ApplicantId>a0Kr00000021nSuEAI</ns8:ApplicantId>
+			<ns8:Business_Type__c>Corporation</ns8:Business_Type__c>
+			<ns8:Phone>7685551212</ns8:Phone>
+			<ns8:ShippingStreet>Easy Street</ns8:ShippingStreet>
+			<ns8:ShippingCity>Woodbridge</ns8:ShippingCity>
+			<ns8:ShippingState>VA</ns8:ShippingState>
+			<ns8:ShippingPostalCode>22191</ns8:ShippingPostalCode>
+		</ns0:Account>
+		<ns0:Account>
+			<ns8:AccountId>001r00000093WqbAAE</ns8:AccountId>
+			<ns8:ContactId>003r0000008ygbmAAA</ns8:ContactId>
+			<ns8:ApplicantId>a0Kr00000021nTEEAY</ns8:ApplicantId>
+			<ns8:Business_Type__c>Corporation</ns8:Business_Type__c>
+			<ns8:Phone>4565551214</ns8:Phone>
+			<ns8:ShippingStreet>3451 Jefferson Davis Highway</ns8:ShippingStreet>
+			<ns8:ShippingCity>Alexandria</ns8:ShippingCity>
+			<ns8:ShippingState>VA</ns8:ShippingState>
+			<ns8:ShippingPostalCode>22305</ns8:ShippingPostalCode>
+		</ns0:Account>
+	</ns0:Accounts>
+	<ns0:Contacts>
+		<ns0:Contact>
+			<ns9:ContactId>003r0000008ygbmAAA</ns9:ContactId>
+			<ns9:ApplicantId>a0Kr00000021nTEEAY</ns9:ApplicantId>
+			<ns9:FirstName>Owner</ns9:FirstName>
+			<ns9:LastName>777111001OwnerAcct</ns9:LastName>
+			<ns9:Phone>5435551213</ns9:Phone>
+			<ns9:MobilePhone>5435551214</ns9:MobilePhone>
+			<ns9:Work_Phone__c>5435551212</ns9:Work_Phone__c>
+			<ns9:MailingStreet>3451 Jefferson Davis Highway</ns9:MailingStreet>
+			<ns9:MailingCity>Alexandria</ns9:MailingCity>
+			<ns9:MailingState>VA</ns9:MailingState>
+			<ns9:MailingPostalCode>22305</ns9:MailingPostalCode>
+		</ns0:Contact>
+		<ns0:Contact>
+			<ns9:ContactId>003r0000008ygZMAAY</ns9:ContactId>
+			<ns9:ApplicantId>a0Kr00000021nSuEAI</ns9:ApplicantId>
+			<ns9:FirstName>FirstContact</ns9:FirstName>
+			<ns9:LastName>777111001BusinessCnt</ns9:LastName>
+			<ns9:Phone>7895551213</ns9:Phone>
+			<ns9:MobilePhone>7895551214</ns9:MobilePhone>
+			<ns9:Work_Phone__c>7895551212</ns9:Work_Phone__c>
+		</ns0:Contact>
+	</ns0:Contacts>
+	<ns0:Loan__c>
+		<ns10:Id>a0mr0000000W9oPAAS</ns10:Id>
+		<ns10:Interest_Rate__c>8.93</ns10:Interest_Rate__c>
+		<ns10:Loan_Amount__c>7650000</ns10:Loan_Amount__c>
+		<ns10:Payment_Amount__c>25000</ns10:Payment_Amount__c>
+		<ns10:Secure__c>false</ns10:Secure__c>
+		<ns10:Total_Term__c>240</ns10:Total_Term__c>
+		<ns10:Disaster_Declaration__c>a0Yr0000000SUUlEAO</ns10:Disaster_Declaration__c>
+	</ns0:Loan__c>
+	<ns0:Disaster__c>
+		<ns11:Id>a0Yr0000000SUUlEAO</ns11:Id>
+		<ns11:Disaster_Type__c>Presidential</ns11:Disaster_Type__c>
+		<ns11:Physical_Number__c>0008</ns11:Physical_Number__c>
+	</ns0:Disaster__c>
+	<ns0:ETRAN_Originate_App_Defaults>
+		<ns12:LoanApplication ns12:action="insert">
+			<ns12:InterestStructureCd>F</ns12:InterestStructureCd>
+			<ns12:NetEarningsClause>N</ns12:NetEarningsClause>
+			<ns12:RevolvingInd>N</ns12:RevolvingInd>
+		</ns12:LoanApplication>
+		<ns12:Interest ns12:action="insert">
+			<ns12:BaseRateSourcTypCd>DSR</ns12:BaseRateSourcTypCd>
+			<ns12:IntrstTypInd>F</ns12:IntrstTypInd>
+			<ns12:Phase>1</ns12:Phase>
+		</ns12:Interest>
+		<ns12:Borrower ns12:action="insert">
+			<ns12:CreditScorSourcCd>13</ns12:CreditScorSourcCd>
+			<ns12:PhysCountryCd>US</ns12:PhysCountryCd>
+		</ns12:Borrower>
+		<ns12:BorrowerRace ns12:action="insert">
+			<ns12:RaceCd>6</ns12:RaceCd>
+		</ns12:BorrowerRace>
+		<ns12:Principal ns12:action="insert">
+			<ns12:EthnicCd>UN</ns12:EthnicCd>
+			<ns12:ExtrnlCreditScorInd>N</ns12:ExtrnlCreditScorInd>
+			<ns12:GndrCd>U</ns12:GndrCd>
+			<ns12:GntyInd>N</ns12:GntyInd>
+			<ns12:VetCd>5</ns12:VetCd>
+		</ns12:Principal>
+		<ns12:PrincipalRace ns12:action="insert">
+			<ns12:RaceCd>6</ns12:RaceCd>
+		</ns12:PrincipalRace>
+		<ns12:UseOfProceeds ns12:action="insert">
+			<ns12:LoanProceedTypCd>05</ns12:LoanProceedTypCd>
+			<ns12:ProceedTypCd>D</ns12:ProceedTypCd>
+		</ns12:UseOfProceeds>
+	</ns0:ETRAN_Originate_App_Defaults>
+</ns0:Canonical>

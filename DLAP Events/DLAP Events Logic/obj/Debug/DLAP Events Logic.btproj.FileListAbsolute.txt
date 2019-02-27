@@ -1,0 +1,21 @@
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsLogic.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsLogic.pdb
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Logic\obj\Debug\DLAPEventsLogic.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Logic\obj\Debug\DLAPEventsLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Logic\obj\Debug\DLAPEventsLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Logic\obj\Debug\DLAPEventsLogic.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsLogic.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsLogic.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Logic\bin\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Logic\obj\Debug\DLAPEventsLogic.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Logic\obj\Debug\DLAPEventsLogic.pdb

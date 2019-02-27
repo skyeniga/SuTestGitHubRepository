@@ -1,0 +1,37 @@
+﻿{
+  "$schema": "C:\\Program Files (x86)\\Microsoft BizTalk Server 2016\\Developer Tools\\BizTalkServerAppplicationSchema.json",
+  "BizTalkAssemblies": [
+    {
+      "Name": "DLAPDocumentListSalesforceDefinition", 
+      "path": "bin\\Debug\\DLAPDocumentListSalesforceDefinition.dll"
+    },
+    {
+      "Name": "DLAPDocumentListDefinition",
+      "path": "bin\\Debug\\DLAPDocumentListDefinition.dll"
+    },
+    {
+      "Name": "DLAPDocumentListLogic",
+      "path": "bin\\Debug\\DLAPDocumentListLogic.dll"
+    }
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "Binding",
+      "Path": "bindings\\Binding.xml"
+    }
+  ],
+  "Assemblies": [
+  ],
+  "PreProcessingScripts": [
+  ],
+  "PostProcessingScripts": [
+  ],
+  "Files": [
+  ],
+  "DeploymentSequence": [
+    "DLAPDocumentListSalesforceDefinition",
+    "DLAPDocumentListDefinition",
+    "DLAPDocumentListLogic",
+    "Binding"
+  ]
+}

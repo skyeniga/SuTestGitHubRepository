@@ -1,0 +1,11 @@
+<ns0:Canonical xmlns:ns0="http://SBA.gov/ETRANObligation/Canonical/" xmlns:notify1="http://SBA.gov/ETRANObligation/Salesforce/NotificationSingle/" xmlns:ns1="http://soap.sforce.com/2005/09/outbound" xmlns:bus="http://SBA.gov/ETRANObligation/Borrower/BusinessTypeMapping/" xmlns:ns3="urn:enterprise.soap.sforce.com" xmlns:etran="http://ws.elend" xmlns:def="http://SBA.gov/ETRANObligation/ETRANOriginate/ETRANOriginateAppDefaults/" xmlns:multi="http://SBA.gov/ETRANObligation/Definition/Salesforce/Multi/Query/" xmlns:event="http://SBA.gov/ETRANObligation/Definition/Salesforce/Event_Request__c/" xmlns:ns2="urn:sobject.enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <notify1:Notification>
+    <ns1:Id>04l35000000QNCMAA4</ns1:Id>
+    <ns1:sObject>
+      <ns2:Id>a0h35000000SJMtAAO</ns2:Id>
+      <ns2:Application_Number__c>2000001418</ns2:Application_Number__c>
+      <ns2:SObject_ID__c>a0t35000000AC7SAAW</ns2:SObject_ID__c>
+    </ns1:sObject>
+  </notify1:Notification>
+  <ns0:Event_Request__c GUID__c="" Application_Number__c="2000001418" Log_Message__c="" SObject_ID__c="a0t35000000AC7SAAW" SObject_Name__c="Loan__c" Stage__c="Loan Obligated" Status__c="" />
+</ns0:Canonical>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<brl xmlns="http://schemas.microsoft.com/businessruleslanguage/2002">
+  <ruleset name="ETran Obligation Legal Org Type">
+    <version major="1" minor="0" description="" modifiedby="SBA\RSKozlin" date="2018-08-21T16:28:59.5028007-04:00" />
+    <configuration />
+    <bindings>
+      <xmldocument ref="xml_31" doctype="SBA.ETRANObligation.Definition.Rules.LegalOrgTypeMapping" instances="16" selectivity="1" instance="0">
+        <selector>/*[local-name()='LegalOrgTypeMapping' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</selector>
+        <schema>C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\LegalOrgTypeMapping.xsd</schema>
+      </xmldocument>
+    </bindings>
+    <rule name="1 - Sole Proprietorship" priority="0" active="true">
+      <if>
+        <or>
+          <compare operator="equal">
+            <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+            <lhs>
+              <function>
+                <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+                <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                  <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                  <fieldalias>SalesforceBusinessType</fieldalias>
+                </xmldocumentmember>
+              </function>
+            </lhs>
+            <rhs>
+              <constant>
+                <string>Individual - Sole Prop</string>
+              </constant>
+            </rhs>
+          </compare>
+          <compare operator="equal">
+            <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+            <lhs>
+              <function>
+                <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+                <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                  <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                  <fieldalias>SalesforceBusinessType</fieldalias>
+                </xmldocumentmember>
+              </function>
+            </lhs>
+            <rhs>
+              <constant>
+                <string>Individual or Sole Proprietor</string>
+              </constant>
+            </rhs>
+          </compare>
+        </or>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="ead185ef-7b5d-43e3-9176-bec60ab09cfb" />
+          <xmldocumentmember xmldocumentref="xml_31" type="int" sideeffects="true">
+            <field>*[local-name()='ETranLegalOrgTypeCode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+            <fieldalias>ETranLegalOrgTypeCode</fieldalias>
+            <argument>
+              <constant>
+                <int>1</int>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+      </then>
+    </rule>
+    <rule name="7 - Trust" priority="0" active="true">
+      <if>
+        <compare operator="equal">
+          <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+          <lhs>
+            <function>
+              <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+              <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                <fieldalias>SalesforceBusinessType</fieldalias>
+              </xmldocumentmember>
+            </function>
+          </lhs>
+          <rhs>
+            <constant>
+              <string>Trust</string>
+            </constant>
+          </rhs>
+        </compare>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="ead185ef-7b5d-43e3-9176-bec60ab09cfb" />
+          <xmldocumentmember xmldocumentref="xml_31" type="int" sideeffects="true">
+            <field>*[local-name()='ETranLegalOrgTypeCode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+            <fieldalias>ETranLegalOrgTypeCode</fieldalias>
+            <argument>
+              <constant>
+                <int>7</int>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+      </then>
+    </rule>
+    <rule name="9 - Limited Liability Partnership " priority="0" active="true">
+      <if>
+        <compare operator="equal">
+          <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+          <lhs>
+            <function>
+              <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+              <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                <fieldalias>SalesforceBusinessType</fieldalias>
+              </xmldocumentmember>
+            </function>
+          </lhs>
+          <rhs>
+            <constant>
+              <string>Limited Partnership</string>
+            </constant>
+          </rhs>
+        </compare>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="ead185ef-7b5d-43e3-9176-bec60ab09cfb" />
+          <xmldocumentmember xmldocumentref="xml_31" type="int" sideeffects="true">
+            <field>*[local-name()='ETranLegalOrgTypeCode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+            <fieldalias>ETranLegalOrgTypeCode</fieldalias>
+            <argument>
+              <constant>
+                <int>9</int>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+      </then>
+    </rule>
+    <rule name="3 - Corporation" priority="0" active="true">
+      <if>
+        <compare operator="equal">
+          <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+          <lhs>
+            <function>
+              <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+              <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                <fieldalias>SalesforceBusinessType</fieldalias>
+              </xmldocumentmember>
+            </function>
+          </lhs>
+          <rhs>
+            <constant>
+              <string>Corporation</string>
+            </constant>
+          </rhs>
+        </compare>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="ead185ef-7b5d-43e3-9176-bec60ab09cfb" />
+          <xmldocumentmember xmldocumentref="xml_31" type="int" sideeffects="true">
+            <field>*[local-name()='ETranLegalOrgTypeCode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+            <fieldalias>ETranLegalOrgTypeCode</fieldalias>
+            <argument>
+              <constant>
+                <int>3</int>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+      </then>
+    </rule>
+    <rule name="2 - Partnership" priority="0" active="true">
+      <if>
+        <compare operator="equal">
+          <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+          <lhs>
+            <function>
+              <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+              <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                <fieldalias>SalesforceBusinessType</fieldalias>
+              </xmldocumentmember>
+            </function>
+          </lhs>
+          <rhs>
+            <constant>
+              <string>Partnership</string>
+            </constant>
+          </rhs>
+        </compare>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="ead185ef-7b5d-43e3-9176-bec60ab09cfb" />
+          <xmldocumentmember xmldocumentref="xml_31" type="int" sideeffects="true">
+            <field>*[local-name()='ETranLegalOrgTypeCode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+            <fieldalias>ETranLegalOrgTypeCode</fieldalias>
+            <argument>
+              <constant>
+                <int>2</int>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+      </then>
+    </rule>
+    <rule name="4 - Limited Liability Company (LLC) " priority="0" active="true">
+      <if>
+        <or>
+          <compare operator="equal">
+            <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+            <lhs>
+              <function>
+                <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+                <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                  <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                  <fieldalias>SalesforceBusinessType</fieldalias>
+                </xmldocumentmember>
+              </function>
+            </lhs>
+            <rhs>
+              <constant>
+                <string>Limited Liability Entity</string>
+              </constant>
+            </rhs>
+          </compare>
+          <compare operator="equal">
+            <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+            <lhs>
+              <function>
+                <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+                <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                  <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                  <fieldalias>SalesforceBusinessType</fieldalias>
+                </xmldocumentmember>
+              </function>
+            </lhs>
+            <rhs>
+              <constant>
+                <string>LLE</string>
+              </constant>
+            </rhs>
+          </compare>
+          <compare operator="equal">
+            <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+            <lhs>
+              <function>
+                <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+                <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                  <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                  <fieldalias>SalesforceBusinessType</fieldalias>
+                </xmldocumentmember>
+              </function>
+            </lhs>
+            <rhs>
+              <constant>
+                <string>Limited Liability Company</string>
+              </constant>
+            </rhs>
+          </compare>
+        </or>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="ead185ef-7b5d-43e3-9176-bec60ab09cfb" />
+          <xmldocumentmember xmldocumentref="xml_31" type="int" sideeffects="true">
+            <field>*[local-name()='ETranLegalOrgTypeCode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+            <fieldalias>ETranLegalOrgTypeCode</fieldalias>
+            <argument>
+              <constant>
+                <int>4</int>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+      </then>
+    </rule>
+    <rule name="11 - Non-Profit Organization" priority="0" active="true">
+      <if>
+        <compare operator="equal">
+          <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+          <lhs>
+            <function>
+              <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" />
+              <xmldocumentmember xmldocumentref="xml_31" type="string" sideeffects="false">
+                <field>*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+                <fieldalias>SalesforceBusinessType</fieldalias>
+              </xmldocumentmember>
+            </function>
+          </lhs>
+          <rhs>
+            <constant>
+              <string>Non-Profit</string>
+            </constant>
+          </rhs>
+        </compare>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="d6652178-b8fa-41c7-84da-bf56f0db216c" element="ead185ef-7b5d-43e3-9176-bec60ab09cfb" />
+          <xmldocumentmember xmldocumentref="xml_31" type="int" sideeffects="true">
+            <field>*[local-name()='ETranLegalOrgTypeCode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']</field>
+            <fieldalias>ETranLegalOrgTypeCode</fieldalias>
+            <argument>
+              <constant>
+                <int>11</int>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+      </then>
+    </rule>
+  </ruleset>
+</brl>

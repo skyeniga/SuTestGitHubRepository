@@ -1,0 +1,4 @@
+<ns0:Request xmlns:ns0="http://SBA.gov/Salesforce/Query/Test/">
+	<ns0:SQLCommand>COMMAND</ns0:SQLCommand>
+	<ns0:ApplicationId>a0Mr0000000Q0jbEAC</ns0:ApplicationId>
+</ns0:Request>

@@ -1,0 +1,74 @@
+<agg:Root xmlns:agg="http://schemas.microsoft.com/BizTalk/2003/aggschema">
+  <InputMessagePart_0>
+    <SBA_ETran>
+      <App>
+        <LoanApplication action="insert">
+          <CollateralInd>Y</CollateralInd>
+          <DisasterCntrlNmb>126038</DisasterCntrlNmb>
+          <DisasterApplicNmb>2000001418</DisasterApplicNmb>
+          <LoanTermMnths>360</LoanTermMnths>
+          <InterestStructureCd>F</InterestStructureCd>
+          <NetEarningsClause>N</NetEarningsClause>
+          <ProcessingMethodCd>DPB</ProcessingMethodCd>
+          <ProjectCityName>NEW HAMPTON</ProjectCityName>
+          <ProjectStrtName1>100 TURTLE BAY RD</ProjectStrtName1>
+          <ProjectStCd>NY</ProjectStCd>
+          <ProjectZipCd>10958</ProjectZipCd>
+          <PymtAmt>373</PymtAmt>
+          <RequestedAmt>100000</RequestedAmt>
+        </LoanApplication>
+        <Interest action="insert">
+          <BaseIntrstRatePct>1.94</BaseIntrstRatePct>
+          <BaseRateSourcTypCd>DSR</BaseRateSourcTypCd>
+          <IntrstTypInd>F</IntrstTypInd>
+          <Phase>1</Phase>
+        </Interest>
+        <Borrower action="insert">
+          <BirthDt>1953-09-21</BirthDt>
+          <BusinessPersonInd>P</BusinessPersonInd>
+          <FirstName>JOSE</FirstName>
+          <LastName>LAMB</LastName>
+          <MiddleInitial>J</MiddleInitial>
+          <PhysStrtName1>100 TURTLE BAY RD</PhysStrtName1>
+          <PhysCityName>NEW HAMPTON</PhysCityName>
+          <PhysCountryCd>US</PhysCountryCd>
+          <PhysStCd>NY</PhysStCd>
+          <PhysZipCd>10958</PhysZipCd>
+          <PrimaryBusinessInd>Y</PrimaryBusinessInd>
+          <PrimaryPhone>5148798878</PrimaryPhone>
+          <PriorSBALoanInd>N</PriorSBALoanInd>
+          <TaxId>1647089277</TaxId>
+          <Title>JOSE LAMB</Title>
+        </Borrower>
+        <BorrowerRace action="insert">
+          <BusinessPersonInd>P</BusinessPersonInd>
+          <TaxId>1647089277</TaxId>
+          <RaceCd>6</RaceCd>
+        </BorrowerRace>
+        <SpecialPurpose action="insert">
+          <SpcPurpsLoanCd>DNCE</SpcPurpsLoanCd>
+        </SpecialPurpose>
+        <UseOfProceeds action="insert">
+          <LoanProceedTypCd>05</LoanProceedTypCd>
+          <ProceedTypCd>D</ProceedTypCd>
+          <ProceedAmt>55000</ProceedAmt>
+        </UseOfProceeds>
+        <UseOfProceeds action="insert">
+          <LoanProceedTypCd>04</LoanProceedTypCd>
+          <ProceedTypCd>D</ProceedTypCd>
+          <ProceedAmt>45000</ProceedAmt>
+        </UseOfProceeds>
+      </App>
+    </SBA_ETran>
+  </InputMessagePart_0>
+  <InputMessagePart_1>
+    <ns0:ETranCredentials xmlns:ns0="http://SBA.gov/ETranShared/ETranCredentials/">
+      <ns0:username>DCMSUser</ns0:username>
+      <ns0:password>DCMS_2011</ns0:password>
+      <ns0:email>sri.golo@sba.gov</ns0:email>
+      <ns0:respfrmt>        
+      </ns0:respfrmt>
+      <ns0:softwarevendorname>DCMS</ns0:softwarevendorname>
+    </ns0:ETranCredentials>
+  </InputMessagePart_1>
+</agg:Root>

@@ -1,0 +1,40 @@
+{
+  "SchemaVersion": "1.0.0.0",
+  "ApplicationVersion": "1.0.0.0",
+  "BizTalkAssemblies": [
+    {
+      "Name": "DLAPEventsDefinition",
+      "Path": "bin\\DLAPEventsDefinition.dll"
+    },
+    {
+      "Name": "DLAPEventsLogic",
+      "Path": "bin\\DLAPEventsLogic.dll"
+    },
+    {
+      "Name": "DLAPEventsOracleDefinition",
+      "Path": "bin\\DLAPEventsOracleDefinition.dll"
+    },
+    {
+      "Name": "DLAPEventsSalesforceDefinition",
+      "Path": "bin\\DLAPEventsSalesforceDefinition.dll"
+    }
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "DLAPEventsBindingInfo",
+      "Path": "bindings\\DLAPEventsBindingInfo.xml"
+    }
+  ],
+  "Assemblies": [],
+  "PreProcessingScripts": [],
+  "PostProcessingScripts": [],
+  "Files": [],
+  "Tokens": [],
+  "DeploymentSequence": [
+    "DLAPEventsDefinition",
+    "DLAPEventsOracleDefinition",
+    "DLAPEventsSalesforceDefinition",
+    "DLAPEventsLogic",
+    "DLAPEventsBindingInfo"
+  ]
+}

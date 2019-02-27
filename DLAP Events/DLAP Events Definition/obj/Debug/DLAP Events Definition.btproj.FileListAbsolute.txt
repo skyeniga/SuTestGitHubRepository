@@ -1,0 +1,12 @@
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Definition\bin\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Definition\bin\Debug\DLAPEventsDefinition.pdb
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Definition\obj\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Definition\obj\Debug\DLAPEventsDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Definition\bin\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Definition\bin\Debug\DLAPEventsDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Definition\obj\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Definition\obj\Debug\DLAPEventsDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Definition\bin\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Definition\bin\Debug\DLAPEventsDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Definition\obj\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Definition\obj\Debug\DLAPEventsDefinition.pdb

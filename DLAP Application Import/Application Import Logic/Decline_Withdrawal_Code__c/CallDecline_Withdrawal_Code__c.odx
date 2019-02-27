@@ -1,0 +1,243 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="9eb3a07f-1d28-448b-b088-a28173f4d9ab" LowerBound="1.1" HigherBound="48.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="MultipartMessageType" OID="52d9227b-b8dc-4ba4-bc3c-a493e0396c2a" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="StatementRequestUpdateDecline_Withdrawal_Code__c" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="136c7054-fe26-4a01-89de-f37838ab2f73" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataService_Decline_Withdrawal_Code__c.parameters" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="c5f4e832-8c02-4eba-8a1a-a399c84c4be8" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="StatementResponseUpdateDecline_Withdrawal_Code__c" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="dc5bf93a-e49b-4802-a1b6-e944e9c1dc40" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataService_Decline_Withdrawal_Code__c.table" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="5251775f-14f8-4a69-ac2f-fe126cfc632c" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="47.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CallSalesForceDecline_Withdrawal_Code__c" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="9f00415a-faca-4e1c-81fe-a50a98a05f3f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AfterSummaryDeclineCodeCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="2082b8b9-9a29-441b-a124-1249aeb9ce3a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementRequestUpdateDecline_Withdrawal_Code__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateDecline_Withdrawal_Code__cMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="24e9c45d-62a7-44c1-9e25-6b4a560677d1" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementResponseUpdateDecline_Withdrawal_Code__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateDecline_Withdrawal_Code__cResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="dbc73188-4214-4384-8490-104615846d15" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Task" OID="aabd2753-546c-4434-a365-4d2f2743ba32" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="45.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Create Request" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="50b6015f-ccd1-4809-bb62-ba1b9aa73e9d" ParentLink="ComplexStatement_Statement" LowerBound="29.1" HigherBound="35.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct Create Decline Withdrawal Code Message" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="58949d18-c9dc-42b6-8101-75957e1006f0" ParentLink="ComplexStatement_Statement" LowerBound="32.1" HigherBound="34.1">
+                            <om:Property Name="ClassName" Value="Application_Import_Logic.MakeDeclineWithdrawalCodeRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Map to Create Decline Withdrawal Code" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="d15bcf7c-3c0c-4d97-8d0b-627bac5fe2ef" ParentLink="Transform_InputMessagePartRef" LowerBound="33.137" HigherBound="33.157">
+                                <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="2b726ba2-8b3e-4fee-996d-5e8f67829000" ParentLink="Transform_OutputMessagePartRef" LowerBound="33.28" HigherBound="33.74">
+                                <om:Property Name="MessageRef" Value="CreateDecline_Withdrawal_Code__cMsg" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="f4e188be-a054-434d-81a7-05389d23652d" ParentLink="Construct_MessageRef" LowerBound="30.23" HigherBound="30.58">
+                            <om:Property Name="Ref" Value="CreateDecline_Withdrawal_Code__cMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="3cfa36ed-648f-4aa0-93e5-a9139df17095" ParentLink="ComplexStatement_Statement" LowerBound="35.1" HigherBound="37.1">
+                        <om:Property Name="Expression" Value="AfterSummaryDeclineCodeCount = xpath(CreateDecline_Withdrawal_Code__cMsg.parameters,&quot;count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/Decline_Withdrawal_Code__c']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/Decline_Withdrawal_Code__c']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/Decline_Withdrawal_Code__c'])&quot;);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Count Decline Withdrawal Code" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="6032f4d5-18e9-4a01-9d07-276d0fa47129" ParentLink="ComplexStatement_Statement" LowerBound="37.1" HigherBound="45.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Summary Decline Code Exists" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="9e7a784a-6cdb-47f2-a07f-88d5b1973c6f" ParentLink="ReallyComplexStatement_Branch" LowerBound="38.13" HigherBound="45.1">
+                            <om:Property Name="Expression" Value="AfterSummaryDeclineCodeCount &gt; 0" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Summary Decline Code" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Send" OID="789c7c33-c210-4c98-aefb-e7a355aa7813" ParentLink="ComplexStatement_Statement" LowerBound="40.1" HigherBound="42.1">
+                                <om:Property Name="PortName" Value="DeclineWithdrawalCodePort" />
+                                <om:Property Name="MessageName" Value="CreateDecline_Withdrawal_Code__cMsg" />
+                                <om:Property Name="OperationName" Value="Operation" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send Decline Code Request" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="a24047e7-8c54-46d0-ab2d-9b60355e48a9" ParentLink="ComplexStatement_Statement" LowerBound="42.1" HigherBound="44.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="DeclineWithdrawalCodePort" />
+                                <om:Property Name="MessageName" Value="CreateDecline_Withdrawal_Code__cResponseMsg" />
+                                <om:Property Name="OperationName" Value="Operation" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Receive Decline Code Response" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="e0b6844d-7277-4e86-a4e7-4448b05cfc29" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="MessageDeclaration" OID="7cb130f3-5835-4f95-9886-f1d419cfa802" ParentLink="ServiceBody_Declaration" LowerBound="27.15" HigherBound="27.114">
+                    <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ParamDirection" Value="Ref" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ApplicationCanonical" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a5945ade-8c0b-416d-badf-bd4c3eea7236" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.CDataServiceDeclineWithdrawalCodePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DeclineWithdrawalCodePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="2a2f3044-81fc-4edf-a35d-df506b962dcb" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f4c78b60-5b60-4892-8a7a-60fbc41e896e" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CDataServiceDeclineWithdrawalCodePortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="f0b841f6-c82d-49cb-ac64-d924b3c9d633" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="f895b608-d752-4f62-b2b2-c1eff312e64a" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.61">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementRequestUpdateDecline_Withdrawal_Code__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="42badc04-0911-4c8f-b330-1f1d540db9f9" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.63" HigherBound="16.112">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementResponseUpdateDecline_Withdrawal_Code__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    internal messagetype StatementRequestUpdateDecline_Withdrawal_Code__c
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataService_Decline_Withdrawal_Code__c.parameters parameters;
+    };
+    internal messagetype StatementResponseUpdateDecline_Withdrawal_Code__c
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataService_Decline_Withdrawal_Code__c.table parameters;
+    };
+    internal porttype CDataServiceDeclineWithdrawalCodePortType
+    {
+        requestresponse Operation
+        {
+            StatementRequestUpdateDecline_Withdrawal_Code__c, StatementResponseUpdateDecline_Withdrawal_Code__c
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service CallSalesForceDecline_Withdrawal_Code__c
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses CDataServiceDeclineWithdrawalCodePortType DeclineWithdrawalCodePort;
+        message StatementRequestUpdateDecline_Withdrawal_Code__c CreateDecline_Withdrawal_Code__cMsg;
+        message StatementResponseUpdateDecline_Withdrawal_Code__c CreateDecline_Withdrawal_Code__cResponseMsg;
+        System.Int32 AfterSummaryDeclineCodeCount;
+        body (ref message Application_Import_Definition.HomeDisasterLoanApplicationCanonical ApplicationCanonical)
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("50b6015f-ccd1-4809-bb62-ba1b9aa73e9d")]
+            construct CreateDecline_Withdrawal_Code__cMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("58949d18-c9dc-42b6-8101-75957e1006f0")]
+                transform (CreateDecline_Withdrawal_Code__cMsg.parameters) = Application_Import_Logic.MakeDeclineWithdrawalCodeRequest (ApplicationCanonical);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3cfa36ed-648f-4aa0-93e5-a9139df17095")]
+            AfterSummaryDeclineCodeCount = xpath(CreateDecline_Withdrawal_Code__cMsg.parameters,"count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/Decline_Withdrawal_Code__c']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/Decline_Withdrawal_Code__c']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/Decline_Withdrawal_Code__c'])");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6032f4d5-18e9-4a01-9d07-276d0fa47129")]
+            if (AfterSummaryDeclineCodeCount > 0)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("789c7c33-c210-4c98-aefb-e7a355aa7813")]
+                send (DeclineWithdrawalCodePort.Operation, CreateDecline_Withdrawal_Code__cMsg);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a24047e7-8c54-46d0-ab2d-9b60355e48a9")]
+                receive (DeclineWithdrawalCodePort.Operation, CreateDecline_Withdrawal_Code__cResponseMsg);
+            }
+        }
+    }
+}
+

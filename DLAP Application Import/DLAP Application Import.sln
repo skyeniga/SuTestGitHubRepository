@@ -1,0 +1,448 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application Import Logic", "Application Import Logic\Application Import Logic.btproj", "{AEBB05B0-F955-49ED-B912-808E6849E6C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application Import Definition", "Application Import Definition\Application Import Definition.btproj", "{2DB1D498-00E6-4B1A-BD73-1371B3F87F2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salesforce Application Import Definition", "Salesforce Application Import Definition\Salesforce Application Import Definition.btproj", "{AA7B66CD-8B80-4842-9F52-8674611C6230}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bindings and MSIs", "Bindings and MSIs", "{BCFF4F14-68C0-44B1-B0FE-5085E3F9072D}"
+	ProjectSection(SolutionItems) = preProject
+		Bindings and MSIs\CleanBindings.ps1 = Bindings and MSIs\CleanBindings.ps1
+		Bindings and MSIs\DLAP Application Import 2.0.0.10 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.10 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.11 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.11 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.12 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.12 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.13.msi = Bindings and MSIs\DLAP Application Import 2.0.0.13.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.15 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.15 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.16 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.16 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.17 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.17 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.18 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.18 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.19 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.19 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.4 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.4 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.5 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.5 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.6 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.6 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.8 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.8 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.0.9 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.0.9 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.1.0 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.1.0 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.1.1 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.1.1 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.2.0 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.2.0 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.2.1 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.2.1 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.2.2 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.2.2 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.2.3 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.2.3 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.4.1 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.4.1 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.4.2 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.4.2 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.4.4 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.4.4 DEV.msi
+		..\..\..\..\..\..\SBAWorkSpace\DLAPDeployment\Deployment 2.0.5.0\DLAP Application Import 2.0.5.0 DEV.msi = ..\..\..\..\..\..\SBAWorkSpace\DLAPDeployment\Deployment 2.0.5.0\DLAP Application Import 2.0.5.0 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.5.5 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.5.5 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.7.2 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.7.2 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.7.8 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.7.8 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.8.3 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.8.3 DEV.msi
+		Bindings and MSIs\DLAP Application Import 2.0.9.10 DEV .msi = Bindings and MSIs\DLAP Application Import 2.0.9.10 DEV .msi
+		Bindings and MSIs\DLAP Application Import 2.0.9.5 DEV.msi = Bindings and MSIs\DLAP Application Import 2.0.9.5 DEV.msi
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.1 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.1 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.10 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.10 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.11 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.11 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.12 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.12 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.13 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.13 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.15 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.15 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.16 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.16 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.17 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.17 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.18 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.18 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.19 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.19 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.2 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.2 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.3 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.3 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.4 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.4 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.5 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.5 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.6 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.6 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.7 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.7 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.8 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.8 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.9 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.0.9 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.1.0 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.1.0 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.1.1 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.1.1 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.2.0 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.2.0 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.2.1 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.2.1 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.2.2 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.2.2 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.2.3 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.2.3 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.4.1 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.4.1 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.4.2 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.4.2 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.4.4 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.4.4 DEV.xml
+		..\..\..\..\..\..\SBAWorkSpace\DLAPDeployment\Deployment 2.0.5.0\DLAP Application Import Binding Info 2.0.5.0 DEV.xml = ..\..\..\..\..\..\SBAWorkSpace\DLAPDeployment\Deployment 2.0.5.0\DLAP Application Import Binding Info 2.0.5.0 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.5.5 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.5.5 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.7.2 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.7.2 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.7.8 DEV .xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.7.8 DEV .xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.8.3 DEV .xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.8.3 DEV .xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.9.10 DEV.xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.9.10 DEV.xml
+		Bindings and MSIs\DLAP Application Import Binding Info 2.0.9.5 DEV .xml = Bindings and MSIs\DLAP Application Import Binding Info 2.0.9.5 DEV .xml
+		Bindings and MSIs\DLAP Application Import Bindings for Deployment.xml = Bindings and MSIs\DLAP Application Import Bindings for Deployment.xml
+		Bindings and MSIs\DLAP Application Import Bindings for Development.xml = Bindings and MSIs\DLAP Application Import Bindings for Development.xml
+		Bindings and MSIs\DLAP Application Import bindings.xml = Bindings and MSIs\DLAP Application Import bindings.xml
+		Bindings and MSIs\DLAP Application Import BRE Rules 2.0.0.1 DEV.xml = Bindings and MSIs\DLAP Application Import BRE Rules 2.0.0.1 DEV.xml
+		Bindings and MSIs\DLAP Application Import Webdirectory no bindings.msi = Bindings and MSIs\DLAP Application Import Webdirectory no bindings.msi
+		Bindings and MSIs\DLAP+Application+Import+Binding+Info+2.0.11.0_DEVINT1.xml = Bindings and MSIs\DLAP+Application+Import+Binding+Info+2.0.11.0_DEVINT1.xml
+		Bindings and MSIs\ELASubmit WSDL.xml = Bindings and MSIs\ELASubmit WSDL.xml
+		Bindings and MSIs\Preparing for Deployment checklist.txt = Bindings and MSIs\Preparing for Deployment checklist.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oracle Application Import Definition", "Oracle Application Import Definition\Oracle Application Import Definition.btproj", "{65BE8C7C-C7AB-407B-8740-772039C6CECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document Upload Logic", "Document Upload Logic\Document Upload Logic.btproj", "{88F558C7-DE3F-4C7E-B63F-1DBC081E947B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{14C51A9C-CED3-4622-8D28-5D0F052602D1}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\DLAP Application Import Deployment Steps.docx = Deployment\DLAP Application Import Deployment Steps.docx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning", "Versioning", "{082D362E-B1F4-4338-AB5C-314114B28FB9}"
+	ProjectSection(SolutionItems) = preProject
+		Versioning\AssemblyInfoShared.cs = Versioning\AssemblyInfoShared.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP Application Import RecordType Values", "DLAP Application Import RecordType Values\DLAP Application Import RecordType Values.csproj", "{F2B2CA1F-658E-49DD-8480-EB2F8B488DC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.0", "2.0.0.0", "{F3139C4F-58CB-445E-B5E7-9CD1DB309ED7}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.0\DLAP Application Import 2.0.0.0.msi = Deployment\2.0.0.0\DLAP Application Import 2.0.0.0.msi
+		Deployment\2.0.0.1\DLAP Application Import Binding Info 2.0.0.1.xml = Deployment\2.0.0.1\DLAP Application Import Binding Info 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.1", "2.0.0.1", "{C13498BE-D3B4-4995-8CC6-B29D9E8038E4}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.1\DLAP Application Import 2.0.0.1.msi = Deployment\2.0.0.1\DLAP Application Import 2.0.0.1.msi
+		Deployment\2.0.0.1\DLAP Application Import Binding Info 2.0.0.1.xml = Deployment\2.0.0.1\DLAP Application Import Binding Info 2.0.0.1.xml
+		Deployment\2.0.0.1\DLAP Application Import BRE Rules 2.0.0.1.xml = Deployment\2.0.0.1\DLAP Application Import BRE Rules 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.2", "2.0.0.2", "{1D61B362-8164-41E6-AD6C-3463FC255ADA}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.2\DLAP Application Import Binding Info2.0.0.2.xml = Deployment\2.0.0.2\DLAP Application Import Binding Info2.0.0.2.xml
+		Deployment\2.0.0.2\DLAP Application Import BRE Rules2.0.0.1.xml = Deployment\2.0.0.2\DLAP Application Import BRE Rules2.0.0.1.xml
+		Deployment\2.0.0.2\DLAP Application Import2.0.0.2.msi = Deployment\2.0.0.2\DLAP Application Import2.0.0.2.msi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.3", "2.0.0.3", "{30E2BC9E-3B9F-4E27-84CF-54E0C22A3960}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.3\DLAP Application Import 2.0.0.3.msi = Deployment\2.0.0.3\DLAP Application Import 2.0.0.3.msi
+		Deployment\2.0.0.3\DLAP Application Import Binding Info 2.0.0.3.xml = Deployment\2.0.0.3\DLAP Application Import Binding Info 2.0.0.3.xml
+		Deployment\2.0.0.3\DLAP Application Import BRE Rules  2.0.0.1.xml = Deployment\2.0.0.3\DLAP Application Import BRE Rules  2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.4", "2.0.0.4", "{9873366F-199B-4472-9AA7-73CF52D680F1}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.4\DLAP Application Import 2.0.0.4.msi = Deployment\2.0.0.4\DLAP Application Import 2.0.0.4.msi
+		Deployment\2.0.0.4\DLAP Application Import Binding Info 2.0.0.4.xml = Deployment\2.0.0.4\DLAP Application Import Binding Info 2.0.0.4.xml
+		Deployment\2.0.0.4\DLAP Application Import BRE Rules 2.0.0.1.xml = Deployment\2.0.0.4\DLAP Application Import BRE Rules 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.5", "2.0.0.5", "{A8EE984E-B21E-4FAE-8459-95E05A049B0A}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.5\DLAP Application Import 2.0.0.5.msi = Deployment\2.0.0.5\DLAP Application Import 2.0.0.5.msi
+		Deployment\2.0.0.5\DLAP Application Import Binding Info 2.0.0.5.xml = Deployment\2.0.0.5\DLAP Application Import Binding Info 2.0.0.5.xml
+		Deployment\2.0.0.5\DLAP Application Import BRE Rules 2.0.0.1.xml = Deployment\2.0.0.5\DLAP Application Import BRE Rules 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.6", "2.0.0.6", "{1AABDC90-FCBC-44B1-A2C4-57386495EC18}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.6\DLAP Application Import 2.0.0.6.msi = Deployment\2.0.0.6\DLAP Application Import 2.0.0.6.msi
+		Deployment\2.0.0.6\DLAP Application Import Binding Info 2.0.0.6.xml = Deployment\2.0.0.6\DLAP Application Import Binding Info 2.0.0.6.xml
+		Deployment\2.0.0.6\DLAP Application Import BRE Rules 2.0.0.1.xml = Deployment\2.0.0.6\DLAP Application Import BRE Rules 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.7", "2.0.0.7", "{3684F084-9464-4ECE-8826-9B28C2B48323}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.7\DLAP Application Import 2.0.0.7.msi = Deployment\2.0.0.7\DLAP Application Import 2.0.0.7.msi
+		Deployment\2.0.0.7\DLAP Application Import Binding Info 2.0.0.7.xml = Deployment\2.0.0.7\DLAP Application Import Binding Info 2.0.0.7.xml
+		Deployment\2.0.0.7\DLAP Application Import BRE Rules 2.0.0.1.xml = Deployment\2.0.0.7\DLAP Application Import BRE Rules 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.8", "2.0.0.8", "{B58E75AE-63EA-482E-AECB-BA226B103231}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.8\DLAP Application Import 2.0.0.8.msi = Deployment\2.0.0.8\DLAP Application Import 2.0.0.8.msi
+		Deployment\2.0.0.8\DLAP Application Import Binding Info 2.0.0.8.xml = Deployment\2.0.0.8\DLAP Application Import Binding Info 2.0.0.8.xml
+		Deployment\2.0.0.8\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.8\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.9", "2.0.0.9", "{D5085E0B-4B3B-488C-A7A6-B3B0B4DCAF9E}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.9\DLAP Application Import 2.0.0.9.msi = Deployment\2.0.0.9\DLAP Application Import 2.0.0.9.msi
+		Deployment\2.0.0.9\DLAP Application Import Binding Info 2.0.0.9.xml = Deployment\2.0.0.9\DLAP Application Import Binding Info 2.0.0.9.xml
+		Deployment\2.0.0.9\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.9\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.10", "2.0.0.10", "{6AC3B692-61C7-4F76-BBE0-86B563BF764A}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.10\DLAP Application Import 2.0.0.10.msi = Deployment\2.0.0.10\DLAP Application Import 2.0.0.10.msi
+		Deployment\2.0.0.10\DLAP Application Import Binding Info 2.0.0.10.xml = Deployment\2.0.0.10\DLAP Application Import Binding Info 2.0.0.10.xml
+		Deployment\2.0.0.10\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.10\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.11", "2.0.0.11", "{AD6286B2-BAA7-4E18-82BF-A673A493CF6E}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.11\DLAP Application Import 2.0.0.11.msi = Deployment\2.0.0.11\DLAP Application Import 2.0.0.11.msi
+		Deployment\2.0.0.11\DLAP Application Import 2.0.0.11.XML = Deployment\2.0.0.11\DLAP Application Import 2.0.0.11.XML
+		Deployment\2.0.0.11\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.11\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.12", "2.0.0.12", "{073E26C6-1EF7-4AF5-A20B-31056CD0D9E3}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.12\DLAP Application Import 2.0.0.12.msi = Deployment\2.0.0.12\DLAP Application Import 2.0.0.12.msi
+		Deployment\2.0.0.12\DLAP Application Import 2.0.0.12.xml = Deployment\2.0.0.12\DLAP Application Import 2.0.0.12.xml
+		Deployment\2.0.0.12\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.12\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.13", "2.0.0.13", "{D40F8535-4E34-4396-9609-2429D8C2DBED}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.13\DLAP Application Import 2.0.0.13.msi = Deployment\2.0.0.13\DLAP Application Import 2.0.0.13.msi
+		Deployment\2.0.0.13\DLAP Application Import 2.0.0.13.xml = Deployment\2.0.0.13\DLAP Application Import 2.0.0.13.xml
+		Deployment\2.0.0.13\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.13\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.14", "2.0.0.14", "{51BE1B6F-42DC-4941-993F-E989557BEF94}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.14\DLAP Application Import 2.0.0.14.msi = Deployment\2.0.0.14\DLAP Application Import 2.0.0.14.msi
+		Deployment\2.0.0.14\DLAP Application Import 2.0.0.14.xml = Deployment\2.0.0.14\DLAP Application Import 2.0.0.14.xml
+		Deployment\2.0.0.14\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.14\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.15", "2.0.0.15", "{B6E722A7-78C3-4379-84DF-585D0D8D10E1}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.15\DLAP Application Import 2.0.0.15.msi = Deployment\2.0.0.15\DLAP Application Import 2.0.0.15.msi
+		Deployment\2.0.0.15\DLAP Application Import 2.0.0.15.xml = Deployment\2.0.0.15\DLAP Application Import 2.0.0.15.xml
+		Deployment\2.0.0.15\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.15\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.16", "2.0.0.16", "{0FD35A5B-1665-48D0-BCF9-8EF00ED61FEC}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.16\DLAP Application Import 2.0.0.16.msi = Deployment\2.0.0.16\DLAP Application Import 2.0.0.16.msi
+		Deployment\2.0.0.16\DLAP Application Import 2.0.0.16.xml = Deployment\2.0.0.16\DLAP Application Import 2.0.0.16.xml
+		Deployment\2.0.0.16\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.16\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.17", "2.0.0.17", "{7CB44859-7EAC-424F-98F9-78923964B223}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.17\DLAP Application Import 2.0.0.17.msi = Deployment\2.0.0.17\DLAP Application Import 2.0.0.17.msi
+		Deployment\2.0.0.17\DLAP Application Import 2.0.0.17.xml = Deployment\2.0.0.17\DLAP Application Import 2.0.0.17.xml
+		Deployment\2.0.0.17\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.17\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.18", "2.0.0.18", "{134B7343-D0A2-4AEC-B96C-48A4D8C4D815}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.18\DLAP Application Import 2.0.0.18.msi = Deployment\2.0.0.18\DLAP Application Import 2.0.0.18.msi
+		Deployment\2.0.0.18\DLAP Application Import 2.0.0.18.xml = Deployment\2.0.0.18\DLAP Application Import 2.0.0.18.xml
+		Deployment\2.0.0.18\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.18\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.19", "2.0.0.19", "{C1E9587B-83FE-406F-B91F-2ADCA1B7D5AD}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.19\DLAP Application Import 2.0.0.19.msi = Deployment\2.0.0.19\DLAP Application Import 2.0.0.19.msi
+		Deployment\2.0.0.19\DLAP Application Import 2.0.0.19.xml = Deployment\2.0.0.19\DLAP Application Import 2.0.0.19.xml
+		Deployment\2.0.0.19\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.0.19\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.1.0", "2.0.1.0", "{CCCB5CC8-349E-4D58-BEE6-18967D3B8F83}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.1.0\DLAP Application Import 2.0.1.0.msi = Deployment\2.0.1.0\DLAP Application Import 2.0.1.0.msi
+		Deployment\2.0.1.0\DLAP Application Import 2.0.1.0.xml = Deployment\2.0.1.0\DLAP Application Import 2.0.1.0.xml
+		Deployment\2.0.1.0\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.1.0\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.2.0", "2.0.2.0", "{C8DB89B0-8421-407E-AE7D-5BC5893A1915}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.2.0\DLAP Application Import 2.0.2.0.msi = Deployment\2.0.2.0\DLAP Application Import 2.0.2.0.msi
+		Deployment\2.0.2.0\DLAP Application Import 2.0.2.0.xml = Deployment\2.0.2.0\DLAP Application Import 2.0.2.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.2.1", "2.0.2.1", "{C5DFE75E-52A3-4274-98AC-00A09D458E2F}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.2.1\DLAP Application Import 2.0.2.1.msi = Deployment\2.0.2.1\DLAP Application Import 2.0.2.1.msi
+		Deployment\2.0.2.1\DLAP Application Import 2.0.2.1.xml = Deployment\2.0.2.1\DLAP Application Import 2.0.2.1.xml
+		Deployment\2.0.2.1\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.2.1\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.2.2", "2.0.2.2", "{EB2A9078-ECD7-4A00-95EC-EFBCC17F1E68}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.2.2\DLAP Application Import 2.0.2.2.msi = Deployment\2.0.2.2\DLAP Application Import 2.0.2.2.msi
+		Deployment\2.0.2.2\DLAP Application Import 2.0.2.2.xml = Deployment\2.0.2.2\DLAP Application Import 2.0.2.2.xml
+		Deployment\2.0.2.2\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.2.2\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.2.3", "2.0.2.3", "{1C08C8D0-55CE-4CB4-A704-1D02357F77E2}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.2.3\DLAP Application Import 2.0.2.3.msi = Deployment\2.0.2.3\DLAP Application Import 2.0.2.3.msi
+		Deployment\2.0.2.3\DLAP Application Import 2.0.2.3.xml = Deployment\2.0.2.3\DLAP Application Import 2.0.2.3.xml
+		Deployment\2.0.2.3\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.2.3\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.4.1", "2.0.4.1", "{80AFB4A8-B6B1-4099-8636-01BDE0359D7B}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.4.1\DLAP Application Import 2.0.4.1.msi = Deployment\2.0.4.1\DLAP Application Import 2.0.4.1.msi
+		Deployment\2.0.4.1\DLAP Application Import 2.0.4.1.xml = Deployment\2.0.4.1\DLAP Application Import 2.0.4.1.xml
+		Deployment\2.0.4.1\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.4.1\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.4.2", "2.0.4.2", "{E01EEE2F-E321-4282-8A30-2D2F82ACEFB6}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.4.2\DLAP Application Import 2.0.4.2.msi = Deployment\2.0.4.2\DLAP Application Import 2.0.4.2.msi
+		Deployment\2.0.4.2\DLAP Application Import 2.0.4.2.xml = Deployment\2.0.4.2\DLAP Application Import 2.0.4.2.xml
+		Deployment\2.0.4.2\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.4.2\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.4.4", "2.0.4.4", "{E6846D7F-282E-4361-B091-4ED8414EB9B1}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.4.4\DLAP Application Import 2.0.4.4.msi = Deployment\2.0.4.4\DLAP Application Import 2.0.4.4.msi
+		Deployment\2.0.4.4\DLAP Application Import Binding Info 2.0.4.4 .xml = Deployment\2.0.4.4\DLAP Application Import Binding Info 2.0.4.4 .xml
+		Deployment\2.0.4.4\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.4.4\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.5.0", "2.0.5.0", "{BE8D82E9-47B9-4D55-9F4A-BD70396A2C98}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.5.0\DLAP Application Import 2.0.5.0 .msi = Deployment\2.0.5.0\DLAP Application Import 2.0.5.0 .msi
+		Deployment\2.0.5.0\DLAP Application Import Binding Info 2.0.5.0.xml = Deployment\2.0.5.0\DLAP Application Import Binding Info 2.0.5.0.xml
+		Deployment\2.0.5.0\DLAP Application Import BRE Rules 2.0.0.2 .xml = Deployment\2.0.5.0\DLAP Application Import BRE Rules 2.0.0.2 .xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.5.5", "2.0.5.5", "{FEF29315-CB9D-41D3-8F1E-DB56EE9EF130}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.5.5\DLAP Application Import 2.0.5.5.msi = Deployment\2.0.5.5\DLAP Application Import 2.0.5.5.msi
+		Deployment\2.0.5.5\DLAP Application Import Binding Info 2.0.5.5.xml = Deployment\2.0.5.5\DLAP Application Import Binding Info 2.0.5.5.xml
+		Deployment\2.0.5.5\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.5.5\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.7.2", "2.0.7.2", "{1811B871-95CF-4117-ADD2-908E266299A1}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.7.2\DLAP Application Import 2.0.7.2.msi = Deployment\2.0.7.2\DLAP Application Import 2.0.7.2.msi
+		Deployment\2.0.7.2\DLAP Application Import Binding Info 2.0.7.2.xml = Deployment\2.0.7.2\DLAP Application Import Binding Info 2.0.7.2.xml
+		Deployment\2.0.7.2\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.7.2\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.7.8", "2.0.7.8", "{3250825E-81B0-4C51-94FD-E5C7BE8413BE}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.7.8\DLAP Application Import 2.0.7.8.msi = Deployment\2.0.7.8\DLAP Application Import 2.0.7.8.msi
+		Deployment\2.0.7.8\DLAP Application Import Binding Info 2.0.7.8.xml = Deployment\2.0.7.8\DLAP Application Import Binding Info 2.0.7.8.xml
+		Deployment\2.0.7.8\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.7.8\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.8.3", "2.0.8.3", "{D54F363F-3800-4201-868B-0676D9F71040}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.8.3\DLAP Application Import 2.0.8.3.msi = Deployment\2.0.8.3\DLAP Application Import 2.0.8.3.msi
+		Deployment\2.0.8.3\DLAP Application Import Binding Info 2.0.8.3.xml = Deployment\2.0.8.3\DLAP Application Import Binding Info 2.0.8.3.xml
+		Deployment\2.0.8.3\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.8.3\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.9.5", "2.0.9.5", "{48FF1432-16DD-4F87-86B8-2A20A819C75E}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.9.5\DLAP Application Import 2.0.9.5 .msi = Deployment\2.0.9.5\DLAP Application Import 2.0.9.5 .msi
+		Deployment\2.0.9.5\DLAP Application Import Binding Info 2.0.9.5.xml = Deployment\2.0.9.5\DLAP Application Import Binding Info 2.0.9.5.xml
+		Deployment\2.0.9.5\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.9.5\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.9.10", "2.0.9.10", "{84379C27-9271-401D-A8C9-124F44459444}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.9.10\DLAP Application Import 2.0.9.10 .msi = Deployment\2.0.9.10\DLAP Application Import 2.0.9.10 .msi
+		Deployment\2.0.9.10\DLAP Application Import Binding Info 2.0.9.10.xml = Deployment\2.0.9.10\DLAP Application Import Binding Info 2.0.9.10.xml
+		Deployment\2.0.9.10\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.9.10\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.11.0", "2.0.11.0", "{0DC6318F-8082-43EC-A843-FEC2244B89F5}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.11.0\DLAP Application Import 2.0.11.0.msi = Deployment\2.0.11.0\DLAP Application Import 2.0.11.0.msi
+		Deployment\2.0.11.0\DLAP Application Import Binding Info 2.0.11.0.xml = Deployment\2.0.11.0\DLAP Application Import Binding Info 2.0.11.0.xml
+		Deployment\2.0.11.0\DLAP Application Import BRE Rules 2.0.0.2.xml = Deployment\2.0.11.0\DLAP Application Import BRE Rules 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "Application Import", "Application Import\Application Import.btaproj", "{708C430A-F7B9-472E-A4C8-80BDB675CD0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDeploy", "WebDeploy", "{3D2EF611-9EA2-4029-95C4-902F6D5B66A3}"
+	ProjectSection(SolutionItems) = preProject
+		WebDeploy\DLAP.zip = WebDeploy\DLAP.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEBB05B0-F955-49ED-B912-808E6849E6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEBB05B0-F955-49ED-B912-808E6849E6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEBB05B0-F955-49ED-B912-808E6849E6C2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AEBB05B0-F955-49ED-B912-808E6849E6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEBB05B0-F955-49ED-B912-808E6849E6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEBB05B0-F955-49ED-B912-808E6849E6C2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2DB1D498-00E6-4B1A-BD73-1371B3F87F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB1D498-00E6-4B1A-BD73-1371B3F87F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB1D498-00E6-4B1A-BD73-1371B3F87F2D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2DB1D498-00E6-4B1A-BD73-1371B3F87F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB1D498-00E6-4B1A-BD73-1371B3F87F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB1D498-00E6-4B1A-BD73-1371B3F87F2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AA7B66CD-8B80-4842-9F52-8674611C6230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7B66CD-8B80-4842-9F52-8674611C6230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7B66CD-8B80-4842-9F52-8674611C6230}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AA7B66CD-8B80-4842-9F52-8674611C6230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7B66CD-8B80-4842-9F52-8674611C6230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7B66CD-8B80-4842-9F52-8674611C6230}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{65BE8C7C-C7AB-407B-8740-772039C6CECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65BE8C7C-C7AB-407B-8740-772039C6CECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65BE8C7C-C7AB-407B-8740-772039C6CECA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{65BE8C7C-C7AB-407B-8740-772039C6CECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65BE8C7C-C7AB-407B-8740-772039C6CECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65BE8C7C-C7AB-407B-8740-772039C6CECA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{88F558C7-DE3F-4C7E-B63F-1DBC081E947B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F558C7-DE3F-4C7E-B63F-1DBC081E947B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F558C7-DE3F-4C7E-B63F-1DBC081E947B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{88F558C7-DE3F-4C7E-B63F-1DBC081E947B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F558C7-DE3F-4C7E-B63F-1DBC081E947B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F558C7-DE3F-4C7E-B63F-1DBC081E947B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F2B2CA1F-658E-49DD-8480-EB2F8B488DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B2CA1F-658E-49DD-8480-EB2F8B488DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B2CA1F-658E-49DD-8480-EB2F8B488DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B2CA1F-658E-49DD-8480-EB2F8B488DC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708C430A-F7B9-472E-A4C8-80BDB675CD0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708C430A-F7B9-472E-A4C8-80BDB675CD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708C430A-F7B9-472E-A4C8-80BDB675CD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708C430A-F7B9-472E-A4C8-80BDB675CD0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3139C4F-58CB-445E-B5E7-9CD1DB309ED7} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{C13498BE-D3B4-4995-8CC6-B29D9E8038E4} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{1D61B362-8164-41E6-AD6C-3463FC255ADA} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{30E2BC9E-3B9F-4E27-84CF-54E0C22A3960} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{9873366F-199B-4472-9AA7-73CF52D680F1} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{A8EE984E-B21E-4FAE-8459-95E05A049B0A} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{1AABDC90-FCBC-44B1-A2C4-57386495EC18} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{3684F084-9464-4ECE-8826-9B28C2B48323} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{B58E75AE-63EA-482E-AECB-BA226B103231} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{D5085E0B-4B3B-488C-A7A6-B3B0B4DCAF9E} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{6AC3B692-61C7-4F76-BBE0-86B563BF764A} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{AD6286B2-BAA7-4E18-82BF-A673A493CF6E} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{073E26C6-1EF7-4AF5-A20B-31056CD0D9E3} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{D40F8535-4E34-4396-9609-2429D8C2DBED} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{51BE1B6F-42DC-4941-993F-E989557BEF94} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{B6E722A7-78C3-4379-84DF-585D0D8D10E1} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{0FD35A5B-1665-48D0-BCF9-8EF00ED61FEC} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{7CB44859-7EAC-424F-98F9-78923964B223} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{134B7343-D0A2-4AEC-B96C-48A4D8C4D815} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{C1E9587B-83FE-406F-B91F-2ADCA1B7D5AD} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{CCCB5CC8-349E-4D58-BEE6-18967D3B8F83} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{C8DB89B0-8421-407E-AE7D-5BC5893A1915} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{C5DFE75E-52A3-4274-98AC-00A09D458E2F} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{EB2A9078-ECD7-4A00-95EC-EFBCC17F1E68} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{1C08C8D0-55CE-4CB4-A704-1D02357F77E2} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{80AFB4A8-B6B1-4099-8636-01BDE0359D7B} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{E01EEE2F-E321-4282-8A30-2D2F82ACEFB6} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{E6846D7F-282E-4361-B091-4ED8414EB9B1} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{BE8D82E9-47B9-4D55-9F4A-BD70396A2C98} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{FEF29315-CB9D-41D3-8F1E-DB56EE9EF130} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{1811B871-95CF-4117-ADD2-908E266299A1} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{3250825E-81B0-4C51-94FD-E5C7BE8413BE} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{D54F363F-3800-4201-868B-0676D9F71040} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{48FF1432-16DD-4F87-86B8-2A20A819C75E} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{84379C27-9271-401D-A8C9-124F44459444} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+		{0DC6318F-8082-43EC-A843-FEC2244B89F5} = {14C51A9C-CED3-4622-8D28-5D0F052602D1}
+	EndGlobalSection
+EndGlobal

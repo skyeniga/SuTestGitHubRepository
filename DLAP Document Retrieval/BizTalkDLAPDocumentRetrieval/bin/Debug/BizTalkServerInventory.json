@@ -1,0 +1,35 @@
+{
+  "SchemaVersion": "1.0.0.0",
+  "ApplicationVersion": "1.0.0.0",
+  "BizTalkAssemblies": [
+    {
+      "Name": "DLAPDocumentRetrievalDefinition",
+      "Path": "bin\\DLAPDocumentRetrievalDefinition.dll"
+    },
+    {
+      "Name": "DLAPDocumentRetrievalSalesforceDefinition",
+      "Path": "bin\\DLAPDocumentRetrievalSalesforceDefinition.dll"
+    },
+    {
+      "Name": "DLAPDocumentRetrievalLogic",
+      "Path": "bin\\DLAPDocumentRetrievalLogic.dll"
+    }
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "Binding",
+      "Path": "bindings\\Binding.xml"
+    }
+  ],
+  "Assemblies": [],
+  "PreProcessingScripts": [],
+  "PostProcessingScripts": [],
+  "Files": [],
+  "Tokens": [],
+  "DeploymentSequence": [
+    "DLAPDocumentRetrievalDefinition",
+    "DLAPDocumentRetrievalSalesforceDefinition",
+    "DLAPDocumentRetrievalLogic",
+    "Binding"
+  ]
+}

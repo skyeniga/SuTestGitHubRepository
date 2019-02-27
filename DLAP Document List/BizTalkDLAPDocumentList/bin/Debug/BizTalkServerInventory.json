@@ -1,0 +1,35 @@
+{
+  "SchemaVersion": "1.0.0.0",
+  "ApplicationVersion": "1.0.0.0",
+  "BizTalkAssemblies": [
+    {
+      "Name": "DLAPDocumentListSalesforceDefinition",
+      "Path": "bin\\Debug\\DLAPDocumentListSalesforceDefinition.dll"
+    },
+    {
+      "Name": "DLAPDocumentListDefinition",
+      "Path": "bin\\Debug\\DLAPDocumentListDefinition.dll"
+    },
+    {
+      "Name": "DLAPDocumentListLogic",
+      "Path": "bin\\Debug\\DLAPDocumentListLogic.dll"
+    }
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "Binding",
+      "Path": "bindings\\Binding.xml"
+    }
+  ],
+  "Assemblies": [],
+  "PreProcessingScripts": [],
+  "PostProcessingScripts": [],
+  "Files": [],
+  "Tokens": [],
+  "DeploymentSequence": [
+    "DLAPDocumentListSalesforceDefinition",
+    "DLAPDocumentListDefinition",
+    "DLAPDocumentListLogic",
+    "Binding"
+  ]
+}

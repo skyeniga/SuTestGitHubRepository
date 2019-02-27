@@ -1,0 +1,8 @@
+- deploy app
+- import DLAP Application Import Bindings for Development
+- remove WCF receive location
+- export bindings as DLAP Application Import Bindings for Deployment
+- export MSI to deployment folder
+- open an administrator CMD prompt and change directories to the "Bindings and MSIs" folder
+- run "powershell .\CleanBindings.ps1"
+- check in solution

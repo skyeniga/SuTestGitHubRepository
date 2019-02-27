@@ -1,0 +1,557 @@
+<Application>
+	<VERSION>9</VERSION>
+	<APP_ID>46983</APP_ID>
+	<APP_ELA_REFERENCE_NBR>2300000022</APP_ELA_REFERENCE_NBR>
+	<APP_CREATE_DATE>01/30/2018 12:50:11 PM</APP_CREATE_DATE>
+	<APP_SUBMIT_DATE>01/30/2018 01:33:08 PM</APP_SUBMIT_DATE>
+	<APP_PRD_PRODUCT>Business</APP_PRD_PRODUCT>
+	<APP_DPO_OWN_IND />
+	<APP_DPO_PRIMARY_IND />
+	<APP_DPO_SECONDARY_IND>UNDEFINED</APP_DPO_SECONDARY_IND>
+	<APP_DPO_RENTAL_IND>UNDEFINED</APP_DPO_RENTAL_IND>
+	<APP_DPO_EXTFAM_IND>UNDEFINED</APP_DPO_EXTFAM_IND>
+	<APP_BUS_RE>true</APP_BUS_RE>
+	<APP_BUS_CONT>false</APP_BUS_CONT>
+	<APP_BUS_EIDL>false</APP_BUS_EIDL>
+	<APP_BUS_MREIDL>false</APP_BUS_MREIDL>
+	<APP_PRO_ID>752208</APP_PRO_ID>
+	<APP_DMG_STATE_CD>VA</APP_DMG_STATE_CD>
+	<APP_DMG_COUNTY>Fairfax</APP_DMG_COUNTY>
+	<APP_FEMA_REGIS_NBR />
+	<FemaReferralTrackingId>0</FemaReferralTrackingId>
+	<PrepopulatedWithFemaData>false</PrepopulatedWithFemaData>
+	<APP_CONSENT_IND>true</APP_CONSENT_IND>
+	<APP_ACKNOWLEDGE_IND>true</APP_ACKNOWLEDGE_IND>
+	<APP_CERTIFY_IND>true</APP_CERTIFY_IND>
+	<LateFilingJustification />
+	<APP_CONTACT_NAME>Jill Ziffle</APP_CONTACT_NAME>
+	<APP_CONTACT_NBR>2129081703</APP_CONTACT_NBR>
+	<APP_INSP_NAME>Jill Ziffle</APP_INSP_NAME>
+	<APP_INSP_NBR>2129081703</APP_INSP_NBR>
+	<APP_SUMMARY_DECLINE_CODE />
+	<EST_LOSS_RE>15000.00</EST_LOSS_RE>
+	<EST_LOSS_INV />
+	<EST_LOSS_EQUIP />
+	<EST_LOSS_IMPROVE />
+	<NoIndividualOwner>true</NoIndividualOwner>
+	<NoEntityOwner>false</NoEntityOwner>
+	<PackageId />
+	<ApplicantColl>
+		<Applicants>
+			<AppId>46983</AppId>
+			<ApplicantId>61959</ApplicantId>
+			<ApplicantType>Primary</ApplicantType>
+			<APL_FIRST_NAME />
+			<APL_MIDDLE_NAME />
+			<APL_LAST_NAME />
+			<APL_SUFFIX />
+			<APL_SSN />
+			<APL_DOB />
+			<APL_BIRTH_PLACE />
+			<APL_MARITAL_STATUS />
+			<APL_RELATION_TYPE>PRIM</APL_RELATION_TYPE>
+			<APL_RELATION_OTHER />
+			<APL_FAMILY_SIZE />
+			<APL_SBA_EMPLOYEE />
+			<APL_SELF_EMPLOYED />
+			<MailingAddress>
+				<MAR_ADDR_TYPE>B</MAR_ADDR_TYPE>
+				<MAR_ADDR_OTHER_DESC />
+				<MAR_ADDRESS1>1701 SNIFTER</MAR_ADDRESS1>
+				<MAR_ADDRESS2 />
+				<MAR_CITY>FAIRFAX</MAR_CITY>
+				<MAR_STATE_CD>VA</MAR_STATE_CD>
+				<MAR_ZIP>22031</MAR_ZIP>
+				<MAR_COUNTY />
+			</MailingAddress>
+			<APL_CONTACT_METHOD />
+			<APL_PRIM_PHONE>7609081753</APL_PRIM_PHONE>
+			<APL_WORK_PHONE />
+			<APL_ALT_PHONE />
+			<APL_FAX />
+			<APL_EMAIL />
+			<APL_OTHER_CONTACT />
+			<APL_REL_NAME />
+			<APL_REL_PHONE />
+			<APL_ORG_TYPE_CD>LLC</APL_ORG_TYPE_CD>
+			<APL_LEGAL_NAME>Jill Business</APL_LEGAL_NAME>
+			<APL_EIN_NBR>541234567</APL_EIN_NBR>
+			<APL_BUS_TRADE_NAME />
+			<APL_BUS_ACTIVITY />
+			<APL_NO_EMPL />
+			<APL_DATE_ESTD>08/12/1987</APL_DATE_ESTD>
+			<APL_DATE_CURR_MGMT>08/12/1987</APL_DATE_CURR_MGMT>
+			<APL_TITLEOFFICE />
+			<APL_PER_OWNERSHIP />
+			<APL_CITIZEN_IND />
+			<NotEmployed>false</NotEmployed>
+			<AplWageColl />
+			<NoOtherIncome>false</NoOtherIncome>
+			<AplOtherIncomeColl />
+			<APL_AFFILIATE_IND>N</APL_AFFILIATE_IND>
+			<AplAffiliateColl />
+			<FinancialsForEntity>
+				<IncomeStatement Offline="true" />
+				<BalanceSheet Offline="true" />
+				<ScheduleOfLiabilities Offline="false">
+					<StatementDate />
+					<NoLiabilities>false</NoLiabilities>
+					<LiabilityDetailList>
+						<LiabilityDetail>
+							<CreditorName>American Express</CreditorName>
+							<OriginalBalance>14000.00</OriginalBalance>
+							<OriginalDate>04/2017</OriginalDate>
+							<CurrentBalance>10000.00</CurrentBalance>
+							<PaymentsAreCurrent>false</PaymentsAreCurrent>
+							<MaturityDate />
+							<PaymentAmount>500.00</PaymentAmount>
+							<PaymentFrequency>MONTHLY</PaymentFrequency>
+							<HowSecured />
+						</LiabilityDetail>
+						<LiabilityDetail>
+							<CreditorName>First National</CreditorName>
+							<OriginalBalance>35000.00</OriginalBalance>
+							<OriginalDate>06/2017</OriginalDate>
+							<CurrentBalance>25000.00</CurrentBalance>
+							<PaymentsAreCurrent>false</PaymentsAreCurrent>
+							<MaturityDate />
+							<PaymentAmount>1000.00</PaymentAmount>
+							<PaymentFrequency>MONTHLY</PaymentFrequency>
+							<HowSecured />
+						</LiabilityDetail>
+					</LiabilityDetailList>
+				</ScheduleOfLiabilities>
+				<SalesFigures Offline="true">
+					<BeginningOfFiscalYear>0</BeginningOfFiscalYear>
+				</SalesFigures>
+			</FinancialsForEntity>
+			<TaxTranscriptRequest>
+				<PreviousAddress>
+					<MAR_ADDR_TYPE />
+					<MAR_ADDR_OTHER_DESC />
+					<MAR_ADDRESS1 />
+					<MAR_ADDRESS2 />
+					<MAR_CITY />
+					<MAR_STATE_CD />
+					<MAR_ZIP />
+					<MAR_COUNTY />
+				</PreviousAddress>
+				<TaxForm>1065</TaxForm>
+				<EndOfFiscalYear>
+					<string>12/31/2016</string>
+					<string>12/31/2015</string>
+					<string>12/31/2014</string>
+				</EndOfFiscalYear>
+				<SignerTitle>PARTNER</SignerTitle>
+				<Attestation>true</Attestation>
+				<IncludeSpouse>true</IncludeSpouse>
+				<SwitchedEntityOrder>false</SwitchedEntityOrder>
+				<DataEntryRequired>false</DataEntryRequired>
+				<DownloadRequired>false</DownloadRequired>
+				<FileUploaded>true</FileUploaded>
+				<SubmitOffline>false</SubmitOffline>
+				<SignatureRequired>true</SignatureRequired>
+				<FileName>ELA2300000022-Jill Business-Request for Transcript of Tax Return.pdf</FileName>
+			</TaxTranscriptRequest>
+		</Applicants>
+		<Applicants>
+			<AppId>46983</AppId>
+			<ApplicantId>61961</ApplicantId>
+			<ApplicantType>Coapplicant</ApplicantType>
+			<APL_FIRST_NAME />
+			<APL_MIDDLE_NAME />
+			<APL_LAST_NAME />
+			<APL_SUFFIX />
+			<APL_SSN />
+			<APL_DOB />
+			<APL_BIRTH_PLACE />
+			<APL_MARITAL_STATUS />
+			<APL_RELATION_TYPE>OWNER</APL_RELATION_TYPE>
+			<APL_RELATION_OTHER />
+			<APL_FAMILY_SIZE />
+			<APL_SBA_EMPLOYEE />
+			<APL_SELF_EMPLOYED />
+			<MailingAddress>
+				<MAR_ADDR_TYPE />
+				<MAR_ADDR_OTHER_DESC />
+				<MAR_ADDRESS1>1701 SNIFTER</MAR_ADDRESS1>
+				<MAR_ADDRESS2 />
+				<MAR_CITY>FAIRFAX</MAR_CITY>
+				<MAR_STATE_CD>VA</MAR_STATE_CD>
+				<MAR_ZIP>22031</MAR_ZIP>
+				<MAR_COUNTY />
+			</MailingAddress>
+			<APL_CONTACT_METHOD />
+			<APL_PRIM_PHONE />
+			<APL_WORK_PHONE />
+			<APL_ALT_PHONE />
+			<APL_FAX />
+			<APL_EMAIL />
+			<APL_OTHER_CONTACT />
+			<APL_REL_NAME />
+			<APL_REL_PHONE />
+			<APL_ORG_TYPE_CD>LLC</APL_ORG_TYPE_CD>
+			<APL_LEGAL_NAME>Jill Burgers</APL_LEGAL_NAME>
+			<APL_EIN_NBR>451234567</APL_EIN_NBR>
+			<APL_BUS_TRADE_NAME />
+			<APL_BUS_ACTIVITY />
+			<APL_NO_EMPL />
+			<APL_DATE_ESTD />
+			<APL_DATE_CURR_MGMT />
+			<APL_TITLEOFFICE />
+			<APL_PER_OWNERSHIP>90</APL_PER_OWNERSHIP>
+			<APL_CITIZEN_IND />
+			<NotEmployed>false</NotEmployed>
+			<AplWageColl />
+			<NoOtherIncome>false</NoOtherIncome>
+			<AplOtherIncomeColl />
+			<APL_AFFILIATE_IND>N</APL_AFFILIATE_IND>
+			<AplAffiliateColl />
+			<FinancialsForEntity>
+				<IncomeStatement Offline="true" />
+				<BalanceSheet Offline="true" />
+				<ScheduleOfLiabilities Offline="false">
+					<StatementDate />
+					<NoLiabilities>false</NoLiabilities>
+					<LiabilityDetailList>
+						<LiabilityDetail>
+							<CreditorName>BOA</CreditorName>
+							<OriginalBalance>20000.00</OriginalBalance>
+							<OriginalDate>09/2008</OriginalDate>
+							<CurrentBalance>15000.00</CurrentBalance>
+							<PaymentsAreCurrent>false</PaymentsAreCurrent>
+							<MaturityDate />
+							<PaymentAmount>500.00</PaymentAmount>
+							<PaymentFrequency>MONTHLY</PaymentFrequency>
+							<HowSecured />
+						</LiabilityDetail>
+					</LiabilityDetailList>
+				</ScheduleOfLiabilities>
+				<SalesFigures Offline="true">
+					<BeginningOfFiscalYear>0</BeginningOfFiscalYear>
+				</SalesFigures>
+			</FinancialsForEntity>
+			<TaxTranscriptRequest>
+				<PreviousAddress>
+					<MAR_ADDR_TYPE />
+					<MAR_ADDR_OTHER_DESC />
+					<MAR_ADDRESS1 />
+					<MAR_ADDRESS2 />
+					<MAR_CITY />
+					<MAR_STATE_CD />
+					<MAR_ZIP />
+					<MAR_COUNTY />
+				</PreviousAddress>
+				<TaxForm>1120</TaxForm>
+				<EndOfFiscalYear>
+					<string>12/31/2016</string>
+					<string>12/31/2015</string>
+					<string>12/31/2014</string>
+				</EndOfFiscalYear>
+				<SignerTitle>VP</SignerTitle>
+				<Attestation>true</Attestation>
+				<IncludeSpouse>true</IncludeSpouse>
+				<SwitchedEntityOrder>false</SwitchedEntityOrder>
+				<DataEntryRequired>false</DataEntryRequired>
+				<DownloadRequired>false</DownloadRequired>
+				<FileUploaded>true</FileUploaded>
+				<SubmitOffline>false</SubmitOffline>
+				<SignatureRequired>true</SignatureRequired>
+				<FileName>ELA2300000022-Jill Business-Request for Transcript of Tax Return.pdf</FileName>
+			</TaxTranscriptRequest>
+		</Applicants>
+		<Applicants>
+			<AppId>46983</AppId>
+			<ApplicantId>61962</ApplicantId>
+			<ApplicantType>Coapplicant</ApplicantType>
+			<APL_FIRST_NAME />
+			<APL_MIDDLE_NAME />
+			<APL_LAST_NAME />
+			<APL_SUFFIX />
+			<APL_SSN />
+			<APL_DOB />
+			<APL_BIRTH_PLACE />
+			<APL_MARITAL_STATUS />
+			<APL_RELATION_TYPE>OWNER</APL_RELATION_TYPE>
+			<APL_RELATION_OTHER />
+			<APL_FAMILY_SIZE />
+			<APL_SBA_EMPLOYEE />
+			<APL_SELF_EMPLOYED />
+			<MailingAddress>
+				<MAR_ADDR_TYPE />
+				<MAR_ADDR_OTHER_DESC />
+				<MAR_ADDRESS1>1701 SNIFTER</MAR_ADDRESS1>
+				<MAR_ADDRESS2 />
+				<MAR_CITY>FAIRFAX</MAR_CITY>
+				<MAR_STATE_CD>VA</MAR_STATE_CD>
+				<MAR_ZIP>22031</MAR_ZIP>
+				<MAR_COUNTY />
+			</MailingAddress>
+			<APL_CONTACT_METHOD />
+			<APL_PRIM_PHONE />
+			<APL_WORK_PHONE />
+			<APL_ALT_PHONE />
+			<APL_FAX />
+			<APL_EMAIL />
+			<APL_OTHER_CONTACT />
+			<APL_REL_NAME />
+			<APL_REL_PHONE />
+			<APL_ORG_TYPE_CD>LLC</APL_ORG_TYPE_CD>
+			<APL_LEGAL_NAME>Fred Dogs</APL_LEGAL_NAME>
+			<APL_EIN_NBR>541234568</APL_EIN_NBR>
+			<APL_BUS_TRADE_NAME />
+			<APL_BUS_ACTIVITY />
+			<APL_NO_EMPL />
+			<APL_DATE_ESTD />
+			<APL_DATE_CURR_MGMT />
+			<APL_TITLEOFFICE />
+			<APL_PER_OWNERSHIP>10</APL_PER_OWNERSHIP>
+			<APL_CITIZEN_IND />
+			<NotEmployed>false</NotEmployed>
+			<AplWageColl />
+			<NoOtherIncome>false</NoOtherIncome>
+			<AplOtherIncomeColl />
+			<APL_AFFILIATE_IND>N</APL_AFFILIATE_IND>
+			<AplAffiliateColl />
+			<FinancialsForEntity>
+				<IncomeStatement Offline="true" />
+				<BalanceSheet Offline="true" />
+				<ScheduleOfLiabilities Offline="false">
+					<StatementDate />
+					<NoLiabilities>false</NoLiabilities>
+					<LiabilityDetailList>
+						<LiabilityDetail>
+							<CreditorName>Chase</CreditorName>
+							<OriginalBalance>40000.00</OriginalBalance>
+							<OriginalDate>09/2017</OriginalDate>
+							<CurrentBalance>35000.00</CurrentBalance>
+							<PaymentsAreCurrent>false</PaymentsAreCurrent>
+							<MaturityDate />
+							<PaymentAmount>1000.00</PaymentAmount>
+							<PaymentFrequency>MONTHLY</PaymentFrequency>
+							<HowSecured />
+						</LiabilityDetail>
+					</LiabilityDetailList>
+				</ScheduleOfLiabilities>
+				<SalesFigures Offline="true">
+					<BeginningOfFiscalYear>0</BeginningOfFiscalYear>
+				</SalesFigures>
+			</FinancialsForEntity>
+			<TaxTranscriptRequest>
+				<PreviousAddress>
+					<MAR_ADDR_TYPE />
+					<MAR_ADDR_OTHER_DESC />
+					<MAR_ADDRESS1 />
+					<MAR_ADDRESS2 />
+					<MAR_CITY />
+					<MAR_STATE_CD />
+					<MAR_ZIP />
+					<MAR_COUNTY />
+				</PreviousAddress>
+				<TaxForm>1120</TaxForm>
+				<EndOfFiscalYear>
+					<string>12/31/2016</string>
+					<string>12/31/2015</string>
+					<string>12/31/2014</string>
+				</EndOfFiscalYear>
+				<SignerTitle>PRES</SignerTitle>
+				<Attestation>true</Attestation>
+				<IncludeSpouse>true</IncludeSpouse>
+				<SwitchedEntityOrder>false</SwitchedEntityOrder>
+				<DataEntryRequired>false</DataEntryRequired>
+				<DownloadRequired>false</DownloadRequired>
+				<FileUploaded>true</FileUploaded>
+				<SubmitOffline>false</SubmitOffline>
+				<SignatureRequired>true</SignatureRequired>
+				<FileName>ELA2300000022-Jill Business-Request for Transcript of Tax Return.pdf</FileName>
+			</TaxTranscriptRequest>
+		</Applicants>
+	</ApplicantColl>
+	<DmgPropertyColl>
+		<Dmg_Properties>
+			<AppId>46983</AppId>
+			<DmgPropertyId>1</DmgPropertyId>
+			<MailingAddress>
+				<MAR_ADDR_TYPE />
+				<MAR_ADDR_OTHER_DESC />
+				<MAR_ADDRESS1>1701 SNIFTER</MAR_ADDRESS1>
+				<MAR_ADDRESS2 />
+				<MAR_CITY>FAIRFAX</MAR_CITY>
+				<MAR_STATE_CD>VA</MAR_STATE_CD>
+				<MAR_ZIP>22031</MAR_ZIP>
+				<MAR_COUNTY>Fairfax</MAR_COUNTY>
+			</MailingAddress>
+			<DPO_PRIMARY_IND />
+			<DPO_OWN_IND>BUS_OWNER_ODA</DPO_OWN_IND>
+			<DPO_HOME_RE>false</DPO_HOME_RE>
+			<DPO_HOME_PP>false</DPO_HOME_PP>
+			<DPO_HOME_AUTO>false</DPO_HOME_AUTO>
+			<DPO_NO_INSURANCE_IND>false</DPO_NO_INSURANCE_IND>
+			<DpoInsuranceColl>
+				<Dpo_Insurances>
+					<DmgPropertyId>1</DmgPropertyId>
+					<InsuranceId>1</InsuranceId>
+					<DPI_TYPE>HAZARD</DPI_TYPE>
+					<DPI_INS_COMPANYNAME>ACME Hazard</DPI_INS_COMPANYNAME>
+					<DPI_INS_AGENTNAME />
+					<DPI_AGENT_PHONE />
+					<DPI_POLICY_NBR />
+					<DPI_AMT_RECVD />
+				</Dpo_Insurances>
+			</DpoInsuranceColl>
+		</Dmg_Properties>
+		<Dmg_Properties>
+			<AppId>46983</AppId>
+			<DmgPropertyId>2</DmgPropertyId>
+			<MailingAddress>
+				<MAR_ADDR_TYPE />
+				<MAR_ADDR_OTHER_DESC />
+				<MAR_ADDRESS1>1702 SNIFTER</MAR_ADDRESS1>
+				<MAR_ADDRESS2 />
+				<MAR_CITY>FAIRFAX</MAR_CITY>
+				<MAR_STATE_CD>VA</MAR_STATE_CD>
+				<MAR_ZIP>22031</MAR_ZIP>
+				<MAR_COUNTY>Fairfax</MAR_COUNTY>
+			</MailingAddress>
+			<DPO_PRIMARY_IND />
+			<DPO_OWN_IND>BUS_OWNER_ODA</DPO_OWN_IND>
+			<DPO_HOME_RE>false</DPO_HOME_RE>
+			<DPO_HOME_PP>false</DPO_HOME_PP>
+			<DPO_HOME_AUTO>false</DPO_HOME_AUTO>
+			<DPO_NO_INSURANCE_IND>false</DPO_NO_INSURANCE_IND>
+			<DpoInsuranceColl>
+				<Dpo_Insurances>
+					<DmgPropertyId>2</DmgPropertyId>
+					<InsuranceId>1</InsuranceId>
+					<DPI_TYPE>HAZARD</DPI_TYPE>
+					<DPI_INS_COMPANYNAME>BACME</DPI_INS_COMPANYNAME>
+					<DPI_INS_AGENTNAME />
+					<DPI_AGENT_PHONE />
+					<DPI_POLICY_NBR />
+					<DPI_AMT_RECVD />
+				</Dpo_Insurances>
+			</DpoInsuranceColl>
+		</Dmg_Properties>
+	</DmgPropertyColl>
+	<DpoDupBenefitColl />
+	<Assets>
+		<APO_CASH_AMT />
+		<APO_IRA_AMT />
+		<APO_STOCK_AMT />
+		<APO_GOODS_AMT />
+		<APO_PRIMARY_RE_DESC />
+		<APO_PRIMARY_RE_AMT />
+		<APO_OTHER_RE1_DESC />
+		<APO_OTHER_RE1_AMT />
+		<APO_OTHER_RE2_DESC />
+		<APO_OTHER_RE2_AMT />
+		<APO_OTHER_RE3_DESC />
+		<APO_OTHER_RE3_AMT />
+		<APO_OTHER1_DESC />
+		<APO_OTHER1_AMT />
+		<APO_OTHER2_DESC />
+		<APO_OTHER2_AMT />
+	</Assets>
+	<Debts>
+		<NoDebts>false</NoDebts>
+		<RentedProperty>
+			<ARE_LANDLORD_NAME />
+			<MailingAddress>
+				<MAR_ADDR_TYPE />
+				<MAR_ADDR_OTHER_DESC />
+				<MAR_ADDRESS1 />
+				<MAR_ADDRESS2 />
+				<MAR_CITY />
+				<MAR_STATE_CD />
+				<MAR_ZIP />
+				<MAR_COUNTY />
+			</MailingAddress>
+			<ARE_RENTLEASE_AMT />
+		</RentedProperty>
+		<MortgageColl />
+		<RealEstateTax>
+			<Amount />
+			<Frequency />
+		</RealEstateTax>
+		<HazardInsurance>
+			<Amount />
+			<Frequency />
+		</HazardInsurance>
+		<CondoHoaFee>
+			<Amount />
+			<Frequency />
+		</CondoHoaFee>
+		<OtherDebtColl />
+	</Debts>
+	<ExtraExpenseColl />
+	<MREIDL_Damages>
+		<EmployeeName />
+		<EmployeeSSN />
+	</MREIDL_Damages>
+	<Final_Questions>
+		<FQS_SBALOAN_IND />
+		<FQS_SBA_LOCATION />
+		<FQS_SBA_ACC_NBR />
+		<FQS_FEDLOAN_IND>N</FQS_FEDLOAN_IND>
+		<FQS_FED_AGENCY_NAME />
+		<FQS_FED_LOCATION />
+		<FQS_FED_ACC_NBR />
+		<FQS_FEDDEL_IND>N</FQS_FEDDEL_IND>
+		<FQS_DEL_AGENCY_NAME />
+		<FQS_DEL_LOCATION />
+		<FQS_DEL_ACC_NBR />
+		<FQS_BKRPY_IND>N</FQS_BKRPY_IND>
+		<FQS_BKRPY_DESC />
+		<FQS_JDGMT_IND>N</FQS_JDGMT_IND>
+		<FQS_JDGMT_COMMENTS />
+		<FQS_FELONY_IND>N</FQS_FELONY_IND>
+		<FQS_FELONY_ID>0</FQS_FELONY_ID>
+		<FQS_FELONY_DETAILS />
+		<FQS_912_IND>N</FQS_912_IND>
+		<FQS_912_NAME1_ID>0</FQS_912_NAME1_ID>
+		<FQS_912_DTLS />
+		<FQS_DEBAR_IND>N</FQS_DEBAR_IND>
+		<FQS_DEBAR_DESC />
+		<FQS_CITIZEN_IND />
+		<FQS_CITIZEN_DTLS />
+		<FQS_DISCUSS_MIT_IND>false</FQS_DISCUSS_MIT_IND>
+		<FQS_LR_IND />
+		<FQS_LR_NAME />
+		<FQS_LR_COMPANY />
+		<FQS_LR_PHONE />
+		<MailingAddress>
+			<MAR_ADDR_TYPE />
+			<MAR_ADDR_OTHER_DESC />
+			<MAR_ADDRESS1 />
+			<MAR_ADDRESS2 />
+			<MAR_CITY />
+			<MAR_STATE_CD />
+			<MAR_ZIP />
+			<MAR_COUNTY />
+		</MailingAddress>
+		<FQS_LR_FEE />
+		<FQS_LR_DISCUSS>false</FQS_LR_DISCUSS>
+		<FQS_EMP_IND>N</FQS_EMP_IND>
+		<FQS_EMP_NAME1_ID>0</FQS_EMP_NAME1_ID>
+		<FQS_AGREE_IND>false</FQS_AGREE_IND>
+		<FQS_FINALCOMMENTS />
+	</Final_Questions>
+	<RegUser>
+		<USR_USER_ID>22000</USR_USER_ID>
+		<USR_USER_NAME>bloesgen2</USR_USER_NAME>
+		<USR_FIRST_NAME>Brian</USR_FIRST_NAME>
+		<USR_LAST_NAME>Loesgen</USR_LAST_NAME>
+		<USR_MIDDLE_NAME />
+		<USR_SUFFIX />
+		<USR_SSN>435980424</USR_SSN>
+		<USR_ADDRESS1>1703 Brimley St</USR_ADDRESS1>
+		<USR_ADDRESS2 />
+		<USR_CITY>Herndon</USR_CITY>
+		<USR_STATE_CD>VA</USR_STATE_CD>
+		<USR_ZIP>20170</USR_ZIP>
+		<USR_COUNTY />
+		<USR_PRIM_PHONE>7608153477</USR_PRIM_PHONE>
+		<USR_ALT_PHONE />
+		<USR_EMAIL>brianloesgen@phidiax.com</USR_EMAIL>
+	</RegUser>
+</Application>

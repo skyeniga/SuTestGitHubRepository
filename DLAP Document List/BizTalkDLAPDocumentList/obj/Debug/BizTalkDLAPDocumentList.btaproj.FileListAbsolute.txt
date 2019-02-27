@@ -1,0 +1,34 @@
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Binding.xml
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\BizTalkServerInventory.json
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\BizTalkDLAPDocumentList.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\BizTalkDLAPDocumentList.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\obj\Debug\BizTalkDLAPDocumentList.btaprojResolveAssemblyReference.cache
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\obj\Debug\BizTalkDLAPDocumentList.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\obj\Debug\BizTalkDLAPDocumentList.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListLogic.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListLogic.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Binding.xml
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\BizTalkServerInventory.json
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\BizTalkDLAPDocumentList.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\BizTalkDLAPDocumentList.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\bin\Debug\DLAPDocumentListSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\obj\Debug\BizTalkDLAPDocumentList.btaprojResolveAssemblyReference.cache
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\obj\Debug\BizTalkDLAPDocumentList.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\BizTalkDLAPDocumentList\obj\Debug\BizTalkDLAPDocumentList.pdb

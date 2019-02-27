@@ -1,0 +1,50 @@
+{
+  "SchemaVersion": "1.0.0.0",
+  "ApplicationVersion": "1.0.0.0",
+  "BizTalkAssemblies": [
+    {
+      "Name": "DLAPApplicationImportDefinition",
+      "Path": "bin\\DLAPApplicationImportDefinition.dll"
+    },
+    {
+      "Name": "DLAPApplicationImportRecordTypeValues",
+      "Path": "bin\\DLAPApplicationImportRecordTypeValues.dll"
+    },
+    {
+      "Name": "DLAPApplicationImportOracleDefinition",
+      "Path": "bin\\DLAPApplicationImportOracleDefinition.dll"
+    },
+    {
+      "Name": "DLAPApplicationImportSalesforceDefinition",
+      "Path": "bin\\DLAPApplicationImportSalesforceDefinition.dll"
+    },
+    {
+      "Name": "DLAPApplicationImportDocumentCoordinatorLogic",
+      "Path": "bin\\DLAPApplicationImportDocumentCoordinatorLogic.dll"
+    },
+    {
+      "Name": "DLAPApplicationImportLogic",
+      "Path": "bin\\DLAPApplicationImportLogic.dll"
+    }
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "Binding",
+      "Path": "bindings\\Binding.xml"
+    }
+  ],
+  "Assemblies": [],
+  "PreProcessingScripts": [],
+  "PostProcessingScripts": [],
+  "Files": [],
+  "Tokens": [],
+  "DeploymentSequence": [
+    "DLAPApplicationImportDefinition",
+    "DLAPApplicationImportRecordTypeValues",
+    "DLAPApplicationImportOracleDefinition",
+    "DLAPApplicationImportSalesforceDefinition",
+    "DLAPApplicationImportDocumentCoordinatorLogic",
+    "DLAPApplicationImportLogic",
+    "Binding"
+  ]
+}

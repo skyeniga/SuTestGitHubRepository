@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2b836297-1b87-4d1f-b1b3-0351a1b40f36" activeEnvironment="Default" name="DocumentRetrieval" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="4beb560e-b422-4f68-97d3-a06246c13f4e" wsaVersion="200508" name="WSHttpBinding_ITwoWayAsync" type="wsdl" bindingName="{http://SBA.gov/DLAPDocumentRetrieval/}WSHttpBinding_ITwoWayAsync" soapVersion="1_2" anonymous="optional" definition="https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc?wsdl"><con:part><con:url>https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="BizTalkServiceInstance" targetNamespace="http://SBA.gov/DLAPDocumentRetrieval/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://SBA.gov/DLAPDocumentRetrieval/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:documentation>
+    <CreationInfo Created="2018-03-21 10:21:23Z"/>
+  </wsdl:documentation>
+  <wsp:Policy wsu:Id="WSHttpBinding_ITwoWayAsync_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <http:BasicAuthentication xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http"/>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing/>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://SBA.gov/DLAPDocumentRetrieval/Imports">
+      <xsd:import schemaLocation="https://odabiztstws05.sba.gov:443/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc?xsd=xsd2" namespace="http://SBA.gov/DLAPDocumentRetrieval/RetrievalRequest"/>
+      <xsd:import schemaLocation="https://odabiztstws05.sba.gov:443/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc?xsd=xsd3" namespace="http://SBA.gov/DLAPDocumentRetrieval/RetrievalResponse"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DocumentRetrieval_Retrieval_InputMessage">
+    <wsdl:part name="part" element="q1:RetrievalRequest" xmlns:q1="http://SBA.gov/DLAPDocumentRetrieval/RetrievalRequest"/>
+  </wsdl:message>
+  <wsdl:message name="DocumentRetrieval_Retrieval_OutputMessage">
+    <wsdl:part name="part" element="q2:RetrievalResponse" xmlns:q2="http://SBA.gov/DLAPDocumentRetrieval/RetrievalResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="DocumentRetrieval">
+    <wsdl:documentation/>
+    <wsdl:operation name="Retrieval">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:DocumentRetrieval_Retrieval_InputMessage"/>
+      <wsdl:output message="tns:DocumentRetrieval_Retrieval_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ITwoWayAsync" type="tns:DocumentRetrieval">
+    <wsp:PolicyReference URI="#WSHttpBinding_ITwoWayAsync_policy"/>
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Retrieval">
+      <wsdl:documentation/>
+      <soap12:operation soapAction="Retrieval" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal" encodingStyle="http://www.w3.org/2003/05/soap-encoding"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" encodingStyle="http://www.w3.org/2003/05/soap-encoding"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BizTalkServiceInstance">
+    <wsdl:port name="WSHttpBinding_ITwoWayAsync" binding="tns:WSHttpBinding_ITwoWayAsync">
+      <soap12:address location="https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc"/>
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>https://odabiztstws05.sba.gov:443/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema targetNamespace="http://SBA.gov/DLAPDocumentRetrieval/RetrievalRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="http://SBA.gov/DLAPDocumentRetrieval/RetrievalRequest">
+  <xs:element name="RetrievalRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ApplicationNumber" type="xs:string"/>
+        <xs:element name="UserID" type="xs:string"/>
+        <xs:element name="ActionID" type="xs:string"/>
+        <xs:element name="SDCID" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://odabiztstws05.sba.gov:443/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema targetNamespace="http://SBA.gov/DLAPDocumentRetrieval/RetrievalResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="http://SBA.gov/DLAPDocumentRetrieval/RetrievalResponse">
+  <xs:element name="RetrievalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Document_content" type="xs:base64Binary"/>
+        <xs:element name="Doc_content_type" type="xs:string"/>
+        <xs:element name="Doc_retrieve_status" type="xs:string"/>
+        <xs:element name="Doc_retrieve_status_details" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc</con:endpoint></con:endpoints><con:operation id="b3e76fb4-f6ea-446f-b657-ee8a21359e0d" isOneWay="false" action="Retrieval" name="Retrieval" bindingOperationName="Retrieval" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="15f84681-b977-40c8-958f-d0d0d46bfd53" name="Request 1" useWsAddressing="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentRetrieval/DocumentRetrieval.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ret="http://SBA.gov/DLAPDocumentRetrieval/RetrievalRequest">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ret:RetrievalRequest>\r
+         <ApplicationNumber/>\r
+         <UserID/>\r
+         <ActionID/>\r
+         <SDCID>068r0111110DfD0AAK</SDCID>\r
+      </ret:RetrievalRequest>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:username>DLAP</con:username><con:password>Basic2017</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="TRUE" version="200508" action="http://SBA.gov/DLAPDocumentRetrieval/DocumentRetrieval/RetrievalRequest" addDefaultTo="true"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

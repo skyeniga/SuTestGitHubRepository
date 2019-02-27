@@ -1,0 +1,4 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\ETRAN Obligation\ETRAN Obligation Definition Salesforce\bin\Debug\SBA.ETRANObligation.Definition.Salesforce.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\ETRAN Obligation\ETRAN Obligation Definition Salesforce\bin\Debug\SBA.ETRANObligation.Definition.Salesforce.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\ETRAN Obligation\ETRAN Obligation Definition Salesforce\obj\Debug\SBA.ETRANObligation.Definition.Salesforce.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\ETRAN Obligation\ETRAN Obligation Definition Salesforce\obj\Debug\SBA.ETRANObligation.Definition.Salesforce.pdb

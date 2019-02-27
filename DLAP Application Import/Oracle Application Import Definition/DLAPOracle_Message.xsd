@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/Message" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/Message" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:appinfo>
+      <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">Stream</fileNameHint>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:simpleType name="StreamBody">
+    <xs:restriction base="xs:base64Binary" />
+  </xs:simpleType>
+</xs:schema>

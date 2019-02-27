@@ -1,0 +1,62 @@
+
+/* ***************************************************************** */
+Application__c Query by @ApplicationNumber (from SF Notification): 
+SELECT Id, Name, Previous_SBA_Loans__c, Loan_Type__c FROM Application__c WHERE Name=@ApplicationNumber
+
+/* ***************************************************************** */
+Property__c Query by @ApplicationId (from Application__c Query): 
+SELECT Id, Property_Address__c, City__c, State__c, Zip_Code__c FROM Property__c WHERE Application__c=@ApplicationId AND Active__c=true
+
+
+/* ***************************************************************** */
+Applicant__c Query by @ApplicationId (from Application__c Query): 
+SELECT Id, Account__c, Contact__c, Name, Primary_Applicant__c, Tax_ID__c, Entity_Type__c, Ownership_Percent__c, Borrower_Guarantor__c FROM Applicant__c WHERE Application__c=@ApplicationId
+
+
+/* ***************************************************************** */
+Contact Query by @ApplicationId (from Application__c Query): 
+
+**** DISPLAY ****
+SELECT 	c.Id ContactId, apl.Id ApplicantId, 
+		c.Birthdate, c.FirstName, c.LastName, c.MiddleName, c.Suffix, c.Phone, c.MobilePhone, c.Work_Phone__c, 
+		c.MailingStreet, c.MailingCity, c.MailingState, c.MailingPostalCode
+FROM Contact c 
+INNER JOIN Applicant__c apl ON c.Id=apl.Contact__c 
+WHERE apl.Application__c=@ApplicationId
+
+**** FOR USE ****
+SELECT c.Id ContactId, apl.Id ApplicantId, c.Birthdate, c.FirstName, c.LastName, c.MiddleName, c.Suffix, c.Phone, c.MobilePhone, c.Work_Phone__c, c.MailingStreet, c.MailingCity, c.MailingState, c.MailingPostalCode FROM Contact c INNER JOIN Applicant__c apl ON c.Id=apl.Contact__c WHERE apl.Application__c=@ApplicationId
+
+
+
+/* ***************************************************************** */
+Account Query by @ApplicationId (from Application__c Query): 
+**** DISPLAY ****
+SELECT 	a.Id AccountId, c.Id ContactId, apl.Id ApplicantId, 
+		a.Business_Type__c, a.Trade_Name__c, a.Phone, 
+		a.ShippingStreet, a.ShippingCity, a.ShippingState, a.ShippingPostalCode
+FROM Account a 
+INNER JOIN Applicant__c apl ON a.Id=apl.Account__c 
+WHERE apl.Application__c=@ApplicationId
+	
+**** FOR USE ****
+SELECT a.Id AccountId, c.Id ContactId, apl.Id ApplicantId, a.Business_Type__c, a.Trade_Name__c, a.Phone, a.ShippingStreet, a.ShippingCity, a.ShippingState, a.ShippingPostalCode FROM Account a INNER JOIN Applicant__c apl ON a.Id=apl.Account__c WHERE apl.Application__c=@ApplicationId
+
+
+/* ***************************************************************** */
+Loan__c Query by @LoanId: 
+SELECT Id, Interest_Rate__c, Loan_Amount__c, Payment_Amount__c, Secure__c, Servicing_Office__c, Total_Term__c, Disaster_Declaration__c FROM Loan__c WHERE Id=@LoanId
+
+/* ***************************************************************** */
+Disaster__c Query by DisasterId (from Loan__c Query):
+SELECT Id, Disaster_Type__c, Physical_Number__c FROM Disaster__c WHERE Id=@DisasterId
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,362 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="bbcbebda-889c-43dd-8d4b-e041fb1ae986" LowerBound="1.1" HigherBound="84.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="DLAPDocument" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="07b579c5-839a-4e4d-a217-7913da78764d" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestEventPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="36a52f52-fb4b-4e31-a633-efdd4af743a9" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="425e8e1f-f6d6-4ae9-9ee4-9e16e783be00" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.33">
+                    <om:Property Name="Ref" Value="DLAPDocument.RestEventRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="d5e4a510-d20b-4445-a7b8-b6dab9dd707d" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.35" HigherBound="16.56">
+                    <om:Property Name="Ref" Value="DLAPDocument.RestEventResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="ef8a0adb-5611-46ed-b4e2-b0d6fdede31d" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestEventRequestType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="043cbdb6-b282-4738-81d9-208829dc2e67" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="DLAPDocumentRetrievalSalesforceDefinition.Rest.RestEvent.SaveRequest" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="73fe28fb-8f44-4787-a6e3-d0761df92d6e" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestEventResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="eb73e6ae-3df9-4856-9b63-37e17334d5f3" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="DLAPDocumentRetrievalSalesforceDefinition.Rest.RestEvent.results" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="337f13cb-d5ce-4a15-be06-bbf4dd36692c" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="83.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RetrievalEventRequest" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="8fdeac09-2c4f-4ce7-8adb-ac78e1512acd" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TempXml" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a95680b5-d687-4fa0-9f64-730e1fe273ca" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GUID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="034db045-a866-4f9c-b63e-9dfcdd93bd71" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestEventMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4cb16eb8-b513-4ffb-863a-7e9fd6b86d9f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestEventSFID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="655bc5ef-bb88-414d-82b9-8a08a169cfba" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Exception" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestEventException" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="6e7fe960-d5a3-4467-b7ea-c1cd8a4a3046" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="DLAPDocument.RestEventRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestEventRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="ea9f32f2-a444-40e6-a63a-fdc3f7748aec" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="DLAPDocument.RestEventResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestEventResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="2ee6dff8-07f1-4535-87b4-ca35f04552ce" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="VariableDeclaration" OID="a676f29c-3ad3-441a-9f17-93e93bcf3594" ParentLink="ServiceBody_Declaration" LowerBound="31.15" HigherBound="31.50">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Application_Number__c" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="2cc70f21-fb1e-44c1-aa0a-270226a1cb6b" ParentLink="ServiceBody_Declaration" LowerBound="31.52" HigherBound="31.79">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="SObject_ID__c" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="abf6e77a-f970-4150-8b96-a18764dee685" ParentLink="ServiceBody_Declaration" LowerBound="31.81" HigherBound="31.109">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Log_Message__c" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="9c3da375-0e18-4100-93a5-95e54e96444f" ParentLink="ServiceBody_Declaration" LowerBound="31.111" HigherBound="31.140">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="SObject_Name__c" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="5ea50e81-ba95-40b0-b919-e29bb55068a1" ParentLink="ServiceBody_Declaration" LowerBound="31.142" HigherBound="31.164">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Stage__c" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="6037bce8-4a3d-4cbd-981d-a85a9a4bd78c" ParentLink="ServiceBody_Declaration" LowerBound="31.166" HigherBound="31.189">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Status__c" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="180e5926-6764-420e-bc34-850c915c92de" ParentLink="ServiceBody_Declaration" LowerBound="31.191" HigherBound="31.227">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Auto_Decline_Reason__c" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="8f5afe28-20b3-40a6-be0e-e3c5f9e35113" ParentLink="ServiceBody_Declaration" LowerBound="31.229" HigherBound="31.264">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.Guid" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="OrchestrationInstanceId" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="f84d8b89-0605-4efc-a0fa-b6bca8404099" ParentLink="ServiceBody_Statement" LowerBound="38.1" HigherBound="65.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct Rest Event Request Msg" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="7c03b257-1f9d-4a02-b591-aea5f1667fe7" ParentLink="ComplexStatement_Statement" LowerBound="41.1" HigherBound="64.1">
+                        <om:Property Name="Expression" Value="TempXml = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;Status__c = System.Security.SecurityElement.Escape(Status__c); &#xD;&#xA;&#xD;&#xA;Stage__c = System.Security.SecurityElement.Escape(Stage__c);&#xD;&#xA; &#xD;&#xA;Application_Number__c = System.Security.SecurityElement.Escape(Application_Number__c); &#xD;&#xA;&#xD;&#xA;SObject_Name__c = System.Security.SecurityElement.Escape(SObject_Name__c); &#xD;&#xA;&#xD;&#xA;SObject_ID__c= System.Security.SecurityElement.Escape(SObject_ID__c); &#xD;&#xA;&#xD;&#xA;Log_Message__c = System.Security.SecurityElement.Escape(Log_Message__c); &#xD;&#xA;&#xD;&#xA;GUID = System.DateTime.Now.ToString(&quot;yyyyMMddHHmmssfffffff&quot;)+&quot;--&quot;+System.Convert.ToString(OrchestrationInstanceId);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;TempXml.LoadXml(System.String.Format(&quot;&lt;ns0:SaveRequest xmlns:ns0='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest'&gt;&lt;ns0:allOrNone&gt;true&lt;/ns0:allOrNone&gt;&lt;ns0:records type='Event_Request__c'&gt;&lt;ns0:Application_Number__c&gt;{0}&lt;/ns0:Application_Number__c&gt;&lt;ns0:SObject_ID__c&gt;{1}&lt;/ns0:SObject_ID__c&gt;&lt;ns0:Log_Message__c&gt;{2}&lt;/ns0:Log_Message__c&gt;&lt;ns0:SObject_Name__c&gt;{3}&lt;/ns0:SObject_Name__c&gt;&lt;ns0:Stage__c&gt;{4}&lt;/ns0:Stage__c&gt;&lt;ns0:Status__c&gt;{5}&lt;/ns0:Status__c&gt;&lt;ns0:Auto_Decline_Reason__c&gt;{6}&lt;/ns0:Auto_Decline_Reason__c&gt;&lt;ns0:GUID__c&gt;{7}&lt;/ns0:GUID__c&gt;&lt;/ns0:records&gt;&lt;/ns0:SaveRequest&gt;&quot;,Application_Number__c,SObject_ID__c,Log_Message__c,SObject_Name__c,Stage__c,Status__c,Auto_Decline_Reason__c,GUID));&#xD;&#xA;&#xD;&#xA;RestEventRequestMsg.MessagePart = TempXml;&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="Make Request Msg" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="e7aaa676-ad3b-4b9b-a092-1ae10c02d9bb" ParentLink="Construct_MessageRef" LowerBound="39.23" HigherBound="39.42">
+                        <om:Property Name="Ref" Value="RestEventRequestMsg" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="6d47e91d-bd62-40ed-9a49-af24cec37cc9" ParentLink="ServiceBody_Statement" LowerBound="65.1" HigherBound="67.1">
+                    <om:Property Name="PortName" Value="RestEventPort" />
+                    <om:Property Name="MessageName" Value="RestEventRequestMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send Rest Event Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Receive" OID="6e81659d-4305-431e-a67a-e169f0f4aabe" ParentLink="ServiceBody_Statement" LowerBound="67.1" HigherBound="69.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="PortName" Value="RestEventPort" />
+                    <om:Property Name="MessageName" Value="RestEventResponseMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Rest Event Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="9158f587-ec12-486b-bd82-6c1bcab8b47e" ParentLink="ServiceBody_Statement" LowerBound="69.1" HigherBound="73.1">
+                    <om:Property Name="Expression" Value="RestEventMessage =  xpath(RestEventResponseMsg.MessagePart,&quot;string(/*[local-name()='results' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='result' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='errors' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='message' and namespace-uri()='http://SBA.gov/DLAPDocumentUpload/REST/INSERT/EventResponse'])&quot;);&#xD;&#xA;&#xD;&#xA;RestEventSFID = xpath(RestEventResponseMsg.MessagePart,&quot;string(/*[local-name()='results' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='result' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='id' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest'])&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Extract Values" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="6b1d035d-d610-4c90-af71-267a9a0a5129" ParentLink="ServiceBody_Statement" LowerBound="73.1" HigherBound="81.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Valid Response" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="7d48d2d0-06a2-4413-a260-052a231c2896" ParentLink="ReallyComplexStatement_Branch" LowerBound="74.13" HigherBound="81.1">
+                        <om:Property Name="Expression" Value="!System.String.IsNullOrWhiteSpace(RestEventMessage) &amp;&amp; (RestEventSFID.Length == 0)" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Error" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="39f3c870-1aa8-4c00-950b-0e1611a58029" ParentLink="ComplexStatement_Statement" LowerBound="76.1" HigherBound="78.1">
+                            <om:Property Name="Expression" Value="RestEventException = new System.Exception(&quot;DLAP Document Retrieval Event Request Rest Exception  -  &quot; + RestEventMessage);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rest Exception" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Throw" OID="62204449-a1eb-4fc8-b1bf-0121af48e99d" ParentLink="ComplexStatement_Statement" LowerBound="78.1" HigherBound="80.1">
+                            <om:Property Name="ThrownReference" Value="RestEventException" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Rest Error " />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="103f3149-950d-40b4-aad1-5c4f7df5fc69" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="e730237c-d203-49ea-aabb-c5922f587297" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DLAPDocument.RestEventPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestEventPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="cb8f9576-30e9-40b2-8d5e-878631c8bbfd" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module DLAPDocument
+{
+    internal messagetype RestEventRequestType
+    {
+        body DLAPDocumentRetrievalSalesforceDefinition.Rest.RestEvent.SaveRequest MessagePart;
+    };
+    internal messagetype RestEventResponseType
+    {
+        body DLAPDocumentRetrievalSalesforceDefinition.Rest.RestEvent.results MessagePart;
+    };
+    internal porttype RestEventPortType
+    {
+        requestresponse Operation
+        {
+            RestEventRequestType, RestEventResponseType
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service RetrievalEventRequest
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses RestEventPortType RestEventPort;
+        message RestEventRequestType RestEventRequestMsg;
+        message RestEventResponseType RestEventResponseMsg;
+        System.Xml.XmlDocument TempXml;
+        System.String GUID;
+        System.String RestEventMessage;
+        System.String RestEventSFID;
+        System.Exception RestEventException;
+        body (System.String Application_Number__c, System.String SObject_ID__c, System.String Log_Message__c, System.String SObject_Name__c, System.String Stage__c, System.String Status__c, System.String Auto_Decline_Reason__c, System.Guid OrchestrationInstanceId)
+        {
+            TempXml = new System.Xml.XmlDocument();
+            GUID = "";
+            RestEventMessage = "";
+            RestEventSFID = "";
+            RestEventException = new System.Exception();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f84d8b89-0605-4efc-a0fa-b6bca8404099")]
+            construct RestEventRequestMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("7c03b257-1f9d-4a02-b591-aea5f1667fe7")]
+                TempXml = new System.Xml.XmlDocument();
+                
+                Status__c = System.Security.SecurityElement.Escape(Status__c); 
+                
+                Stage__c = System.Security.SecurityElement.Escape(Stage__c);
+                 
+                Application_Number__c = System.Security.SecurityElement.Escape(Application_Number__c); 
+                
+                SObject_Name__c = System.Security.SecurityElement.Escape(SObject_Name__c); 
+                
+                SObject_ID__c= System.Security.SecurityElement.Escape(SObject_ID__c); 
+                
+                Log_Message__c = System.Security.SecurityElement.Escape(Log_Message__c); 
+                
+                GUID = System.DateTime.Now.ToString("yyyyMMddHHmmssfffffff")+"--"+System.Convert.ToString(OrchestrationInstanceId);
+                
+                
+                
+                TempXml.LoadXml(System.String.Format("<ns0:SaveRequest xmlns:ns0='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest'><ns0:allOrNone>true</ns0:allOrNone><ns0:records type='Event_Request__c'><ns0:Application_Number__c>{0}</ns0:Application_Number__c><ns0:SObject_ID__c>{1}</ns0:SObject_ID__c><ns0:Log_Message__c>{2}</ns0:Log_Message__c><ns0:SObject_Name__c>{3}</ns0:SObject_Name__c><ns0:Stage__c>{4}</ns0:Stage__c><ns0:Status__c>{5}</ns0:Status__c><ns0:Auto_Decline_Reason__c>{6}</ns0:Auto_Decline_Reason__c><ns0:GUID__c>{7}</ns0:GUID__c></ns0:records></ns0:SaveRequest>",Application_Number__c,SObject_ID__c,Log_Message__c,SObject_Name__c,Stage__c,Status__c,Auto_Decline_Reason__c,GUID));
+                
+                RestEventRequestMsg.MessagePart = TempXml;
+                
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6d47e91d-bd62-40ed-9a49-af24cec37cc9")]
+            send (RestEventPort.Operation, RestEventRequestMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6e81659d-4305-431e-a67a-e169f0f4aabe")]
+            receive (RestEventPort.Operation, RestEventResponseMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9158f587-ec12-486b-bd82-6c1bcab8b47e")]
+            RestEventMessage =  xpath(RestEventResponseMsg.MessagePart,"string(/*[local-name()='results' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='result' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='errors' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='message' and namespace-uri()='http://SBA.gov/DLAPDocumentUpload/REST/INSERT/EventResponse'])");
+            
+            RestEventSFID = xpath(RestEventResponseMsg.MessagePart,"string(/*[local-name()='results' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='result' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest']/*[local-name()='id' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/REST/INSERT/EventRequest'])");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6b1d035d-d610-4c90-af71-267a9a0a5129")]
+            if (!System.String.IsNullOrWhiteSpace(RestEventMessage) && (RestEventSFID.Length == 0))
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("39f3c870-1aa8-4c00-950b-0e1611a58029")]
+                RestEventException = new System.Exception("DLAP Document Retrieval Event Request Rest Exception  -  " + RestEventMessage);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("62204449-a1eb-4fc8-b1bf-0121af48e99d")]
+                throw RestEventException;
+            }
+        }
+    }
+}
+

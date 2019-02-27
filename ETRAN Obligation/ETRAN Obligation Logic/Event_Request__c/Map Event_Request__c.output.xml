@@ -1,0 +1,183 @@
+﻿<ns0:Canonical xmlns:multi="http://SBA.gov/ETRANObligation/Definition/Salesforce/Multi/Query/" xmlns:bbt="http://SBA.gov/ETRANObligation/Definition/Borrower/BorrowerBusinessTypes/" xmlns:orgtype="http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/" xmlns:def="http://SBA.gov/ETRANObligation/ETRANOriginate/ETRANOriginateAppDefaults/" xmlns:event="http://SBA.gov/ETRANObligation/Salesforce/Insert/Event_Request__c/" xmlns:ns1="urn:enterprise.soap.sforce.com" xmlns:ns3="http://soap.sforce.com/2005/09/outbound" xmlns:ns0="http://SBA.gov/ETRANObligation/Canonical/" xmlns:notify1="http://SBA.gov/ETRANObligation/Salesforce/NotificationSingle/" xmlns:etran="http://ws.elend" xmlns:ns4="urn:sobject.enterprise.soap.sforce.com">
+  <notify1:Notification>
+    <ns1:Id xmlns:ns1="http://soap.sforce.com/2005/09/outbound">04l35000000QNCMAA4</ns1:Id>
+    <ns1:sObject xmlns:ns1="http://soap.sforce.com/2005/09/outbound">
+      <ns2:Id xmlns:ns2="urn:sobject.enterprise.soap.sforce.com">a0h35000000SJMtAAO</ns2:Id>
+      <ns2:Application_Number__c xmlns:ns2="urn:sobject.enterprise.soap.sforce.com">2000001418</ns2:Application_Number__c>
+      <ns2:SObject_ID__c xmlns:ns2="urn:sobject.enterprise.soap.sforce.com">a0t35000000AC7SAAW</ns2:SObject_ID__c>
+    </ns1:sObject>
+  </notify1:Notification>
+  <ns0:Multi>
+    <ns0:Request>
+      <multi:q>SELECT Id, RecordType.Name, Name, Previous_SBA_Loans__c, Loan_Type__c, Org_Type__c, Application_Type__c, Loan_Type2__c, Loss_Type__c, FEMA_Registration_Number__c, (SELECT Id, Interest_Rate__c, Loan_Amount__c, Payment_Amount__c, Secure__c, Servicing_Office__c, Total_Term__c, Disaster_Declaration__c, Disaster_Declaration__r.Name, Disaster_Declaration__r.Disaster_Damaged_Type__c, Disaster_Declaration__r.Physical_Number__c FROM Loans__r WHERE Id=@LoanId), (SELECT Credit_Elsewhere_Test__c, Physical_Allocated_Amount__c, EIDL_Allocated_Amount__c FROM Processing_Application_Review__r), (SELECT Id, Property_Address__c, City__c, State__c, Zip_Code__c FROM Property__r WHERE Active__c=true), (SELECT Id, RecordType.Name, Name, Primary_Applicant__c, Tax_ID__c, Related_Parent__r.Tax_ID__c, Entity_Type__c, Applicant_Relation_Type__c, Ownership_Percent__c, Borrower_Guarantor__c, Account__r.Id, Account__r.Name, Account__r.Business_Type__c, Account__r.Trade_Name__c, Account__r.Phone, Account__r.ShippingStreet, Account__r.ShippingCity, Account__r.ShippingState, Account__r.ShippingPostalCode, Contact__r.Id, Contact__r.Birthdate, Contact__r.Title, Contact__r.FirstName, Contact__r.LastName, Contact__r.MiddleName, Contact__r.Suffix, Contact__r.Phone, Contact__r.MobilePhone, Contact__r.Work_Phone__c, Contact__r.MailingStreet, Contact__r.MailingCity, Contact__r.MailingState, Contact__r.MailingPostalCode FROM Applicants__r WHERE Active__c=true) FROM Application__c WHERE Name=@ApplicationNumber</multi:q>
+      <multi:ApplicationNumber>2000001418</multi:ApplicationNumber>
+      <multi:LoanId>a0t35000000AC7SAAW</multi:LoanId>
+    </ns0:Request>
+    <ns0:QueryResult>
+      <multi:done>true</multi:done>
+      <multi:records type="Application__c" url="/services/data/v42.0/sobjects/Application__c/a0N35000000iE2REAU">
+        <multi:Id>a0N35000000iE2REAU</multi:Id>
+        <multi:RecordType type="RecordType" url="/services/data/v42.0/sobjects/RecordType/012350000000Om6AAE">
+          <multi:Name>Business Loan Application</multi:Name>
+        </multi:RecordType>
+        <multi:Name>2000003811</multi:Name>
+        <multi:Loan_Type__c>Business</multi:Loan_Type__c>
+        <multi:Org_Type__c>Individual - Sole Prop</multi:Org_Type__c>
+        <multi:Loan_Type2__c>BUSINESS EIDL</multi:Loan_Type2__c>
+        <multi:Loss_Type__c>Business Contents;Real Property</multi:Loss_Type__c>
+        <multi:Loans__r>
+          <multi:done>true</multi:done>
+          <multi:records type="Loan__c" url="/services/data/v42.0/sobjects/Loan__c/a0t35000000ATBLAA4">
+            <multi:Id>a0t35000000ATBLAA4</multi:Id>
+            <multi:Interest_Rate__c>7.16</multi:Interest_Rate__c>
+            <multi:Loan_Amount__c>55000.0</multi:Loan_Amount__c>
+            <multi:Payment_Amount__c>888.0</multi:Payment_Amount__c>
+            <multi:Secure__c>false</multi:Secure__c>
+            <multi:Servicing_Office__c>9030</multi:Servicing_Office__c>
+            <multi:Total_Term__c>84.0</multi:Total_Term__c>
+            <multi:Disaster_Declaration__c>a0a35000000QKRCAA4</multi:Disaster_Declaration__c>
+            <multi:Disaster_Declaration__r type="Disaster__c" url="/services/data/v42.0/sobjects/Disaster__c/a0a35000000QKRCAA4">
+              <multi:Name>VA-00465</multi:Name>
+              <multi:Disaster_Damaged_Type__c>8 - HURRICANES</multi:Disaster_Damaged_Type__c>
+              <multi:Physical_Number__c>12572</multi:Physical_Number__c>
+            </multi:Disaster_Declaration__r>
+          </multi:records>
+          <multi:totalSize>1</multi:totalSize>
+        </multi:Loans__r>
+        <multi:Processing_Application_Review__r>
+          <multi:done>true</multi:done>
+          <multi:records type="Processing_Application_Review__c" url="/services/data/v42.0/sobjects/Processing_Application_Review__c/a1235000000MzPuAAK">
+            <multi:Credit_Elsewhere_Test__c>Market Rate</multi:Credit_Elsewhere_Test__c>
+            <multi:Physical_Allocated_Amount__c>55000.0</multi:Physical_Allocated_Amount__c>
+          </multi:records>
+          <multi:totalSize>1</multi:totalSize>
+        </multi:Processing_Application_Review__r>
+        <multi:Property__r>
+          <multi:done>true</multi:done>
+          <multi:records type="Property__c" url="/services/data/v42.0/sobjects/Property__c/a1335000000CNadAAG">
+            <multi:Id>a1335000000CNadAAG</multi:Id>
+            <multi:Property_Address__c>2 HARPER DR</multi:Property_Address__c>
+            <multi:City__c>ALLEN</multi:City__c>
+            <multi:State__c>TX</multi:State__c>
+            <multi:Zip_Code__c>75002</multi:Zip_Code__c>
+          </multi:records>
+          <multi:totalSize>1</multi:totalSize>
+        </multi:Property__r>
+        <multi:Applicants__r>
+          <multi:done>true</multi:done>
+          <multi:records type="Applicant__c" url="/services/data/v42.0/sobjects/Applicant__c/a0L35000000dailEAA">
+            <multi:Id>a0L35000000dailEAA</multi:Id>
+            <multi:RecordType type="RecordType" url="/services/data/v42.0/sobjects/RecordType/012350000000Om1AAE">
+              <multi:Name>Individual or Sole Proprietor</multi:Name>
+            </multi:RecordType>
+            <multi:Name>HAROLD MCMILLAN</multi:Name>
+            <multi:Primary_Applicant__c>true</multi:Primary_Applicant__c>
+            <multi:Tax_ID__c>1626730995</multi:Tax_ID__c>
+            <multi:Entity_Type__c>Individual - Sole Prop</multi:Entity_Type__c>
+            <multi:Applicant_Relation_Type__c>Applicant</multi:Applicant_Relation_Type__c>
+            <multi:Ownership_Percent__c>100.0</multi:Ownership_Percent__c>
+            <multi:Borrower_Guarantor__c>Borrower</multi:Borrower_Guarantor__c>
+            <multi:Contact__r type="Contact" url="/services/data/v42.0/sobjects/Contact/00335000004c2iEAAQ">
+              <multi:Id>00335000004c2iEAAQ</multi:Id>
+              <multi:Birthdate>1975-06-10</multi:Birthdate>
+              <multi:FirstName>HAROLD</multi:FirstName>
+              <multi:LastName>MCMILLAN</multi:LastName>
+              <multi:Phone>2542359575</multi:Phone>
+              <multi:MobilePhone>6454658789</multi:MobilePhone>
+              <multi:MailingStreet>2 HARPER DR</multi:MailingStreet>
+              <multi:MailingCity>ALLEN</multi:MailingCity>
+              <multi:MailingState>TX</multi:MailingState>
+              <multi:MailingPostalCode>75002</multi:MailingPostalCode>
+            </multi:Contact__r>
+          </multi:records>
+          <multi:totalSize>1</multi:totalSize>
+        </multi:Applicants__r>
+      </multi:records>
+      <multi:totalSize>1</multi:totalSize>
+    </ns0:QueryResult>
+  </ns0:Multi>
+  <ns0:BorrowerBusinessTypes>
+    <bbt:BorrowerBusinessType>
+      <bbt:ApplicantId>a0L35000000dailEAA</bbt:ApplicantId>
+      <orgtype:LegalOrgTypeMapping>
+        <orgtype:SalesforceBusinessType>Individual - Sole Prop</orgtype:SalesforceBusinessType>
+        <orgtype:ETranLegalOrgTypeCode>1</orgtype:ETranLegalOrgTypeCode>
+      </orgtype:LegalOrgTypeMapping>
+    </bbt:BorrowerBusinessType>
+  </ns0:BorrowerBusinessTypes>
+  <ns0:ETRAN_Originate_App_Defaults>
+    <def:LoanApplication def:action="insert">
+      <def:InterestStructureCd>F</def:InterestStructureCd>
+      <def:NetEarningsClause>N</def:NetEarningsClause>
+      <def:RevolvingInd>N</def:RevolvingInd>
+    </def:LoanApplication>
+    <def:Interest def:action="insert">
+      <def:BaseRateSourcTypCd>DSR</def:BaseRateSourcTypCd>
+      <def:IntrstTypInd>F</def:IntrstTypInd>
+      <def:Phase>1</def:Phase>
+    </def:Interest>
+    <def:Borrower def:action="insert">
+      <def:CreditScorSourcCd>13</def:CreditScorSourcCd>
+      <def:PhysCountryCd>US</def:PhysCountryCd>
+    </def:Borrower>
+    <def:BorrowerRace def:action="insert">
+      <def:RaceCd>6</def:RaceCd>
+    </def:BorrowerRace>
+    <def:Principal def:action="insert">
+      <def:EthnicCd>UN</def:EthnicCd>
+      <def:ExtrnlCreditScorInd>N</def:ExtrnlCreditScorInd>
+      <def:GndrCd>U</def:GndrCd>
+      <def:GntyInd>N</def:GntyInd>
+      <def:VetCd>5</def:VetCd>
+    </def:Principal>
+    <def:PrincipalRace def:action="insert">
+      <def:RaceCd>6</def:RaceCd>
+    </def:PrincipalRace>
+    <def:SpecialPurpose def:action="insert"></def:SpecialPurpose>
+    <def:UseOfProceeds_Physical def:action="insert">
+      <def:LoanProceedTypCd>05</def:LoanProceedTypCd>
+      <def:ProceedTypCd>D</def:ProceedTypCd>
+    </def:UseOfProceeds_Physical>
+    <def:UseOfProceeds_EIDL def:action="insert">
+      <def:LoanProceedTypCd>04</def:LoanProceedTypCd>
+      <def:ProceedTypCd>D</def:ProceedTypCd>
+    </def:UseOfProceeds_EIDL>
+  </ns0:ETRAN_Originate_App_Defaults>
+  <ns0:SBA_ETran_Response>
+    <etran:AuthErrorNmb>0</etran:AuthErrorNmb>
+    <etran:AuthErrorText>Login Successful.</etran:AuthErrorText>
+    <etran:Synopsis>Synopsis of Web Service (XML) processing, SBA TEST DATABASE:</etran:Synopsis>
+    <etran:Synopsis>The file was of acceptable size and type, so it was accepted by the SBA's server.</etran:Synopsis>
+    <etran:Synopsis>LoanAppETranSeqNmb :2490. It was saved to the SBA's database as a transaction history.</etran:Synopsis>
+    <etran:Synopsis>It "deserialized" correctly, which allowed its 1 loan application(s) to be processed.</etran:Synopsis>
+    <etran:Synopsis>Processing application 1 of 1 in the file.</etran:Synopsis>
+    <etran:Synopsis>Passed "presave validation".</etran:Synopsis>
+    <etran:Synopsis>Saved to SBA test database as application number 1836.</etran:Synopsis>
+    <etran:Synopsis>Most recent credit score on file for this app, if any: ''. Primary Borrower Business DUNS number on file for this app, if any: '296004506'.</etran:Synopsis>
+    <etran:App LoanAppNmb="1836">
+      <etran:Results>
+        <etran:LoanAppNm>777111001 Business Apl</etran:LoanAppNm>
+        <etran:LoanAppRqstAmt>7650000</etran:LoanAppRqstAmt>
+        <etran:LoanAppPrtLoanNmb></etran:LoanAppPrtLoanNmb>
+        <etran:LoanAppPrtAppNmb></etran:LoanAppPrtAppNmb>
+        <etran:LoanAppRecvDt>06/13/2018 19:13:29</etran:LoanAppRecvDt>
+        <etran:LoanAppEtranEmailAdr>sri.golo@sba.gov</etran:LoanAppEtranEmailAdr>
+        <etran:LoanAppAppvDt>06/13/2018 19:13:29</etran:LoanAppAppvDt>
+        <etran:LoanAppSBAAppvAmt>7650000</etran:LoanAppSBAAppvAmt>
+        <etran:LoanNmb>7590495010</etran:LoanNmb>
+        <etran:LoanGntyFeeAmt>0</etran:LoanGntyFeeAmt>
+        <etran:LoanGntyFeeExplainTxt></etran:LoanGntyFeeExplainTxt>
+        <etran:LoanGntyPercent>100</etran:LoanGntyPercent>
+        <etran:LoanAppFundDt>2018-06-13 19:13:34.034</etran:LoanAppFundDt>
+        <etran:LoanAppStatCd>FD</etran:LoanAppStatCd>
+        <etran:BusDUNSNmb>296004506</etran:BusDUNSNmb>
+        <etran:LiquidCreditScore></etran:LiquidCreditScore>
+      </etran:Results>
+      <etran:Warnings>Warnings for application 1 of 1:</etran:Warnings>
+      <etran:Warnings>00001. For Project, the full 9 digit zip code is mandatory for Project Address. (Zip Code + 4) (4055)</etran:Warnings>
+      <etran:Warnings>00003. For Principal 1, Tax ID 1159664349, the full 9 digit zip code is mandatory for Physical Address. (Zip Code + 4) (4054)</etran:Warnings>
+      <etran:Warnings>00002. For Borrower 1, Tax ID 0059484337, the full 9 digit zip code is mandatory for Physical Address. (Zip Code + 4) (4054)</etran:Warnings>
+    </etran:App>
+  </ns0:SBA_ETran_Response>
+  <ns0:Event_Request__c GUID__c="" Application_Number__c="2000001418" Log_Message__c="ETran Response: &#xA;&#xD; &#xA;&#xD;AuthErrorNmb: 0 &#xA;&#xD;AuthErrorText: Login Successful. &#xA;&#xD;Synopsis[1]: Synopsis of Web Service (XML) processing, SBA TEST DATABASE: &#xA;&#xD;Synopsis[2]: The file was of acceptable size and type, so it was accepted by the SBA's server. &#xA;&#xD;Synopsis[3]: LoanAppETranSeqNmb :2490. It was saved to the SBA's database as a transaction history. &#xA;&#xD;Synopsis[4]: It &quot;deserialized&quot; correctly, which allowed its 1 loan application(s) to be processed. &#xA;&#xD;Synopsis[5]: Processing application 1 of 1 in the file. &#xA;&#xD;Synopsis[6]: Passed &quot;presave validation&quot;. &#xA;&#xD;Synopsis[7]: Saved to SBA test database as application number 1836. &#xA;&#xD;Synopsis[8]: Most recent credit score on file for this app, if any: ''. Primary Borrower Business DUNS number on file for this app, if any: '296004506'. &#xA;&#xD;Warnings[1]: Warnings for application 1 of 1: &#xA;&#xD;Warnings[2]: 00001. For Project, the full 9 digit zip code is mandatory for Project Address. (Zip Code + 4) (4055) &#xA;&#xD;Warnings[3]: 00003. For Principal 1, Tax ID 1159664349, the full 9 digit zip code is mandatory for Physical Address. (Zip Code + 4) (4054) &#xA;&#xD;Warnings[4]: 00002. For Borrower 1, Tax ID 0059484337, the full 9 digit zip code is mandatory for Physical Address. (Zip Code + 4) (4054)" SObject_ID__c="a0t35000000AC7SAAW" SObject_Name__c="Loan__c" Stage__c="Loan Obligated" Status__c="Success"></ns0:Event_Request__c>
+</ns0:Canonical>

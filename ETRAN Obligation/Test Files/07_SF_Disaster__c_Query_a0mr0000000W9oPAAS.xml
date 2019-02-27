@@ -1,0 +1,4 @@
+<ns0:Request xmlns:ns0="http://SBA.gov/Salesforce/Query/Test/">
+	<ns0:SQLCommand>SELECT Id, Disaster_Type__c, Physical_Number__c FROM Disaster__c WHERE Id=@DisasterId</ns0:SQLCommand>
+	<ns0:DisasterId>a0Yr0000000SUUlEAO</ns0:DisasterId>
+</ns0:Request>

@@ -1,0 +1,5 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\DLAP Application Import RecordType Values\bin\Debug\DLAPApplicationImportRecordTypeValues.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\DLAP Application Import RecordType Values\bin\Debug\DLAPApplicationImportRecordTypeValues.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\DLAP Application Import RecordType Values\obj\Debug\DLAP Application Import RecordType Values.csprojResolveAssemblyReference.cache
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\DLAP Application Import RecordType Values\obj\Debug\DLAPApplicationImportRecordTypeValues.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\DLAP Application Import RecordType Values\obj\Debug\DLAPApplicationImportRecordTypeValues.pdb

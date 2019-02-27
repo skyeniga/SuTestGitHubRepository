@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D9B3CDA-BBC2-487A-9DCD-AB0F77C76CAD}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>DLAPEventsLogic</RootNamespace>
+    <AssemblyName>DLAPEventsLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DLAP Events.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Versioning\AssemblyInfoShared.cs">
+      <Link>Properties\AssemblyInfoShared.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DLAP Events Definition\DLAP Events Definition.btproj">
+      <Project>{5758f675-1cec-44a7-af1d-80d5f487b3c9}</Project>
+      <Name>DLAP Events Definition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLAP Events Oracle Definition\DLAP Events Oracle Definition.btproj">
+      <Project>{7a5ccd93-1da7-4b50-b33e-e281b76da934}</Project>
+      <Name>DLAP Events Oracle Definition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLAP Events Salesforce Definition\DLAP Events Salesforce Definition.btproj">
+      <Project>{cf98d1bb-8161-4f55-8bf4-41943e73ff18}</Project>
+      <Name>DLAP Events Salesforce Definition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DLAP Events.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="DLAPEventLogic.odx">
+      <TypeName>DLAPEventLogic</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="DLAPEventStatusLogic.odx">
+      <TypeName>DLAPEventStatusLogic</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="DLAPEventDocumentLogic.odx">
+      <TypeName>DLAPEventDocumentListsLogic</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSalesforceQueryStatusApplicationInfoRequest.btm">
+      <TypeName>MakeSalesforceQueryStatusApplicationInfoRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSalesforceQueryStatusCheckListItemRequest.btm">
+      <TypeName>MakeSalesforceQueryStatusCheckListItemRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSalesforceQueryStatusLoanRequest.btm">
+      <TypeName>MakeSalesforceQueryStatusLoanRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeEventStatusResponse.btm">
+      <TypeName>MakeEventStatusResponse</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSFNotificationAckMsg.btm">
+      <TypeName>MakeSFNotificationAckMsg</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeOracleEventNotificationStatusRequest.btm">
+      <TypeName>MakeOracleEventNotificationStatusRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSalesforceEventRequest.btm">
+      <TypeName>MakeSalesforceEventRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSalesforceErrorEventRequest.btm">
+      <TypeName>MakeSalesforceErrorEventRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSalesforceQueryDocumentApplicationInfoRequest.btm">
+      <TypeName>MakeSalesforceQueryDocumentApplicationInfoRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSalesforceQueryDocumentCheckListItemRequest.btm">
+      <TypeName>MakeSalesforceQueryDocumentCheckListItemRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeEventsDocumentResponse.btm">
+      <TypeName>MakeEventsDocumentResponse</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSalesforceInvalidNotificationEventRequest.btm">
+      <TypeName>MakeSalesforceInvalidNotificationEventRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeSalesforceContentVersionRequest.btm">
+      <TypeName>MakeSalesforceContentVersionRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="MakeDocumentListResponse.btm">
+      <TypeName>MakeDocumentListResponse</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="DLAPEventsEventRequest.odx">
+      <TypeName>ACHEventRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="DLAP Events.BindingInfo 2.0.1.0 DEV.xml" />
+    <Map Include="MakeRestDLAPEventsStatusResponse.btm">
+      <TypeName>MakeRestDLAPEventsStatusResponse</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="MakeRestQueryApplicationInfoRequest.btm">
+      <TypeName>MakeRestQueryApplicationInfoRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="MakeApplicationInfoResponse.btm">
+      <TypeName>MakeApplicationInfoResponse</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="MakeSalesforceCheckListItemResponse.btm">
+      <TypeName>MakeSalesforceCheckListItemResponse</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="MakeRestDocumentRequest.btm">
+      <TypeName>MakeRestDocumentRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="MakeSalesforceChecklistItemDocumentResponse.btm">
+      <TypeName>MakeSalesforceChecklistItemDocumentResponse</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="MakeSalesforceErrorUpdateEventRequest.xsl" />
+    <Map Include="MakeSalesforceErrorUpdateEventRequest.btm">
+      <TypeName>MakeSalesforceErrorUpdateEventRequest</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <XLang Include="DLAPEventsMultipleNotificationsDebatcherLogic.odx">
+      <TypeName>DLAPEventsMultipleNotificationsDebatcherLogic</TypeName>
+      <Namespace>DLAPEventsLogic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

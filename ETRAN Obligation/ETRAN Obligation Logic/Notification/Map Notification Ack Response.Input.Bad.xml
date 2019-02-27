@@ -1,0 +1,15 @@
+<ns0:notifications xmlns:ns0="http://soap.sforce.com/2005/09/outbound">
+  <ns0:OrganizationId>OrganizationIdOrga</ns0:OrganizationId>
+  <ns0:ActionId>ActionIdActionIdAc</ns0:ActionId>
+  <ns0:SessionId>SessionId_0</ns0:SessionId>
+  <ns0:EnterpriseUrl>EnterpriseUrl_0</ns0:EnterpriseUrl>
+  <ns0:PartnerUrl>PartnerUrl_0</ns0:PartnerUrl>
+  <ns0:Notification>
+    <ns0:Id>a0v30000000B8AGVT6</ns0:Id>
+    <ns0:sObject>
+      <ns1:fieldsToNull xmlns:ns1="urn:sobject.enterprise.soap.sforce.com"></ns1:fieldsToNull>
+      <ns1:Id xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">a0vt0000000J8FGZS9</ns1:Id>
+
+    </ns0:sObject>
+  </ns0:Notification>
+</ns0:notifications>

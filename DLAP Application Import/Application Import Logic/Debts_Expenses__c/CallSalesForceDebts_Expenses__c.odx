@@ -1,0 +1,252 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="b422b453-993d-4757-a567-405232281659" LowerBound="1.1" HigherBound="48.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="6e0f6d81-466d-4e5f-b7cd-b7b35d2cec54" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="47.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CallSalesForceDebts_Expenses__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="e90354d0-ad60-472b-bb97-5f2754a0a6e8" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AfterDebtsExpensesCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b0578c24-8206-485a-8ce6-4183672071cc" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementRequestDebts_Expenses__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateDebts_Expenses__cMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="aef20416-6175-400a-8173-792b6820bd4f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementResponseDebts_Expenses__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateDebts_Expenses__cResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="2d12d7f7-dfa0-4068-a178-1d6abaca9ed2" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageDeclaration" OID="de103c9c-e0a4-422b-8e61-e64679f0da78" ParentLink="ServiceBody_Declaration" LowerBound="27.15" HigherBound="27.110">
+                    <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ApplicationCanonical" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="ce933529-7121-4fa7-b302-886425a6ec4a" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="45.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Create Debts" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="4a5a8154-61df-48a9-8809-985512e352b8" ParentLink="ComplexStatement_Statement" LowerBound="29.1" HigherBound="35.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct Debts_Expenses Message" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="01be3094-eae6-490c-b282-1cd5cc5214ee" ParentLink="ComplexStatement_Statement" LowerBound="32.1" HigherBound="34.1">
+                            <om:Property Name="ClassName" Value="Application_Import_Logic.Debts_Expenses__c.MakeSalesForceDebts_Expenses__cRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Map to Create Account" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="ff17db92-1376-483e-9cc5-4870787f2698" ParentLink="Transform_OutputMessagePartRef" LowerBound="33.28" HigherBound="33.65">
+                                <om:Property Name="MessageRef" Value="CreateDebts_Expenses__cMsg" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="e3676fdd-72b6-4239-bb9c-b30ad301dfc4" ParentLink="Transform_InputMessagePartRef" LowerBound="33.152" HigherBound="33.172">
+                                <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="97878459-4e3f-4a1c-9ceb-bb77ae6acc62" ParentLink="Construct_MessageRef" LowerBound="30.23" HigherBound="30.49">
+                            <om:Property Name="Ref" Value="CreateDebts_Expenses__cMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="0e277544-ed3d-4030-b676-302ddac1750f" ParentLink="ComplexStatement_Statement" LowerBound="35.1" HigherBound="37.1">
+                        <om:Property Name="Expression" Value="AfterDebtsExpensesCount = xpath(CreateDebts_Expenses__cMsg.parameters,&quot;count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/Debts_Expenses__c']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/Debts_Expenses__c']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/Debts_Expenses__c'])&quot;);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Count Debts Expenses" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="b414db95-91dd-45e3-a50c-4d2385dfdb49" ParentLink="ComplexStatement_Statement" LowerBound="37.1" HigherBound="45.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Debts Expenses Exists?" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="a5069e37-ec9a-46e0-8c89-f664949038ab" ParentLink="ReallyComplexStatement_Branch" LowerBound="38.13" HigherBound="45.1">
+                            <om:Property Name="Expression" Value="AfterDebtsExpensesCount &gt; 0" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Debts Expenses" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Send" OID="6d8de275-685f-4093-8ac7-408996f14c97" ParentLink="ComplexStatement_Statement" LowerBound="40.1" HigherBound="42.1">
+                                <om:Property Name="PortName" Value="CallSalesForceDebts_Expenses__cPort" />
+                                <om:Property Name="MessageName" Value="CreateDebts_Expenses__cMsg" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send Request" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="aeea071c-36ee-4748-bb07-dd6ab8179066" ParentLink="ComplexStatement_Statement" LowerBound="42.1" HigherBound="44.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="CallSalesForceDebts_Expenses__cPort" />
+                                <om:Property Name="MessageName" Value="CreateDebts_Expenses__cResponseMsg" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Receive Response" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="4368acd5-f116-4da9-9741-6f95f643b235" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b97a2b37-25e6-457d-ac75-1cc3bce2b5b6" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="13" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.CDataServiceSelectDebts_Expenses__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CallSalesForceDebts_Expenses__cPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="596edd25-be2e-47bb-a9fa-6e8ecba1d336" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="09087611-dd3e-4ae1-ab44-d60e196874d4" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementResponseDebts_Expenses__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="777ea4ae-8d43-410b-8aac-037b7998856d" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceDebts_Expenses__c.table" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="b87810dc-3939-488d-9303-0d0e7b36e3aa" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementRequestDebts_Expenses__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="7a5ac84d-ed9b-4b30-8bd0-376cf394a0ea" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceDebts_Expenses__c.parameters" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ebbc4952-c436-4dac-81a2-7cf7f3cd417e" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="CDataServiceSelectDebts_Expenses__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6dd5bd50-2b55-4335-b2d2-d8cff9f6225a" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="statement" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="89ac43ee-7663-43b7-8aa9-fff843f82b57" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.48" HigherBound="16.82">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementResponseDebts_Expenses__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="6e7ac6ad-a38b-429e-9bb6-ec96773e2490" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.46">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementRequestDebts_Expenses__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    public messagetype StatementResponseDebts_Expenses__c
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceDebts_Expenses__c.table parameters;
+    };
+    public messagetype StatementRequestDebts_Expenses__c
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceDebts_Expenses__c.parameters parameters;
+    };
+    public porttype CDataServiceSelectDebts_Expenses__c
+    {
+        requestresponse statement
+        {
+            StatementRequestDebts_Expenses__c, StatementResponseDebts_Expenses__c
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service CallSalesForceDebts_Expenses__c
+    {
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses CDataServiceSelectDebts_Expenses__c CallSalesForceDebts_Expenses__cPort;
+        message StatementRequestDebts_Expenses__c CreateDebts_Expenses__cMsg;
+        message StatementResponseDebts_Expenses__c CreateDebts_Expenses__cResponseMsg;
+        System.Int32 AfterDebtsExpensesCount;
+        body (message Application_Import_Definition.HomeDisasterLoanApplicationCanonical ApplicationCanonical)
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4a5a8154-61df-48a9-8809-985512e352b8")]
+            construct CreateDebts_Expenses__cMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("01be3094-eae6-490c-b282-1cd5cc5214ee")]
+                transform (CreateDebts_Expenses__cMsg.parameters) = Application_Import_Logic.Debts_Expenses__c.MakeSalesForceDebts_Expenses__cRequest (ApplicationCanonical);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0e277544-ed3d-4030-b676-302ddac1750f")]
+            AfterDebtsExpensesCount = xpath(CreateDebts_Expenses__cMsg.parameters,"count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/Debts_Expenses__c']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/Debts_Expenses__c']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/Debts_Expenses__c'])");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b414db95-91dd-45e3-a50c-4d2385dfdb49")]
+            if (AfterDebtsExpensesCount > 0)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6d8de275-685f-4093-8ac7-408996f14c97")]
+                send (CallSalesForceDebts_Expenses__cPort.statement, CreateDebts_Expenses__cMsg);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("aeea071c-36ee-4748-bb07-dd6ab8179066")]
+                receive (CallSalesForceDebts_Expenses__cPort.statement, CreateDebts_Expenses__cResponseMsg);
+            }
+        }
+    }
+}
+

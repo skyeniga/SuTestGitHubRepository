@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="f8a66800-e853-4e10-92cf-df6cc0a999ef" activeEnvironment="Default" name="ETRANObligation" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:WsdlInterface" id="97b8c194-434b-42c9-b313-68d0ab0dc190" wsaVersion="NONE" name="BasicHttpBinding_ITwoWayAsync" type="wsdl" bindingName="{http://SBA.gov/ETRANObligation/}BasicHttpBinding_ITwoWayAsync" soapVersion="1_1" anonymous="optional" definition="https://biztalk.tspi.net/DCMS2/ETRANObligation/ETRANObligation.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart="https://biztalk.tspi.net/DCMS2/ETRANObligation/ETRANObligation.svc?wsdl">
+      <con:part>
+        <con:url>https://biztalk.tspi.net/DCMS2/ETRANObligation/ETRANObligation.svc?wsdl</con:url>
+        <con:content><![CDATA[
+          <wsdl:definitions name="BizTalkServiceInstance" targetNamespace="http://SBA.gov/ETRANObligation/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://SBA.gov/ETRANObligation/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:documentation>
+    <CreationInfo Created="2017-10-27 16:03:54Z"/>
+  </wsdl:documentation>
+  <wsp:Policy wsu:Id="BasicHttpBinding_ITwoWayAsync_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://SBA.gov/ETRANObligation/Imports"/>
+  </wsdl:types>
+  <wsdl:message name="ETRANObligation_Retrieve_InputMessage">
+    <wsdl:part name="part" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:message name="ETRANObligation_Retrieve_OutputMessage">
+    <wsdl:part name="part" type="xsd:anyType"/>
+  </wsdl:message>
+  <wsdl:portType name="ETRANObligation">
+    <wsdl:documentation/>
+    <wsdl:operation name="Retrieve">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:ETRANObligation_Retrieve_InputMessage"/>
+      <wsdl:output message="tns:ETRANObligation_Retrieve_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITwoWayAsync" type="tns:ETRANObligation">
+    <wsp:PolicyReference URI="#BasicHttpBinding_ITwoWayAsync_policy"/>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Retrieve">
+      <wsdl:documentation/>
+      <soap:operation soapAction="Retrieve" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BizTalkServiceInstance">
+    <wsdl:port name="BasicHttpBinding_ITwoWayAsync" binding="tns:BasicHttpBinding_ITwoWayAsync">
+      <soap:address location="https://biztalk.tspi.net/DCMS2/ETRANObligation/ETRANObligation.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
+        ]]></con:content>
+        <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+      </con:part>
+    </con:definitionCache>
+    <con:endpoints>
+      
+    <con:endpoint>https://odabizsrvtr.sba.gov/DCMS2/ETRANObligation/ETRANObligation.svc</con:endpoint><con:endpoint>https://odabizsrvts.sba.gov/DCMS2/ETRANObligation/ETRANObligation.svc</con:endpoint><con:endpoint>https://odabiztstws03.sba.gov/DCMS2/ETRANObligation/ETRANObligation.svc</con:endpoint></con:endpoints>
+    <con:operation id="30913d69-3508-414c-b050-32965533fe26" isOneWay="false" action="Retrieve" name="Retrieve" bindingOperationName="Retrieve" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+      <con:settings/>
+      <con:call id="64fc7672-bf43-489e-a100-165a42e75c0d" name="Home Loan Request" useWsAddressing="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://odabizsrvtr.sba.gov/DCMS2/ETRANObligation/ETRANObligation.svc</con:endpoint>
+        <con:request><![CDATA[
+          
+        
+        <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <notifications xmlns="http://soap.sforce.com/2005/09/outbound">
+   <OrganizationId>00Dr00000008rEVEAY</OrganizationId>
+   <ActionId>04kt0000000PB2HAAW</ActionId>
+   <SessionId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+   <EnterpriseUrl>https://sba-oda--QA.cs32.my.salesforce.com/services/Soap/c/41.0/00Dr00000008rEV</EnterpriseUrl>
+   <PartnerUrl>https://sba-oda--QA.cs32.my.salesforce.com/services/Soap/u/41.0/00Dr00000008rEV</PartnerUrl>
+   <Notification>
+    <Id>04lr0000001YQ0tAAG</Id>
+    <sObject xsi:type="sf:Event_Request__c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sf="urn:sobject.enterprise.soap.sforce.com">
+     <sf:Id>a0mr0000000dShbAAE</sf:Id>
+     <sf:Application_Number__c>2300000317</sf:Application_Number__c>
+     <sf:SObject_ID__c>a0y35000001QYTNAA4</sf:SObject_ID__c>
+    </sObject>
+   </Notification>
+  </notifications>  
+   </soapenv:Body>\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="TRUE" version="200508" action="Retrieve" addDefaultTo="true"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+      <con:call id="ed418d79-c4a3-4433-a91d-11a44fb0fc70" name="Business Loan Request">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://odabiztstws03.sba.gov/DCMS2/ETRANObligation/ETRANObligation.svc</con:endpoint>
+        <con:request><![CDATA[
+          <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns0:notifications xmlns:ns0="http://soap.sforce.com/2005/09/outbound">
+  <ns0:OrganizationId>OrganizationIdOrga</ns0:OrganizationId>
+  <ns0:ActionId>ActionIdActionIdAc</ns0:ActionId>
+  <ns0:SessionId>SessionId_0</ns0:SessionId>
+  <ns0:EnterpriseUrl>EnterpriseUrl_0</ns0:EnterpriseUrl>
+  <ns0:PartnerUrl>PartnerUrl_0</ns0:PartnerUrl>
+  <ns0:Notification>
+    <ns0:Id>a0v30000000B8AGVT6</ns0:Id>
+    <ns0:sObject>
+      <ns1:fieldsToNull xmlns:ns1="urn:sobject.enterprise.soap.sforce.com"></ns1:fieldsToNull>
+      <ns1:Id xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">a0vt0000000J8FGZS9</ns1:Id>
+      <ns1:Application_Number__c xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">777111001</ns1:Application_Number__c>
+      <ns1:SObject_ID__c xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">a0mr0000000W9oPAAS</ns1:SObject_ID__c>
+    </ns0:sObject>
+  </ns0:Notification>
+</ns0:notifications>   
+   </soapenv:Body>
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="Retrieve"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+      <con:call id="43c60de3-e193-4481-83e7-f4c268588467" name="Both Loan Requests at Once">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://odabiztstws03.sba.gov/DCMS2/ETRANObligation/ETRANObligation.svc</con:endpoint>
+        <con:request><![CDATA[
+          
+        
+        <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns0:notifications xmlns:ns0="http://soap.sforce.com/2005/09/outbound">
+  <ns0:OrganizationId>OrganizationIdOrga</ns0:OrganizationId>
+  <ns0:ActionId>ActionIdActionIdAc</ns0:ActionId>
+  <ns0:SessionId>SessionId_0</ns0:SessionId>
+  <ns0:EnterpriseUrl>EnterpriseUrl_0</ns0:EnterpriseUrl>
+  <ns0:PartnerUrl>PartnerUrl_0</ns0:PartnerUrl>
+  <ns0:Notification>
+    <ns0:Id>a0v30000000B8AGVT6</ns0:Id>
+    <ns0:sObject>
+      <ns1:fieldsToNull xmlns:ns1="urn:sobject.enterprise.soap.sforce.com"></ns1:fieldsToNull>
+      <ns1:Id xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">a0vt0000000J8FGZS9</ns1:Id>
+      <ns1:Application_Number__c xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">000000117</ns1:Application_Number__c>
+      <ns1:SObject_ID__c xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">a0mr0000000V8ANAA0</ns1:SObject_ID__c>
+    </ns0:sObject>
+  </ns0:Notification>
+  <ns0:Notification>
+    <ns0:Id>a0v30000000B8AGVT7</ns0:Id>
+    <ns0:sObject>
+      <ns1:fieldsToNull xmlns:ns1="urn:sobject.enterprise.soap.sforce.com"></ns1:fieldsToNull>
+      <ns1:Id xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">a0vt0000000J8FGZT0</ns1:Id>
+      <ns1:Application_Number__c xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">777111001</ns1:Application_Number__c>
+      <ns1:SObject_ID__c xmlns:ns1="urn:sobject.enterprise.soap.sforce.com">a0mr0000000W9oPAAS</ns1:SObject_ID__c>
+    </ns0:sObject>
+  </ns0:Notification>
+</ns0:notifications>   
+   </soapenv:Body>\r
+</soapenv:Envelope>
+        ]]></con:request>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="Retrieve"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:call>
+    </con:operation>
+  </con:interface>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+</con:soapui-project>

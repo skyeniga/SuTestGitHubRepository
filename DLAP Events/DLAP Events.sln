@@ -1,0 +1,121 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP Events Logic", "DLAP Events Logic\DLAP Events Logic.btproj", "{1D9B3CDA-BBC2-487A-9DCD-AB0F77C76CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP Events Salesforce Definition", "DLAP Events Salesforce Definition\DLAP Events Salesforce Definition.btproj", "{CF98D1BB-8161-4F55-8BF4-41943E73FF18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP Events Oracle Definition", "DLAP Events Oracle Definition\DLAP Events Oracle Definition.btproj", "{7A5CCD93-1DA7-4B50-B33E-E281B76DA934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP Events Definition", "DLAP Events Definition\DLAP Events Definition.btproj", "{5758F675-1CEC-44A7-AF1D-80D5F487B3C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning", "Versioning", "{2C041954-86CE-4841-BA92-1CC1E5B7A59D}"
+	ProjectSection(SolutionItems) = preProject
+		Versioning\AssemblyInfoShared.cs = Versioning\AssemblyInfoShared.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{D3174E33-8910-4EC1-AB90-FA2D9169F428}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\BizTalk Code Review Check List - DLAP Events.docx = Deployment\BizTalk Code Review Check List - DLAP Events.docx
+		Deployment\DLAPEvents-soapui-project.xml = Deployment\DLAPEvents-soapui-project.xml
+		Deployment\DLAPEvents_Deployment_Instructions.docx = Deployment\DLAPEvents_Deployment_Instructions.docx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.0", "2.0.0.0", "{D8E04124-737E-4F01-8AEB-01F1BFEE05E6}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.0\DLAP Events 2.0.0.0.msi = Deployment\2.0.0.0\DLAP Events 2.0.0.0.msi
+		Deployment\2.0.0.0\DLAP Events.BindingInfo 2.0.0.0.xml = Deployment\2.0.0.0\DLAP Events.BindingInfo 2.0.0.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.1", "2.0.0.1", "{E2F27DE7-9303-4E02-AA82-16BA271ECE97}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.1\DLAP Events 2.0.0.1.msi = Deployment\2.0.0.1\DLAP Events 2.0.0.1.msi
+		Deployment\2.0.0.1\DLAP Events.BindingInfo 2.0.0.1.xml = Deployment\2.0.0.1\DLAP Events.BindingInfo 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.2", "2.0.0.2", "{D15B0C5F-DB62-4777-B7A1-B06A74C71B21}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.2\DLAP Events 2.0.0.2.msi = Deployment\2.0.0.2\DLAP Events 2.0.0.2.msi
+		Deployment\2.0.0.2\DLAP Events.BindingInfo 2.0.0.2.xml = Deployment\2.0.0.2\DLAP Events.BindingInfo 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.1.0", "2.0.1.0", "{D3711E5F-2143-4688-901A-7268FEB2C285}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.1.0\DLAP Events 2.0.1.0.msi = Deployment\2.0.1.0\DLAP Events 2.0.1.0.msi
+		Deployment\2.0.1.0\DLAP Events.BindingInfo 2.0.1.0.xml = Deployment\2.0.1.0\DLAP Events.BindingInfo 2.0.1.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.8.1", "2.0.8.1", "{EE1848D2-A5B6-4579-A8EE-CE2C0695804B}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.8.1\DLAP Events 2.0.8.1.msi = Deployment\2.0.8.1\DLAP Events 2.0.8.1.msi
+		Deployment\2.0.8.1\DLAP Events.BindingInfo 2.0.8.1.xml = Deployment\2.0.8.1\DLAP Events.BindingInfo 2.0.8.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Local", "Local", "{38F0F189-1DAB-4CFD-94ED-9FA40D4A8BC4}"
+	ProjectSection(SolutionItems) = preProject
+		Local\DLAP Events 2.0.9.10 DEV.msi = Local\DLAP Events 2.0.9.10 DEV.msi
+		Local\DLAP Events.BindingInfo 2.0.9.10 DEV.xml = Local\DLAP Events.BindingInfo 2.0.9.10 DEV.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.9.10", "2.0.9.10", "{E3B87AAE-EEEA-44D9-8826-76F5F4A19F10}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.9.10\DLAP Events 2.0.9.10.msi = Deployment\2.0.9.10\DLAP Events 2.0.9.10.msi
+		Deployment\2.0.9.10\DLAP Events.BindingInfo 2.0.9.10 .xml = Deployment\2.0.9.10\DLAP Events.BindingInfo 2.0.9.10 .xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDeploy", "WebDeploy", "{3F61C87E-6E21-41F1-92CE-68B176A79F24}"
+	ProjectSection(SolutionItems) = preProject
+		WebDeploy\DLAPEventNotification.zip = WebDeploy\DLAPEventNotification.zip
+	EndProjectSection
+EndProject
+Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "BizTalkDLAPEvents", "BizTalkDLAPEvents\BizTalkDLAPEvents.btaproj", "{C1A27E5F-6640-4254-A820-A0B8227B5D0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D9B3CDA-BBC2-487A-9DCD-AB0F77C76CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9B3CDA-BBC2-487A-9DCD-AB0F77C76CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9B3CDA-BBC2-487A-9DCD-AB0F77C76CAD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1D9B3CDA-BBC2-487A-9DCD-AB0F77C76CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9B3CDA-BBC2-487A-9DCD-AB0F77C76CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9B3CDA-BBC2-487A-9DCD-AB0F77C76CAD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CF98D1BB-8161-4F55-8BF4-41943E73FF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF98D1BB-8161-4F55-8BF4-41943E73FF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF98D1BB-8161-4F55-8BF4-41943E73FF18}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CF98D1BB-8161-4F55-8BF4-41943E73FF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF98D1BB-8161-4F55-8BF4-41943E73FF18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF98D1BB-8161-4F55-8BF4-41943E73FF18}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7A5CCD93-1DA7-4B50-B33E-E281B76DA934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5CCD93-1DA7-4B50-B33E-E281B76DA934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A5CCD93-1DA7-4B50-B33E-E281B76DA934}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7A5CCD93-1DA7-4B50-B33E-E281B76DA934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A5CCD93-1DA7-4B50-B33E-E281B76DA934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A5CCD93-1DA7-4B50-B33E-E281B76DA934}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5758F675-1CEC-44A7-AF1D-80D5F487B3C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5758F675-1CEC-44A7-AF1D-80D5F487B3C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5758F675-1CEC-44A7-AF1D-80D5F487B3C9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5758F675-1CEC-44A7-AF1D-80D5F487B3C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5758F675-1CEC-44A7-AF1D-80D5F487B3C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5758F675-1CEC-44A7-AF1D-80D5F487B3C9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C1A27E5F-6640-4254-A820-A0B8227B5D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A27E5F-6640-4254-A820-A0B8227B5D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A27E5F-6640-4254-A820-A0B8227B5D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A27E5F-6640-4254-A820-A0B8227B5D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D8E04124-737E-4F01-8AEB-01F1BFEE05E6} = {D3174E33-8910-4EC1-AB90-FA2D9169F428}
+		{E2F27DE7-9303-4E02-AA82-16BA271ECE97} = {D3174E33-8910-4EC1-AB90-FA2D9169F428}
+		{D15B0C5F-DB62-4777-B7A1-B06A74C71B21} = {D3174E33-8910-4EC1-AB90-FA2D9169F428}
+		{D3711E5F-2143-4688-901A-7268FEB2C285} = {D3174E33-8910-4EC1-AB90-FA2D9169F428}
+		{EE1848D2-A5B6-4579-A8EE-CE2C0695804B} = {D3174E33-8910-4EC1-AB90-FA2D9169F428}
+		{E3B87AAE-EEEA-44D9-8826-76F5F4A19F10} = {D3174E33-8910-4EC1-AB90-FA2D9169F428}
+	EndGlobalSection
+EndGlobal

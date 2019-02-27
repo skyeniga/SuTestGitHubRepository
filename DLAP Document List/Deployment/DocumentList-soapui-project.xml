@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="00755913-3a97-4fde-95db-e94e61730b95" activeEnvironment="Default" name="DocumentList" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="91658892-707e-40fd-a381-fdf7a2b578b5" wsaVersion="200508" name="WSHttpBinding_ITwoWayAsync" type="wsdl" bindingName="{http://SBA.gov/DLAPDocumentList/}WSHttpBinding_ITwoWayAsync" soapVersion="1_2" anonymous="optional" definition="https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentList/DocumentList.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentList/DocumentList.svc?wsdl"><con:part><con:url>https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentList/DocumentList.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="BizTalkServiceInstance" targetNamespace="http://SBA.gov/DLAPDocumentList/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://SBA.gov/DLAPDocumentList/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:documentation>
+    <CreationInfo Created="2018-03-26 16:54:15Z"/>
+  </wsdl:documentation>
+  <wsp:Policy wsu:Id="WSHttpBinding_ITwoWayAsync_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <http:BasicAuthentication xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http"/>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false"/>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing/>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://SBA.gov/DLAPDocumentList/Imports">
+      <xsd:import schemaLocation="https://odabiztstws05.sba.gov:443/DCMS2/DLAPDocumentList/DocumentList.svc?xsd=xsd2" namespace="http://SBA.gov/DLAPDocumentList/DocumentListRequest"/>
+      <xsd:import schemaLocation="https://odabiztstws05.sba.gov:443/DCMS2/DLAPDocumentList/DocumentList.svc?xsd=xsd3" namespace="http://SBA.gov/DLAPDocumentList/DocumentListResponse"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="DocumentList_List_InputMessage">
+    <wsdl:part name="part" element="q1:DocumentListRequest" xmlns:q1="http://SBA.gov/DLAPDocumentList/DocumentListRequest"/>
+  </wsdl:message>
+  <wsdl:message name="DocumentList_List_OutputMessage">
+    <wsdl:part name="part" element="q2:DOCUMENT" xmlns:q2="http://SBA.gov/DLAPDocumentList/DocumentListResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="DocumentList">
+    <wsdl:documentation/>
+    <wsdl:operation name="List">
+      <wsdl:documentation/>
+      <wsdl:input message="tns:DocumentList_List_InputMessage"/>
+      <wsdl:output message="tns:DocumentList_List_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ITwoWayAsync" type="tns:DocumentList">
+    <wsp:PolicyReference URI="#WSHttpBinding_ITwoWayAsync_policy"/>
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="List">
+      <wsdl:documentation/>
+      <soap12:operation soapAction="List" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal" encodingStyle="http://www.w3.org/2003/05/soap-encoding"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" encodingStyle="http://www.w3.org/2003/05/soap-encoding"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BizTalkServiceInstance">
+    <wsdl:port name="WSHttpBinding_ITwoWayAsync" binding="tns:WSHttpBinding_ITwoWayAsync">
+      <soap12:address location="https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentList/DocumentList.svc"/>
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentList/DocumentList.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>https://odabiztstws05.sba.gov:443/DCMS2/DLAPDocumentList/DocumentList.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema targetNamespace="http://SBA.gov/DLAPDocumentList/DocumentListRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="http://SBA.gov/DLAPDocumentList/DocumentListRequest">
+  <xs:element name="DocumentListRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ApplicationNumber" type="xs:string"/>
+        <xs:element name="UserID" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://odabiztstws05.sba.gov:443/DCMS2/DLAPDocumentList/DocumentList.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema targetNamespace="http://SBA.gov/DLAPDocumentList/DocumentListResponse" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="http://SBA.gov/DLAPDocumentList/DocumentListResponse">
+  <xs:element name="DOCUMENT">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="1">
+        <xs:element name="AppData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="1" maxOccurs="1" name="App_Nbr" type="xs:string"/>
+              <xs:element minOccurs="1" maxOccurs="1" name="Loan_Type" type="xs:string"/>
+              <xs:element minOccurs="1" maxOccurs="1" name="Disaster_Name" type="xs:string"/>
+              <xs:element minOccurs="1" maxOccurs="1" name="Requested_Document_Count" type="xs:integer"/>
+              <xs:element minOccurs="1" maxOccurs="1" name="Disaster_Deadline_Date" type="xs:string"/>
+              <xs:element minOccurs="0" maxOccurs="1" name="AccountInformation">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Loan_Nbr" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ApplicantList">
+          <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Applicants">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="1" maxOccurs="1" name="ApplicantId" type="xs:integer"/>
+                    <xs:element minOccurs="1" maxOccurs="1" name="APL_ORG_TYPE_CD" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="LegalName" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="APL_FIRST_NAME" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="APL_MIDDLE_NAME" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="APL_LAST_NAME" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="APL_SUFFIX" type="xs:string"/>
+                    <xs:element minOccurs="1" maxOccurs="1" name="APL_RELATION_TYPE" type="xs:string"/>
+                    <xs:element minOccurs="0" name="AplAffiliateColl">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Apl_Affiliates">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="AffiliateId" type="xs:integer"/>
+                                <xs:element name="AFI_NAME" type="xs:string"/>
+                                <xs:element name="AFI_ORG_TYPE" type="xs:string"/>
+                                <xs:element name="AFI_PER_OWNERSHIP" type="xs:string"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DocumentList">
+          <xs:complexType>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentDetails">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="1" maxOccurs="1" name="ChecklistType" type="xs:string"/>
+                    <xs:element minOccurs="1" maxOccurs="1" name="ActionID" type="xs:string"/>
+                    <xs:element minOccurs="1" maxOccurs="1" name="Status" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="ApplicantId" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="AffiliateId" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="ReceiveDate" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="RequestDate" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="DeadlineDate" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="ScanDocumentID" type="xs:string"/>
+                    <xs:element minOccurs="1" maxOccurs="1" name="DocumentType" type="xs:string"/>
+                    <xs:element minOccurs="1" maxOccurs="1" name="DocumentTitle" type="xs:string"/>
+                    <xs:element minOccurs="1" maxOccurs="1" name="DocumentDescription" type="xs:string"/>
+                    <xs:element minOccurs="0" maxOccurs="1" name="DocumentPath" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Error">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ErrorStatus" type="xs:string"/>
+              <xs:element name="ErrorDetails" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentList/DocumentList.svc</con:endpoint></con:endpoints><con:operation id="be83cb3d-0cdf-49d6-9efb-0e705be2a651" isOneWay="false" action="List" name="List" bindingOperationName="List" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="806df90b-5d90-4092-bbdd-79eaed411380" name="Request 1" useWsAddressing="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentList/DocumentList.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:doc="http://SBA.gov/DLAPDocumentList/DocumentListRequest">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <doc:DocumentListRequest>\r
+         <ApplicationNumber>2300000007</ApplicationNumber>\r
+         <UserID>126</UserID>\r
+      </doc:DocumentListRequest>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:username>DLAP</con:username><con:password>Basic2017</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="TRUE" version="200508" action="http://SBA.gov/DLAPDocumentList/DocumentList/ListRequest" addDefaultTo="true"/><con:wsrmConfig version="1.2"/></con:call><con:call id="cf23893e-0209-46aa-8cf4-c08ac6bec4c2" name="Request 2" useWsAddressing="true"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://odabiztstws05.sba.gov/DCMS2/DLAPDocumentList/DocumentList.svc</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:doc="http://SBA.gov/DLAPDocumentList/DocumentListRequest">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <doc:DocumentListRequest>\r
+         <ApplicationNumber>1300000013</ApplicationNumber>\r
+         <UserID>21996</UserID>\r
+      </doc:DocumentListRequest>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:username>DLAP</con:username><con:password>Basic2017</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="TRUE" version="200508" action="http://SBA.gov/DLAPDocumentList/DocumentList/ListRequest" addDefaultTo="true"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

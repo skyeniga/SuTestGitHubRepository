@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://SBA.gov/DLAPDocumentUpload/Loan__c" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Request">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="SQLCommand" type="xs:string" />
+        <xs:element name="LoanNumber" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Record">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="IsNull" type="xs:boolean" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="AffectedRows" type="xs:int" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,4 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload SalesForce Definition\bin\Debug\DLAPDocumentUploadSalesForceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload SalesForce Definition\bin\Debug\DLAPDocumentUploadSalesForceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload SalesForce Definition\obj\Debug\DLAPDocumentUploadSalesForceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload SalesForce Definition\obj\Debug\DLAPDocumentUploadSalesForceDefinition.pdb

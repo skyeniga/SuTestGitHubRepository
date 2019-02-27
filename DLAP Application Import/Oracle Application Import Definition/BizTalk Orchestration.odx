@@ -1,0 +1,171 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="b8009704-a0b6-4727-b1e8-fb1b843fbaa3" LowerBound="1.1" HigherBound="39.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Oracle_Application_Import_Definition" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="1ec9577e-8035-4f50-9684-b758b4e3958b" ParentLink="Module_PortType" LowerBound="20.1" HigherBound="31.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9e99294d-7069-4575-b67a-c0739500fab9" ParentLink="PortType_OperationDeclaration" LowerBound="22.1" HigherBound="26.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="ReadLOB" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="fbd7669b-6cf4-44ae-83f4-9dcd1528ee3f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="24.13" HigherBound="24.71">
+                    <om:Property Name="Ref" Value="Oracle_Application_Import_Definition.ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_ReadLOB_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="45c11a62-1bc1-4118-93d2-02d89075ceda" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="24.73" HigherBound="24.132">
+                    <om:Property Name="Ref" Value="Oracle_Application_Import_Definition.ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_ReadLOB_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="8fbef874-574a-46e4-861f-b417f9195f17" ParentLink="PortType_OperationDeclaration" LowerBound="26.1" HigherBound="30.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="Select" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e9e5aa45-83d0-44b4-8119-80feab5cf4ba" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="28.13" HigherBound="28.70">
+                    <om:Property Name="Ref" Value="Oracle_Application_Import_Definition.ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="ee9abc59-0c7e-4ed4-883d-093f8cc90911" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="28.72" HigherBound="28.130">
+                    <om:Property Name="Ref" Value="Oracle_Application_Import_Definition.ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="3b55cfe9-d9f3-43d7-9de6-6eca1d9bccc2" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_ReadLOB_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="82129db7-7928-4bde-9f95-738205e19d5f" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.ReadLOB" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="e99d1ba9-0d37-4add-aab3-a1e8a03eb6fd" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_ReadLOB_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="b7f22b75-d3c6-4972-ab02-d6d1469136f7" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.ReadLOBResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="bc10f47e-1bcb-4b1b-a21e-3660a3dff410" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="83682128-ce57-4cff-a600-711291be7a56" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.Select" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="bf5077a0-06a8-4103-84ca-3b4e1231bd8a" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="831fd06d-8088-461c-a6a5-6994b57c8042" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.SelectResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="3e9f82c4-a8e9-446f-ad23-9838d36e1ced" ParentLink="Module_ServiceDeclaration" LowerBound="31.1" HigherBound="38.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Orchestration_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="d94a8f0d-a18f-45ce-9e47-43a99bd7ad2f" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Oracle_Application_Import_Definition
+{
+    internal messagetype ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_ReadLOB_InputMessage
+    {
+        body DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.ReadLOB parameters;
+    };
+    internal messagetype ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_ReadLOB_OutputMessage
+    {
+        body DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.ReadLOBResponse parameters;
+    };
+    public messagetype ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage
+    {
+        body DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.Select parameters;
+    };
+    public messagetype ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage
+    {
+        body DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.SelectResponse parameters;
+    };
+    public porttype ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2
+    {
+        requestresponse ReadLOB
+        {
+            ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_ReadLOB_InputMessage, ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_ReadLOB_OutputMessage
+        };
+        requestresponse Select
+        {
+            ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage, ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Orchestration_1
+    {
+        body ()
+        {
+        }
+    }
+}
+

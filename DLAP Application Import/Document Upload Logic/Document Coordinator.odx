@@ -1,0 +1,723 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="a89c2bae-7595-4c69-ba37-a59e5617ccb5" LowerBound="1.1" HigherBound="229.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="0b48e5fa-ad9b-42f5-8b1d-c0e2b591ed9e" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="228.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DocumentCoordinatorLogic" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="b09145c1-d2ed-47f9-b84b-da4501a6fdf9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TotalCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="44384d14-db79-490e-addb-de33eecace68" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Index" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="246b6c02-eea8-444a-9a69-effaafa7ff17" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentIndexXpath" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2b091026-00d1-492d-b8c4-6d8dee52c0ad" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_DESCRIPTION" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7ef9b07a-bd87-486b-b054-b70f7bd74e14" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_APPLICATIONID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3fba68a6-d83c-4574-acf4-010f041dedc8" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_DATA" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="91e8aacb-c1d9-4ee6-8ad2-5ecb301a2072" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="InitialValue" Value="&quot;Tax Transcript&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_DOCUMENT_C" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7ae5ae1d-a36c-499e-91ef-45949b58f618" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="33.1" HigherBound="34.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_FILEEXTENSION" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="189709b2-167f-4372-a486-b724bdf9e7c0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="InitialValue" Value="&quot;/fake/path&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_PATHONCLIENT" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="394162ee-8eaa-45c7-9aa0-9572f5d815f7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="35.1" HigherBound="36.1">
+                <om:Property Name="InitialValue" Value=" &quot;Initial ELA Pull from DLAP&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_REASONFORCHANGE" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="73739f1d-3005-4784-9dc0-1214181459fb" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="36.1" HigherBound="37.1">
+                <om:Property Name="InitialValue" Value="System.String.Empty" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_TITLE" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="00ddf5a4-3e7b-4ff1-9d8a-b898254973d4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="37.1" HigherBound="38.1">
+                <om:Property Name="InitialValue" Value="&quot;string(/*[local-name()='SelectResponse' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/*[local-name()='SelectResult' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/*[local-name()='SUBMITTED_DOCUMENTS_DCMS2RECORDSELECT' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2'][{0}]/*[local-name()='{1}' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/text())&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetDocField" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="1c2ceb9a-6436-4216-8b11-5e7682a71944" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="38.1" HigherBound="39.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocAppSalesForceId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7e85cb1d-a1fc-4979-92d8-d338564317ea" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="39.1" HigherBound="40.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_APPLICANT_ID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ec2e76a8-7cb0-4490-af60-0b1bbfd372c4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="40.1" HigherBound="41.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceApplicantId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d5608be5-2527-4ca7-9b5e-e1e785aa571e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="41.1" HigherBound="42.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_ORIGIN" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="116a4173-73c5-4642-8427-0d7a5201c0ed" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="42.1" HigherBound="43.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="UserIdIndexXpath" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7c2bfb6f-38b3-472d-b7e1-8a029cde89a3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="43.1" HigherBound="44.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="USR_USER_ID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c63678ac-5563-4835-96cf-2310d2cd8488" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="44.1" HigherBound="45.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TITLE" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d832ed57-1fbd-40c3-bc7c-d20da574d842" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="45.1" HigherBound="46.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOC_TYPE_VAL" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="58bcd809-2592-45d2-aeb5-34f4a4cb459d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="46.1" HigherBound="47.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DOCUMENT_TYPE_CD_ODA" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2417de8a-402c-4389-9ded-3f71240a7ef3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="47.1" HigherBound="48.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentType_c" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="20c9c94e-ff38-43b9-a4ac-4645459987ca" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="48.1" HigherBound="49.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FileName_TITLE" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="3cc53ac9-ca77-45e8-8129-f8de8b5d3cc1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="49.1" HigherBound="50.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FileName_TITLE_Escape" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="bc208aa6-d606-4e39-94ee-10f6a86fe3d7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SubmittedDocumentsRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8d906607-ca00-425c-9669-a785c56640e5" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SubmittedDocumentsResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="7d89560b-9475-40af-b607-d43bf7402beb" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageDeclaration" OID="e2b28e50-91e2-4ceb-b1fe-69d6b99bc129" ParentLink="ServiceBody_Declaration" LowerBound="50.15" HigherBound="50.97">
+                    <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Trigger" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="cda0eee5-1eec-4cd1-8505-b130608ff41b" ParentLink="ServiceBody_Statement" LowerBound="75.1" HigherBound="226.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="DLAP ELA Document Coordinator " />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="346f7cbb-c9e0-4216-9419-a55f93f5dcf4" ParentLink="ComplexStatement_Statement" LowerBound="75.1" HigherBound="81.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="ConstructRequest" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="c4fde389-850a-4aa1-9fdf-3c666f897eaf" ParentLink="ComplexStatement_Statement" LowerBound="78.1" HigherBound="80.1">
+                            <om:Property Name="ClassName" Value="Document_Upload_Logic.CreateOracleRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Create Request" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="1b833534-5273-4517-b247-4c4cb045902c" ParentLink="Transform_InputMessagePartRef" LowerBound="79.114" HigherBound="79.121">
+                                <om:Property Name="MessageRef" Value="Trigger" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="dae7e68a-d0ab-4d3a-9107-4b9a4d6aca28" ParentLink="Transform_OutputMessagePartRef" LowerBound="79.28" HigherBound="79.67">
+                                <om:Property Name="MessageRef" Value="SubmittedDocumentsRequestMsg" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="478e6def-33a6-4879-a898-98d54219868e" ParentLink="Construct_MessageRef" LowerBound="76.23" HigherBound="76.51">
+                            <om:Property Name="Ref" Value="SubmittedDocumentsRequestMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="02839fd4-8d8f-4eca-8bf0-785b8ed00b81" ParentLink="ComplexStatement_Statement" LowerBound="81.1" HigherBound="83.1">
+                        <om:Property Name="PortName" Value="OraclePort" />
+                        <om:Property Name="MessageName" Value="SubmittedDocumentsRequestMsg" />
+                        <om:Property Name="OperationName" Value="Select" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send Document Request" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="4bb90429-bb54-4694-96e8-7a47e56a7fbb" ParentLink="ComplexStatement_Statement" LowerBound="83.1" HigherBound="85.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="OraclePort" />
+                        <om:Property Name="MessageName" Value="SubmittedDocumentsResponseMsg" />
+                        <om:Property Name="OperationName" Value="Select" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive Documents" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="f18dc206-63ca-4da8-852d-a3248ee609c2" ParentLink="ComplexStatement_Statement" LowerBound="85.1" HigherBound="87.1">
+                        <om:Property Name="Expression" Value="TotalCount =  xpath(SubmittedDocumentsResponseMsg.parameters, &quot;count(/*[local-name()='SelectResponse' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/*[local-name()='SelectResult' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/*[local-name()='SUBMITTED_DOCUMENTS_DCMS2RECORDSELECT' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2'])&quot;);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Get Document Count" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="While" OID="3d3fbf1f-c110-4861-a7ce-74f998fc2130" ParentLink="ComplexStatement_Statement" LowerBound="87.1" HigherBound="226.1">
+                        <om:Property Name="Expression" Value="Index &lt; TotalCount" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Loop Through Documents" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="VariableAssignment" OID="d8020666-ede3-4e56-bfb0-999a5910b646" ParentLink="ComplexStatement_Statement" LowerBound="90.1" HigherBound="92.1">
+                            <om:Property Name="Expression" Value="Index = Index + 1;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Update Index" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="8d757d4c-d8e6-4112-a28c-41a9617dd824" ParentLink="ComplexStatement_Statement" LowerBound="92.1" HigherBound="102.1">
+                            <om:Property Name="Expression" Value="DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_ORIGIN&quot;);&#xD;&#xA;DOC_ORIGIN = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_APPLICANT_ID&quot;);&#xD;&#xA;DOC_APPLICANT_ID = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="DOC_ORIGIN" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="600288b1-4579-46a4-a720-eccc701e630d" ParentLink="ComplexStatement_Statement" LowerBound="102.1" HigherBound="223.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Application or Applicant?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="92dea4f3-e980-4f7d-b229-659e5e200137" ParentLink="ReallyComplexStatement_Branch" LowerBound="103.17" HigherBound="159.1">
+                                <om:Property Name="Expression" Value="DOC_APPLICANT_ID == &quot;0&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Application Linking" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="0270ef9a-fd90-4d5c-8075-ee541ded90f1" ParentLink="ComplexStatement_Statement" LowerBound="105.1" HigherBound="158.1">
+                                    <om:Property Name="Expression" Value="DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_ID&quot;);&#xD;&#xA;DOC_DESCRIPTION = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_CONTENTS&quot;);&#xD;&#xA;DOC_DATA = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_CONTENT_TYPE&quot;);&#xD;&#xA;DOC_FILEEXTENSION = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_INSTANCE_NAME&quot;);&#xD;&#xA;TITLE = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;FileName_TITLE_Escape = System.IO.Path.GetFileNameWithoutExtension(TITLE);&#xD;&#xA;&#xD;&#xA;FileName_TITLE = System.Security.SecurityElement.Escape(FileName_TITLE_Escape);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;if(DOC_FILEEXTENSION == &quot;application/pdf&quot;)&#xD;&#xA;{DOC_TITLE = FileName_TITLE+&quot;.pdf&quot;;}&#xD;&#xA;else{DOC_TITLE = FileName_TITLE+&quot;.pdf&quot;;}&#xD;&#xA;&#xD;&#xA;DOC_PATHONCLIENT = &quot;/fake/&quot; + DOC_TITLE;&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_APPLICANT_ID&quot;);&#xD;&#xA;&#xD;&#xA;DOC_APPLICANT_ID = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;SalesForceApplicantId = xpath(Trigger, @&quot;string(/*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']/*[local-name()='SalesForceApplication__cID' and namespace-uri()='']/text())&quot;);&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_TYPE&quot;);&#xD;&#xA;DOCUMENT_TYPE_CD_ODA = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;if(!System.String.IsNullOrWhiteSpace(DOCUMENT_TYPE_CD_ODA))&#xD;&#xA;{&#xD;&#xA;    if (DOCUMENT_TYPE_CD_ODA == &quot;525&quot;)&#xD;&#xA;        { DOC_TYPE_VAL = &quot;4506T&quot;; }&#xD;&#xA;		&#xD;&#xA;    else if (DOCUMENT_TYPE_CD_ODA == &quot;542&quot;)&#xD;&#xA;        { DOC_TYPE_VAL = &quot;Schedule of Liabilities (2202)&quot;; }&#xD;&#xA;		&#xD;&#xA;    else if (DOCUMENT_TYPE_CD_ODA == &quot;544&quot;)&#xD;&#xA;        { DOC_TYPE_VAL = &quot;Personal Financial Statement (413)&quot;; }&#xD;&#xA;    &#xD;&#xA;    else{ DOC_TYPE_VAL = &quot;Other&quot;;}&#xD;&#xA;}		&#xD;&#xA;else{ DOC_TYPE_VAL = &quot;Other&quot;;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;UserIdIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_USR_ID&quot;);&#xD;&#xA;USR_USER_ID = xpath(SubmittedDocumentsResponseMsg.parameters, UserIdIndexXpath);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Extract Metadata to Application" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="a490871a-60b4-49c7-baac-ac5b9c87289f" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="5f9f04ae-1e5e-49b6-b585-bd05c9cd0ac1" ParentLink="ComplexStatement_Statement" LowerBound="161.1" HigherBound="222.1">
+                                    <om:Property Name="Expression" Value="DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_ID&quot;);&#xD;&#xA;DOC_DESCRIPTION = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_CONTENTS&quot;);&#xD;&#xA;DOC_DATA = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_CONTENT_TYPE&quot;);&#xD;&#xA;DOC_FILEEXTENSION = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_INSTANCE_NAME&quot;);&#xD;&#xA;TITLE = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;FileName_TITLE = System.IO.Path.GetFileNameWithoutExtension(TITLE);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;FileName_TITLE_Escape = System.IO.Path.GetFileNameWithoutExtension(TITLE);&#xD;&#xA;&#xD;&#xA;FileName_TITLE = System.Security.SecurityElement.Escape(FileName_TITLE_Escape);&#xD;&#xA;&#xD;&#xA;if(DOC_FILEEXTENSION == &quot;application/pdf&quot;)&#xD;&#xA;{DOC_TITLE = FileName_TITLE+&quot;.pdf&quot;;}&#xD;&#xA;else{DOC_TITLE = FileName_TITLE+&quot;.pdf&quot;;}&#xD;&#xA;&#xD;&#xA;DOC_PATHONCLIENT = &quot;/fake/&quot; + DOC_TITLE;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_APPLICANT_ID&quot;);&#xD;&#xA;DOC_APPLICANT_ID = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;SalesForceApplicantId = xpath(Trigger, @&quot;string(&#xD;&#xA;/*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']&#xD;&#xA;/*[local-name()='ApplicantColl' and namespace-uri()='']&#xD;&#xA;/*[local-name()='Applicants' and namespace-uri()='' ]&#xD;&#xA;/*[local-name()='ApplicantId' and namespace-uri()='' and text()='&quot;+DOC_APPLICANT_ID+@&quot;']/..&#xD;&#xA;/*[local-name()='SalesForceApplicantID' and namespace-uri()='']/text())&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;DocumentIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_TYPE&quot;);&#xD;&#xA;DOCUMENT_TYPE_CD_ODA = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);&#xD;&#xA;&#xD;&#xA;if(!System.String.IsNullOrWhiteSpace(DOCUMENT_TYPE_CD_ODA))&#xD;&#xA;{&#xD;&#xA;    if (DOCUMENT_TYPE_CD_ODA == &quot;525&quot;)&#xD;&#xA;        { DOC_TYPE_VAL = &quot;4506T&quot;; }&#xD;&#xA;		&#xD;&#xA;    else if (DOCUMENT_TYPE_CD_ODA == &quot;542&quot;)&#xD;&#xA;        { DOC_TYPE_VAL = &quot;Schedule of Liabilities (2202)&quot;; }&#xD;&#xA;		&#xD;&#xA;    else if (DOCUMENT_TYPE_CD_ODA == &quot;544&quot;)&#xD;&#xA;        { DOC_TYPE_VAL = &quot;Personal Financial Statement (413)&quot;; }&#xD;&#xA;&#xD;&#xA;    else{ DOC_TYPE_VAL = &quot;Other&quot;;}&#xD;&#xA;}		&#xD;&#xA;else{ DOC_TYPE_VAL = &quot;Other&quot;;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;UserIdIndexXpath = System.String.Format(GetDocField, Index, &quot;DOC_USR_ID&quot;);&#xD;&#xA;USR_USER_ID = xpath(SubmittedDocumentsResponseMsg.parameters, UserIdIndexXpath);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Extract Metadata to Applicant" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Call" OID="2af17403-74d9-423f-a208-fa5d1306cb51" ParentLink="ComplexStatement_Statement" LowerBound="223.1" HigherBound="225.1">
+                            <om:Property Name="Identifier" Value="CallOrchestration_1" />
+                            <om:Property Name="Invokee" Value="SBA.BizTalk.Shared.Salesforce.Documents.Logic.Upload" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="CallOrchestration_1" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Parameter" OID="6774a9d6-cf98-49cc-b8eb-a538338430f0" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="DOC_TITLE" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="e59fb430-0ca5-4160-ba25-3609a7062667" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="DOC_DESCRIPTION" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="afa2384d-9e47-4cdb-94f9-b91cbc029499" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="DOC_PATHONCLIENT" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="30c126fa-0780-4404-a565-7d585bb54f82" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="DOC_DATA" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="fc3b3b74-56ad-40e0-b0c7-8f8bfdf8dfce" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="DOC_FILEEXTENSION" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="53f9b178-ca7e-44ae-833f-348966a31f5b" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="DOC_TYPE_VAL" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="4a48209a-a669-45b7-b409-3bc2f5223e33" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="DOC_REASONFORCHANGE" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="1ffce533-adf4-4a36-95bf-843a6db9e3e0" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="SalesForceApplicantId" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="ed0bd7ee-729c-4968-ad34-3b61852e7db9" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="USR_USER_ID" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="37bb103e-f87d-40fd-9047-8a50a3147cbd" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="DOCUMENT_TYPE_CD_ODA" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="04fea88e-76ea-4a44-9756-cc75edcd0b7a" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="15" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OraclePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="de1d0f62-2a2e-433d-af9f-47f0b447ad88" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="cd4de54a-8e43-4068-87bb-8640f546af7e" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9190447c-d67c-48b2-acb0-c654bc62bd3d" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="Select" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c428b989-02cd-4fa1-8f4e-92ce2cc03a51" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.72" HigherBound="16.130">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="aafef394-0475-4f7a-97d6-a457e984abf1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.70">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="debb0056-3070-4fe2-979f-f2819366911a" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="1f83fc6f-1f26-42a0-a935-a0ad669b2418" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.SelectResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="4f184f1b-680b-4a09-8809-e9f35daa5520" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="9d49d600-6c92-4bd5-8548-240df099a566" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.Select" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    public messagetype ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage
+    {
+        body Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.SelectResponse parameters;
+    };
+    public messagetype ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage
+    {
+        body Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2.Select parameters;
+    };
+    public porttype ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2
+    {
+        requestresponse Select
+        {
+            ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage, ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    public service DocumentCoordinatorLogic
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2 OraclePort;
+        message ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_InputMessage SubmittedDocumentsRequestMsg;
+        message ELA_DB_View_SUBMITTED_DOCUMENTS_DCMS2_Select_OutputMessage SubmittedDocumentsResponseMsg;
+        System.Int32 TotalCount;
+        System.Int32 Index;
+        System.String DocumentIndexXpath;
+        System.String DOC_DESCRIPTION;
+        System.String DOC_APPLICATIONID;
+        System.String DOC_DATA;
+        System.String DOC_DOCUMENT_C;
+        System.String DOC_FILEEXTENSION;
+        System.String DOC_PATHONCLIENT;
+        System.String DOC_REASONFORCHANGE;
+        System.String DOC_TITLE;
+        System.String GetDocField;
+        System.String DocAppSalesForceId;
+        System.String DOC_APPLICANT_ID;
+        System.String SalesForceApplicantId;
+        System.String DOC_ORIGIN;
+        System.String UserIdIndexXpath;
+        System.String USR_USER_ID;
+        System.String TITLE;
+        System.String DOC_TYPE_VAL;
+        System.String DOCUMENT_TYPE_CD_ODA;
+        System.String DocumentType_c;
+        System.String FileName_TITLE;
+        System.String FileName_TITLE_Escape;
+        body (message Application_Import_Definition.HomeDisasterLoanApplicationCanonical Trigger)
+        {
+            Index = 0;
+            DocumentIndexXpath = "";
+            DOC_DESCRIPTION = System.String.Empty;
+            DOC_APPLICATIONID = System.String.Empty;
+            DOC_DATA = System.String.Empty;
+            DOC_DOCUMENT_C = "Tax Transcript";
+            DOC_FILEEXTENSION = System.String.Empty;
+            DOC_PATHONCLIENT = "/fake/path";
+            DOC_REASONFORCHANGE =  "Initial ELA Pull from DLAP";
+            DOC_TITLE = System.String.Empty;
+            GetDocField = "string(/*[local-name()='SelectResponse' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/*[local-name()='SelectResult' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/*[local-name()='SUBMITTED_DOCUMENTS_DCMS2RECORDSELECT' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2'][{0}]/*[local-name()='{1}' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/text())";
+            DocAppSalesForceId = "";
+            DOC_APPLICANT_ID = "";
+            SalesForceApplicantId = "";
+            DOC_ORIGIN = "";
+            UserIdIndexXpath = "";
+            USR_USER_ID = "";
+            TITLE = "";
+            DOC_TYPE_VAL = "";
+            DOCUMENT_TYPE_CD_ODA = "";
+            DocumentType_c = "";
+            FileName_TITLE = "";
+            FileName_TITLE_Escape = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("346f7cbb-c9e0-4216-9419-a55f93f5dcf4")]
+            construct SubmittedDocumentsRequestMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c4fde389-850a-4aa1-9fdf-3c666f897eaf")]
+                transform (SubmittedDocumentsRequestMsg.parameters) = Document_Upload_Logic.CreateOracleRequest (Trigger);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("02839fd4-8d8f-4eca-8bf0-785b8ed00b81")]
+            send (OraclePort.Select, SubmittedDocumentsRequestMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4bb90429-bb54-4694-96e8-7a47e56a7fbb")]
+            receive (OraclePort.Select, SubmittedDocumentsResponseMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f18dc206-63ca-4da8-852d-a3248ee609c2")]
+            TotalCount =  xpath(SubmittedDocumentsResponseMsg.parameters, "count(/*[local-name()='SelectResponse' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/*[local-name()='SelectResult' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2']/*[local-name()='SUBMITTED_DOCUMENTS_DCMS2RECORDSELECT' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2'])");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3d3fbf1f-c110-4861-a7ce-74f998fc2130")]
+            while (Index < TotalCount)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d8020666-ede3-4e56-bfb0-999a5910b646")]
+                Index = Index + 1;
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("8d757d4c-d8e6-4112-a28c-41a9617dd824")]
+                DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_ORIGIN");
+                DOC_ORIGIN = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                
+                DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_APPLICANT_ID");
+                DOC_APPLICANT_ID = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                
+                
+                
+                
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("600288b1-4579-46a4-a720-eccc701e630d")]
+                if (DOC_APPLICANT_ID == "0")
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0270ef9a-fd90-4d5c-8075-ee541ded90f1")]
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_ID");
+                    DOC_DESCRIPTION = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_CONTENTS");
+                    DOC_DATA = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_CONTENT_TYPE");
+                    DOC_FILEEXTENSION = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_INSTANCE_NAME");
+                    TITLE = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    
+                    FileName_TITLE_Escape = System.IO.Path.GetFileNameWithoutExtension(TITLE);
+                    
+                    FileName_TITLE = System.Security.SecurityElement.Escape(FileName_TITLE_Escape);
+                    
+                    
+                    
+                    if(DOC_FILEEXTENSION == "application/pdf")
+                    {DOC_TITLE = FileName_TITLE+".pdf";}
+                    else{DOC_TITLE = FileName_TITLE+".pdf";}
+                    
+                    DOC_PATHONCLIENT = "/fake/" + DOC_TITLE;
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_APPLICANT_ID");
+                    
+                    DOC_APPLICANT_ID = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    SalesForceApplicantId = xpath(Trigger, @"string(/*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']/*[local-name()='SalesForceApplication__cID' and namespace-uri()='']/text())");
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_TYPE");
+                    DOCUMENT_TYPE_CD_ODA = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    if(!System.String.IsNullOrWhiteSpace(DOCUMENT_TYPE_CD_ODA))
+                    {
+                        if (DOCUMENT_TYPE_CD_ODA == "525")
+                            { DOC_TYPE_VAL = "4506T"; }
+                    		
+                        else if (DOCUMENT_TYPE_CD_ODA == "542")
+                            { DOC_TYPE_VAL = "Schedule of Liabilities (2202)"; }
+                    		
+                        else if (DOCUMENT_TYPE_CD_ODA == "544")
+                            { DOC_TYPE_VAL = "Personal Financial Statement (413)"; }
+                        
+                        else{ DOC_TYPE_VAL = "Other";}
+                    }		
+                    else{ DOC_TYPE_VAL = "Other";}
+                    
+                    
+                    UserIdIndexXpath = System.String.Format(GetDocField, Index, "DOC_USR_ID");
+                    USR_USER_ID = xpath(SubmittedDocumentsResponseMsg.parameters, UserIdIndexXpath);
+                }
+                else 
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5f9f04ae-1e5e-49b6-b585-bd05c9cd0ac1")]
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_ID");
+                    DOC_DESCRIPTION = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_CONTENTS");
+                    DOC_DATA = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_CONTENT_TYPE");
+                    DOC_FILEEXTENSION = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_INSTANCE_NAME");
+                    TITLE = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    FileName_TITLE = System.IO.Path.GetFileNameWithoutExtension(TITLE);
+                    
+                    
+                    FileName_TITLE_Escape = System.IO.Path.GetFileNameWithoutExtension(TITLE);
+                    
+                    FileName_TITLE = System.Security.SecurityElement.Escape(FileName_TITLE_Escape);
+                    
+                    if(DOC_FILEEXTENSION == "application/pdf")
+                    {DOC_TITLE = FileName_TITLE+".pdf";}
+                    else{DOC_TITLE = FileName_TITLE+".pdf";}
+                    
+                    DOC_PATHONCLIENT = "/fake/" + DOC_TITLE;
+                    
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_APPLICANT_ID");
+                    DOC_APPLICANT_ID = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    
+                    SalesForceApplicantId = xpath(Trigger, @"string(
+                    /*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']
+                    /*[local-name()='ApplicantColl' and namespace-uri()='']
+                    /*[local-name()='Applicants' and namespace-uri()='' ]
+                    /*[local-name()='ApplicantId' and namespace-uri()='' and text()='"+DOC_APPLICANT_ID+@"']/..
+                    /*[local-name()='SalesForceApplicantID' and namespace-uri()='']/text())");
+                    
+                    
+                    DocumentIndexXpath = System.String.Format(GetDocField, Index, "DOC_TYPE");
+                    DOCUMENT_TYPE_CD_ODA = xpath(SubmittedDocumentsResponseMsg.parameters, DocumentIndexXpath);
+                    
+                    if(!System.String.IsNullOrWhiteSpace(DOCUMENT_TYPE_CD_ODA))
+                    {
+                        if (DOCUMENT_TYPE_CD_ODA == "525")
+                            { DOC_TYPE_VAL = "4506T"; }
+                    		
+                        else if (DOCUMENT_TYPE_CD_ODA == "542")
+                            { DOC_TYPE_VAL = "Schedule of Liabilities (2202)"; }
+                    		
+                        else if (DOCUMENT_TYPE_CD_ODA == "544")
+                            { DOC_TYPE_VAL = "Personal Financial Statement (413)"; }
+                    
+                        else{ DOC_TYPE_VAL = "Other";}
+                    }		
+                    else{ DOC_TYPE_VAL = "Other";}
+                    
+                    
+                    
+                    UserIdIndexXpath = System.String.Format(GetDocField, Index, "DOC_USR_ID");
+                    USR_USER_ID = xpath(SubmittedDocumentsResponseMsg.parameters, UserIdIndexXpath);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2af17403-74d9-423f-a208-fa5d1306cb51")]
+                call SBA.BizTalk.Shared.Salesforce.Documents.Logic.Upload (DOC_TITLE, DOC_DESCRIPTION, DOC_PATHONCLIENT, DOC_DATA, DOC_FILEEXTENSION, DOC_TYPE_VAL, DOC_REASONFORCHANGE, SalesForceApplicantId, USR_USER_ID, DOCUMENT_TYPE_CD_ODA);
+            }
+        }
+    }
+}
+

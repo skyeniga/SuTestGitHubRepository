@@ -1,0 +1,369 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="6d40cd79-81c3-45fa-859e-d7b81ce160c3" LowerBound="1.1" HigherBound="95.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="626a85d7-6462-4727-b8d5-0fc53698edc2" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="94.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Error_Analyzer" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="c7e46956-13fd-499e-8441-eadebf5f8c68" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Text.StringBuilder" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="exceptionMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="aef82567-9eb6-42c0-af6b-c995a6cf223c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="8.1" HigherBound="9.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Text.RegularExpressions.Regex" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="regEx" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="28b4b3d2-2bbe-4c95-916d-ae2e707a4cde" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="9.1" HigherBound="10.1">
+                <om:Property Name="InitialValue" Value="@&quot;Could not execute the specified command: INVALID_LOGIN: Invalid username, password, security token; or user locked out.&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="logonExceptionSFRegex" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c7c8f1aa-c8fc-4740-9ace-022b512d0f6f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Text.RegularExpressions.MatchCollection" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="regMatchCollection" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6373669d-9142-4539-981b-b446056498e7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="11.1" HigherBound="12.1">
+                <om:Property Name="InitialValue" Value="@&quot;ORA-01017: invalid username/password; logon denied&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="logonExceptionRegex" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="171d8065-7b5c-4d3a-af37-b96fe6d24c31" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="12.1" HigherBound="13.1">
+                <om:Property Name="InitialValue" Value="@&quot;ORA-12154: TNS:could not resolve the connect identifier specified&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="badTNSRegex" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="cc5d9a56-ceb6-489f-93c1-f07cbfbba385" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="13.1" HigherBound="14.1">
+                <om:Property Name="InitialValue" Value="@&quot;System error: No such host is known&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="badSFServerName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="11893d0d-c7ad-44aa-bd13-ca7d23d4abbe" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="VariableDeclaration" OID="c65b5091-c8ab-4da4-897c-7fa8ff32769c" ParentLink="ServiceBody_Declaration" LowerBound="14.15" HigherBound="14.61">
+                    <om:Property Name="InitialValue" Value="@&quot;Application Import:\nThis application {0} {1} during the {2} Process Step.\n&quot;" />
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="EventNotificationMessageTemplate" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="648eb382-8f48-484a-b7d6-ecbba65ff117" ParentLink="ServiceBody_Declaration" LowerBound="14.63" HigherBound="14.111">
+                    <om:Property Name="InitialValue" Value="&quot;&quot;" />
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="EventNotificationApplicationNumber" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="dee04a09-49d6-4507-b7db-a7442040d097" ParentLink="ServiceBody_Declaration" LowerBound="14.113" HigherBound="14.155">
+                    <om:Property Name="InitialValue" Value="&quot;Initial Setup&quot;" />
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="EventNotificationProcessStep" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="c4308715-7914-4560-b05c-50747a446e18" ParentLink="ServiceBody_Declaration" LowerBound="14.157" HigherBound="14.199">
+                    <om:Property Name="InitialValue" Value="&quot;Order LV Inspection Event was Successfully transferred to Loss Verification.&quot;" />
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="Ref" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="EventNotificationMessage" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="ecd1d5a0-eca6-42f2-82ab-522f08def6f0" ParentLink="ServiceBody_Declaration" LowerBound="14.201" HigherBound="14.225">
+                    <om:Property Name="UseDefaultConstructor" Value="True" />
+                    <om:Property Name="Type" Value="System.Exception" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="excpCap" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Decision" OID="5c60e468-8321-48c0-9591-058aef039bcd" ParentLink="ServiceBody_Statement" LowerBound="21.1" HigherBound="92.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Exception has Message Data?" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="dbc986b4-62a4-4310-b8c4-7f2d212f5a76" ParentLink="ReallyComplexStatement_Branch" LowerBound="22.13" HigherBound="92.1">
+                        <om:Property Name="Expression" Value="! System.String.IsNullOrEmpty(excpCap.Message)" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Test Errors" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Task" OID="22c2a2a8-bd52-43a3-91b0-459d4a922834" ParentLink="ComplexStatement_Statement" LowerBound="24.1" HigherBound="56.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Oracle Checks" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="08fcd8cf-4eb2-473a-b0ff-4d0685fe808a" ParentLink="ComplexStatement_Statement" LowerBound="24.1" HigherBound="27.1">
+                                <om:Property Name="Expression" Value="regEx = new System.Text.RegularExpressions.Regex(logonExceptionRegex);&#xD;&#xA;regMatchCollection = regEx.Matches(excpCap.Message);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Bad Oracle Logon" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="221e93e9-9194-47f1-8d7b-55e81118cba5" ParentLink="ComplexStatement_Statement" LowerBound="27.1" HigherBound="41.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Did a logon to Oracle fail?" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="986cdcfc-9744-4b7e-a66b-35a424b92ec4" ParentLink="ReallyComplexStatement_Branch" LowerBound="28.17" HigherBound="41.1">
+                                    <om:Property Name="Expression" Value="regMatchCollection.Count &gt; 0" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Logon Failed" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="VariableAssignment" OID="9f326045-851b-4039-8557-bf34f3726a5a" ParentLink="ComplexStatement_Statement" LowerBound="30.1" HigherBound="40.1">
+                                        <om:Property Name="Expression" Value="exceptionMessage.AppendFormat(&#xD;&#xA;EventNotificationMessageTemplate, &#xD;&#xA;EventNotificationApplicationNumber,&#xD;&#xA;@&quot;failed when attempting to logon to DLAP ELA Oracle due to an incorrect connect setting in the BizTalk Send or Receive Port&quot;, &#xD;&#xA;EventNotificationProcessStep );&#xD;&#xA;&#xD;&#xA;SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.BuildExceptionString(ref exceptionMessage, excpCap);&#xD;&#xA;&#xD;&#xA;EventNotificationMessage = exceptionMessage.ToString();&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Fault Error" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="341bdf10-6e5f-4c70-80d9-b8d1ad50e850" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="55286032-221d-48c5-9c8b-c9334823c02c" ParentLink="ComplexStatement_Statement" LowerBound="41.1" HigherBound="44.1">
+                                <om:Property Name="Expression" Value="regEx = new System.Text.RegularExpressions.Regex(badTNSRegex);&#xD;&#xA;regMatchCollection = regEx.Matches(excpCap.Message);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Bad Oracle TNS Entry" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="50df4e4d-13dd-489f-a98b-ecd4f72dfd8b" ParentLink="ComplexStatement_Statement" LowerBound="44.1" HigherBound="56.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Did a logon to Oracle fail?" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="ef51e6c8-2155-4a5a-a187-fd5b7cfe814f" ParentLink="ReallyComplexStatement_Branch" LowerBound="45.17" HigherBound="56.1">
+                                    <om:Property Name="Expression" Value="regMatchCollection.Count &gt; 0" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="TNS Entry Bad" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="VariableAssignment" OID="102b2e63-781a-4514-98c1-201cf3549268" ParentLink="ComplexStatement_Statement" LowerBound="47.1" HigherBound="55.1">
+                                        <om:Property Name="Expression" Value="exceptionMessage.AppendFormat(&#xD;&#xA;EventNotificationMessageTemplate, &#xD;&#xA;EventNotificationApplicationNumber,&#xD;&#xA;@&quot;failed when attempting to connect to the Oracle Server due to a bad Oracle Server name setting in the associated BizTalk send port&quot;, &#xD;&#xA;EventNotificationProcessStep );&#xD;&#xA;&#xD;&#xA;EventNotificationMessage = exceptionMessage.ToString();&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Fault Error" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="5ecb59ca-ec52-449d-a371-1b6380cab712" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Task" OID="c022a8cf-1cd9-4611-849d-ce51125b448e" ParentLink="ComplexStatement_Statement" LowerBound="56.1" HigherBound="91.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Salesforce Checks" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="a5c7a843-5c1a-4f24-88cf-ee8c1398d507" ParentLink="ComplexStatement_Statement" LowerBound="56.1" HigherBound="59.1">
+                                <om:Property Name="Expression" Value="regEx = new System.Text.RegularExpressions.Regex(logonExceptionSFRegex);&#xD;&#xA;regMatchCollection = regEx.Matches(excpCap.Message);&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Bad SF logon" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="78b713ec-4004-44a0-84e6-42a51db381e4" ParentLink="ComplexStatement_Statement" LowerBound="59.1" HigherBound="73.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Did a logon to SF fail?" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="d06dc35b-17d8-4827-9dc8-f01e48c7a03e" ParentLink="ReallyComplexStatement_Branch" LowerBound="60.17" HigherBound="73.1">
+                                    <om:Property Name="Expression" Value="regMatchCollection.Count &gt; 0" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="SF Logon Bad" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="VariableAssignment" OID="a5a9361b-2a48-446b-8bc3-3b3891381c27" ParentLink="ComplexStatement_Statement" LowerBound="62.1" HigherBound="72.1">
+                                        <om:Property Name="Expression" Value="exceptionMessage.AppendFormat(&#xD;&#xA;EventNotificationMessageTemplate, &#xD;&#xA;EventNotificationApplicationNumber,&#xD;&#xA;@&quot;failed when attempting to logon to Salesforce&quot;, &#xD;&#xA;EventNotificationProcessStep );&#xD;&#xA;&#xD;&#xA;SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.BuildExceptionString(ref exceptionMessage, excpCap);&#xD;&#xA;&#xD;&#xA;EventNotificationMessage = exceptionMessage.ToString();&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Fault Error" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="7b54e201-8eeb-4dc2-bca7-90c07c4060ce" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="cdb171ca-8273-439b-8b4c-6ad05499f7de" ParentLink="ComplexStatement_Statement" LowerBound="73.1" HigherBound="76.1">
+                                <om:Property Name="Expression" Value="regEx = new System.Text.RegularExpressions.Regex(badSFServerName);&#xD;&#xA;regMatchCollection = regEx.Matches(excpCap.Message);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Bad SF Server Name" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Decision" OID="ac55ce8d-0918-48ed-9c3c-e0915f95ede6" ParentLink="ComplexStatement_Statement" LowerBound="76.1" HigherBound="91.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Did a logon to SF fail?" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="DecisionBranch" OID="32787bbe-4382-4817-b574-8a4acd7aeb36" ParentLink="ReallyComplexStatement_Branch" LowerBound="77.17" HigherBound="91.1">
+                                    <om:Property Name="Expression" Value="regMatchCollection.Count &gt; 0" />
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="SF Server Bad" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="VariableAssignment" OID="b9a22284-859a-4a8b-bf1d-7b2cb884bc75" ParentLink="ComplexStatement_Statement" LowerBound="79.1" HigherBound="90.1">
+                                        <om:Property Name="Expression" Value="exceptionMessage.AppendFormat(&#xD;&#xA;EventNotificationMessageTemplate, &#xD;&#xA;EventNotificationApplicationNumber,&#xD;&#xA;@&quot;failed when attempting to connect to Salesforce because the server name in the connection string is wrong.&#xD;&#xA;Correct the connection string in the BizTalk Send port to resolve this&quot;, &#xD;&#xA;EventNotificationProcessStep );&#xD;&#xA;&#xD;&#xA;SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.BuildExceptionString(ref exceptionMessage, excpCap);&#xD;&#xA;&#xD;&#xA;EventNotificationMessage = exceptionMessage.ToString();&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Fault Error" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="DecisionBranch" OID="75d69b28-d86e-4aba-926b-883c992ed037" ParentLink="ReallyComplexStatement_Branch">
+                                    <om:Property Name="IsGhostBranch" Value="True" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Else" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="77f666e7-38e7-4758-a168-ef93128efdad" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Error_Analyzer
+    {
+        System.Text.StringBuilder exceptionMessage;
+        System.Text.RegularExpressions.Regex regEx;
+        System.String logonExceptionSFRegex;
+        System.Text.RegularExpressions.MatchCollection regMatchCollection;
+        System.String logonExceptionRegex;
+        System.String badTNSRegex;
+        System.String badSFServerName;
+        body (System.String EventNotificationMessageTemplate, System.String EventNotificationApplicationNumber, System.String EventNotificationProcessStep, ref System.String EventNotificationMessage, System.Exception excpCap)
+        {
+            exceptionMessage = new System.Text.StringBuilder();
+            logonExceptionSFRegex = @"Could not execute the specified command: INVALID_LOGIN: Invalid username, password, security token; or user locked out.";
+            logonExceptionRegex = @"ORA-01017: invalid username/password; logon denied";
+            badTNSRegex = @"ORA-12154: TNS:could not resolve the connect identifier specified";
+            badSFServerName = @"System error: No such host is known";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("5c60e468-8321-48c0-9591-058aef039bcd")]
+            if (! System.String.IsNullOrEmpty(excpCap.Message))
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("08fcd8cf-4eb2-473a-b0ff-4d0685fe808a")]
+                regEx = new System.Text.RegularExpressions.Regex(logonExceptionRegex);
+                regMatchCollection = regEx.Matches(excpCap.Message);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("221e93e9-9194-47f1-8d7b-55e81118cba5")]
+                if (regMatchCollection.Count > 0)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("9f326045-851b-4039-8557-bf34f3726a5a")]
+                    exceptionMessage.AppendFormat(
+                    EventNotificationMessageTemplate, 
+                    EventNotificationApplicationNumber,
+                    @"failed when attempting to logon to DLAP ELA Oracle due to an incorrect connect setting in the BizTalk Send or Receive Port", 
+                    EventNotificationProcessStep );
+                    
+                    SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.BuildExceptionString(ref exceptionMessage, excpCap);
+                    
+                    EventNotificationMessage = exceptionMessage.ToString();
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("55286032-221d-48c5-9c8b-c9334823c02c")]
+                regEx = new System.Text.RegularExpressions.Regex(badTNSRegex);
+                regMatchCollection = regEx.Matches(excpCap.Message);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("50df4e4d-13dd-489f-a98b-ecd4f72dfd8b")]
+                if (regMatchCollection.Count > 0)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("102b2e63-781a-4514-98c1-201cf3549268")]
+                    exceptionMessage.AppendFormat(
+                    EventNotificationMessageTemplate, 
+                    EventNotificationApplicationNumber,
+                    @"failed when attempting to connect to the Oracle Server due to a bad Oracle Server name setting in the associated BizTalk send port", 
+                    EventNotificationProcessStep );
+                    
+                    EventNotificationMessage = exceptionMessage.ToString();
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a5c7a843-5c1a-4f24-88cf-ee8c1398d507")]
+                regEx = new System.Text.RegularExpressions.Regex(logonExceptionSFRegex);
+                regMatchCollection = regEx.Matches(excpCap.Message);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("78b713ec-4004-44a0-84e6-42a51db381e4")]
+                if (regMatchCollection.Count > 0)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("a5a9361b-2a48-446b-8bc3-3b3891381c27")]
+                    exceptionMessage.AppendFormat(
+                    EventNotificationMessageTemplate, 
+                    EventNotificationApplicationNumber,
+                    @"failed when attempting to logon to Salesforce", 
+                    EventNotificationProcessStep );
+                    
+                    SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.BuildExceptionString(ref exceptionMessage, excpCap);
+                    
+                    EventNotificationMessage = exceptionMessage.ToString();
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("cdb171ca-8273-439b-8b4c-6ad05499f7de")]
+                regEx = new System.Text.RegularExpressions.Regex(badSFServerName);
+                regMatchCollection = regEx.Matches(excpCap.Message);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("ac55ce8d-0918-48ed-9c3c-e0915f95ede6")]
+                if (regMatchCollection.Count > 0)
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b9a22284-859a-4a8b-bf1d-7b2cb884bc75")]
+                    exceptionMessage.AppendFormat(
+                    EventNotificationMessageTemplate, 
+                    EventNotificationApplicationNumber,
+                    @"failed when attempting to connect to Salesforce because the server name in the connection string is wrong.
+                    Correct the connection string in the BizTalk Send port to resolve this", 
+                    EventNotificationProcessStep );
+                    
+                    SBA.BizTalk.Shared.MessageHelper.Exceptions.ExceptionFormatter.BuildExceptionString(ref exceptionMessage, excpCap);
+                    
+                    EventNotificationMessage = exceptionMessage.ToString();
+                }
+            }
+        }
+    }
+}
+

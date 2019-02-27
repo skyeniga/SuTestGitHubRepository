@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B12E22B-CF63-480A-AF70-3B892DB8E243}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>SBA.ETRANObligation.Logic</RootNamespace>
+    <AssemblyName>SBA.ETRANObligation.Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SBA Obligation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SBA.BizTalk.Shared.AuditLogging.Logic, Version=2.0.8.4, Culture=neutral, PublicKeyToken=109c4f8710513e58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.BizTalk.Shared.AuditLogging.Logic\v4.0_2.0.8.4__109c4f8710513e58\SBA.BizTalk.Shared.AuditLogging.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="SBA.BizTalk.Shared.MessageHelper, Version=2.0.9.0, Culture=neutral, PublicKeyToken=7bf51f5d89236764, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.BizTalk.Shared.MessageHelper\v4.0_2.0.9.0__7bf51f5d89236764\SBA.BizTalk.Shared.MessageHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.BizTalk.Shared.Pipelines\v4.0_1.0.1.2__7bf51f5d89236764\SBA.BizTalk.Shared.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="SBA.BizTalk.Shared.Salesforce.EventLogging.Logic, Version=2.0.9.14, Culture=neutral, PublicKeyToken=7bf51f5d89236764, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.BizTalk.Shared.Salesforce.EventLogging.Logic\v4.0_2.0.9.14__7bf51f5d89236764\SBA.BizTalk.Shared.Salesforce.EventLogging.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="SBA.BizTalk.Shared.Salesforce.RestApi.Component, Version=2.0.8.4, Culture=neutral, PublicKeyToken=7bf51f5d89236764, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.BizTalk.Shared.Salesforce.RestApi.Component\v4.0_2.0.8.4__7bf51f5d89236764\SBA.BizTalk.Shared.Salesforce.RestApi.Component.dll</HintPath>
+    </Reference>
+    <Reference Include="SBA.BizTalk.Shared.Salesforce.RestApi.Definition, Version=2.0.8.4, Culture=neutral, PublicKeyToken=7bf51f5d89236764, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.BizTalk.Shared.Salesforce.RestApi.Definition\v4.0_2.0.8.4__7bf51f5d89236764\SBA.BizTalk.Shared.Salesforce.RestApi.Definition.dll</HintPath>
+    </Reference>
+    <Reference Include="SBA.BizTalk.Shared.Salesforce.RestApi.Logic, Version=2.0.8.4, Culture=neutral, PublicKeyToken=7bf51f5d89236764, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.BizTalk.Shared.Salesforce.RestApi.Logic\v4.0_2.0.8.4__7bf51f5d89236764\SBA.BizTalk.Shared.Salesforce.RestApi.Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="SBA.ETRAN.Shared.Definition, Version=2.0.8.3, Culture=neutral, PublicKeyToken=c9f148e1d16b7a80, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\SBA.ETRAN.Shared.Definition\v4.0_2.0.8.3__c9f148e1d16b7a80\SBA.ETRAN.Shared.Definition.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Versioning\AssemblyInfoShared.cs">
+      <Link>Properties\AssemblyInfoShared.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SBA Obligation.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="BusinessType\Map Business Type To Canonical.btm">
+      <TypeName>Map_Business_Type_To_Canonical</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.BusinessType</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <None Include="Multi\Map Multi Result To Canonical.Input.SoleProp.xml" />
+    <None Include="Multi\Map Multi Result To Canonical.Input.Corp.xml" />
+    <None Include="Multi\Map Multi Result To Canonical.Input.Home.xml" />
+    <None Include="Multi\Map Multi Result To Canonical.Output.xml" />
+    <None Include="Multi\Map Multi Request To Canonical.Output.xml" />
+    <None Include="Multi\Map Multi Request To Canonical.Input.xml" />
+    <None Include="Multi\Map Multi Query Request.Output.xml" />
+    <None Include="Multi\Map Multi Query Request.Input.xml" />
+    <Map Include="Multi\Map Multi Result To Canonical.btm">
+      <TypeName>Map_Multi_Result_To_Canonical</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.Multi</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Multi\Map Multi Request To Canonical.btm">
+      <TypeName>Map_Multi_Request_To_Canonical</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.Multi</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Multi\Map Multi Query Request.btm">
+      <TypeName>Map_Multi_Query_Request</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.Multi</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <None Include="Event_Request__c\Map Event_Request__c From Error.Output.xml" />
+    <Map Include="ETRAN Originate\Map Fault1_1 To Response.btm">
+      <TypeName>Map_Fault1_1_To_Response</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.ETRAN_Originate</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="ETRAN Originate\Map Fault1_2 To Response.btm">
+      <TypeName>Map_Fault1_2_To_Response</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.ETRAN_Originate</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="ETRAN Originate\Map CVCInvocationEx To Response.btm">
+      <TypeName>Map_CVCInvocationEx_To_Response</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.ETRAN_Originate</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="BusinessType\Map Borrower Business Types Initial.btm">
+      <TypeName>Map_Borrower_Business_Types_Initial</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.BusinessType</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <None Include="BusinessType\Map Borrower Business Types Initial.Input.Home.xml" />
+    <None Include="BusinessType\Map Borrower Business Types Initial.Output.xml" />
+    <None Include="BusinessType\Map Borrower Business Types Initial.Input.Corp.xml" />
+    <None Include="BusinessType\Map Borrower Business Types Initial.Input.SoleProp.xml" />
+    <Content Include="BusinessType\Map Borrower Business Types Initial.xsl" />
+    <None Include="BusinessType\Map Business Type To Canonical.Input.xml" />
+    <None Include="BusinessType\Map Business Type To Canonical.Output.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Event_Request__c\Map Event_Request__c From Error.xsl" />
+    <None Include="Event_Request__c\Map Event_Request__c From Error.Input.xml" />
+    <Content Include="Event_Request__c\Map Event_Request__c.xsl" />
+    <None Include="Loan__c\Map Loan__c Update Request.Output.xml" />
+    <None Include="Loan__c\Map Loan__c Update Request.Input.xml" />
+    <None Include="Event_Request__c\Map Event_Request__c.input.errors.xml" />
+    <None Include="ETRAN Originate\Map ETRAN Originate Response to Canonical.Output.xml" />
+    <Map Include="ETRAN Originate\Map ETRAN Originate App Defaults To Canonical.btm">
+      <TypeName>Map_ETRAN_Originate_App_Defaults_To_Canonical</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.ETRANOriginate</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <None Include="ETRAN Originate\Map ETRAN Originate App.Input.Business.xml" />
+    <None Include="ETRAN Originate\Map ETRAN Originate Request.Input.xml" />
+    <None Include="ETRAN Originate\Map ETRAN Originate Request.Output.xml" />
+    <None Include="Notification\Map Notification Ack Response.Input.Bad.xml" />
+    <Map Include="ETRAN Originate\Map ETRAN Originate Request.btm">
+      <TypeName>Map_ETRAN_Originate_Request</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.ETRANOriginate</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="ETRAN Originate\Create ETRAN Originate App Defaults.btm">
+      <TypeName>Create_ETRAN_Originate_App_Defaults</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.ETRANOriginate</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <None Include="ETRAN Originate\Create ETRAN Originate App Defaults.Input.xml" />
+    <None Include="ETRAN Originate\Create ETRAN Originate App Defaults.Output.xml" />
+    <None Include="ETRAN Originate\Map ETRAN Originate App Defaults To Canonical.Input.xml" />
+    <None Include="ETRAN Originate\Map ETRAN Originate App Defaults To Canonical.Output.xml" />
+    <None Include="ETRAN Originate\Map ETRAN Originate App.Input.SoleProp.xml" />
+    <None Include="ETRAN Originate\Map ETRAN Originate Response to Canonical.Input.xml" />
+    <Content Include="ETRAN Originate\Map ETRAN Originate Request.xsl" />
+    <None Include="Notification\Map Notification to Canonical.Input.xml" />
+    <None Include="Notification\Map Notification to Canonical.Output.xml" />
+    <None Include="Notification\Map Notification Ack Response.Output.xml" />
+    <None Include="Notification\Map Notification Ack Response.Input.Good.xml" />
+    <Map Include="Notification\Map Notification Ack Response.btm">
+      <TypeName>MapNotificationAckResponse</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.Notification</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Event_Request__c\Map Event_Request__c From Error.btm">
+      <TypeName>Map_Event_Request_c_From_Error</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.Event_Request__c</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Event_Request__c\Map Event_Request__c.btm">
+      <TypeName>Map_Event_Request_c</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.Event_Request__c</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <XLang Include="ETRAN Obligation SF Notify Debatcher.odx">
+      <TypeName>ETRAN_Obligation_SF_Notify_Debatcher</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <None Include="Event_Request__c\Map Event_Request__c.input.xml" />
+    <None Include="Event_Request__c\Map Event_Request__c.output.xml" />
+    <Map Include="ETRAN Originate\Map ETRAN Originate Response to Canonical.btm">
+      <TypeName>Map_ETRAN_Originate_Response_to_Canonical</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.ETRANOriginate</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Notification\Map Notification to Canonical.btm">
+      <TypeName>Map_Notification_to_Canonical</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.Notification</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="ETRAN Originate\Map ETRAN Originate App.btm">
+      <TypeName>MapETRANOriginateApp</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.ETRANOriginate</Namespace>
+      <SubType>Designer</SubType>
+    </Map>
+    <XLang Include="ETRAN Obligation Logic.odx">
+      <TypeName>ETRAN_Obligation_Logic_Copy</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <None Include="ETRAN Originate\Map ETRAN Originate App.Input.Home.xml" />
+    <None Include="ETRAN Originate\Map ETRAN Originate App.Output.xml" />
+    <Map Include="Loan__c\Map Loan__c Update Request.btm">
+      <TypeName>Map_Loan__c_Update_Request</TypeName>
+      <Namespace>SBA.ETRANObligation.Logic.Loan__c</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="ETRAN Originate\Map ETRAN Originate App.xsl" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ETRAN Obligation Definition ETRAN\ETRAN Obligation Definition ETRAN.btproj">
+      <Project>{9a3601ef-1718-4eb7-bc33-b56de31ee7a0}</Project>
+      <Name>ETRAN Obligation Definition ETRAN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETRAN Obligation Definition Rules\ETRAN Obligation Definition Rules.btproj">
+      <Project>{38a63874-786e-4012-a534-55ac24d03050}</Project>
+      <Name>ETRAN Obligation Definition Rules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETRAN Obligation Definition Salesforce\ETRAN Obligation Definition Salesforce.btproj">
+      <Project>{fe7385a9-9899-401d-8b1a-1f03d0733da1}</Project>
+      <Name>ETRAN Obligation Definition Salesforce</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETRAN Obligation Definition\ETRAN Obligation Definition.btproj">
+      <Project>{e83a8f25-011a-4de2-9597-0c0d52ad79fd}</Project>
+      <Name>ETRAN Obligation Definition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

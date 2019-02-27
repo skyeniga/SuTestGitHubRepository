@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E83A8F25-011A-4DE2-9597-0C0D52AD79FD}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>SBA.ETRANObligation.Definition</RootNamespace>
+    <AssemblyName>SBA.ETRANObligation.Definition</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <EnableUnitTesting>True</EnableUnitTesting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SBA Obligation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Versioning\AssemblyInfoShared.cs">
+      <Link>Properties\AssemblyInfoShared.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Canonical\ETRAN Obligation Canonical.xsd">
+      <TypeName>ETRANObligationCanonical</TypeName>
+      <Namespace>SBA.ETRANObligation.Definition.Canonical</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="ETRAN Originate\ETRAN Originate App Defaults.xsd">
+      <TypeName>ETRANOriginateAppDefaults</TypeName>
+      <Namespace>SBA.ETRANObligation.Definition.ETRAN_Originate</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Borrower\Borrower Business Types.xsd">
+      <TypeName>BorrowerBusinessTypes</TypeName>
+      <Namespace>SBA.ETRANObligation.Definition.Borrower</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <None Include="SBA Obligation.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ETRAN Obligation Definition ETRAN\ETRAN Obligation Definition ETRAN.btproj">
+      <Project>{9a3601ef-1718-4eb7-bc33-b56de31ee7a0}</Project>
+      <Name>ETRAN Obligation Definition ETRAN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETRAN Obligation Definition Rules\ETRAN Obligation Definition Rules.btproj">
+      <Project>{38a63874-786e-4012-a534-55ac24d03050}</Project>
+      <Name>ETRAN Obligation Definition Rules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ETRAN Obligation Definition Salesforce\ETRAN Obligation Definition Salesforce.btproj">
+      <Project>{fe7385a9-9899-401d-8b1a-1f03d0733da1}</Project>
+      <Name>ETRAN Obligation Definition Salesforce</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Borrower\Borrower Business Types.xml" />
+    <None Include="Canonical\ETRAN Obligation Canonical.Input.BeforeEtran.xml" />
+    <None Include="Canonical\ETRAN Obligation Canonical.Input.xml" />
+    <None Include="Canonical\ETRAN Obligation Canonical.Output.xml" />
+    <None Include="ETRAN Originate\ETRAN Originate App Defaults.Input.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

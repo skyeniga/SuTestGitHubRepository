@@ -1,0 +1,8 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Logic\bin\Debug\DLAPDocumentUploadLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Logic\bin\Debug\DLAPDocumentUploadLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Logic\bin\Debug\DLAPDocumentUploadDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Logic\bin\Debug\DLAPDocumentUploadSalesForceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Logic\bin\Debug\SBA.BizTalk.Shared.Salesforce.Documents.Logic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Logic\bin\Debug\SBA.BizTalk.Shared.Salesforce.EventLogging.Logic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Logic\obj\Debug\DLAPDocumentUploadLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Logic\obj\Debug\DLAPDocumentUploadLogic.pdb

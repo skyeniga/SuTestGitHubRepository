@@ -1,0 +1,35 @@
+{
+  "SchemaVersion": "1.0.0.0",
+  "ApplicationVersion": "1.0.0.0",
+  "BizTalkAssemblies": [
+    {
+      "Name": "DLAPDocumentUploadDefinition",
+      "Path": "bin\\DLAPDocumentUploadDefinition.dll"
+    },
+    {
+      "Name": "DLAPDocumentUploadSalesForceDefinition",
+      "Path": "bin\\DLAPDocumentUploadSalesForceDefinition.dll"
+    },
+    {
+      "Name": "DLAPDocumentUploadLogic",
+      "Path": "bin\\DLAPDocumentUploadLogic.dll"
+    }
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "Binding",
+      "Path": "bindings\\Binding.xml"
+    }
+  ],
+  "Assemblies": [],
+  "PreProcessingScripts": [],
+  "PostProcessingScripts": [],
+  "Files": [],
+  "Tokens": [],
+  "DeploymentSequence": [
+    "DLAPDocumentUploadDefinition",
+    "DLAPDocumentUploadSalesForceDefinition",
+    "DLAPDocumentUploadLogic",
+    "Binding"
+  ]
+}

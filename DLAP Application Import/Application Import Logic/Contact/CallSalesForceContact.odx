@@ -1,0 +1,337 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="f9e0ad4d-c7a2-4282-9e70-5b67d739d922" LowerBound="1.1" HigherBound="64.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="b04931f1-3b7c-4708-be2e-bfb74b392f76" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="63.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CallSalesForceContact" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="c1c9a814-3e5b-451d-a5c4-0944467676b0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CountCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="fbfda9fb-636b-43aa-8b8b-171522bcd463" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TempApplicationCanonical" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="997647ed-f0b8-4d61-952d-0f43c9a28143" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementRequestContact" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateContactMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b6c2aa28-e434-4146-8378-6665730b251c" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementResponseContact" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateContactResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="89a03cef-0674-40f7-84ff-30265aa3b15a" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageDeclaration" OID="61d8d467-4fa8-4d38-9574-85356b38b548" ParentLink="ServiceBody_Declaration" LowerBound="28.15" HigherBound="28.114">
+                    <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ParamDirection" Value="Ref" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ApplicationCanonical" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="cbd3a1e8-fd89-4c4e-b247-23302d3e0c42" ParentLink="ServiceBody_Statement" LowerBound="30.1" HigherBound="61.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct Request" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="b307b12d-7ce6-40c3-81f1-4881c2a5b620" ParentLink="ComplexStatement_Statement" LowerBound="30.1" HigherBound="36.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Create SF Request" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="0ecd197a-8558-4173-b76e-a610f9cbcca5" ParentLink="ComplexStatement_Statement" LowerBound="33.1" HigherBound="35.1">
+                            <om:Property Name="ClassName" Value="Application_Import_Logic.Contact.MakeContactRequestMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Create Request" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="d1cf6455-f6e1-41ca-ada4-8fbe353bc2b0" ParentLink="Transform_InputMessagePartRef" LowerBound="34.115" HigherBound="34.135">
+                                <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="474a25ca-6d85-420d-8636-afbe3ac32a85" ParentLink="Transform_OutputMessagePartRef" LowerBound="34.28" HigherBound="34.55">
+                                <om:Property Name="MessageRef" Value="CreateContactMsg" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="1aae3847-e978-4e77-b557-0f698ae42ba8" ParentLink="Construct_MessageRef" LowerBound="31.23" HigherBound="31.39">
+                            <om:Property Name="Ref" Value="CreateContactMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="252fb356-d2da-418d-b0f3-d004a637d859" ParentLink="ComplexStatement_Statement" LowerBound="36.1" HigherBound="38.1">
+                        <om:Property Name="Expression" Value="CountCount = xpath(CreateContactMsg.parameters,&quot;count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/Contact']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/Contact']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/Contact'])&quot;);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Count Contact" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="56222e2f-f7d4-43ae-b62e-0d39b4ea5dd5" ParentLink="ComplexStatement_Statement" LowerBound="38.1" HigherBound="61.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Contact Data Exists?" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="0ae718fb-2692-4f34-8185-ab49c391bb6d" ParentLink="ReallyComplexStatement_Branch" LowerBound="39.13" HigherBound="61.1">
+                            <om:Property Name="Expression" Value="CountCount &gt; 0" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Contact Exists" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Send" OID="5ae6fb71-68c3-48b4-8e3d-89959afd13a0" ParentLink="ComplexStatement_Statement" LowerBound="41.1" HigherBound="43.1">
+                                <om:Property Name="PortName" Value="SendSalesForceRequestMsg" />
+                                <om:Property Name="MessageName" Value="CreateContactMsg" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send Request" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="63d49837-68bb-466a-806a-c81c4d8bec32" ParentLink="ComplexStatement_Statement" LowerBound="43.1" HigherBound="45.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="SendSalesForceRequestMsg" />
+                                <om:Property Name="MessageName" Value="CreateContactResponseMsg" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Receive Response" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Task" OID="bf504dda-3fbd-4f3c-a313-debb6abc9feb" ParentLink="ComplexStatement_Statement" LowerBound="45.1" HigherBound="60.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Recreate Canonical" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Construct" OID="6ca04f6b-b3db-4f7c-b33e-20561fe401c4" ParentLink="ComplexStatement_Statement" LowerBound="45.1" HigherBound="52.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct Temp Message" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="28423edb-b7b4-436a-980b-6d8defe1c5be" ParentLink="Construct_MessageRef" LowerBound="46.27" HigherBound="46.51">
+                                        <om:Property Name="Ref" Value="TempApplicationCanonical" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="8077838f-f081-4223-a35b-96d112838f22" ParentLink="ComplexStatement_Statement" LowerBound="48.1" HigherBound="51.1">
+                                        <om:Property Name="Expression" Value="TempApplicationCanonical=ApplicationCanonical;&#xD;&#xA;TempApplicationCanonical(*)=ApplicationCanonical(*);" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Assign Temp Msg" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Construct" OID="1a745609-fd26-4228-bc45-33bbccf77b64" ParentLink="ComplexStatement_Statement" LowerBound="52.1" HigherBound="60.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Re-construct canonical" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Transform" OID="e4f83993-4764-4d3b-b376-8fa8d7142c7f" ParentLink="ComplexStatement_Statement" LowerBound="55.1" HigherBound="57.1">
+                                        <om:Property Name="ClassName" Value="Application_Import_Logic.MakeCanonicalWithApplicantSalesForceIDs" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Create Canonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="MessagePartRef" OID="4079ff29-b31d-4b4b-a45e-2e2eb0398a69" ParentLink="Transform_InputMessagePartRef" LowerBound="56.122" HigherBound="56.157">
+                                            <om:Property Name="MessageRef" Value="CreateContactResponseMsg" />
+                                            <om:Property Name="PartRef" Value="parameters" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="d84bea94-cab7-4b4f-ad82-2dac1197ea6e" ParentLink="Transform_InputMessagePartRef" LowerBound="56.159" HigherBound="56.183">
+                                            <om:Property Name="MessageRef" Value="TempApplicationCanonical" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_4" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="9d3d30ec-a87a-4da8-b871-5e1a1d239dab" ParentLink="Transform_OutputMessagePartRef" LowerBound="56.32" HigherBound="56.52">
+                                            <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_5" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="ca3ff511-8c5b-487c-bf3d-79700b8400da" ParentLink="ComplexStatement_Statement" LowerBound="57.1" HigherBound="59.1">
+                                        <om:Property Name="Expression" Value="ApplicationCanonical(*)=TempApplicationCanonical(*);&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Assign Context Properties" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="20e1cdba-06c6-4df7-8c6d-bf96ec88948f" ParentLink="Construct_MessageRef" LowerBound="53.27" HigherBound="53.47">
+                                        <om:Property Name="Ref" Value="ApplicationCanonical" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="0e9c84d8-4029-4d47-b665-4b6e3ac3c4dd" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0a9885b3-6722-460e-8059-8d06c258323f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="28" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.CDataServiceSelectContact" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendSalesForceRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="45f134dc-bd4c-45bc-99fc-bbdc1e266d0f" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="8cf6871f-9893-432b-b0dc-ba33a75dbf5f" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementResponseContact" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="cf06bb23-d903-45f4-b34d-9161997f56fc" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceContact.table" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="67218f38-04b1-486a-8ef2-7fd7260b7480" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementRequestContact" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="5f144c16-5833-40a0-a47c-3d63433a9d4c" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceContact.parameters" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="7e6abbd3-7286-4e97-ab81-27454e2ef960" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="CDataServiceSelectContact" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="439207b6-1b12-4977-a008-63fa5ce48b8d" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="statement" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e65e1396-c1e6-42a7-a973-701bce612ee8" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.38" HigherBound="16.62">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementResponseContact" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="b87cfeb9-887d-4ab2-8564-40f300dd3206" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.36">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementRequestContact" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    public messagetype StatementResponseContact
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceContact.table parameters;
+    };
+    public messagetype StatementRequestContact
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceContact.parameters parameters;
+    };
+    public porttype CDataServiceSelectContact
+    {
+        requestresponse statement
+        {
+            StatementRequestContact, StatementResponseContact
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    public service CallSalesForceContact
+    {
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses CDataServiceSelectContact SendSalesForceRequestMsg;
+        message Application_Import_Definition.HomeDisasterLoanApplicationCanonical TempApplicationCanonical;
+        message StatementRequestContact CreateContactMsg;
+        message StatementResponseContact CreateContactResponseMsg;
+        System.Int32 CountCount;
+        body (ref message Application_Import_Definition.HomeDisasterLoanApplicationCanonical ApplicationCanonical)
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b307b12d-7ce6-40c3-81f1-4881c2a5b620")]
+            construct CreateContactMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("0ecd197a-8558-4173-b76e-a610f9cbcca5")]
+                transform (CreateContactMsg.parameters) = Application_Import_Logic.Contact.MakeContactRequestMsg (ApplicationCanonical);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("252fb356-d2da-418d-b0f3-d004a637d859")]
+            CountCount = xpath(CreateContactMsg.parameters,"count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/Contact']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/Contact']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/Contact'])");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("56222e2f-f7d4-43ae-b62e-0d39b4ea5dd5")]
+            if (CountCount > 0)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("5ae6fb71-68c3-48b4-8e3d-89959afd13a0")]
+                send (SendSalesForceRequestMsg.statement, CreateContactMsg);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("63d49837-68bb-466a-806a-c81c4d8bec32")]
+                receive (SendSalesForceRequestMsg.statement, CreateContactResponseMsg);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6ca04f6b-b3db-4f7c-b33e-20561fe401c4")]
+                construct TempApplicationCanonical
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8077838f-f081-4223-a35b-96d112838f22")]
+                    TempApplicationCanonical=ApplicationCanonical;
+                    TempApplicationCanonical(*)=ApplicationCanonical(*);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1a745609-fd26-4228-bc45-33bbccf77b64")]
+                construct ApplicationCanonical
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e4f83993-4764-4d3b-b376-8fa8d7142c7f")]
+                    transform (ApplicationCanonical) = Application_Import_Logic.MakeCanonicalWithApplicantSalesForceIDs (CreateContactResponseMsg.parameters, TempApplicationCanonical);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ca3ff511-8c5b-487c-bf3d-79700b8400da")]
+                    ApplicationCanonical(*)=TempApplicationCanonical(*);
+                }
+            }
+        }
+    }
+}
+

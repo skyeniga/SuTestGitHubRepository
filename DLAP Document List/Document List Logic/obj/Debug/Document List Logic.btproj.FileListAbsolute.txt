@@ -1,0 +1,14 @@
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Logic\bin\Debug\DLAPDocumentListLogic.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Logic\bin\Debug\DLAPDocumentListLogic.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Logic\bin\Debug\DLAPDocumentListDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Logic\bin\Debug\DLAPDocumentListSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Logic\bin\Debug\SBA.BizTalk.Shared.Salesforce.EventLogging.Logic.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Logic\obj\Debug\DLAPDocumentListLogic.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document List Logic\obj\Debug\DLAPDocumentListLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Logic\bin\Debug\DLAPDocumentListLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Logic\bin\Debug\DLAPDocumentListLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Logic\bin\Debug\DLAPDocumentListDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Logic\bin\Debug\DLAPDocumentListSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Logic\bin\Debug\SBA.BizTalk.Shared.Salesforce.EventLogging.Logic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Logic\obj\Debug\DLAPDocumentListLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document List Logic\obj\Debug\DLAPDocumentListLogic.pdb

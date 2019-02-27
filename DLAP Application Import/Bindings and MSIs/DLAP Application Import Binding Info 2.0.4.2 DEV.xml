@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="FullyBound" BoundEndpoints="2" TotalEndpoints="2">
+  <Timestamp>2018-06-22T16:03:53.6613601-04:00</Timestamp>
+  <ModuleRefCollection>
+    <ModuleRef Name="[Application:Small Business Administration DLAP Application Import]" Version="" Culture="" PublicKeyToken="" FullName="[Application:Small Business Administration DLAP Application Import], Version=, Culture=, PublicKeyToken=">
+      <Services />
+      <TrackedSchemas>
+        <Schema FullName="Application_Import_Definition.DLAP_Property_Schema" AssemblyQualifiedName="Application_Import_Definition.DLAP_Property_Schema,DLAPApplicationImportDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Application_Import_Definition.OraclePollingMultipleApplications" RootName="ArrayOfPOLLINGSTMTRECORD" AssemblyQualifiedName="Application_Import_Definition.OraclePollingMultipleApplications,DLAPApplicationImportDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Application_Import_Definition.OraclePollingMultipleApplications" RootName="POLLINGSTMT" AssemblyQualifiedName="Application_Import_Definition.OraclePollingMultipleApplications,DLAPApplicationImportDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Application_Import_Definition.OraclePollingMultipleApplications" RootName="POLLINGSTMTRECORD" AssemblyQualifiedName="Application_Import_Definition.OraclePollingMultipleApplications,DLAPApplicationImportDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" RootName="Application" AssemblyQualifiedName="Application_Import_Definition.HomeDisasterLoanApplicationCanonical,DLAPApplicationImportDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Application_Import_Definition.HomeDisasterLoanApplication" RootName="Application" AssemblyQualifiedName="Application_Import_Definition.HomeDisasterLoanApplication,DLAPApplicationImportDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2" RootName="SUBMITTED_APPLICATIONSRECORDUPDATE" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2" RootName="Update" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2" RootName="UpdateResponse" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_Message" RootName="typeOnlySchema" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_Message,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2" RootName="ArrayOfSUBMITTED_DOCUMENTS_DCMS2RECORDSELECT" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2" RootName="ReadLOB" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2" RootName="ReadLOBResponse" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2" RootName="Select" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2" RootName="SelectResponse" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2" RootName="SUBMITTED_DOCUMENTS_DCMS2RECORDSELECT" AssemblyQualifiedName="Oracle_Application_Import_Definition.DLAPOracle_SUBMITTED_DOCUMENTS_DCMS2,DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceContact" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceContact,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceContact" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceContact,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceApplication__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceApplication__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceApplication__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceApplication__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceApplicant__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceApplicant__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceApplicant__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceApplicant__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceInsurance__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceInsurance__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceInsurance__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceInsurance__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceDebts_Expenses__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceDebts_Expenses__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceDebts_Expenses__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceDebts_Expenses__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceMortgage__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceMortgage__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceMortgage__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceMortgage__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceDamaged_Property__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceDamaged_Property__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceDamaged_Property__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceDamaged_Property__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceIRS_Transcripts__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceIRS_Transcripts__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceIRS_Transcripts__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceIRS_Transcripts__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceDisasterLookup" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceDisasterLookup,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataServiceDisasterLookup" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataServiceDisasterLookup,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataService_RecordType" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataService_RecordType,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition_XSD.CDataService_RecordType" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition_XSD.CDataService_RecordType,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.CDataService_Asset_Incomes__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition.CDataService_Asset_Incomes__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.CDataService_Asset_Incomes__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition.CDataService_Asset_Incomes__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.CDataServiceUpdateApplicant__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition.CDataServiceUpdateApplicant__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.CDataServiceUpdateApplicant__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition.CDataServiceUpdateApplicant__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.CDataService_Additional_Contact__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition.CDataService_Additional_Contact__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.CDataService_Additional_Contact__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition.CDataService_Additional_Contact__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.CDataServiceOther_Assistance__c" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition.CDataServiceOther_Assistance__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.CDataServiceOther_Assistance__c" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition.CDataServiceOther_Assistance__c,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.Account.CDataServiceAccount" RootName="parameters" AssemblyQualifiedName="Salesforce_Application_Import_Definition.Account.CDataServiceAccount,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="Salesforce_Application_Import_Definition.Account.CDataServiceAccount" RootName="table" AssemblyQualifiedName="Salesforce_Application_Import_Definition.Account.CDataServiceAccount,DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+      </TrackedSchemas>
+    </ModuleRef>
+    <ModuleRef Name="DLAPApplicationImportDefinition" Version="2.0.4.2" Culture="neutral" PublicKeyToken="e88caed7579907c1" FullName="DLAPApplicationImportDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="DLAPApplicationImportOracleDefinition" Version="2.0.4.2" Culture="neutral" PublicKeyToken="e88caed7579907c1" FullName="DLAPApplicationImportOracleDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="DLAPApplicationImportSalesforceDefinition" Version="2.0.4.2" Culture="neutral" PublicKeyToken="e88caed7579907c1" FullName="DLAPApplicationImportSalesforceDefinition, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="DLAPApplicationImportDocumentCoordinatorLogic" Version="2.0.4.2" Culture="neutral" PublicKeyToken="e88caed7579907c1" FullName="DLAPApplicationImportDocumentCoordinatorLogic, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1">
+      <Services>
+        <Service Name="Application_Import_Logic.DocumentCoordinatorLogic" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports>
+            <Port Name="OraclePort" Modifier="1" BindingOption="1">
+              <SendPortRef Name="DLAP Application Import UploadDocuments" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+      </Services>
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="DLAPApplicationImportLogic" Version="2.0.4.2" Culture="neutral" PublicKeyToken="e88caed7579907c1" FullName="DLAPApplicationImportLogic, Version=2.0.4.2, Culture=neutral, PublicKeyToken=e88caed7579907c1">
+      <Services>
+        <Service Name="Application_Import_Logic.DLAP_Application_Import" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesforceAccount" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesForceApplicant" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesForceApplication__c" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesForceContact" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesForceInsurance" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesForceProperty__c" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesForceIRS_Transcripts__c" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesForceAssetIncomes" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesForceMortgage__c" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesForceDebts_Expenses__c" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.Error_Analyzer" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.OracleMultpleApplicationsDebatcherLogic" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports>
+            <Port Name="DLAPELAOraclePollingPort" Modifier="2" BindingOption="1">
+              <SendPortRef xsi:nil="true" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef Name="DCMS2/DLAP/ELASubmit" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallSalesforceOther_Assistance__c" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="Application_Import_Logic.CallAddtionalContact" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+      </Services>
+      <TrackedSchemas />
+    </ModuleRef>
+  </ModuleRefCollection>
+  <SendPortCollection>
+    <SendPort Name="DLAP Application Import CreateAccount" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;All Or None=True;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Account&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Account#parameters" /&gt;
+    &lt;Statement Property="BTS.Operation" Operator="0" Value="statement" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateApplication__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;All Or None=True;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Application__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Application__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateContact__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;All Or None=True;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Pseudo Columns="*=*";Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Contact&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Contact#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateApplicant__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;All Or None=True;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Applicant__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Applicant__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateInsurance__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Insurance__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Insurance__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateEvent_Request__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt; http://sba-oda/DLAP/Event_Request__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Event_Request__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateDamaged_Property__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/DamagedProperty__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/DamagedProperty__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateIRS_Transcripts__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/IRS_Transcripts__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/IRS_Transcripts__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import DisasterLookup" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Select Id from Disaster__c where (External_Id_DMS_Number__c = @APP_PRO_ID)</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;1&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/DisasterLookup&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand&amp;gt;Select Id from Disaster__c where (External_Id_DMS_Number__c = @APP_PRO_ID)&amp;lt;/SQLCommand&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Select Id from Disaster__c where (External_Id_DMS_Number__c = @APP_PRO_ID)&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/DisasterLookup#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import UploadDocuments" IsStatic="true" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>oracledb://ela_dev3.sba.gov/?PollingId=DLAP/ApplicationImport/UploadDocuments</Address>
+        <TransportType Name="WCF-OracleDB" Capabilities="779" ConfigurationClsid="d7127586-e851-412e-8a8a-2428aeddc219" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;BindingType vt="8"&gt;oracleDBBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="oracleDBBinding" useAmbientTransaction="false" enableBizTalkCompatibilityMode="true" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;http://Microsoft.LobServices.OracleDB/2007/03/ELA_DB/View/SUBMITTED_DOCUMENTS_DCMS2/Select&lt;/StaticAction&gt;&lt;ProxyUserName vt="8" /&gt;&lt;ProxyAddress vt="8" /&gt;&lt;UserName vt="8"&gt;DCMS_INT&lt;/UserName&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;Password vt="1" /&gt;&lt;IsolationLevel vt="8"&gt;Serializable&lt;/IsolationLevel&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;EnableTransaction vt="11"&gt;-1&lt;/EnableTransaction&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>0</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T05:00:00</FromTime>
+        <ToTime>2000-01-01T04:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-OracleDB" Capabilities="779" ConfigurationClsid="d7127586-e851-412e-8a8a-2428aeddc219" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T05:00:00</FromTime>
+        <ToTime>2000-01-01T04:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateAssetIncomes" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Asset_Incomes__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T05:00:00</FromTime>
+        <ToTime>2000-01-01T04:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T05:00:00</FromTime>
+        <ToTime>2000-01-01T04:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Asset_Incomes__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateMortgage__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Mortgage__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T05:00:00</FromTime>
+        <ToTime>2000-01-01T04:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T05:00:00</FromTime>
+        <ToTime>2000-01-01T04:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Mortgage__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateDebtsExpenses" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Debts_Expenses__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T05:00:00</FromTime>
+        <ToTime>2000-01-01T04:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T05:00:00</FromTime>
+        <ToTime>2000-01-01T04:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Debts_Expenses__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import UpdateApplicant__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/UpdateApplicant__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/UpdateApplicant__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import Addtional_Conatct__C" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;All Or None=True;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Additional_Contact__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Additional_Contact__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import CreateOther_Assistance__c" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <PrimaryTransport>
+        <Address>Salesforce://send/Updategram</Address>
+        <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;AdapterConfig vt="8"&gt;&amp;lt;Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;&amp;lt;CommandType&amp;gt;0&amp;lt;/CommandType&amp;gt;&amp;lt;ConnectionLifetime&amp;gt;0&amp;lt;/ConnectionLifetime&amp;gt;&amp;lt;ConnectionString&amp;gt;Login URL="https://sba-oda--dev24.cs33.my.salesforce.com/services/Soap/c/41.0;";Password=ku10eswegExU#;Security Token=1AGIn4nlcLu8Siyol3b9nt4C;User=biztalk@sba.gov.dev24;Use Sandbox=True&amp;lt;/ConnectionString&amp;gt;&amp;lt;MessageIncludeNulls&amp;gt;False&amp;lt;/MessageIncludeNulls&amp;gt;&amp;lt;MessageNamespace&amp;gt;http://sba-oda/DLAP/Other_Assistance__c&amp;lt;/MessageNamespace&amp;gt;&amp;lt;MessageRootNode&amp;gt;table&amp;lt;/MessageRootNode&amp;gt;&amp;lt;MessageRowNode&amp;gt;row&amp;lt;/MessageRowNode&amp;gt;&amp;lt;RequestRootNode&amp;gt;parameters&amp;lt;/RequestRootNode&amp;gt;&amp;lt;SQLCommand /&amp;gt;&amp;lt;SSOAffiliate /&amp;gt;&amp;lt;TransportLog&amp;gt;&amp;lt;Location&amp;gt;Application&amp;lt;/Location&amp;gt;&amp;lt;LogMode&amp;gt;3&amp;lt;/LogMode&amp;gt;&amp;lt;LogType&amp;gt;1&amp;lt;/LogType&amp;gt;&amp;lt;/TransportLog&amp;gt;&amp;lt;URIIdentity&amp;gt;Salesforce://send/&amp;lt;/URIIdentity&amp;gt;&amp;lt;uri&amp;gt;Salesforce://send/Updategram&amp;lt;/uri&amp;gt;&amp;lt;/Config&amp;gt;&lt;/AdapterConfig&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="CData.Salesforce 2017" Capabilities="15627" ConfigurationClsid="2806315c-f326-4248-a478-8748270376f7" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://sba-oda/DLAP/Other_Assistance__c#parameters" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+    <SendPort Name="DLAP Application Import Oracle Submitted Applications Status Update" IsStatic="true" IsTwoWay="true" BindingOption="0">
+      <Description>SendPort DLAP for OracleDBBinding.</Description>
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>oracledb://ela_dev3.sba.gov/?PollingId=dlap_files_for_transfer</Address>
+        <TransportType Name="WCF-OracleDB" Capabilities="779" ConfigurationClsid="d7127586-e851-412e-8a8a-2428aeddc219" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;BindingType vt="8"&gt;oracleDBBinding&lt;/BindingType&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="oracleDBBinding" useAmbientTransaction="false" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;StaticAction vt="8"&gt;http://Microsoft.LobServices.OracleDB/2007/03/DCMS_INT/View/SUBMITTED_APPLICATIONS/Update&lt;/StaticAction&gt;&lt;ProxyUserName vt="8" /&gt;&lt;ProxyAddress vt="8" /&gt;&lt;UserName vt="8"&gt;DCMS_INT&lt;/UserName&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;PropagateFaultMessage vt="11"&gt;-1&lt;/PropagateFaultMessage&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;Password vt="1" /&gt;&lt;IsolationLevel vt="8"&gt;Serializable&lt;/IsolationLevel&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;EnableTransaction vt="11"&gt;-1&lt;/EnableTransaction&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="Send" HostTrusted="false">
+          <TransportType Name="WCF-OracleDB" Capabilities="779" ConfigurationClsid="d7127586-e851-412e-8a8a-2428aeddc219" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T00:00:00</FromTime>
+        <ToTime>2000-01-01T23:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </SendPort>
+  </SendPortCollection>
+  <DistributionListCollection />
+  <ReceivePortCollection>
+    <ReceivePort Name="DCMS2/DLAP/ELASubmit" IsTwoWay="false" BindingOption="1">
+      <Description xsi:nil="true" />
+      <ReceiveLocations>
+        <ReceiveLocation Name="DLAP Application Import From Oracle">
+          <Description xsi:nil="true" />
+          <Address>oracledb://ela_dev3.sba.gov/?PollingId=dlap_files_for_transfer</Address>
+          <PublicAddress />
+          <Primary>true</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2000-01-01T00:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2000-01-01T23:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2017-11-24T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2017-11-25T23:59:59</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="WCF-OracleDB" Capabilities="779" ConfigurationClsid="d7127586-e851-412e-8a8a-2428aeddc219" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;BindingConfiguration vt="8"&gt;&amp;lt;binding name="oracleDBBinding" pollingStatement="SELECT APP_DATA_FINAL_XML FROM ELA_DB.SUBMITTED_APPLICATIONS_DCMS2 WHERE APP_STATUS = 'TRANSFER_READY'  AND DESTINATION_SYSTEM = 'DCMS2' FOR UPDATE NOWAIT" postPollStatement="update ELA_DB.SUBMITTED_APPLICATIONS_DCMS2&amp;amp;#xD;&amp;amp;#xA;set APP_STATUS = 'TRANSFER_COMPLETE' , LAST_UPDATE_DATE = SYSDATE, LAST_UPDATED_BY = 'BizTalk' where APP_STATUS = 'TRANSFER_READY'" pollingInterval="5" useAmbientTransaction="false" polledDataAvailableStatement="select COUNT (*) from ELA_DB.SUBMITTED_APPLICATIONS_DCMS2&amp;amp;#xD;&amp;amp;#xA;where APP_STATUS = 'TRANSFER_READY' and DESTINATION_SYSTEM = 'DCMS2'" dataFetchSize="150000000" enableBizTalkCompatibilityMode="true" /&amp;gt;&lt;/BindingConfiguration&gt;&lt;InboundBodyPathExpression vt="8"&gt;/*[local-name()='POLLINGSTMT' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='APP_DATA_FINAL_XML' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']&lt;/InboundBodyPathExpression&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;AffiliateApplicationName vt="8" /&gt;&lt;BindingType vt="8"&gt;oracleDBBinding&lt;/BindingType&gt;&lt;DisableLocationOnFailure vt="11"&gt;0&lt;/DisableLocationOnFailure&gt;&lt;UserName vt="8"&gt;DCMS_INT&lt;/UserName&gt;&lt;ServiceBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="ServiceBehavior"&amp;gt;&amp;lt;oracleDBAdapterInboundTransactionBehavior transactionTimeout="00:02:00" transactionIsolationLevel="ReadCommitted" /&amp;gt;&amp;lt;/behavior&amp;gt;&lt;/ServiceBehaviorConfiguration&gt;&lt;EndpointBehaviorConfiguration vt="8"&gt;&amp;lt;behavior name="EndpointBehavior" /&amp;gt;&lt;/EndpointBehaviorConfiguration&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;IncludeExceptionDetailInFaults vt="11"&gt;-1&lt;/IncludeExceptionDetailInFaults&gt;&lt;InboundNodeEncoding vt="8"&gt;String&lt;/InboundNodeEncoding&gt;&lt;CredentialType vt="8"&gt;UserAccount&lt;/CredentialType&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;Password vt="1" /&gt;&lt;SuspendMessageOnFailure vt="11"&gt;-1&lt;/SuspendMessageOnFailure&gt;&lt;OrderedProcessing vt="11"&gt;0&lt;/OrderedProcessing&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+          <ReceivePipelineData xsi:nil="true" />
+          <SendPipeline xsi:nil="true" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>true</Enable>
+          <ReceiveHandler Name="Receive" HostTrusted="false">
+            <TransportType Name="WCF-OracleDB" Capabilities="779" ConfigurationClsid="d7127586-e851-412e-8a8a-2428aeddc219" />
+          </ReceiveHandler>
+        </ReceiveLocation>
+        <ReceiveLocation Name="WcfService_DCMS2/DLAP/ELASubmit">
+          <Description xsi:nil="true" />
+          <Address>/DCMS2/DLAP/ELASubmit.svc</Address>
+          <PublicAddress />
+          <Primary>false</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2000-01-01T00:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2000-01-01T23:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2000-01-01T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2000-01-01T23:59:59</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="WCF-WSHttp" Capabilities="899" ConfigurationClsid="2b219014-ba04-4b70-a66b-a8c418b109fd" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;InboundNodeEncoding vt="8"&gt;Base64&lt;/InboundNodeEncoding&gt;&lt;MessageEncoding vt="8"&gt;Text&lt;/MessageEncoding&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;EnableTransaction vt="11"&gt;0&lt;/EnableTransaction&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;InboundBodyPathExpression vt="8"&gt;/*[local-name()='part' and namespace-uri()='']&lt;/InboundBodyPathExpression&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyPath&lt;/InboundBodyLocation&gt;&lt;AlgorithmSuite vt="8"&gt;Basic256&lt;/AlgorithmSuite&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;TextEncoding vt="8"&gt;utf-8&lt;/TextEncoding&gt;&lt;NegotiateServiceCredential vt="11"&gt;-1&lt;/NegotiateServiceCredential&gt;&lt;EstablishSecurityContext vt="11"&gt;-1&lt;/EstablishSecurityContext&gt;&lt;SecurityMode vt="8"&gt;None&lt;/SecurityMode&gt;&lt;IncludeExceptionDetailInFaults vt="11"&gt;-1&lt;/IncludeExceptionDetailInFaults&gt;&lt;TransportClientCredentialType vt="8"&gt;Windows&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;MessageClientCredentialType vt="8"&gt;Windows&lt;/MessageClientCredentialType&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;SuspendMessageOnFailure vt="11"&gt;-1&lt;/SuspendMessageOnFailure&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;MaxConcurrentCalls vt="3"&gt;200&lt;/MaxConcurrentCalls&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+          <ReceivePipelineData xsi:nil="true" />
+          <SendPipeline xsi:nil="true" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>true</Enable>
+          <ReceiveHandler Name="Isolated" HostTrusted="false">
+            <TransportType Name="WCF-WSHttp" Capabilities="899" ConfigurationClsid="2b219014-ba04-4b70-a66b-a8c418b109fd" />
+          </ReceiveHandler>
+        </ReceiveLocation>
+      </ReceiveLocations>
+      <SendPipelineData xsi:nil="true" />
+      <Authentication>0</Authentication>
+      <Tracking>0</Tracking>
+      <Transforms />
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>Small Business Administration DLAP Application Import</ApplicationName>
+    </ReceivePort>
+  </ReceivePortCollection>
+  <PartyCollection xsi:nil="true" />
+</BindingInfo>

@@ -1,0 +1,4 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Definition\bin\Debug\DLAPDocumentUploadDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Definition\bin\Debug\DLAPDocumentUploadDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Definition\obj\Debug\DLAPDocumentUploadDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Upload\DLAP Document Upload Definition\obj\Debug\DLAPDocumentUploadDefinition.pdb

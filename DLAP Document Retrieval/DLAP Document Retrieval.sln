@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document Retrieval Definition", "Document Retrieval Definition\Document Retrieval Definition.btproj", "{BD903EB2-CEDA-4C03-9634-D0CAAA20B91B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document Retrieval Logic", "Document Retrieval Logic\Document Retrieval Logic.btproj", "{75288003-5630-4DB5-8DD1-181D5B8A886A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{26FD7E2F-79A8-4494-9685-23FEA7E0315A}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\BizTalk Code Review Check List - DLAP Document Retrieval.docx = Deployment\BizTalk Code Review Check List - DLAP Document Retrieval.docx
+		Deployment\DLAP Document Retrieval_Deployment_Instructions.docx = Deployment\DLAP Document Retrieval_Deployment_Instructions.docx
+		Deployment\DLAPDocumentRetrieval-soapui-project.xml = Deployment\DLAPDocumentRetrieval-soapui-project.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning", "Versioning", "{F10314AB-B515-4BE0-B2F4-2BD23A2E7ABF}"
+	ProjectSection(SolutionItems) = preProject
+		Versioning\AssemblyInfoShared.cs = Versioning\AssemblyInfoShared.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.0", "2.0.0.0", "{3C49AADD-3AF4-44AD-87A4-1BEF9A3FAD78}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.0\DLAP Document Retrieval 2.0.0.0.msi = Deployment\2.0.0.0\DLAP Document Retrieval 2.0.0.0.msi
+		Deployment\2.0.0.0\DLAP Document Retrieval.BindingInfo 2.0.0.0.xml = Deployment\2.0.0.0\DLAP Document Retrieval.BindingInfo 2.0.0.0.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document Retrieval Salesforce Definition", "Document Retrieval Salesforce Definition\Document Retrieval Salesforce Definition.btproj", "{8BFEF999-3762-424F-8AF0-983747721DD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.1", "2.0.0.1", "{3A246EF5-5BEC-46CF-80EB-561499A685AA}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.1\DLAP Document Retrieval 2.0.0.1.msi = Deployment\2.0.0.1\DLAP Document Retrieval 2.0.0.1.msi
+		Deployment\2.0.0.1\DLAP Document Retrieval.BindingInfo 2.0.0.1.xml = Deployment\2.0.0.1\DLAP Document Retrieval.BindingInfo 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.9.1", "2.0.9.1", "{E8482BCF-3445-4976-975C-F1FE8F223CF4}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.9.1\DLAP Document Retrieval 2.0.9.1.msi = Deployment\2.0.9.1\DLAP Document Retrieval 2.0.9.1.msi
+		Deployment\2.0.9.1\DLAP Document Retrieval.BindingInfo 2.0.9.1.xml = Deployment\2.0.9.1\DLAP Document Retrieval.BindingInfo 2.0.9.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Local", "Local", "{A0175E88-18B1-4E18-9924-326ED7B1E203}"
+	ProjectSection(SolutionItems) = preProject
+		Local\DLAP Document Retrieval.BindingInfo 2.0.9.1 DEV.xml = Local\DLAP Document Retrieval.BindingInfo 2.0.9.1 DEV.xml
+		Document Retrieval Logic\Document Retrieval.BindingInfoDev.xml = Document Retrieval Logic\Document Retrieval.BindingInfoDev.xml
+	EndProjectSection
+EndProject
+Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "BizTalkDLAPDocumentRetrieval", "BizTalkDLAPDocumentRetrieval\BizTalkDLAPDocumentRetrieval.btaproj", "{221E0DD5-0336-4B80-A4E6-9723D1238C2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDeploy", "WebDeploy", "{19E2BA97-B381-4580-962C-82EC08C351E7}"
+	ProjectSection(SolutionItems) = preProject
+		WebDeploy\DLAPDocumentRetrieval.zip = WebDeploy\DLAPDocumentRetrieval.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD903EB2-CEDA-4C03-9634-D0CAAA20B91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD903EB2-CEDA-4C03-9634-D0CAAA20B91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD903EB2-CEDA-4C03-9634-D0CAAA20B91B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BD903EB2-CEDA-4C03-9634-D0CAAA20B91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD903EB2-CEDA-4C03-9634-D0CAAA20B91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD903EB2-CEDA-4C03-9634-D0CAAA20B91B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{75288003-5630-4DB5-8DD1-181D5B8A886A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75288003-5630-4DB5-8DD1-181D5B8A886A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75288003-5630-4DB5-8DD1-181D5B8A886A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{75288003-5630-4DB5-8DD1-181D5B8A886A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75288003-5630-4DB5-8DD1-181D5B8A886A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75288003-5630-4DB5-8DD1-181D5B8A886A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8BFEF999-3762-424F-8AF0-983747721DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BFEF999-3762-424F-8AF0-983747721DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BFEF999-3762-424F-8AF0-983747721DD9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8BFEF999-3762-424F-8AF0-983747721DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BFEF999-3762-424F-8AF0-983747721DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BFEF999-3762-424F-8AF0-983747721DD9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{221E0DD5-0336-4B80-A4E6-9723D1238C2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221E0DD5-0336-4B80-A4E6-9723D1238C2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221E0DD5-0336-4B80-A4E6-9723D1238C2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221E0DD5-0336-4B80-A4E6-9723D1238C2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C49AADD-3AF4-44AD-87A4-1BEF9A3FAD78} = {26FD7E2F-79A8-4494-9685-23FEA7E0315A}
+		{3A246EF5-5BEC-46CF-80EB-561499A685AA} = {26FD7E2F-79A8-4494-9685-23FEA7E0315A}
+		{E8482BCF-3445-4976-975C-F1FE8F223CF4} = {26FD7E2F-79A8-4494-9685-23FEA7E0315A}
+	EndGlobalSection
+EndGlobal

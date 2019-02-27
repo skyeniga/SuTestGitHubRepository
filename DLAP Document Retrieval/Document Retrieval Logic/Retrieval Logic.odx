@@ -1,0 +1,1102 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="c12a95df-d107-4953-aedf-3771585dbe68" LowerBound="1.1" HigherBound="285.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="DLAPDocument" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="bb043a5a-d1fa-43cd-944a-741d7420d8ff" ParentLink="Module_ServiceDeclaration" LowerBound="49.1" HigherBound="284.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RetrievalLogic" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="5828b207-2b29-4dd1-813c-8320afd248d1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="64.1" HigherBound="65.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TempErrorResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="37f1fce5-62d9-4b72-9545-874e756240b4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="65.1" HigherBound="66.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ContentVersionIDStatus" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="1345cd33-7330-4065-ab4f-75750d08cce4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="66.1" HigherBound="67.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ContentVersionID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="22d7d7e8-b275-4972-967f-0d6081b1f74e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="67.1" HigherBound="68.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Guid" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OrchestrationInstanceId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0175d1f2-b279-4018-a35d-992d17a5e33b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="68.1" HigherBound="69.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5cc0947a-cc38-418d-a428-bd1c2737d499" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="69.1" HigherBound="70.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceObjectName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="4d78e0db-6be9-4ab6-a690-87b0d7686234" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Stage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="30e02608-14d9-41b6-b217-c35801e3f088" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Status" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9c5f6912-4e7f-4ee1-a36e-a3fb0ce451a7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageTemp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a642dd0e-952d-49a6-8f2f-ba96abbc1183" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceObjectId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a37ec4ba-6ecd-4ce2-bbc7-3f11e3d8e75e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="InitialValue" Value="true" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Boolean" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Flag" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9bbb7407-c1b0-4e12-9932-cf68b9d876b5" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ResponseStatus" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7e7370d7-9a02-47e2-9c82-219fdfca2e2e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Application" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6e325e61-a805-4b81-bd34-6374b7e035a0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="77.1" HigherBound="78.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SOQL_ContentVersion_QUERY" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="729f2d8a-a16c-4a57-b6b8-03b61854c85c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="78.1" HigherBound="79.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Byte" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ContentVersionBytes" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="ca1df1ee-101a-4ae7-9e03-cd7d5bfd2123" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="79.1" HigherBound="80.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Base64String" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7d6cfdd7-451e-4555-b0f4-e34f694c722c" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="80.1" HigherBound="81.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Empty" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b1f25fcd-67ff-41e2-90e2-70c3443344c7" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="58.1" HigherBound="59.1">
+                <om:Property Name="Type" Value="DLAPDocument.DocumentRetrievalRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentRetrievalRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="16a4b6c4-b6d2-4076-bc87-cf65e4bd56a0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="59.1" HigherBound="60.1">
+                <om:Property Name="Type" Value="DLAPDocument.DocumentRetrievalResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentRetrievalResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1dedf206-3925-47e6-80ab-6ac7ee556072" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="60.1" HigherBound="61.1">
+                <om:Property Name="Type" Value="DLAPDocument.DocumentRetrievalFaultResponeType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentRetrievalFaultResponeMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c52f45a3-f398-4b68-a19f-affc69877c74" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="61.1" HigherBound="62.1">
+                <om:Property Name="Type" Value="DLAPDocument.RestContentVersionQueryRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestContentVersionQueryRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3878c32b-1709-49e4-adb1-2e5fc587a090" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="62.1" HigherBound="63.1">
+                <om:Property Name="Type" Value="DLAPDocument.RestContentVersionDataQueryResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestContentVersionDataQueryResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="cf9a1a99-3010-4d17-88ac-893432e330d3" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="63.1" HigherBound="64.1">
+                <om:Property Name="Type" Value="DLAPDocument.RestContentVersionQueryResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestContentVersionQueryResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="95dcd9e8-e597-4b54-983d-fa38aa265cd4" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="d297f1d8-b13d-4b1e-857d-606b3a29373a" ParentLink="ServiceBody_Statement" LowerBound="83.1" HigherBound="100.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="DocumentRetrievalPort" />
+                    <om:Property Name="MessageName" Value="DocumentRetrievalRequestMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Document Retrieval Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="03a14c44-0041-4bc5-b3ce-8086df74e5d7" ParentLink="ServiceBody_Statement" LowerBound="100.1" HigherBound="278.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Document Retrieval Processing" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Scope" OID="bd4b49c5-c4b6-43ad-85fb-07659d9f63e9" ParentLink="ComplexStatement_Statement" LowerBound="100.1" HigherBound="278.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Document Retrieval Processing Error Scope" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="77957e96-3e00-4588-b339-6b103aa76ece" ParentLink="ComplexStatement_Statement" LowerBound="105.1" HigherBound="112.1">
+                            <om:Property Name="Expression" Value="ContentVersionID = xpath(DocumentRetrievalRequestMsg.MessagePart,&quot;string(/*[local-name()='RetrievalRequest' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/RetrievalRequest']/*[local-name()='SDCID' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;if(!System.String.IsNullOrWhiteSpace(ContentVersionID))&#xD;&#xA;{ContentVersionIDStatus = true;}&#xD;&#xA;else{ContentVersionIDStatus = false;}&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Validation" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Decision" OID="47438fb2-de62-4131-8367-f9604590c5d4" ParentLink="ComplexStatement_Statement" LowerBound="112.1" HigherBound="180.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Content Version ID Exists?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="39a47f62-e3b0-4d65-8ac7-c720451c091d" ParentLink="ReallyComplexStatement_Branch" LowerBound="113.21" HigherBound="164.1">
+                                <om:Property Name="Expression" Value="ContentVersionIDStatus == true" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Exists" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Construct" OID="ef317496-6a7e-4755-ae00-dbc0ac790925" ParentLink="ComplexStatement_Statement" LowerBound="115.1" HigherBound="128.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct Content Version Request Msg" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Transform" OID="314bcc89-eff6-43b4-a2cb-fae83b2c014e" ParentLink="ComplexStatement_Statement" LowerBound="118.1" HigherBound="120.1">
+                                        <om:Property Name="ClassName" Value="DocumentRetrievalLogic.MakeContentVersionRequestMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Make ContentVersion Request Msg" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="MessagePartRef" OID="ed220e44-3dcd-4d33-9d97-1fc29291453a" ParentLink="Transform_InputMessagePartRef" LowerBound="119.142" HigherBound="119.181">
+                                            <om:Property Name="MessageRef" Value="DocumentRetrievalRequestMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="1ad12a73-e0ae-467d-817f-8c9da45f58b0" ParentLink="Transform_OutputMessagePartRef" LowerBound="119.40" HigherBound="119.85">
+                                            <om:Property Name="MessageRef" Value="RestContentVersionQueryRequestMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="fd7efeb4-f48b-4a23-949e-a0b1d6683f17" ParentLink="ComplexStatement_Statement" LowerBound="120.1" HigherBound="127.1">
+                                        <om:Property Name="Expression" Value="SOQL_ContentVersion_QUERY = @&quot;Select Id, LatestPublishedVersion.Id, LatestPublishedVersion.VersionData, LatestPublishedVersion.FileType from ContentDocument where LatestPublishedVersion.Id IN &quot;+&quot;(&quot;+&quot;'&quot;+ContentVersionID+&quot;'&quot;+&quot;)&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;RestContentVersionQueryRequestMsg(DLAPDocumentRetrievalSalesforceDefinition.Rest.SOQL_ContentVersion_Query) = SOQL_ContentVersion_QUERY; &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Make SOQL" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="9d72a40d-afd0-401c-aeda-24c04e8389fd" ParentLink="Construct_MessageRef" LowerBound="116.35" HigherBound="116.68">
+                                        <om:Property Name="Ref" Value="RestContentVersionQueryRequestMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="bcda904c-0fb9-4e6b-ac9f-58d51237c345" ParentLink="ComplexStatement_Statement" LowerBound="128.1" HigherBound="130.1">
+                                    <om:Property Name="PortName" Value="RestContentVersionQueryPort" />
+                                    <om:Property Name="MessageName" Value="RestContentVersionQueryRequestMsg" />
+                                    <om:Property Name="OperationName" Value="Operation" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send ContentVersion Request" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Receive" OID="b57f62af-3fac-4980-8458-ecbf12bf1fa9" ParentLink="ComplexStatement_Statement" LowerBound="130.1" HigherBound="132.1">
+                                    <om:Property Name="Activate" Value="False" />
+                                    <om:Property Name="PortName" Value="RestContentVersionQueryPort" />
+                                    <om:Property Name="MessageName" Value="RestContentVersionQueryResponseMsg" />
+                                    <om:Property Name="OperationName" Value="Operation" />
+                                    <om:Property Name="OperationMessageName" Value="Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Receive ContentVersion Response" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Construct" OID="ac4930fe-855f-490e-9a8c-176062b498d9" ParentLink="ComplexStatement_Statement" LowerBound="132.1" HigherBound="147.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct Content Version Request Msg" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="c9a7a91f-a0b2-4b3d-a220-d64673b17301" ParentLink="Construct_MessageRef" LowerBound="133.35" HigherBound="133.68">
+                                        <om:Property Name="Ref" Value="RestContentVersionQueryRequestMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Transform" OID="4a60756a-e269-4892-831e-1637a93a5040" ParentLink="ComplexStatement_Statement" LowerBound="135.1" HigherBound="137.1">
+                                        <om:Property Name="ClassName" Value="DocumentRetrievalLogic.MakeContentVersionRequestMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Make ContentVersion Request Msg" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="MessagePartRef" OID="3737dc55-5c2e-4c85-8f57-53d0230bf63d" ParentLink="Transform_InputMessagePartRef" LowerBound="136.142" HigherBound="136.181">
+                                            <om:Property Name="MessageRef" Value="DocumentRetrievalRequestMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="201b8ffe-4ae2-4e6b-b01a-2f98546a28d6" ParentLink="Transform_OutputMessagePartRef" LowerBound="136.40" HigherBound="136.85">
+                                            <om:Property Name="MessageRef" Value="RestContentVersionQueryRequestMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="dbcf7970-bb38-42a6-b3be-3cda9b64275a" ParentLink="ComplexStatement_Statement" LowerBound="137.1" HigherBound="146.1">
+                                        <om:Property Name="Expression" Value="SOQL_ContentVersion_QUERY = ContentVersionID;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;RestContentVersionQueryRequestMsg(DLAPDocumentRetrievalSalesforceDefinition.Rest.SOQL_ContentVersionData_Query) = SOQL_ContentVersion_QUERY; &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Make SOQL" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Send" OID="67d1112b-799d-49d3-8f4b-8ddb139f3d6f" ParentLink="ComplexStatement_Statement" LowerBound="147.1" HigherBound="149.1">
+                                    <om:Property Name="PortName" Value="RestContentVersionDataQueryPort" />
+                                    <om:Property Name="MessageName" Value="RestContentVersionQueryRequestMsg" />
+                                    <om:Property Name="OperationName" Value="Operation" />
+                                    <om:Property Name="OperationMessageName" Value="Request" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Send ContentVersion Request" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Receive" OID="085faf9a-f30d-44e2-aa7c-96254e1ecdb2" ParentLink="ComplexStatement_Statement" LowerBound="149.1" HigherBound="151.1">
+                                    <om:Property Name="Activate" Value="False" />
+                                    <om:Property Name="PortName" Value="RestContentVersionDataQueryPort" />
+                                    <om:Property Name="MessageName" Value="RestContentVersionDataQueryResponseMsg" />
+                                    <om:Property Name="OperationName" Value="Operation" />
+                                    <om:Property Name="OperationMessageName" Value="Response" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Receive ContentVersion Response" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Construct" OID="daa977ba-8ca4-417c-a2c5-1eafc90c2139" ParentLink="ComplexStatement_Statement" LowerBound="151.1" HigherBound="159.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct Document Retrieval Response Msg" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="df8bf63a-0c05-425b-b790-5978ef90f12a" ParentLink="Construct_MessageRef" LowerBound="152.35" HigherBound="152.63">
+                                        <om:Property Name="Ref" Value="DocumentRetrievalResponseMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="Transform" OID="c2e70145-fdfe-4b95-a3d2-da7dbaf41a4b" ParentLink="ComplexStatement_Statement" LowerBound="154.1" HigherBound="156.1">
+                                        <om:Property Name="ClassName" Value="DocumentRetrievalLogic.MakeDocumentRetrievalResponse" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Make Document Retrieval Response" />
+                                        <om:Property Name="Signal" Value="False" />
+                                        <om:Element Type="MessagePartRef" OID="7faa51a2-c9bf-4757-bb5e-6b79ace1c277" ParentLink="Transform_InputMessagePartRef" LowerBound="155.138" HigherBound="155.184">
+                                            <om:Property Name="MessageRef" Value="RestContentVersionQueryResponseMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                        <om:Element Type="MessagePartRef" OID="566ad007-9fd9-4c3d-b2b4-1839bc5f1ec3" ParentLink="Transform_OutputMessagePartRef" LowerBound="155.40" HigherBound="155.80">
+                                            <om:Property Name="MessageRef" Value="DocumentRetrievalResponseMsg" />
+                                            <om:Property Name="PartRef" Value="MessagePart" />
+                                            <om:Property Name="ReportToAnalyst" Value="True" />
+                                            <om:Property Name="Name" Value="MessagePartReference_4" />
+                                            <om:Property Name="Signal" Value="False" />
+                                        </om:Element>
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="0d785bef-2903-4dcf-a85e-383d0ebfd628" ParentLink="ComplexStatement_Statement" LowerBound="156.1" HigherBound="158.1">
+                                        <om:Property Name="Expression" Value="xpath(DocumentRetrievalResponseMsg.MessagePart, &quot;/*[local-name()='RetrievalResponse' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/RetrievalResponse']/*[local-name()='Document_content' and namespace-uri()='']&quot;) = SBA.BizTalk.Shared.MessageHelper.XLANGMessageHelper.Instance.ConvertBinaryMessageToBase64(RestContentVersionDataQueryResponseMsg); &#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Inject Content" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="dade47f9-f25a-4c2a-8ee3-0f2b08b930ac" ParentLink="ComplexStatement_Statement" LowerBound="159.1" HigherBound="163.1">
+                                    <om:Property Name="Expression" Value="Flag = true;&#xD;&#xA;&#xD;&#xA;ResponseStatus = xpath(DocumentRetrievalResponseMsg.MessagePart, &quot;string(/*[local-name()='RetrievalResponse' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/RetrievalResponse']/*[local-name()='Doc_retrieve_status' and namespace-uri()=''])&quot;);" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Flag" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="1372ce17-f7a2-43cb-b52f-083d2414f794" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Construct" OID="23b1f29f-a2e1-4113-9a3b-951fa5c2ce14" ParentLink="ComplexStatement_Statement" LowerBound="166.1" HigherBound="179.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct Document Retrieval Error Response Msg" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageRef" OID="a9912b3d-7b3a-4292-b8d2-e96210c2e95c" ParentLink="Construct_MessageRef" LowerBound="167.35" HigherBound="167.63">
+                                        <om:Property Name="Ref" Value="DocumentRetrievalResponseMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessageAssignment" OID="974a19e8-4308-4e4b-a6f2-14481d4e9143" ParentLink="ComplexStatement_Statement" LowerBound="169.1" HigherBound="178.1">
+                                        <om:Property Name="Expression" Value="TempErrorResponse = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;TempErrorResponse.LoadXml(@&quot;&lt;ns0:RetrievalResponse xmlns:ns0='http://SBA.gov/DLAPDocumentRetrieval.RetrievalResponse'&gt;&lt;Doc_retrieve_status&gt;FAILED&lt;/Doc_retrieve_status&gt;&lt;Doc_retrieve_status_details&gt;Exception:ContentVersion Id couldn’t be found thus Document can't be retrieved&lt;/Doc_retrieve_status_details&gt;&lt;/ns0:RetrievalResponse&gt;&quot;);&#xD;&#xA;&#xD;&#xA;DocumentRetrievalResponseMsg.MessagePart = TempErrorResponse;&#xD;&#xA;&#xD;&#xA;Flag = false;&#xD;&#xA;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Make Document Error Response" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="adef182e-2ab7-48e7-8245-6c2fb57f6b6d" ParentLink="ComplexStatement_Statement" LowerBound="180.1" HigherBound="214.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success Response?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="da4c7284-8c3f-4e23-ab60-25f6ea1d2748" ParentLink="ReallyComplexStatement_Branch" LowerBound="181.21" HigherBound="197.1">
+                                <om:Property Name="Expression" Value="(Flag == true)&amp;&amp;(ResponseStatus == &quot;SUCCESS&quot;)" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Success" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="af518bbf-a7b6-4dcd-8d73-a42c86b597cc" ParentLink="ComplexStatement_Statement" LowerBound="183.1" HigherBound="196.1">
+                                    <om:Property Name="Expression" Value="&#xD;&#xA;OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;&#xD;&#xA;&#xD;&#xA;SalesForceObjectName=&quot;Appplication&quot;;&#xD;&#xA;&#xD;&#xA;SalesForceObjectId = ContentVersionID;&#xD;&#xA;&#xD;&#xA;Stage = &quot;Document Retrieved&quot;;&#xD;&#xA;&#xD;&#xA;Status = &quot;Success&quot;;&#xD;&#xA;&#xD;&#xA;Message = &quot;Successfully Retrieved Document&quot;;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set Success Values For Salesforce" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="6208627b-3e45-455d-8074-c736c91294f8" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Error" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="02618de8-1e05-4ecf-b065-e7096a1e2569" ParentLink="ComplexStatement_Statement" LowerBound="199.1" HigherBound="213.1">
+                                    <om:Property Name="Expression" Value="OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;&#xD;&#xA;&#xD;&#xA;Message = &quot;File not found matching…&quot;;&#xD;&#xA;&#xD;&#xA;SalesForceObjectName=&quot;Appplication&quot;;&#xD;&#xA;&#xD;&#xA;SalesForceObjectId = ContentVersionID;&#xD;&#xA;&#xD;&#xA;Stage = &quot;Document Retrieved&quot;;&#xD;&#xA;&#xD;&#xA;Status = &quot;Error&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set Error Values For Salesforce" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Catch" OID="49b890ab-e5e8-4e11-a6b6-b84a61f775df" ParentLink="Scope_Catch" LowerBound="217.1" HigherBound="276.1">
+                            <om:Property Name="ExceptionName" Value="Ex" />
+                            <om:Property Name="ExceptionType" Value="System.SystemException" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="System Exception" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="65d79f22-e39b-44ee-9f98-0a5e03f6fc4a" ParentLink="Catch_Statement" LowerBound="220.1" HigherBound="259.1">
+                                <om:Property Name="Expression" Value="if(Ex.InnerException != null)&#xD;&#xA;{&#xD;&#xA;MessageTemp = Ex.InnerException.ToString();&#xD;&#xA;&#xD;&#xA;Message = MessageTemp.Substring(0, System.Convert.ToInt32(System.Math.Min(900, MessageTemp.Length))) +&quot;Total String Length:&quot;+MessageTemp.Length.ToString();&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;DLAP Document Retrieval Exception&quot;,Message);&#xD;&#xA;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;MessageTemp = Ex.Message.ToString();&#xD;&#xA;&#xD;&#xA;Message = MessageTemp.Substring(0, System.Convert.ToInt32(System.Math.Min(900, MessageTemp.Length))) +&quot;Total String Length:&quot;+MessageTemp.Length.ToString();&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;DLAP Document Retrieval Exception&quot;,Message);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;&#xD;&#xA;&#xD;&#xA;SalesForceObjectName=&quot;Appplication&quot;;&#xD;&#xA;&#xD;&#xA;SalesForceObjectId = ContentVersionID;&#xD;&#xA;&#xD;&#xA;Stage = &quot;Document Retrieved&quot;;&#xD;&#xA;&#xD;&#xA;Status = &quot;Error&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Set Error Values For Salesforce" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Construct" OID="8cd73496-eb82-444c-bf44-44ed264dbb55" ParentLink="Catch_Statement" LowerBound="259.1" HigherBound="269.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct Document Retrieval Fault Response" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="3ebc812f-752b-4908-895b-b5b96b7e307a" ParentLink="ComplexStatement_Statement" LowerBound="262.1" HigherBound="268.1">
+                                    <om:Property Name="Expression" Value="TempErrorResponse = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;TempErrorResponse.LoadXml(@&quot;&lt;ns0:Fault xmlns:ns0='http://SBA.gov/DLAPDocumentRetrieval/RetrievalFault'&gt;&lt;FaultString&gt;Exception:Internal Error&lt;/FaultString&gt;&lt;FaultCode&gt;An error occurred while processing the Document Retrieval&lt;/FaultCode&gt;&lt;/ns0:Fault&gt;&quot;);&#xD;&#xA;&#xD;&#xA;DocumentRetrievalFaultResponeMsg.MessagePart = TempErrorResponse;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="Make Document Error Response" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="17058116-f756-441c-aaf0-72fec62f1b44" ParentLink="Construct_MessageRef" LowerBound="260.35" HigherBound="260.67">
+                                    <om:Property Name="Ref" Value="DocumentRetrievalFaultResponeMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="275ccecb-abca-48c5-ac88-53a9cd55901f" ParentLink="Catch_Statement" LowerBound="269.1" HigherBound="271.1">
+                                <om:Property Name="PortName" Value="DocumentRetrievalPort" />
+                                <om:Property Name="MessageName" Value="DocumentRetrievalFaultResponeMsg" />
+                                <om:Property Name="OperationName" Value="Operation" />
+                                <om:Property Name="OperationMessageName" Value="Fault" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send Fault Response" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Call" OID="ace15ead-b3f9-45ca-a110-705d13a29ea8" ParentLink="Catch_Statement" LowerBound="271.1" HigherBound="273.1">
+                                <om:Property Name="Identifier" Value="SalesForceEventLogging_CallOrchestration" />
+                                <om:Property Name="Invokee" Value="DLAPDocument.RetrievalEventRequest" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Call SalesForce Event Logging Orchestration" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Parameter" OID="094a0043-1a29-4c74-949a-61edcfe0def3" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="Application" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="a276aed8-9d8c-4843-8dc3-decedcf88708" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="SalesForceObjectId" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="404a0a0a-3b94-4685-a09a-b4af6e9b8c20" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="Message" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="9ad60eb8-20d5-4404-b797-89846f4e8ce5" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="SalesForceObjectName" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="70b3ae92-5d68-46cc-91ca-5d621f100077" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="Status" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="da64003f-6925-474f-b3ac-695a6feb8f94" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="Status" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="f2063d25-9007-43b8-b043-06465c037819" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="Empty" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="6a0cceae-e791-4849-b667-a0cea2b23d4c" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="OrchestrationInstanceId" />
+                                    <om:Property Name="Type" Value="System.Guid" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Terminate" OID="382be502-eab5-4ca9-b41f-2ba96fa6d001" ParentLink="Catch_Statement" LowerBound="273.1" HigherBound="275.1">
+                                <om:Property Name="ErrorMessage" Value="&quot;An error occurred while processing the DLAP Document Retrieval&quot;;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Terminate" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="2ba8538d-c9e7-48be-a331-99829ed8ef68" ParentLink="ServiceBody_Statement" LowerBound="278.1" HigherBound="280.1">
+                    <om:Property Name="PortName" Value="DocumentRetrievalPort" />
+                    <om:Property Name="MessageName" Value="DocumentRetrievalResponseMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send Document Error Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Call" OID="f5be43e7-4177-4c04-b09a-087cdcb31e4e" ParentLink="ServiceBody_Statement" LowerBound="280.1" HigherBound="282.1">
+                    <om:Property Name="Identifier" Value="SalesForceEventLogging_CallOrchestration_1" />
+                    <om:Property Name="Invokee" Value="DLAPDocument.RetrievalEventRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Call SalesForce Event Logging Orchestration" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Parameter" OID="e9e76345-19eb-4e1e-ab1e-22d2ebe68833" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="Application" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="6eef7f2e-aaf3-496a-a674-56f9812a98f3" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="SalesForceObjectId" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="9aea2fdd-74a3-4a91-9d51-b50d7d1a71df" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="Message" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="ddf174c3-f857-43dc-9c54-9afc627293eb" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="SalesForceObjectName" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="cb48dc4c-00e2-499c-bbf8-2c74242401ed" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="Stage" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="8090ba90-ee6f-4bc5-867e-f3584abe5c3b" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="Status" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="013d5b7e-b341-46df-934a-23289bcd7459" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="Empty" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="8e19a8ad-6c14-4674-b391-486ce4635aa6" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="OrchestrationInstanceId" />
+                        <om:Property Name="Type" Value="System.Guid" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="8c71e632-117b-4a46-9df6-c3fad19ca8ba" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="52.1" HigherBound="54.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DLAPDocument.DocumentRetrievalPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentRetrievalPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="baf2badc-26db-4ac4-9754-95e44d7134ef" ParentLink="PortDeclaration_CLRAttribute" LowerBound="52.1" HigherBound="53.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0af99a8c-cf80-446a-b02b-9b004f4fa178" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="54.1" HigherBound="56.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="43" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DLAPDocument.RestContentVersionQueryPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestContentVersionQueryPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c2762706-db19-409a-afae-e191faf2baa9" ParentLink="PortDeclaration_CLRAttribute" LowerBound="54.1" HigherBound="55.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c929c716-6936-4444-998e-a5e3015f49ea" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="56.1" HigherBound="58.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DLAPDocument.RestContentVersionDataQueryPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestContentVersionDataQueryPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="ace97228-51e3-4bf7-b1c0-4d474c8b9837" ParentLink="PortDeclaration_CLRAttribute" LowerBound="56.1" HigherBound="57.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="19f58b6c-b5e0-48dc-a8f2-19b6536dfcc9" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DocumentRetrievalRequestType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="9460d92f-a0d4-44c9-9b62-3d79a2b99774" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="DocumentRetrievalDefinition.DocumentRetrievalRequest" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="ab8f558b-62d6-4ea7-9815-082f112ac5ff" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DocumentRetrievalResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="c2b74655-4f93-4622-94a4-65973ba7cdf2" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="DocumentRetrievalDefinition.DocumentRetrievalResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="503f8c03-afdd-4003-8178-efd4b31775ad" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DocumentRetrievalFaultResponeType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="d7f99a7d-11be-4c24-9c3d-2044b50bf2fa" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="DocumentRetrievalDefinition.DocumentRetrievalFault" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="56721a38-b68a-42f6-a4bd-798f77648537" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestContentVersionQueryRequestType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="e5685442-a4c2-4bde-b665-d26eb00f15f0" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="DLAPDocumentRetrievalSalesforceDefinition.Rest.RestContentDocument.Request" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="d628be1f-c722-4814-891c-b8ae9e50999c" ParentLink="Module_MessageType" LowerBound="20.1" HigherBound="24.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestContentVersionDataQueryResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="633be8fa-6cc7-4c0c-9c1b-3dff913db333" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="22.1" HigherBound="23.1">
+                <om:Property Name="ClassName" Value="System.Xml.XmlDocument" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="7eadbff3-8d05-44f6-aa81-431a01b759a4" ParentLink="Module_MessageType" LowerBound="24.1" HigherBound="28.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestContentVersionQueryResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="c5357223-0f74-47da-807b-736e3225624d" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="ClassName" Value="DLAPDocumentRetrievalSalesforceDefinition.Rest.RestContentDocument.QueryResult" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="81c18889-979f-460b-a5f0-1d2283ed3b56" ParentLink="Module_PortType" LowerBound="28.1" HigherBound="35.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestContentVersionQueryPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="cc2ed3d6-cb34-49a3-919e-b7a31b967a12" ParentLink="PortType_OperationDeclaration" LowerBound="30.1" HigherBound="34.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="cc2abb19-761f-4208-949e-b9099d378297" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="32.13" HigherBound="32.47">
+                    <om:Property Name="Ref" Value="DLAPDocument.RestContentVersionQueryRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="38d675e3-90ff-4b7b-a86e-473ab3f70031" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="32.49" HigherBound="32.84">
+                    <om:Property Name="Ref" Value="DLAPDocument.RestContentVersionQueryResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="3f312328-ed91-4836-8360-457997a21ba4" ParentLink="Module_PortType" LowerBound="35.1" HigherBound="42.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DocumentRetrievalPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="7fd81bb8-9fd5-4c28-8bb2-339ab1bfb79f" ParentLink="PortType_OperationDeclaration" LowerBound="37.1" HigherBound="41.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="8dbd8c76-fa43-4282-8ff7-db6959350672" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="39.13" HigherBound="39.41">
+                    <om:Property Name="Ref" Value="DLAPDocument.DocumentRetrievalRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="ac863cd6-428f-4fda-8079-6c7b05e1de0e" ParentLink="OperationDeclaration_FaultMessageRef" LowerBound="39.74" HigherBound="39.115">
+                    <om:Property Name="Ref" Value="DLAPDocument.DocumentRetrievalFaultResponeType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Fault" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="174c91e7-d5ef-4d58-9d25-4603a33553db" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="39.43" HigherBound="39.72">
+                    <om:Property Name="Ref" Value="DLAPDocument.DocumentRetrievalResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="898c69ce-a6d2-4a0c-a430-cc675d25ef17" ParentLink="Module_PortType" LowerBound="42.1" HigherBound="49.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestContentVersionDataQueryPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="2f0d7585-7665-4fe8-a89c-6ec39129b1ec" ParentLink="PortType_OperationDeclaration" LowerBound="44.1" HigherBound="48.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="d95e8008-40eb-4e52-9941-85b0d8fd29d3" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="46.13" HigherBound="46.47">
+                    <om:Property Name="Ref" Value="DLAPDocument.RestContentVersionQueryRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="1b9932f2-87b9-4f04-8e8f-feccbf9630bc" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="46.49" HigherBound="46.88">
+                    <om:Property Name="Ref" Value="DLAPDocument.RestContentVersionDataQueryResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module DLAPDocument
+{
+    internal messagetype DocumentRetrievalRequestType
+    {
+        body DocumentRetrievalDefinition.DocumentRetrievalRequest MessagePart;
+    };
+    internal messagetype DocumentRetrievalResponseType
+    {
+        body DocumentRetrievalDefinition.DocumentRetrievalResponse MessagePart;
+    };
+    internal messagetype DocumentRetrievalFaultResponeType
+    {
+        body DocumentRetrievalDefinition.DocumentRetrievalFault MessagePart;
+    };
+    internal messagetype RestContentVersionQueryRequestType
+    {
+        body DLAPDocumentRetrievalSalesforceDefinition.Rest.RestContentDocument.Request MessagePart;
+    };
+    internal messagetype RestContentVersionDataQueryResponseType
+    {
+        body System.Xml.XmlDocument MessagePart;
+    };
+    internal messagetype RestContentVersionQueryResponseType
+    {
+        body DLAPDocumentRetrievalSalesforceDefinition.Rest.RestContentDocument.QueryResult MessagePart;
+    };
+    internal porttype RestContentVersionQueryPortType
+    {
+        requestresponse Operation
+        {
+            RestContentVersionQueryRequestType, RestContentVersionQueryResponseType
+        };
+    };
+    internal porttype DocumentRetrievalPortType
+    {
+        requestresponse Operation
+        {
+            DocumentRetrievalRequestType, DocumentRetrievalResponseType, Fault = DocumentRetrievalFaultResponeType
+        };
+    };
+    internal porttype RestContentVersionDataQueryPortType
+    {
+        requestresponse Operation
+        {
+            RestContentVersionQueryRequestType, RestContentVersionDataQueryResponseType
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service RetrievalLogic
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements DocumentRetrievalPortType DocumentRetrievalPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses RestContentVersionQueryPortType RestContentVersionQueryPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses RestContentVersionDataQueryPortType RestContentVersionDataQueryPort;
+        message DocumentRetrievalRequestType DocumentRetrievalRequestMsg;
+        message DocumentRetrievalResponseType DocumentRetrievalResponseMsg;
+        message DocumentRetrievalFaultResponeType DocumentRetrievalFaultResponeMsg;
+        message RestContentVersionQueryRequestType RestContentVersionQueryRequestMsg;
+        message RestContentVersionDataQueryResponseType RestContentVersionDataQueryResponseMsg;
+        message RestContentVersionQueryResponseType RestContentVersionQueryResponseMsg;
+        System.Xml.XmlDocument TempErrorResponse;
+        System.Boolean ContentVersionIDStatus;
+        System.String ContentVersionID;
+        System.Guid OrchestrationInstanceId;
+        System.String Message;
+        System.String SalesForceObjectName;
+        System.String Stage;
+        System.String Status;
+        System.String MessageTemp;
+        System.String SalesForceObjectId;
+        System.Boolean Flag;
+        System.String ResponseStatus;
+        System.String Application;
+        System.String SOQL_ContentVersion_QUERY;
+        System.Byte ContentVersionBytes;
+        System.String Base64String;
+        System.String Empty;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d297f1d8-b13d-4b1e-857d-606b3a29373a")]
+            activate receive (DocumentRetrievalPort.Operation, DocumentRetrievalRequestMsg);
+            TempErrorResponse = new System.Xml.XmlDocument();
+            ContentVersionIDStatus = true;
+            ContentVersionID = "";
+            Message = "";
+            SalesForceObjectName = "";
+            Stage = "";
+            Status = "";
+            MessageTemp = "";
+            SalesForceObjectId = "";
+            Flag = true;
+            ResponseStatus = "";
+            Application = "";
+            SOQL_ContentVersion_QUERY = "";
+            Base64String = "";
+            Empty = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bd4b49c5-c4b6-43ad-85fb-07659d9f63e9")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("77957e96-3e00-4588-b339-6b103aa76ece")]
+                    ContentVersionID = xpath(DocumentRetrievalRequestMsg.MessagePart,"string(/*[local-name()='RetrievalRequest' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/RetrievalRequest']/*[local-name()='SDCID' and namespace-uri()=''])");
+                    
+                    if(!System.String.IsNullOrWhiteSpace(ContentVersionID))
+                    {ContentVersionIDStatus = true;}
+                    else{ContentVersionIDStatus = false;}
+                    
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("47438fb2-de62-4131-8367-f9604590c5d4")]
+                    if (ContentVersionIDStatus == true)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ef317496-6a7e-4755-ae00-dbc0ac790925")]
+                        construct RestContentVersionQueryRequestMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("314bcc89-eff6-43b4-a2cb-fae83b2c014e")]
+                            transform (RestContentVersionQueryRequestMsg.MessagePart) = DocumentRetrievalLogic.MakeContentVersionRequestMsg (DocumentRetrievalRequestMsg.MessagePart);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("fd7efeb4-f48b-4a23-949e-a0b1d6683f17")]
+                            SOQL_ContentVersion_QUERY = @"Select Id, LatestPublishedVersion.Id, LatestPublishedVersion.VersionData, LatestPublishedVersion.FileType from ContentDocument where LatestPublishedVersion.Id IN "+"("+"'"+ContentVersionID+"'"+")";
+                            
+                            
+                            RestContentVersionQueryRequestMsg(DLAPDocumentRetrievalSalesforceDefinition.Rest.SOQL_ContentVersion_Query) = SOQL_ContentVersion_QUERY; 
+                            
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("bcda904c-0fb9-4e6b-ac9f-58d51237c345")]
+                        send (RestContentVersionQueryPort.Operation, RestContentVersionQueryRequestMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("b57f62af-3fac-4980-8458-ecbf12bf1fa9")]
+                        receive (RestContentVersionQueryPort.Operation, RestContentVersionQueryResponseMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ac4930fe-855f-490e-9a8c-176062b498d9")]
+                        construct RestContentVersionQueryRequestMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4a60756a-e269-4892-831e-1637a93a5040")]
+                            transform (RestContentVersionQueryRequestMsg.MessagePart) = DocumentRetrievalLogic.MakeContentVersionRequestMsg (DocumentRetrievalRequestMsg.MessagePart);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dbcf7970-bb38-42a6-b3be-3cda9b64275a")]
+                            SOQL_ContentVersion_QUERY = ContentVersionID;
+                            
+                            
+                            
+                            
+                            RestContentVersionQueryRequestMsg(DLAPDocumentRetrievalSalesforceDefinition.Rest.SOQL_ContentVersionData_Query) = SOQL_ContentVersion_QUERY; 
+                            
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("67d1112b-799d-49d3-8f4b-8ddb139f3d6f")]
+                        send (RestContentVersionDataQueryPort.Operation, RestContentVersionQueryRequestMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("085faf9a-f30d-44e2-aa7c-96254e1ecdb2")]
+                        receive (RestContentVersionDataQueryPort.Operation, RestContentVersionDataQueryResponseMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("daa977ba-8ca4-417c-a2c5-1eafc90c2139")]
+                        construct DocumentRetrievalResponseMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c2e70145-fdfe-4b95-a3d2-da7dbaf41a4b")]
+                            transform (DocumentRetrievalResponseMsg.MessagePart) = DocumentRetrievalLogic.MakeDocumentRetrievalResponse (RestContentVersionQueryResponseMsg.MessagePart);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0d785bef-2903-4dcf-a85e-383d0ebfd628")]
+                            xpath(DocumentRetrievalResponseMsg.MessagePart, "/*[local-name()='RetrievalResponse' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/RetrievalResponse']/*[local-name()='Document_content' and namespace-uri()='']") = SBA.BizTalk.Shared.MessageHelper.XLANGMessageHelper.Instance.ConvertBinaryMessageToBase64(RestContentVersionDataQueryResponseMsg); 
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("dade47f9-f25a-4c2a-8ee3-0f2b08b930ac")]
+                        Flag = true;
+                        
+                        ResponseStatus = xpath(DocumentRetrievalResponseMsg.MessagePart, "string(/*[local-name()='RetrievalResponse' and namespace-uri()='http://SBA.gov/DLAPDocumentRetrieval/RetrievalResponse']/*[local-name()='Doc_retrieve_status' and namespace-uri()=''])");
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("23b1f29f-a2e1-4113-9a3b-951fa5c2ce14")]
+                        construct DocumentRetrievalResponseMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("974a19e8-4308-4e4b-a6f2-14481d4e9143")]
+                            TempErrorResponse = new System.Xml.XmlDocument();
+                            
+                            TempErrorResponse.LoadXml(@"<ns0:RetrievalResponse xmlns:ns0='http://SBA.gov/DLAPDocumentRetrieval.RetrievalResponse'><Doc_retrieve_status>FAILED</Doc_retrieve_status><Doc_retrieve_status_details>Exception:ContentVersion Id couldn’t be found thus Document can't be retrieved</Doc_retrieve_status_details></ns0:RetrievalResponse>");
+                            
+                            DocumentRetrievalResponseMsg.MessagePart = TempErrorResponse;
+                            
+                            Flag = false;
+                            
+                        }
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("adef182e-2ab7-48e7-8245-6c2fb57f6b6d")]
+                    if ((Flag == true)&&(ResponseStatus == "SUCCESS"))
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("af518bbf-a7b6-4dcd-8d73-a42c86b597cc")]
+                        
+                        OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;
+                        
+                        SalesForceObjectName="Appplication";
+                        
+                        SalesForceObjectId = ContentVersionID;
+                        
+                        Stage = "Document Retrieved";
+                        
+                        Status = "Success";
+                        
+                        Message = "Successfully Retrieved Document";
+                    }
+                    else 
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("02618de8-1e05-4ecf-b065-e7096a1e2569")]
+                        OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;
+                        
+                        Message = "File not found matching…";
+                        
+                        SalesForceObjectName="Appplication";
+                        
+                        SalesForceObjectId = ContentVersionID;
+                        
+                        Stage = "Document Retrieved";
+                        
+                        Status = "Error";
+                        
+                        
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("49b890ab-e5e8-4e11-a6b6-b84a61f775df")]
+                    catch (System.SystemException Ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("65d79f22-e39b-44ee-9f98-0a5e03f6fc4a")]
+                        if(Ex.InnerException != null)
+                        {
+                        MessageTemp = Ex.InnerException.ToString();
+                        
+                        Message = MessageTemp.Substring(0, System.Convert.ToInt32(System.Math.Min(900, MessageTemp.Length))) +"Total String Length:"+MessageTemp.Length.ToString();
+                        
+                        System.Diagnostics.EventLog.WriteEntry("DLAP Document Retrieval Exception",Message);
+                        
+                        }
+                        
+                        else
+                        {
+                        MessageTemp = Ex.Message.ToString();
+                        
+                        Message = MessageTemp.Substring(0, System.Convert.ToInt32(System.Math.Min(900, MessageTemp.Length))) +"Total String Length:"+MessageTemp.Length.ToString();
+                        
+                        System.Diagnostics.EventLog.WriteEntry("DLAP Document Retrieval Exception",Message);
+                        }
+                        
+                        OrchestrationInstanceId = Microsoft.XLANGs.Core.Service.RootService.InstanceId;
+                        
+                        SalesForceObjectName="Appplication";
+                        
+                        SalesForceObjectId = ContentVersionID;
+                        
+                        Stage = "Document Retrieved";
+                        
+                        Status = "Error";
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8cd73496-eb82-444c-bf44-44ed264dbb55")]
+                        construct DocumentRetrievalFaultResponeMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3ebc812f-752b-4908-895b-b5b96b7e307a")]
+                            TempErrorResponse = new System.Xml.XmlDocument();
+                            
+                            TempErrorResponse.LoadXml(@"<ns0:Fault xmlns:ns0='http://SBA.gov/DLAPDocumentRetrieval/RetrievalFault'><FaultString>Exception:Internal Error</FaultString><FaultCode>An error occurred while processing the Document Retrieval</FaultCode></ns0:Fault>");
+                            
+                            DocumentRetrievalFaultResponeMsg.MessagePart = TempErrorResponse;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("275ccecb-abca-48c5-ac88-53a9cd55901f")]
+                        send (DocumentRetrievalPort.Operation.Fault, DocumentRetrievalFaultResponeMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ace15ead-b3f9-45ca-a110-705d13a29ea8")]
+                        call DLAPDocument.RetrievalEventRequest (Application, SalesForceObjectId, Message, SalesForceObjectName, Status, Status, Empty, OrchestrationInstanceId);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("382be502-eab5-4ca9-b41f-2ba96fa6d001")]
+                        terminate "An error occurred while processing the DLAP Document Retrieval";;
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2ba8538d-c9e7-48be-a331-99829ed8ef68")]
+            send (DocumentRetrievalPort.Operation, DocumentRetrievalResponseMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f5be43e7-4177-4c04-b09a-087cdcb31e4e")]
+            call DLAPDocument.RetrievalEventRequest (Application, SalesForceObjectId, Message, SalesForceObjectName, Stage, Status, Empty, OrchestrationInstanceId);
+        }
+    }
+}
+

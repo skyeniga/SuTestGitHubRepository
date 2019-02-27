@@ -1,0 +1,4 @@
+<ns0:Request xmlns:ns0="http://SBA.gov/Salesforce/Query/Test/">
+	<ns0:SQLCommand>SELECT Id, Name, Previous_SBA_Loans__c, Loan_Type__c FROM Application__c WHERE Name=@ApplicationNumber</ns0:SQLCommand>
+	<ns0:ApplicationNumber>777111001</ns0:ApplicationNumber>
+</ns0:Request>

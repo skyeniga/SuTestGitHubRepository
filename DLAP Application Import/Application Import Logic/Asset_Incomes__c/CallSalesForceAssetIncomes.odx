@@ -1,0 +1,213 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="f9e0ad4d-c7a2-4282-9e70-5b67d739d922" LowerBound="1.1" HigherBound="41.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="b04931f1-3b7c-4708-be2e-bfb74b392f76" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="40.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CallSalesForceAssetIncomes" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="MessageDeclaration" OID="a69785d3-516a-4b79-918a-4f26a8bca162" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementRequestAsset_Incomes__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateAssetIncomesMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="651787f2-c95c-488b-9f11-035e1e739b5b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementResponseAsset_Incomes__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateAssetIncomesResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="89a03cef-0674-40f7-84ff-30265aa3b15a" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageDeclaration" OID="61d8d467-4fa8-4d38-9574-85356b38b548" ParentLink="ServiceBody_Declaration" LowerBound="26.15" HigherBound="26.114">
+                    <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ParamDirection" Value="Ref" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ApplicationCanonical" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="cbd3a1e8-fd89-4c4e-b247-23302d3e0c42" ParentLink="ServiceBody_Statement" LowerBound="28.1" HigherBound="38.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct Request" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="b307b12d-7ce6-40c3-81f1-4881c2a5b620" ParentLink="ComplexStatement_Statement" LowerBound="28.1" HigherBound="34.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Create SF Request" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="0ecd197a-8558-4173-b76e-a610f9cbcca5" ParentLink="ComplexStatement_Statement" LowerBound="31.1" HigherBound="33.1">
+                            <om:Property Name="ClassName" Value="Application_Import_Logic.Asset_Incomes__c.MakeSalesforcesAssetIncomes__cRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Create Request" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="b0c67d7e-ad92-45ff-b68e-d7beaad415c7" ParentLink="Transform_InputMessagePartRef" LowerBound="32.145" HigherBound="32.165">
+                                <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="782e6ec0-7009-4cce-a576-8ccedc65ee75" ParentLink="Transform_OutputMessagePartRef" LowerBound="32.28" HigherBound="32.60">
+                                <om:Property Name="MessageRef" Value="CreateAssetIncomesMsg" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="ae3560de-18de-48c7-988e-80e9884c6365" ParentLink="Construct_MessageRef" LowerBound="29.23" HigherBound="29.44">
+                            <om:Property Name="Ref" Value="CreateAssetIncomesMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="39859665-ec2c-4d76-bc02-a39197f141fd" ParentLink="ComplexStatement_Statement" LowerBound="34.1" HigherBound="36.1">
+                        <om:Property Name="PortName" Value="CallSalesForce" />
+                        <om:Property Name="MessageName" Value="CreateAssetIncomesMsg" />
+                        <om:Property Name="OperationName" Value="statement" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send Request" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="bd9194b7-dd91-440d-977e-39e763228cc6" ParentLink="ComplexStatement_Statement" LowerBound="36.1" HigherBound="38.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="CallSalesForce" />
+                        <om:Property Name="MessageName" Value="CreateAssetIncomesResponseMsg" />
+                        <om:Property Name="OperationName" Value="statement" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive Response" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="782be194-2c29-434b-b303-a6cf84934594" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="15" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.CDataServiceSelectAsset_Incomes__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CallSalesForce" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="f430eca0-3905-40da-8bf5-acb009c9ce27" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="eb90faf4-e1a8-4fa7-a837-570aeaa8d19e" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementResponseAsset_Incomes__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="a38766bc-ae0f-400e-a71a-c41f2b54cb14" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition.CDataService_Asset_Incomes__c.table" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="a71704a2-24fb-4823-b8f4-ec64bab19dbc" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementRequestAsset_Incomes__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="f5d74009-8fcf-43dc-b87c-30813ecbbb6d" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition.CDataService_Asset_Incomes__c.parameters" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="2b43fba4-db0c-429f-967c-dd93d15c4ef7" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="CDataServiceSelectAsset_Incomes__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="d7b15f2e-8bce-4118-8e09-bf07c29f32ef" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="statement" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d52fec50-92e7-4d24-97e0-2faa1cbc30e8" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.45">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementRequestAsset_Incomes__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="37f6da26-687d-4fbd-81e9-10fa547eeba0" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.47" HigherBound="16.80">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementResponseAsset_Incomes__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    public messagetype StatementResponseAsset_Incomes__c
+    {
+        body Salesforce_Application_Import_Definition.CDataService_Asset_Incomes__c.table parameters;
+    };
+    public messagetype StatementRequestAsset_Incomes__c
+    {
+        body Salesforce_Application_Import_Definition.CDataService_Asset_Incomes__c.parameters parameters;
+    };
+    public porttype CDataServiceSelectAsset_Incomes__c
+    {
+        requestresponse statement
+        {
+            StatementRequestAsset_Incomes__c, StatementResponseAsset_Incomes__c
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    public service CallSalesForceAssetIncomes
+    {
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses CDataServiceSelectAsset_Incomes__c CallSalesForce;
+        message StatementRequestAsset_Incomes__c CreateAssetIncomesMsg;
+        message StatementResponseAsset_Incomes__c CreateAssetIncomesResponseMsg;
+        body (ref message Application_Import_Definition.HomeDisasterLoanApplicationCanonical ApplicationCanonical)
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b307b12d-7ce6-40c3-81f1-4881c2a5b620")]
+            construct CreateAssetIncomesMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("0ecd197a-8558-4173-b76e-a610f9cbcca5")]
+                transform (CreateAssetIncomesMsg.parameters) = Application_Import_Logic.Asset_Incomes__c.MakeSalesforcesAssetIncomes__cRequest (ApplicationCanonical);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("39859665-ec2c-4d76-bc02-a39197f141fd")]
+            send (CallSalesForce.statement, CreateAssetIncomesMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("bd9194b7-dd91-440d-977e-39e763228cc6")]
+            receive (CallSalesForce.statement, CreateAssetIncomesResponseMsg);
+        }
+    }
+}
+

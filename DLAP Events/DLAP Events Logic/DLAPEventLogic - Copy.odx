@@ -1,0 +1,531 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="10062ff2-5137-44c5-8aaf-d7d191995f6c" LowerBound="1.1" HigherBound="115.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="DLAPEventsLogic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="cab74aa5-52c2-4187-b61e-d8e37cbe73d4" ParentLink="Module_ServiceDeclaration" LowerBound="42.1" HigherBound="114.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DLAPEventLogic" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="7e1c5a1c-7111-4bd4-a5f0-f3113f478b01" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="55.1" HigherBound="56.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ApplicationNumber" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="092e8e62-bfe3-42d3-a59a-346086b0ae0a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="56.1" HigherBound="57.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LogMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="fae3832d-30f4-45a8-b0dd-c3c6a869fbc6" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="57.1" HigherBound="58.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SFObjectID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8f982089-747a-44f3-94a3-9e9cb61af255" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="58.1" HigherBound="59.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SFObjectName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="6cf33ccd-3da5-46b6-8a12-62f5381ac264" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="49.1" HigherBound="50.1">
+                <om:Property Name="Type" Value="DLAPEventsLogic.DocumentResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0e36a756-071f-4211-8929-9e657dba1dff" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="50.1" HigherBound="51.1">
+                <om:Property Name="Type" Value="DLAPEventsLogic.SalesforceNotificationEventRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesforceNotificationEventRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="4b48f66d-4d85-4467-ad61-dc470c790edc" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="51.1" HigherBound="52.1">
+                <om:Property Name="Type" Value="DLAPEventsLogic.SalesforceNotificationEventResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesforceNotificationEventResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f362f750-4091-4d96-8938-0cf5aa2fbc83" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="52.1" HigherBound="53.1">
+                <om:Property Name="Type" Value="DLAPEventsLogic.StatusResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="StatusResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="18b90747-3d91-435e-b9b0-ef9e01fa9829" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="53.1" HigherBound="54.1">
+                <om:Property Name="Type" Value="DLAPEventsLogic.OracleEventNotificationRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OracleEventNotificationRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="577ce9c3-fdbc-409a-af28-44ede69c3b02" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="54.1" HigherBound="55.1">
+                <om:Property Name="Type" Value="DLAPEventsLogic.OracleEventNotificationResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OracleEventNotificationResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="a5dfd349-1cbe-4402-8c63-b48f5ebbf506" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="e2ea0da0-d7b5-4af2-b8ac-350fe2ef6466" ParentLink="ServiceBody_Statement" LowerBound="61.1" HigherBound="67.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="SalesforceNotificationEventPort" />
+                    <om:Property Name="MessageName" Value="SalesforceNotificationEventRequestMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Salesforce Notification Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="2d9ac972-d939-4f9c-8f29-8e4ee6cc034d" ParentLink="ServiceBody_Statement" LowerBound="67.1" HigherBound="73.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct SF Notification Ack Message " />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="a228a4c3-b833-4db2-a2e4-37ba9cc4b4b5" ParentLink="ComplexStatement_Statement" LowerBound="70.1" HigherBound="72.1">
+                        <om:Property Name="ClassName" Value="DLAPEventsLogic.MakeSFNotificationAckMsg" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Make SF Notification Ack Msg" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="e910a1b3-7fd1-4e6c-994d-fa0fd0480f5e" ParentLink="Transform_OutputMessagePartRef" LowerBound="71.28" HigherBound="71.78">
+                            <om:Property Name="MessageRef" Value="SalesforceNotificationEventResponseMsg" />
+                            <om:Property Name="PartRef" Value="MessagePart" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="1b5ad792-501e-46db-b8d2-4b3d25c59380" ParentLink="Transform_InputMessagePartRef" LowerBound="71.124" HigherBound="71.173">
+                            <om:Property Name="MessageRef" Value="SalesforceNotificationEventRequestMsg" />
+                            <om:Property Name="PartRef" Value="MessagePart" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="fd9efe4f-162d-4fdd-9761-4a55b4120615" ParentLink="Construct_MessageRef" LowerBound="68.23" HigherBound="68.61">
+                        <om:Property Name="Ref" Value="SalesforceNotificationEventResponseMsg" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="2c75a626-0fe7-4871-b8f2-9dbe5ed49886" ParentLink="ServiceBody_Statement" LowerBound="73.1" HigherBound="75.1">
+                    <om:Property Name="PortName" Value="SalesforceNotificationEventPort" />
+                    <om:Property Name="MessageName" Value="SalesforceNotificationEventResponseMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send Salesfroce Notification ACK Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="1057fb8f-0194-4a95-a7db-f0a8c9855b3a" ParentLink="ServiceBody_Statement" LowerBound="75.1" HigherBound="85.1">
+                    <om:Property Name="Expression" Value="//Extracting SF Notification Request Values&#xD;&#xA;&#xD;&#xA;ApplicationNumber = xpath(SalesforceNotificationEventRequestMsg.MessagePart, &quot;string(/*[local-name()='notifications' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Notification' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='sObject' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Application_Number__c' and namespace-uri()='urn:sobject.enterprise.soap.sforce.com'])&quot;);&#xD;&#xA;&#xD;&#xA;LogMessage = xpath(SalesforceNotificationEventRequestMsg.MessagePart, &quot;string(/*[local-name()='notifications' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Notification' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='sObject' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Log_Message__c' and namespace-uri()='urn:sobject.enterprise.soap.sforce.com'])&quot;);&#xD;&#xA;&#xD;&#xA;SFObjectID = xpath(SalesforceNotificationEventRequestMsg.MessagePart, &quot;string(/*[local-name()='notifications' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Notification' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='sObject' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='SObject_ID__c' and namespace-uri()='urn:sobject.enterprise.soap.sforce.com'])&quot;);&#xD;&#xA;&#xD;&#xA;SFObjectName = xpath(SalesforceNotificationEventRequestMsg.MessagePart, &quot;string(/*[local-name()='notifications' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Notification' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='sObject' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='SObject_Name__c' and namespace-uri()='urn:sobject.enterprise.soap.sforce.com'])&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Extracting Notification Values" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="Decision" OID="ec43b166-9248-4bea-ba23-d02a184a2d8d" ParentLink="ServiceBody_Statement" LowerBound="85.1" HigherBound="108.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Decide STATUS or DOCUMENT?" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="DecisionBranch" OID="e8fcfd0f-9c2f-461c-9ea5-4854b662e1b5" ParentLink="ReallyComplexStatement_Branch" LowerBound="86.13" HigherBound="98.1">
+                        <om:Property Name="Expression" Value="&#xD;&#xA;((!System.String.IsNullOrWhiteSpace(ApplicationNumber))&amp;&amp;(!System.String.IsNullOrWhiteSpace(LogMessage)))&#xD;&#xA;" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="STATUS" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Call" OID="58d21740-ac67-4ebe-bab1-8f85ff48470e" ParentLink="ComplexStatement_Statement" LowerBound="89.1" HigherBound="91.1">
+                            <om:Property Name="Identifier" Value="CallStatusOrchestration" />
+                            <om:Property Name="Invokee" Value="DLAPEventsLogic.DLAPEventStatusLogic" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Call Event Status Orchestration" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Parameter" OID="df383ef0-2aca-47a9-b6e9-b378a9ef0fbc" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="SalesforceNotificationEventRequestMsg" />
+                                <om:Property Name="Type" Value="DLAPEventsLogic.SalesforceNotificationEventRequestType" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="13595487-7f00-428b-96a1-76ecfc3aac78" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="In" />
+                                <om:Property Name="Name" Value="StatusResponseMsg" />
+                                <om:Property Name="Type" Value="DLAPEventsLogic.StatusResponseType" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Construct" OID="16874ef5-8197-4c22-bbad-8b7d39b76169" ParentLink="ComplexStatement_Statement" LowerBound="91.1" HigherBound="97.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct Oracle Event Notification Request Msg" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="7e39a3a7-3c15-4102-a12d-22a251c2607d" ParentLink="ComplexStatement_Statement" LowerBound="94.1" HigherBound="96.1">
+                                <om:Property Name="ClassName" Value="DLAPEventsLogic.MakeOracleEventNotificationStatusRequest" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Make Oracle Event Notification Request" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="MessagePartRef" OID="06d3861c-ae0c-46ee-8b56-28831e8c360a" ParentLink="Transform_InputMessagePartRef" LowerBound="95.139" HigherBound="95.188">
+                                    <om:Property Name="MessageRef" Value="SalesforceNotificationEventRequestMsg" />
+                                    <om:Property Name="PartRef" Value="MessagePart" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_3" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="ea42e279-ef87-413e-ae8d-28615ec2c7e1" ParentLink="Transform_OutputMessagePartRef" LowerBound="95.32" HigherBound="95.77">
+                                    <om:Property Name="MessageRef" Value="OracleEventNotificationRequestMsg" />
+                                    <om:Property Name="PartRef" Value="MessagePart" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_4" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="2663eb79-7590-45c3-83e0-e66828c365e9" ParentLink="Construct_MessageRef" LowerBound="92.27" HigherBound="92.60">
+                                <om:Property Name="Ref" Value="OracleEventNotificationRequestMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="7239b05d-e890-4bde-9292-d607f3bbc7f6" ParentLink="ReallyComplexStatement_Branch" LowerBound="98.18" HigherBound="103.1">
+                        <om:Property Name="Expression" Value="((!System.String.IsNullOrWhiteSpace(ApplicationNumber))&amp;&amp;(!System.String.IsNullOrWhiteSpace(SFObjectID)))" />
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="DOCUMENT" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Terminate" OID="8ac859ac-4f2b-4813-b8d5-15f6b55e8ea5" ParentLink="ComplexStatement_Statement" LowerBound="100.1" HigherBound="102.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;DLAP Events SF Notification Request Validation Failed&quot;;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Terminate DLAP Events Process" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="DecisionBranch" OID="4fa2b459-8df8-4bce-b18f-d336f0470699" ParentLink="ReallyComplexStatement_Branch">
+                        <om:Property Name="IsGhostBranch" Value="True" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Else" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Terminate" OID="865b48c6-8833-47c7-9294-dde4a04daf58" ParentLink="ComplexStatement_Statement" LowerBound="105.1" HigherBound="107.1">
+                            <om:Property Name="ErrorMessage" Value="&quot;DLAP Events SF Notification Request Validation Failed&quot;;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Terminate DLAP Events Process" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="f070f669-6261-428d-be3c-1104bec87cb5" ParentLink="ServiceBody_Statement" LowerBound="108.1" HigherBound="110.1">
+                    <om:Property Name="PortName" Value="OracleEventNotificationPort" />
+                    <om:Property Name="MessageName" Value="OracleEventNotificationRequestMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send Oracle Event Notification Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Receive" OID="33899330-d30d-49d5-984b-64ae18720186" ParentLink="ServiceBody_Statement" LowerBound="110.1" HigherBound="112.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="PortName" Value="OracleEventNotificationPort" />
+                    <om:Property Name="MessageName" Value="OracleEventNotificationResponseMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Oracle Event Notification Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="2581fa87-94ed-4a2f-a3ce-7d1cc3224e8f" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="45.1" HigherBound="47.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DLAPEventsLogic.SalesforceNotificationEventPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesforceNotificationEventPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="539cf45b-8f01-4de0-8a7c-e73eff7cde67" ParentLink="PortDeclaration_CLRAttribute" LowerBound="45.1" HigherBound="46.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="957b98c7-f93a-44d5-ab75-a0d97c9957a1" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="47.1" HigherBound="49.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="53" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DLAPEventsLogic.OracleEventNotificationPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OracleEventNotificationPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8c358447-6dc2-4511-8403-e6055f346845" ParentLink="PortDeclaration_CLRAttribute" LowerBound="47.1" HigherBound="48.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="3cb596f4-f9bb-48f2-918c-e1b83896942b" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="StatusResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="eba6753a-d6ec-40ef-9e2b-da3148b0495c" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="DLAPEventsDefinition.EventStatusResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="33cfec91-667f-46f9-9ee6-122c6ee26fcd" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DocumentResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="e64a16c2-aef9-4082-a54e-caecbeaa5148" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="DLAPEventsDefinition.EventDocumentListResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="9d66e5bd-c694-4daa-b23c-5a3bd5e84236" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SalesforceNotificationEventRequestType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="fa17cfee-ae7a-42ab-88c7-5052134e000f" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="DLAPEventsSalesforceDefinition.NotificationService_outbound.notifications" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="1e31df95-5807-408b-8582-dd629e1f1bc0" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SalesforceNotificationEventResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="f44215fc-fcfb-4140-b5f9-d343041f76e2" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="DLAPEventsSalesforceDefinition.NotificationService_outbound.notificationsResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="f523bdc6-776f-4bd6-9668-1d0d745f5314" ParentLink="Module_MessageType" LowerBound="20.1" HigherBound="24.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OracleEventNotificationRequestType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="9a9ff685-dcaf-457c-b4df-804858ae4b4b" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="22.1" HigherBound="23.1">
+                <om:Property Name="ClassName" Value="DLAPEventsOracleDefinition.OracleEventNotification.Insert" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="449cf230-4105-4fe0-ae3b-9fe5c8554f0b" ParentLink="Module_MessageType" LowerBound="24.1" HigherBound="28.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OracleEventNotificationResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="7a86fc9e-6b04-42c7-a534-cc86bfcf33ba" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="ClassName" Value="DLAPEventsOracleDefinition.OracleEventNotification.InsertResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="3ddb47cf-dc08-4fa0-94c7-0907700f80a7" ParentLink="Module_PortType" LowerBound="28.1" HigherBound="35.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SalesforceNotificationEventPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="9780b1ea-8d3a-4c46-bb65-b661553497f3" ParentLink="PortType_OperationDeclaration" LowerBound="30.1" HigherBound="34.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="cf82568c-df55-4a3c-9e7b-bbe0ca42fb80" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="32.13" HigherBound="32.51">
+                    <om:Property Name="Ref" Value="DLAPEventsLogic.SalesforceNotificationEventRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="2e3210c3-d507-4504-acde-282d108810f1" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="32.53" HigherBound="32.92">
+                    <om:Property Name="Ref" Value="DLAPEventsLogic.SalesforceNotificationEventResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ba8a930a-7819-488f-a8a1-2eddd5caf3f9" ParentLink="Module_PortType" LowerBound="35.1" HigherBound="42.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OracleEventNotificationPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="8ce57377-62b3-48e0-9f76-1c9106c7c030" ParentLink="PortType_OperationDeclaration" LowerBound="37.1" HigherBound="41.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="3f0e2f0c-5c78-4b22-a0ba-d67a9f748200" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="39.13" HigherBound="39.47">
+                    <om:Property Name="Ref" Value="DLAPEventsLogic.OracleEventNotificationRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="f2165db6-31b3-4fc3-b4dc-1e2ccffd25f5" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="39.49" HigherBound="39.84">
+                    <om:Property Name="Ref" Value="DLAPEventsLogic.OracleEventNotificationResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module DLAPEventsLogic
+{
+    internal messagetype StatusResponseType
+    {
+        body DLAPEventsDefinition.EventStatusResponse MessagePart;
+    };
+    internal messagetype DocumentResponseType
+    {
+        body DLAPEventsDefinition.EventDocumentListResponse MessagePart;
+    };
+    internal messagetype SalesforceNotificationEventRequestType
+    {
+        body DLAPEventsSalesforceDefinition.NotificationService_outbound.notifications MessagePart;
+    };
+    internal messagetype SalesforceNotificationEventResponseType
+    {
+        body DLAPEventsSalesforceDefinition.NotificationService_outbound.notificationsResponse MessagePart;
+    };
+    internal messagetype OracleEventNotificationRequestType
+    {
+        body DLAPEventsOracleDefinition.OracleEventNotification.Insert MessagePart;
+    };
+    internal messagetype OracleEventNotificationResponseType
+    {
+        body DLAPEventsOracleDefinition.OracleEventNotification.InsertResponse MessagePart;
+    };
+    internal porttype SalesforceNotificationEventPortType
+    {
+        requestresponse Operation
+        {
+            SalesforceNotificationEventRequestType, SalesforceNotificationEventResponseType
+        };
+    };
+    internal porttype OracleEventNotificationPortType
+    {
+        requestresponse Operation
+        {
+            OracleEventNotificationRequestType, OracleEventNotificationResponseType
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service DLAPEventLogic
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements SalesforceNotificationEventPortType SalesforceNotificationEventPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses OracleEventNotificationPortType OracleEventNotificationPort;
+        message DocumentResponseType DocumentResponseMsg;
+        message SalesforceNotificationEventRequestType SalesforceNotificationEventRequestMsg;
+        message SalesforceNotificationEventResponseType SalesforceNotificationEventResponseMsg;
+        message StatusResponseType StatusResponseMsg;
+        message OracleEventNotificationRequestType OracleEventNotificationRequestMsg;
+        message OracleEventNotificationResponseType OracleEventNotificationResponseMsg;
+        System.String ApplicationNumber;
+        System.String LogMessage;
+        System.String SFObjectID;
+        System.String SFObjectName;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e2ea0da0-d7b5-4af2-b8ac-350fe2ef6466")]
+            activate receive (SalesforceNotificationEventPort.Operation, SalesforceNotificationEventRequestMsg);
+            ApplicationNumber = "";
+            LogMessage = "";
+            SFObjectID = "";
+            SFObjectName = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2d9ac972-d939-4f9c-8f29-8e4ee6cc034d")]
+            construct SalesforceNotificationEventResponseMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a228a4c3-b833-4db2-a2e4-37ba9cc4b4b5")]
+                transform (SalesforceNotificationEventResponseMsg.MessagePart) = DLAPEventsLogic.MakeSFNotificationAckMsg (SalesforceNotificationEventRequestMsg.MessagePart);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2c75a626-0fe7-4871-b8f2-9dbe5ed49886")]
+            send (SalesforceNotificationEventPort.Operation, SalesforceNotificationEventResponseMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1057fb8f-0194-4a95-a7db-f0a8c9855b3a")]
+            //Extracting SF Notification Request Values
+            
+            ApplicationNumber = xpath(SalesforceNotificationEventRequestMsg.MessagePart, "string(/*[local-name()='notifications' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Notification' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='sObject' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Application_Number__c' and namespace-uri()='urn:sobject.enterprise.soap.sforce.com'])");
+            
+            LogMessage = xpath(SalesforceNotificationEventRequestMsg.MessagePart, "string(/*[local-name()='notifications' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Notification' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='sObject' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Log_Message__c' and namespace-uri()='urn:sobject.enterprise.soap.sforce.com'])");
+            
+            SFObjectID = xpath(SalesforceNotificationEventRequestMsg.MessagePart, "string(/*[local-name()='notifications' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Notification' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='sObject' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='SObject_ID__c' and namespace-uri()='urn:sobject.enterprise.soap.sforce.com'])");
+            
+            SFObjectName = xpath(SalesforceNotificationEventRequestMsg.MessagePart, "string(/*[local-name()='notifications' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='Notification' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='sObject' and namespace-uri()='http://soap.sforce.com/2005/09/outbound']/*[local-name()='SObject_Name__c' and namespace-uri()='urn:sobject.enterprise.soap.sforce.com'])");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ec43b166-9248-4bea-ba23-d02a184a2d8d")]
+            if (
+                ((!System.String.IsNullOrWhiteSpace(ApplicationNumber))&&(!System.String.IsNullOrWhiteSpace(LogMessage))))
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("58d21740-ac67-4ebe-bab1-8f85ff48470e")]
+                call DLAPEventsLogic.DLAPEventStatusLogic (SalesforceNotificationEventRequestMsg, StatusResponseMsg);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("16874ef5-8197-4c22-bbad-8b7d39b76169")]
+                construct OracleEventNotificationRequestMsg
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("7e39a3a7-3c15-4102-a12d-22a251c2607d")]
+                    transform (OracleEventNotificationRequestMsg.MessagePart) = DLAPEventsLogic.MakeOracleEventNotificationStatusRequest (SalesforceNotificationEventRequestMsg.MessagePart);
+                }
+            }
+            else if (((!System.String.IsNullOrWhiteSpace(ApplicationNumber))&&(!System.String.IsNullOrWhiteSpace(SFObjectID))))
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("8ac859ac-4f2b-4813-b8d5-15f6b55e8ea5")]
+                terminate "DLAP Events SF Notification Request Validation Failed";;
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("865b48c6-8833-47c7-9294-dde4a04daf58")]
+                terminate "DLAP Events SF Notification Request Validation Failed";;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f070f669-6261-428d-be3c-1104bec87cb5")]
+            send (OracleEventNotificationPort.Operation, OracleEventNotificationRequestMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("33899330-d30d-49d5-984b-64ae18720186")]
+            receive (OracleEventNotificationPort.Operation, OracleEventNotificationResponseMsg);
+        }
+    }
+}
+

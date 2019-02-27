@@ -1,0 +1,147 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP Document Upload Definition", "DLAP Document Upload Definition\DLAP Document Upload Definition.btproj", "{EF2F3F23-41EE-4151-943E-4C32AA345416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP Document Upload SalesForce Definition", "DLAP Document Upload SalesForce Definition\DLAP Document Upload SalesForce Definition.btproj", "{296FFE55-D142-4C93-8175-6137CE146DAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLAP Document Upload Logic", "DLAP Document Upload Logic\DLAP Document Upload Logic.btproj", "{1F6268F8-B737-4DC1-AF63-54FE4D27FBD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{B34A3842-B86D-4711-9B5A-C429430DF443}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\BizTalk Code Review Check List - DLAP Upload List.docx = Deployment\BizTalk Code Review Check List - DLAP Upload List.docx
+		Deployment\DLAPDocumentUpload_Deployment_Instructions.docx = Deployment\DLAPDocumentUpload_Deployment_Instructions.docx
+		Deployment\DocumentUpload 2.0.0.2-soapui-project.xml = Deployment\DocumentUpload 2.0.0.2-soapui-project.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning", "Versioning", "{4BB4C737-6404-4A6A-B531-BD4390AC744E}"
+	ProjectSection(SolutionItems) = preProject
+		Versioning\AssemblyInfoShared.cs = Versioning\AssemblyInfoShared.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0.0.0", "1.0.0.0", "{28E79E9C-10C1-4FB0-B2C3-7833B97A3822}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\1.0.0.0\DLAP Document Upload.BindingInfo.xml = Deployment\1.0.0.0\DLAP Document Upload.BindingInfo.xml
+		Deployment\1.0.0.0\DLAP Document Upload.msi = Deployment\1.0.0.0\DLAP Document Upload.msi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.0", "2.0.0.0", "{18AA2422-A9D5-47DD-A8B4-E91551282433}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.0\DLAP Document Upload 2.0.0.0.msi = Deployment\2.0.0.0\DLAP Document Upload 2.0.0.0.msi
+		Deployment\2.0.0.0\DLAP Document Upload.BindingInfo 2.0.0.0.xml = Deployment\2.0.0.0\DLAP Document Upload.BindingInfo 2.0.0.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.1", "2.0.0.1", "{78579952-C678-47DD-8AC6-56BA92E316E3}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.1\DLAP Document Upload 2.0.0.1.msi = Deployment\2.0.0.1\DLAP Document Upload 2.0.0.1.msi
+		Deployment\2.0.0.1\DLAP Document Upload.BindingInfo 2.0.0.1.xml = Deployment\2.0.0.1\DLAP Document Upload.BindingInfo 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.2", "2.0.0.2", "{7A93046B-E966-4A20-81FC-66ED888D4A78}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.2\DLAP Document Upload 2.0.0.2.msi = Deployment\2.0.0.2\DLAP Document Upload 2.0.0.2.msi
+		Deployment\2.0.0.2\DLAP Document Upload.BindingInfo 2.0.0.2.xml = Deployment\2.0.0.2\DLAP Document Upload.BindingInfo 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.3", "2.0.0.3", "{BA45360F-53EB-420C-BF47-3ABB98E9C659}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.3\DLAP Document Upload 2.0.0.3.msi = Deployment\2.0.0.3\DLAP Document Upload 2.0.0.3.msi
+		Deployment\2.0.0.3\DLAP Document Upload.BindingInfo 2.0.0.3.xml = Deployment\2.0.0.3\DLAP Document Upload.BindingInfo 2.0.0.3.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.4", "2.0.0.4", "{F526E11A-8744-418E-A613-C51BF7261460}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.4\DLAP Document Upload 2.0.0.4.msi = Deployment\2.0.0.4\DLAP Document Upload 2.0.0.4.msi
+		Deployment\2.0.0.4\DLAP Document Upload.BindingInfo 2.0.0.4.xml = Deployment\2.0.0.4\DLAP Document Upload.BindingInfo 2.0.0.4.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.5", "2.0.0.5", "{BCEBDEF9-6F1F-4B77-97DB-E6AB8F3CBCC7}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.5\DLAP Document Upload 2.0.0.5.msi = Deployment\2.0.0.5\DLAP Document Upload 2.0.0.5.msi
+		Deployment\2.0.0.5\DLAP Document Upload.BindingInfo 2.0.0.5.xml = Deployment\2.0.0.5\DLAP Document Upload.BindingInfo 2.0.0.5.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.6", "2.0.0.6", "{944059E9-CC9B-4E4A-AD12-1FFBA33634D1}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.6\DLAP Document Upload 2.0.0.6.msi = Deployment\2.0.0.6\DLAP Document Upload 2.0.0.6.msi
+		Deployment\2.0.0.6\DLAP Document Upload.BindingInfo 2.0.0.6.xml = Deployment\2.0.0.6\DLAP Document Upload.BindingInfo 2.0.0.6.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.7", "2.0.0.7", "{DE58C750-1723-4783-BB77-62F41577DAB3}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.7\DLAP Document Upload 2.0.0.7.msi = Deployment\2.0.0.7\DLAP Document Upload 2.0.0.7.msi
+		Deployment\2.0.0.7\DLAP Document Upload.BindingInfo 2.0.0.7.xml = Deployment\2.0.0.7\DLAP Document Upload.BindingInfo 2.0.0.7.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.8", "2.0.0.8", "{AC6FA943-15C9-4FE2-BCF4-E0B45FF50302}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.8\DLAP Document Upload 2.0.0.8.msi = Deployment\2.0.0.8\DLAP Document Upload 2.0.0.8.msi
+		Deployment\2.0.0.8\DLAP Document Upload.BindingInfo 2.0.0.8.xml = Deployment\2.0.0.8\DLAP Document Upload.BindingInfo 2.0.0.8.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.9.1", "2.0.9.1", "{55B2810F-F5F9-479B-B2C4-8433E8DB6170}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.9.1\DLAP Document Upload 2.0.9.1.msi = Deployment\2.0.9.1\DLAP Document Upload 2.0.9.1.msi
+		Deployment\2.0.9.1\DLAP Document Upload.BindingInfo 2..0.9.1.xml = Deployment\2.0.9.1\DLAP Document Upload.BindingInfo 2..0.9.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Local", "Local", "{850E3CA7-58F7-4D55-9CDC-D404D619ACCC}"
+	ProjectSection(SolutionItems) = preProject
+		Local\DLAP Document Upload.BindingInfo 2..0.9.1 DEV.xml = Local\DLAP Document Upload.BindingInfo 2..0.9.1 DEV.xml
+	EndProjectSection
+EndProject
+Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "BizTalkDocumentUpload", "BizTalkDocumentUpload\BizTalkDocumentUpload.btaproj", "{BF01D58B-FEC8-4982-A282-4A49FE3D3000}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDeploy", "WebDeploy", "{AA957E6A-92F8-4E68-9577-0FE01295CA0D}"
+	ProjectSection(SolutionItems) = preProject
+		WebDeploy\DLAPDocumentUpload.zip = WebDeploy\DLAPDocumentUpload.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF2F3F23-41EE-4151-943E-4C32AA345416}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF2F3F23-41EE-4151-943E-4C32AA345416}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF2F3F23-41EE-4151-943E-4C32AA345416}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EF2F3F23-41EE-4151-943E-4C32AA345416}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF2F3F23-41EE-4151-943E-4C32AA345416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF2F3F23-41EE-4151-943E-4C32AA345416}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{296FFE55-D142-4C93-8175-6137CE146DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296FFE55-D142-4C93-8175-6137CE146DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296FFE55-D142-4C93-8175-6137CE146DAC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{296FFE55-D142-4C93-8175-6137CE146DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296FFE55-D142-4C93-8175-6137CE146DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{296FFE55-D142-4C93-8175-6137CE146DAC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1F6268F8-B737-4DC1-AF63-54FE4D27FBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6268F8-B737-4DC1-AF63-54FE4D27FBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6268F8-B737-4DC1-AF63-54FE4D27FBD6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1F6268F8-B737-4DC1-AF63-54FE4D27FBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6268F8-B737-4DC1-AF63-54FE4D27FBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6268F8-B737-4DC1-AF63-54FE4D27FBD6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BF01D58B-FEC8-4982-A282-4A49FE3D3000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF01D58B-FEC8-4982-A282-4A49FE3D3000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF01D58B-FEC8-4982-A282-4A49FE3D3000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF01D58B-FEC8-4982-A282-4A49FE3D3000}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28E79E9C-10C1-4FB0-B2C3-7833B97A3822} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{18AA2422-A9D5-47DD-A8B4-E91551282433} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{78579952-C678-47DD-8AC6-56BA92E316E3} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{7A93046B-E966-4A20-81FC-66ED888D4A78} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{BA45360F-53EB-420C-BF47-3ABB98E9C659} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{F526E11A-8744-418E-A613-C51BF7261460} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{BCEBDEF9-6F1F-4B77-97DB-E6AB8F3CBCC7} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{944059E9-CC9B-4E4A-AD12-1FFBA33634D1} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{DE58C750-1723-4783-BB77-62F41577DAB3} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{AC6FA943-15C9-4FE2-BCF4-E0B45FF50302} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+		{55B2810F-F5F9-479B-B2C4-8433E8DB6170} = {B34A3842-B86D-4711-9B5A-C429430DF443}
+	EndGlobalSection
+EndGlobal

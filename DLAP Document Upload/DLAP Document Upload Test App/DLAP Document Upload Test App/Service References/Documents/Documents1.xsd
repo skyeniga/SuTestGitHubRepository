@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://DocumentUploadDefinition.DocumentUpload" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://DocumentUploadDefinition.DocumentUpload" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DOCUMENT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DOC_ID" type="xs:string" />
+        <xs:element name="DOC_APP_ID" type="xs:string" />
+        <xs:element name="DOC_TYPE" type="xs:string" />
+        <xs:element name="DOC_CONTENTS" type="xs:string" />
+        <xs:element name="DOC_CONTENT_TYPE" type="xs:string" />
+        <xs:element name="DOC_INSTANCE_NAME" type="xs:string" />
+        <xs:element name="DOC_SOURCE" type="xs:string" />
+        <xs:element name="CREATED_BY" type="xs:string" />
+        <xs:element name="CREATION_DATE" type="xs:string" />
+        <xs:element name="LAST_UPDATED_BY" type="xs:string" />
+        <xs:element name="LAST_UPDATE_DATE" type="xs:string" />
+        <xs:element name="DOC_APPLICANT_ID" type="xs:string" />
+        <xs:element name="DOC_AFFILIATE_ID" type="xs:string" />
+        <xs:element name="DOC_ORIGIN" type="xs:string" />
+        <xs:element name="DOC_USR_ID" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DOCUMENTRESPONSE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Status" type="xs:string" />
+        <xs:element name="StatusMessage" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

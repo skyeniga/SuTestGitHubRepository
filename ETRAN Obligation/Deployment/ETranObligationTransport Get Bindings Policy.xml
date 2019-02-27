@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<brl xmlns="http://schemas.microsoft.com/businessruleslanguage/2002">
+  <ruleset name="ETran Obligation Transport">
+    <version major="1" minor="0" description="" modifiedby="SBA\RSKozlin" date="2018-08-08T09:22:15.1057381-04:00" />
+    <configuration />
+    <bindings>
+      <xmldocument ref="xml_31" doctype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" instances="16" selectivity="1" instance="0">
+        <selector>/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</selector>
+        <schema>C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd</schema>
+      </xmldocument>
+      <xmldocument ref="xml_33" doctype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" instances="16" selectivity="1" instance="0">
+        <selector>/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</selector>
+        <schema>C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd</schema>
+      </xmldocument>
+      <xmldocument ref="xml_32" doctype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" instances="16" selectivity="1" instance="0">
+        <selector>/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Port' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</selector>
+        <schema>C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd</schema>
+      </xmldocument>
+    </bindings>
+    <rule name="Get Bindings" priority="0" active="true">
+      <if>
+        <compare operator="equal">
+          <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+          <lhs>
+            <constant>
+              <string>1</string>
+            </constant>
+          </lhs>
+          <rhs>
+            <constant>
+              <string>1</string>
+            </constant>
+          </rhs>
+        </compare>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="b7002492-dc36-417e-b310-42aae01e41a4" element="298fc140-bae5-4dc4-9524-27fadbb63e73" />
+          <xmldocumentmember xmldocumentref="xml_31" type="boolean" sideeffects="true">
+            <field>*[local-name()='EnableBTAuditPayloadLog' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</field>
+            <fieldalias>EnableBTAuditPayloadLog</fieldalias>
+            <argument>
+              <constant>
+                <boolean>true</boolean>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+        <function>
+          <vocabularylink uri="b7002492-dc36-417e-b310-42aae01e41a4" element="3f017983-4175-4441-a7bf-a8c8914dc9fa" />
+          <xmldocumentmember xmldocumentref="xml_32" type="string" sideeffects="true">
+            <field>*[local-name()='Address' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</field>
+            <fieldalias>Address</fieldalias>
+            <argument>
+              <constant>
+                <string>http://165.110.247.76/elend/ws/etran.cfc</string>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+        <function>
+          <vocabularylink uri="b7002492-dc36-417e-b310-42aae01e41a4" element="1f7e4bdd-d0bc-4873-926a-6a488edc637d" />
+          <xmldocumentmember xmldocumentref="xml_33" type="string" sideeffects="true">
+            <field>*[local-name()='SecurityMode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</field>
+            <fieldalias>SecurityMode</fieldalias>
+            <argument>
+              <constant>
+                <string>None</string>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+        <function>
+          <vocabularylink uri="b7002492-dc36-417e-b310-42aae01e41a4" element="8bc94e4f-7d9c-495a-80c0-c058e98b7a0e" />
+          <xmldocumentmember xmldocumentref="xml_33" type="string" sideeffects="true">
+            <field>*[local-name()='MessageClientCredentialType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</field>
+            <fieldalias>MessageClientCredentialType</fieldalias>
+            <argument>
+              <constant>
+                <string>None</string>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+        <function>
+          <vocabularylink uri="b7002492-dc36-417e-b310-42aae01e41a4" element="f9991bfa-1762-4787-bee4-853819133416" />
+          <xmldocumentmember xmldocumentref="xml_33" type="string" sideeffects="true">
+            <field>*[local-name()='TransportClientCredentialType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</field>
+            <fieldalias>TransportClientCredentialType</fieldalias>
+            <argument>
+              <constant>
+                <string>None</string>
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+        <function>
+          <vocabularylink uri="b7002492-dc36-417e-b310-42aae01e41a4" element="c16c04cd-35f0-4c5c-8dce-78c359301b15" />
+          <xmldocumentmember xmldocumentref="xml_33" type="string" sideeffects="true">
+            <field>*[local-name()='UserName' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</field>
+            <fieldalias>UserName</fieldalias>
+            <argument>
+              <constant>
+                <string />
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+        <function>
+          <vocabularylink uri="b7002492-dc36-417e-b310-42aae01e41a4" element="4221bed5-1fe1-4c18-9754-4bbbdc61d417" />
+          <xmldocumentmember xmldocumentref="xml_33" type="string" sideeffects="true">
+            <field>*[local-name()='Password' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']</field>
+            <fieldalias>Password</fieldalias>
+            <argument>
+              <constant>
+                <string />
+              </constant>
+            </argument>
+          </xmldocumentmember>
+        </function>
+      </then>
+    </rule>
+  </ruleset>
+</brl>

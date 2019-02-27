@@ -1,0 +1,8 @@
+﻿<ns0:SaveRequest xmlns:ns0="http://SBA.gov/ETRANObligation/Definition/Salesforce/Loan__c/Save/">
+  <ns0:allOrNone>true</ns0:allOrNone>
+  <ns0:records type="Loan__c">
+    <ns0:Id>a0t35000000ATBLAA4</ns0:Id>
+    <ns0:Obligated_Date__c>2018-06-13 19:13:34.034</ns0:Obligated_Date__c>
+    <ns0:ETRAN_Loan_Number__c>7590495010</ns0:ETRAN_Loan_Number__c>
+  </ns0:records>
+</ns0:SaveRequest>

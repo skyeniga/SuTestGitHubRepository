@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="FullyBound" BoundEndpoints="2" TotalEndpoints="2">
+  <Timestamp>2018-10-10T15:48:24.8095512-04:00</Timestamp>
+  <ModuleRefCollection>
+    <ModuleRef Name="[Application:ETRAN Obligation]" Version="" Culture="" PublicKeyToken="" FullName="[Application:ETRAN Obligation], Version=, Culture=, PublicKeyToken=">
+      <Services />
+      <TrackedSchemas>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Loan__c.Loan__c_Save" RootName="results" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Loan__c.Loan__c_Save,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Loan__c.Loan__c_Save" RootName="SaveRequest" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Loan__c.Loan__c_Save,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Multi.Salesforce_Multi_Query" RootName="QueryResult" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Multi.Salesforce_Multi_Query,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Multi.Salesforce_Multi_Query" RootName="Request" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Multi.Salesforce_Multi_Query,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Event_Request__c.Event_Request__c" RootName="Event_Request__c" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Event_Request__c.Event_Request__c,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_soap_sforce_com_2005_09_outbound" RootName="notifications" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_soap_sforce_com_2005_09_outbound,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_soap_sforce_com_2005_09_outbound" RootName="notificationsResponse" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_soap_sforce_com_2005_09_outbound,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_enterprise_soap_sforce_com" RootName="typeOnlySchema" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_enterprise_soap_sforce_com,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_sobject_enterprise_soap_sforce_com" RootName="typeOnlySchema" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_sobject_enterprise_soap_sforce_com,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationSingle" RootName="Notification" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationSingle,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" RootName="ETranObligationTransport" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport,SBA.ETRANObligation.Definition.Rules, Version=2.0.0.0, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Rules.LegalOrgTypeMapping" RootName="LegalOrgTypeMapping" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Rules.LegalOrgTypeMapping,SBA.ETRANObligation.Definition.Rules, Version=2.0.0.0, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBA_ETran_Response_orig" RootName="SBA_Etran_Response" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBA_ETran_Response_orig,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="anyType" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="anyURI" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="Array" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="base64Binary" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="boolean" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="byte" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="date" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="dateTime" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="decimal" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="double" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="duration" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="ENTITIES" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="ENTITY" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="float" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="gDay" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="gMonth" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="gMonthDay" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="gYear" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="gYearMonth" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="hexBinary" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="ID" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="IDREF" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="IDREFS" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="int" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="integer" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="language" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="long" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="Name" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="NCName" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="negativeInteger" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="NMTOKEN" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="NMTOKENS" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="nonNegativeInteger" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="nonPositiveInteger" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="normalizedString" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="NOTATION" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="positiveInteger" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="QName" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="short" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="string" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="Struct" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="time" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="token" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="unsignedByte" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="unsignedInt" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="unsignedLong" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding" RootName="unsignedShort" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Encoding,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBA_ETran_3_9_orig" RootName="SBA_ETran" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBA_ETran_3_9_orig,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3CFCInvocationException" RootName="CFCInvocationException" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3CFCInvocationException,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBA_ETran_5_0_orig" RootName="SBA_ETran" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBA_ETran_5_0_orig,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBA_ETranTypes" RootName="typeOnlySchema" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBA_ETranTypes,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBA_SimpleTypes" RootName="typeOnlySchema" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBA_SimpleTypes,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Request" RootName="Originate3" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Request,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Response" RootName="Originate3Response" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN.SBAETranOriginate3Response,SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Borrower.BorrowerBusinessTypes" RootName="BorrowerBusinessTypes" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Borrower.BorrowerBusinessTypes,SBA.ETRANObligation.Definition, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.ETRAN_Originate.ETRANOriginateAppDefaults" RootName="ETRAN_Originate_App_Defaults" AssemblyQualifiedName="SBA.ETRANObligation.Definition.ETRAN_Originate.ETRANOriginateAppDefaults,SBA.ETRANObligation.Definition, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="SBA.ETRANObligation.Definition.Canonical.ETRANObligationCanonical" RootName="Canonical" AssemblyQualifiedName="SBA.ETRANObligation.Definition.Canonical.ETRANObligationCanonical,SBA.ETRANObligation.Definition, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+      </TrackedSchemas>
+    </ModuleRef>
+    <ModuleRef Name="SBA.ETRANObligation.Definition.Salesforce" Version="2.0.10.2" Culture="neutral" PublicKeyToken="18227d56be4ceab0" FullName="SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="SBA.ETRANObligation.Definition.Rules" Version="2.0.0.0" Culture="neutral" PublicKeyToken="18227d56be4ceab0" FullName="SBA.ETRANObligation.Definition.Rules, Version=2.0.0.0, Culture=neutral, PublicKeyToken=18227d56be4ceab0">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="SBA.ETRANObligation.Definition.ETRAN" Version="2.0.10.2" Culture="neutral" PublicKeyToken="18227d56be4ceab0" FullName="SBA.ETRANObligation.Definition.ETRAN, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="SBA.ETRANObligation.Definition" Version="2.0.10.2" Culture="neutral" PublicKeyToken="18227d56be4ceab0" FullName="SBA.ETRANObligation.Definition, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="SBA.ETRANObligation.Logic" Version="2.0.10.2" Culture="neutral" PublicKeyToken="18227d56be4ceab0" FullName="SBA.ETRANObligation.Logic, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0">
+      <Services>
+        <Service Name="SBA.ETRANObligation.Logic.ETRANObligationSFNotifyDebatcher" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive InboundMessageBody OutboundMessageBody OrchestrationEvents TrackPropertiesForIncomingMessages TrackPropertiesForOutgoingMessages" Description="">
+          <Ports>
+            <Port Name="SF_Notify_Full_Receive" Modifier="2" BindingOption="1">
+              <SendPortRef xsi:nil="true" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef Name="ETRAN Obligation Salesforce Notification Receive Port" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="SBA.ETRANObligation.Logic.ETRANObligationLogic" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive InboundMessageBody OutboundMessageBody OrchestrationEvents TrackPropertiesForIncomingMessages TrackPropertiesForOutgoingMessages" Description="">
+          <Ports>
+            <Port Name="ETran_Originate3_Port" Modifier="1" BindingOption="4">
+              <SendPortRef Name="SBA.ETRANObligation.Logic_2.0.10.2_SBA.ETRANObligation.Logic.ETRANObligationLogic_ETran_Originate3_Port_18227d56be4ceab0" />
+              <DistributionListRef xsi:nil="true" />
+              <ReceivePortRef xsi:nil="true" />
+            </Port>
+          </Ports>
+          <Roles />
+          <Host Name="Orchestration" NTGroupName="SBA\ODA_BIZTALK_APP_USERS" Type="1" Trusted="false" />
+        </Service>
+      </Services>
+      <TrackedSchemas />
+    </ModuleRef>
+  </ModuleRefCollection>
+  <SendPortCollection>
+    <SendPort Name="SBA.ETRANObligation.Logic_2.0.10.2_SBA.ETRANObligation.Logic.ETRANObligationLogic_ETran_Originate3_Port_18227d56be4ceab0" IsStatic="false" IsTwoWay="true" BindingOption="4">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeEncoderSend" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeEncoderSend, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="2" TrackingOption="None" Description="" />
+      <ReceivePipeline Name="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive" FullyQualifiedName="SBA.BizTalk.Shared.Pipelines.General.SimpleNamespaceChangeDecoderReceive, SBA.BizTalk.Shared.Pipelines, Version=1.0.1.2, Culture=neutral, PublicKeyToken=7bf51f5d89236764" Type="1" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>255</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>ETRAN Obligation</ApplicationName>
+    </SendPort>
+  </SendPortCollection>
+  <DistributionListCollection />
+  <ReceivePortCollection>
+    <ReceivePort Name="ETRAN Obligation Salesforce Notification Receive Port" IsTwoWay="true" BindingOption="1">
+      <Description xsi:nil="true" />
+      <ReceiveLocations>
+        <ReceiveLocation Name="ETRAN Obligation Salesforce Notification Receive">
+          <Description xsi:nil="true" />
+          <Address>/DCMS2/ETRANObligation/ETRANObligation.svc</Address>
+          <PublicAddress />
+          <Primary>true</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2000-01-01T00:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2000-01-01T23:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2000-01-01T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2000-01-01T23:59:59</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="WCF-BasicHttp" Capabilities="899" ConfigurationClsid="467c1a52-373f-4f09-9008-27af6b985f14" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;InboundNodeEncoding vt="8"&gt;Xml&lt;/InboundNodeEncoding&gt;&lt;MessageEncoding vt="8"&gt;Text&lt;/MessageEncoding&gt;&lt;ServiceCertificate vt="8" /&gt;&lt;InboundBodyPathExpression vt="8" /&gt;&lt;OutboundBodyLocation vt="8"&gt;UseBodyElement&lt;/OutboundBodyLocation&gt;&lt;MaxReceivedMessageSize vt="3"&gt;65536&lt;/MaxReceivedMessageSize&gt;&lt;InboundBodyLocation vt="8"&gt;UseBodyElement&lt;/InboundBodyLocation&gt;&lt;AlgorithmSuite vt="8"&gt;Basic256&lt;/AlgorithmSuite&gt;&lt;OutboundXmlTemplate vt="8"&gt;&amp;lt;bts-msg-body xmlns="http://www.microsoft.com/schemas/bts2007" encoding="xml"/&amp;gt;&lt;/OutboundXmlTemplate&gt;&lt;TextEncoding vt="8"&gt;utf-8&lt;/TextEncoding&gt;&lt;SecurityMode vt="8"&gt;Transport&lt;/SecurityMode&gt;&lt;IncludeExceptionDetailInFaults vt="11"&gt;-1&lt;/IncludeExceptionDetailInFaults&gt;&lt;TransportClientCredentialType vt="8"&gt;None&lt;/TransportClientCredentialType&gt;&lt;OpenTimeout vt="8"&gt;00:01:00&lt;/OpenTimeout&gt;&lt;MessageClientCredentialType vt="8"&gt;UserName&lt;/MessageClientCredentialType&gt;&lt;UseSSO vt="11"&gt;0&lt;/UseSSO&gt;&lt;SuspendMessageOnFailure vt="11"&gt;-1&lt;/SuspendMessageOnFailure&gt;&lt;CloseTimeout vt="8"&gt;00:01:00&lt;/CloseTimeout&gt;&lt;SendTimeout vt="8"&gt;00:01:00&lt;/SendTimeout&gt;&lt;MaxConcurrentCalls vt="3"&gt;200&lt;/MaxConcurrentCalls&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="None" Description="" />
+          <ReceivePipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4105-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="Microsoft.BizTalk.Component.XmlDasmComp"&gt;&lt;Properties&gt;&lt;DocumentSpecNames vt="8"&gt;SBA.ETRANObligation.Definition.Salesforce.Notification.NotificationService_soap_sforce_com_2005_09_outbound+notifications,SBA.ETRANObligation.Definition.Salesforce, Version=2.0.10.2, Culture=neutral, PublicKeyToken=18227d56be4ceab0&lt;/DocumentSpecNames&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;Stage CategoryId="9d0e410e-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="Microsoft.BizTalk.Component.PartyRes"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</ReceivePipelineData>
+          <SendPipeline Name="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>true</Enable>
+          <ReceiveHandler Name="Isolated" HostTrusted="false">
+            <TransportType Name="WCF-BasicHttp" Capabilities="899" ConfigurationClsid="467c1a52-373f-4f09-9008-27af6b985f14" />
+          </ReceiveHandler>
+        </ReceiveLocation>
+      </ReceiveLocations>
+      <SendPipelineData xsi:nil="true" />
+      <Authentication>0</Authentication>
+      <Tracking>255</Tracking>
+      <Transforms />
+      <OutboundTransforms />
+      <RouteFailedMessage>true</RouteFailedMessage>
+      <ApplicationName>ETRAN Obligation</ApplicationName>
+    </ReceivePort>
+  </ReceivePortCollection>
+  <PartyCollection xsi:nil="true" />
+</BindingInfo>

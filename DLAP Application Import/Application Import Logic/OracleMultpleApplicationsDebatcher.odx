@@ -1,0 +1,381 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="736741b2-f6d7-43ba-8e6e-9de3fabfa391" LowerBound="1.1" HigherBound="112.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="e53c0560-843f-4a7c-9b17-4749d0b292ce" ParentLink="Module_PortType" LowerBound="8.1" HigherBound="15.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OraclePollingPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="4e3704a9-cd4f-42aa-bfbd-96b38954905b" ParentLink="PortType_OperationDeclaration" LowerBound="10.1" HigherBound="14.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="f7b67f93-0c9d-4b75-af7d-68477d180ea0" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="12.13" HigherBound="12.50">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.OraclePollingMultipleApplicationsType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="df176f46-4878-4018-907e-8e750c66584d" ParentLink="Module_PortType" LowerBound="15.1" HigherBound="22.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DLAPSingleApplicationImportPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="a0801202-7940-45bb-9c5e-92707e87b7d5" ParentLink="PortType_OperationDeclaration" LowerBound="17.1" HigherBound="21.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="62d2cd4b-83b7-4123-8f2d-14da8735e67e" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="19.13" HigherBound="19.31">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.ApplicationMsgType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="cb9d756f-0b0f-4adb-a7ac-f256d37e7b8f" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OraclePollingMultipleApplicationsType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="76cda512-1bee-4745-9858-8e0422e9a8a6" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Application_Import_Definition.OraclePollingMultipleApplications.POLLINGSTMT" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="e84028b5-2726-483a-aaa4-8d0034242a5d" ParentLink="Module_ServiceDeclaration" LowerBound="22.1" HigherBound="111.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OracleMultpleApplicationsDebatcherLogic" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="fc18aa3c-8b63-47f7-bd5a-9c0c5f2e513e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ApplicationCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b844a4c7-0726-4037-8cc2-988c3a23c236" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="32.1" HigherBound="33.1">
+                <om:Property Name="InitialValue" Value="1" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="LoopCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0e6777e8-5a55-4871-b994-039116d4eb7e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="33.1" HigherBound="34.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ApplicationXpath" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="96eaa7ce-4ee9-4ecf-8c5a-e522aa0f0e41" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ApplicationNode" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8075e401-71e2-4a8c-b70d-c42834481d72" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="35.1" HigherBound="36.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TempSingleApplicationMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="3a1bc390-31b5-48c0-b064-4d1633ee0ccd" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.OraclePollingMultipleApplicationsType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OraclePollingMultipleApplicationsMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="fa0182a0-4821-48e2-b7e6-dddb8a1c85f0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.ApplicationMsgType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Application" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="4cd386b9-9c1b-4865-aaed-e28c5f2ee9d4" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="cdba6f7c-6638-4a7f-b82d-adf5ec3057aa" ParentLink="ServiceBody_Statement" LowerBound="38.1" HigherBound="44.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="DLAPELAOraclePollingPort" />
+                    <om:Property Name="MessageName" Value="OraclePollingMultipleApplicationsMsg" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Multiple ELA Applications" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="6512daf2-8840-4fbc-a8a8-eee0200976ab" ParentLink="ServiceBody_Statement" LowerBound="44.1" HigherBound="109.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Debacting Multiple Applications" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Scope" OID="cb4ca1af-311f-4141-aec2-26ad34fd7c0e" ParentLink="ComplexStatement_Statement" LowerBound="44.1" HigherBound="109.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Multiple Applications Error Scope" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="5952b103-9330-439c-9cc4-9159eec7588c" ParentLink="ComplexStatement_Statement" LowerBound="49.1" HigherBound="52.1">
+                            <om:Property Name="Expression" Value="&#xD;&#xA;ApplicationCount = System.Convert.ToInt32(xpath(OraclePollingMultipleApplicationsMsg.MessagePart, &quot;count(/*[local-name()='POLLINGSTMT' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='APP_DATA_FINAL_XML' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer'])&quot;));&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Application Count" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="While" OID="d2692334-9f54-4f14-a6c8-943098fa0bdd" ParentLink="ComplexStatement_Statement" LowerBound="52.1" HigherBound="96.1">
+                            <om:Property Name="Expression" Value="LoopCount &lt;= ApplicationCount" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Loop Through Applications" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Scope" OID="d806fe37-13bb-4080-b537-8dea3c49b8aa" ParentLink="ComplexStatement_Statement" LowerBound="55.1" HigherBound="93.1">
+                                <om:Property Name="InitializedTransactionType" Value="True" />
+                                <om:Property Name="IsSynchronized" Value="False" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Applicant Processing" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Construct" OID="aca9f4d0-803c-481e-bc2c-4d6c8eb15f99" ParentLink="ComplexStatement_Statement" LowerBound="60.1" HigherBound="80.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct Single Application Message" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageAssignment" OID="f2d798b6-6ca6-4c26-b27a-4a4a83caf967" ParentLink="ComplexStatement_Statement" LowerBound="63.1" HigherBound="79.1">
+                                        <om:Property Name="Expression" Value="ApplicationXpath = System.String.Format(&quot;string(/*[local-name()='POLLINGSTMT' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer'][{0}]/*[local-name()='APP_DATA_FINAL_XML' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer'])&quot;,LoopCount);&#xD;&#xA;&#xD;&#xA;ApplicationNode = xpath(OraclePollingMultipleApplicationsMsg.MessagePart, ApplicationXpath);&#xD;&#xA;&#xD;&#xA;ApplicationNode = ApplicationNode.Replace(&quot;&amp;lt;&quot;,&quot;&lt;&quot;);&#xD;&#xA;&#xD;&#xA;ApplicationNode = ApplicationNode.Replace(&quot;&amp;gt;&quot;,&quot;&gt;&quot;);&#xD;&#xA;&#xD;&#xA;TempSingleApplicationMsg = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;TempSingleApplicationMsg.LoadXml(ApplicationNode);&#xD;&#xA;&#xD;&#xA;Application.Application = TempSingleApplicationMsg;&#xD;&#xA;&#xD;&#xA;LoopCount = LoopCount + 1;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Make Application Message" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="0f26056a-f83a-4940-956b-b4e0d9e95c6c" ParentLink="Construct_MessageRef" LowerBound="61.43" HigherBound="61.54">
+                                        <om:Property Name="Ref" Value="Application" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="Catch" OID="b17f0127-3d85-461d-bb50-1604d77f631f" ParentLink="Scope_Catch" LowerBound="83.1" HigherBound="91.1">
+                                    <om:Property Name="ExceptionName" Value="ELAEx" />
+                                    <om:Property Name="ExceptionType" Value="System.Exception" />
+                                    <om:Property Name="IsFaultMessage" Value="False" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="System Exception" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="VariableAssignment" OID="901f96a0-bc7a-473a-97c6-8d92b6aab7f1" ParentLink="Catch_Statement" LowerBound="86.1" HigherBound="88.1">
+                                        <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;DLAP ELA Application Import Exception:Multiple Applications Debatcher &quot;,ELAEx.Message,System.Diagnostics.EventLogEntryType.Error);" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Error Info" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="Terminate" OID="8779a074-d469-4bd6-97ae-f7239316f28e" ParentLink="Catch_Statement" LowerBound="88.1" HigherBound="90.1">
+                                        <om:Property Name="ErrorMessage" Value="&quot;An error occurred while processing DLAP ELA Application Import:Multiple Applications Debatcher&quot;;" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="Terminate" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="c8a293ea-39d8-4cfe-a988-b405a0e46829" ParentLink="ComplexStatement_Statement" LowerBound="93.1" HigherBound="95.1">
+                                <om:Property Name="PortName" Value="DLAPSingleApplicationImportPort" />
+                                <om:Property Name="MessageName" Value="Application" />
+                                <om:Property Name="OperationName" Value="Operation" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send Single Application" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Catch" OID="f9b7ebf8-9ab1-47ca-be03-eec292fb9e02" ParentLink="Scope_Catch" LowerBound="99.1" HigherBound="107.1">
+                            <om:Property Name="ExceptionName" Value="ELAEx" />
+                            <om:Property Name="ExceptionType" Value="System.Exception" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="System Exception" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="70f1a494-540e-4797-9ce3-25c8c29c2177" ParentLink="Catch_Statement" LowerBound="102.1" HigherBound="104.1">
+                                <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;DLAP ELA Application Import Exception:Multiple Applications Debatcher &quot;,ELAEx.Message,System.Diagnostics.EventLogEntryType.Error);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Error Info" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Terminate" OID="36268f47-5d68-4334-8148-6c6431c68a74" ParentLink="Catch_Statement" LowerBound="104.1" HigherBound="106.1">
+                                <om:Property Name="ErrorMessage" Value="&quot;An error occurred while processing DLAP ELA Application Import:Multiple Applications Debatcher&quot;;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Terminate" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ab57c0bc-d6fe-4478-9ec9-ef67409510cb" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="25.1" HigherBound="27.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.OraclePollingPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DLAPELAOraclePollingPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="9fcef847-6c99-4e14-8b8a-a111a10a7c71" ParentLink="PortDeclaration_CLRAttribute" LowerBound="25.1" HigherBound="26.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="8dc058a6-7759-4be0-8fef-d0c09cd3a246" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="27.1" HigherBound="29.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.DLAPSingleApplicationImportPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DLAPSingleApplicationImportPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="205d5899-e0bb-41ff-8d6b-c391b624aeb0" ParentLink="PortDeclaration_CLRAttribute" LowerBound="27.1" HigherBound="28.1">
+                    <om:Property Name="PartnerPort" Value="DLAPSingleApplicationImportPort" />
+                    <om:Property Name="PartnerService" Value="Application_Import_Logic.OracleMultpleApplicationsDebatcherLogic" />
+                    <om:Property Name="DirectBindingType" Value="PartnerPort" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    internal messagetype OraclePollingMultipleApplicationsType
+    {
+        body Application_Import_Definition.OraclePollingMultipleApplications.POLLINGSTMT MessagePart;
+    };
+    internal porttype OraclePollingPortType
+    {
+        oneway Operation
+        {
+            OraclePollingMultipleApplicationsType
+        };
+    };
+    internal porttype DLAPSingleApplicationImportPortType
+    {
+        oneway Operation
+        {
+            ApplicationMsgType
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service OracleMultpleApplicationsDebatcherLogic
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements OraclePollingPortType DLAPELAOraclePollingPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding(typeof(Application_Import_Logic.OracleMultpleApplicationsDebatcherLogic), "DLAPSingleApplicationImportPort")]
+        port uses DLAPSingleApplicationImportPortType DLAPSingleApplicationImportPort;
+        message OraclePollingMultipleApplicationsType OraclePollingMultipleApplicationsMsg;
+        message ApplicationMsgType Application;
+        System.Int32 ApplicationCount;
+        System.Int32 LoopCount;
+        System.String ApplicationXpath;
+        System.String ApplicationNode;
+        System.Xml.XmlDocument TempSingleApplicationMsg;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("cdba6f7c-6638-4a7f-b82d-adf5ec3057aa")]
+            activate receive (DLAPELAOraclePollingPort.Operation, OraclePollingMultipleApplicationsMsg);
+            LoopCount = 1;
+            ApplicationXpath = "";
+            ApplicationNode = "";
+            TempSingleApplicationMsg = new System.Xml.XmlDocument();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("cb4ca1af-311f-4141-aec2-26ad34fd7c0e")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5952b103-9330-439c-9cc4-9159eec7588c")]
+                    
+                    ApplicationCount = System.Convert.ToInt32(xpath(OraclePollingMultipleApplicationsMsg.MessagePart, "count(/*[local-name()='POLLINGSTMT' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='APP_DATA_FINAL_XML' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer'])"));
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d2692334-9f54-4f14-a6c8-943098fa0bdd")]
+                    while (LoopCount <= ApplicationCount)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d806fe37-13bb-4080-b537-8dea3c49b8aa")]
+                        scope
+                        {
+                            body
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("aca9f4d0-803c-481e-bc2c-4d6c8eb15f99")]
+                                construct Application
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f2d798b6-6ca6-4c26-b27a-4a4a83caf967")]
+                                    ApplicationXpath = System.String.Format("string(/*[local-name()='POLLINGSTMT' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer']/*[local-name()='POLLINGSTMTRECORD' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer'][{0}]/*[local-name()='APP_DATA_FINAL_XML' and namespace-uri()='http://Microsoft.LobServices.OracleDB/2007/03/POLLINGSTMTdlap_files_for_transfer'])",LoopCount);
+                                    
+                                    ApplicationNode = xpath(OraclePollingMultipleApplicationsMsg.MessagePart, ApplicationXpath);
+                                    
+                                    ApplicationNode = ApplicationNode.Replace("&lt;","<");
+                                    
+                                    ApplicationNode = ApplicationNode.Replace("&gt;",">");
+                                    
+                                    TempSingleApplicationMsg = new System.Xml.XmlDocument();
+                                    
+                                    TempSingleApplicationMsg.LoadXml(ApplicationNode);
+                                    
+                                    Application.Application = TempSingleApplicationMsg;
+                                    
+                                    LoopCount = LoopCount + 1;
+                                }
+                            }
+                            exceptions
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("b17f0127-3d85-461d-bb50-1604d77f631f")]
+                                catch (System.Exception ELAEx)
+                                {
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("901f96a0-bc7a-473a-97c6-8d92b6aab7f1")]
+                                    System.Diagnostics.EventLog.WriteEntry("DLAP ELA Application Import Exception:Multiple Applications Debatcher ",ELAEx.Message,System.Diagnostics.EventLogEntryType.Error);
+                                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8779a074-d469-4bd6-97ae-f7239316f28e")]
+                                    terminate "An error occurred while processing DLAP ELA Application Import:Multiple Applications Debatcher";;
+                                }
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c8a293ea-39d8-4cfe-a988-b405a0e46829")]
+                        send (DLAPSingleApplicationImportPort.Operation, Application);
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f9b7ebf8-9ab1-47ca-be03-eec292fb9e02")]
+                    catch (System.Exception ELAEx)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("70f1a494-540e-4797-9ce3-25c8c29c2177")]
+                        System.Diagnostics.EventLog.WriteEntry("DLAP ELA Application Import Exception:Multiple Applications Debatcher ",ELAEx.Message,System.Diagnostics.EventLogEntryType.Error);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("36268f47-5d68-4334-8148-6c6431c68a74")]
+                        terminate "An error occurred while processing DLAP ELA Application Import:Multiple Applications Debatcher";;
+                    }
+                }
+            }
+        }
+    }
+}
+

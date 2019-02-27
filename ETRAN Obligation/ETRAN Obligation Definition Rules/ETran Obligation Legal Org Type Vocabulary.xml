@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<brl xmlns="http://schemas.microsoft.com/businessruleslanguage/2002">
+  <vocabulary id="d6652178-b8fa-41c7-84da-bf56f0db216c" name="ETran Obligation Legal Org Type" uri="" description="">
+    <version major="1" minor="0" description="" modifiedby="SBA\RSKozlin" date="2018-08-21T16:15:39.4500535-04:00" />
+    <vocabularydefinition id="acf7d569-7942-480d-aa3f-cdbfb9a42cd4" name="Get SF Business Type" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='SalesforceBusinessType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']" fieldalias="SalesforceBusinessType" type="string">
+          <documentinfo schema="C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\LegalOrgTypeMapping.xsd" documenttype="SBA.ETRANObligation.Definition.Rules.LegalOrgTypeMapping" selector="/*[local-name()='LegalOrgTypeMapping' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']" selectoralias="/*[local-name()='LegalOrgTypeMapping' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']" instance="0" />
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Get SF Business Type" />
+    </vocabularydefinition>
+    <vocabularydefinition id="ead185ef-7b5d-43e3-9176-bec60ab09cfb" name="Set ETran Legal Org Type Code" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='ETranLegalOrgTypeCode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']" fieldalias="ETranLegalOrgTypeCode" type="int">
+          <documentinfo schema="C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\LegalOrgTypeMapping.xsd" documenttype="SBA.ETRANObligation.Definition.Rules.LegalOrgTypeMapping" selector="/*[local-name()='LegalOrgTypeMapping' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']" selectoralias="/*[local-name()='LegalOrgTypeMapping' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/LegalOrgTypeMapping/']" instance="0" />
+          <argument position="0">
+            <valuedefinitionliteral type="int">
+              <int>0</int>
+            </valuedefinitionliteral>
+          </argument>
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set ETran Legal Org Type Code {0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="int">
+            <int>0</int>
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+  </vocabulary>
+</brl>

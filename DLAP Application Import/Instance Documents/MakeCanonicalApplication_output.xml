@@ -1,0 +1,401 @@
+﻿<ns0:Application xmlns:ns0="http://SBA.ODA.Gov/CanonicalApplication"><VERSION>9</VERSION><APP_ID>25361</APP_ID><APP_ELA_REFERENCE_NBR>1100000130</APP_ELA_REFERENCE_NBR><APP_CREATE_DATE>06/09/2016 09:54:26 AM</APP_CREATE_DATE><APP_SUBMIT_DATE>03/08/2017 03:09:49 PM</APP_SUBMIT_DATE><APP_PRD_PRODUCT>Home</APP_PRD_PRODUCT><APP_DPO_OWN_IND>HOME_OWNER_ODA</APP_DPO_OWN_IND><APP_DPO_PRIMARY_IND>Y</APP_DPO_PRIMARY_IND><APP_DPO_SECONDARY_IND>N</APP_DPO_SECONDARY_IND><APP_DPO_RENTAL_IND>N</APP_DPO_RENTAL_IND><APP_DPO_EXTFAM_IND>N</APP_DPO_EXTFAM_IND><APP_BUS_RE>false</APP_BUS_RE><APP_BUS_CONT>false</APP_BUS_CONT><APP_BUS_EIDL>false</APP_BUS_EIDL><APP_BUS_MREIDL>false</APP_BUS_MREIDL><APP_PRO_ID>674212</APP_PRO_ID><APP_DMG_STATE_CD>VA</APP_DMG_STATE_CD><APP_DMG_COUNTY>Fairfax</APP_DMG_COUNTY><APP_FEMA_REGIS_NBR /><FemaReferralTrackingId>0</FemaReferralTrackingId><PrepopulatedWithFemaData>false</PrepopulatedWithFemaData><APP_CONSENT_IND>true</APP_CONSENT_IND><APP_ACKNOWLEDGE_IND>true</APP_ACKNOWLEDGE_IND><APP_CERTIFY_IND>true</APP_CERTIFY_IND><LateFilingJustification>This is my late filing justification.</LateFilingJustification><APP_CONTACT_NAME /><APP_CONTACT_NBR /><APP_INSP_NAME /><APP_INSP_NBR /><EST_LOSS_RE /><EST_LOSS_INV /><EST_LOSS_EQUIP /><EST_LOSS_IMPROVE /><NoIndividualOwner>false</NoIndividualOwner><NoEntityOwner>false</NoEntityOwner><PackageId>fC8_MZqyHMfOF9Lsl5lFeuXQciY=</PackageId><ApplicantColl>
+    <Applicants>
+      <AppId>25361</AppId>
+      <ApplicantId>18850</ApplicantId>
+      <ApplicantType>Primary</ApplicantType>
+      <APL_FIRST_NAME>Jeff</APL_FIRST_NAME>
+      <APL_MIDDLE_NAME />
+      <APL_LAST_NAME>Markovitz</APL_LAST_NAME>
+      <APL_SUFFIX />
+      <APL_SSN>111111111</APL_SSN>
+      <APL_DOB>11/11/1999</APL_DOB>
+      <APL_BIRTH_PLACE />
+      <APL_MARITAL_STATUS>MARRIED</APL_MARITAL_STATUS>
+      <APL_RELATION_TYPE>PRIM</APL_RELATION_TYPE>
+      <APL_RELATION_OTHER />
+      <APL_FAMILY_SIZE>2</APL_FAMILY_SIZE>
+      <APL_SBA_EMPLOYEE>N</APL_SBA_EMPLOYEE>
+      <APL_SELF_EMPLOYED>N</APL_SELF_EMPLOYED>
+      <MailingAddress>
+        <MAR_ADDR_TYPE />
+        <MAR_ADDR_OTHER_DESC />
+        <MAR_ADDRESS1>13221 WOODLAND PARK ROAD</MAR_ADDRESS1>
+        <MAR_ADDRESS2>VERY VERY VERY VERY VERY VERY VERY VERY LONG SUITE</MAR_ADDRESS2>
+        <MAR_CITY>HERNDON</MAR_CITY>
+        <MAR_STATE_CD>VA</MAR_STATE_CD>
+        <MAR_ZIP>20171</MAR_ZIP>
+        <MAR_COUNTY />
+      </MailingAddress>
+      <APL_CONTACT_METHOD>HOME_PHONE</APL_CONTACT_METHOD>
+      <APL_PRIM_PHONE>7034878100</APL_PRIM_PHONE>
+      <APL_WORK_PHONE>7034878100</APL_WORK_PHONE>
+      <APL_ALT_PHONE>7034878100</APL_ALT_PHONE>
+      <APL_FAX />
+      <APL_EMAIL />
+      <APL_OTHER_CONTACT />
+      <APL_REL_NAME>Joe</APL_REL_NAME>
+      <APL_REL_PHONE>3253464576</APL_REL_PHONE>
+      <APL_ORG_TYPE_CD>IND</APL_ORG_TYPE_CD>
+      <APL_LEGAL_NAME />
+      <APL_EIN_NBR />
+      <APL_BUS_TRADE_NAME />
+      <APL_BUS_ACTIVITY />
+      <APL_NO_EMPL />
+      <APL_DATE_ESTD />
+      <APL_DATE_CURR_MGMT />
+      <APL_TITLEOFFICE />
+      <APL_PER_OWNERSHIP />
+      <APL_CITIZEN_IND>Y</APL_CITIZEN_IND>
+      <NotEmployed>false</NotEmployed>
+      <AplWageColl>
+        <Apl_Wages>
+          <ApplicantId>18850</ApplicantId>
+          <WageId>1</WageId>
+          <APW_EMPL_NAME>SBA</APW_EMPL_NAME>
+          <MailingAddress>
+            <MAR_ADDR_TYPE />
+            <MAR_ADDR_OTHER_DESC />
+            <MAR_ADDRESS1>13221 WOODLAND PARK RD</MAR_ADDRESS1>
+            <MAR_ADDRESS2 />
+            <MAR_CITY>HERNDON</MAR_CITY>
+            <MAR_STATE_CD>VA</MAR_STATE_CD>
+            <MAR_ZIP>20171</MAR_ZIP>
+            <MAR_COUNTY />
+          </MailingAddress>
+          <APW_EMPL_YRS>9</APW_EMPL_YRS>
+          <APW_EMPL_MNTHS>6</APW_EMPL_MNTHS>
+          <APW_GROSS_INC_AMT>123.00</APW_GROSS_INC_AMT>
+          <APW_GROSS_INC_FREQ>WEEKLY</APW_GROSS_INC_FREQ>
+          <APW_OCCUPATION>PR</APW_OCCUPATION>
+          <APW_SELF_WAGE>false</APW_SELF_WAGE>
+        </Apl_Wages>
+      </AplWageColl>
+      <NoOtherIncome>false</NoOtherIncome>
+      <AplOtherIncomeColl>
+        <Apl_Other_Income>
+          <ApplicantId>18850</ApplicantId>
+          <OtherIncomeId>1</OtherIncomeId>
+          <API_INCOME_SOURCE>ID_ODA</API_INCOME_SOURCE>
+          <API_INCOME_AMOUNT>123.00</API_INCOME_AMOUNT>
+          <API_INCOME_FREQ>ANNUALLY</API_INCOME_FREQ>
+        </Apl_Other_Income>
+      </AplOtherIncomeColl>
+      <APL_AFFILIATE_IND>N</APL_AFFILIATE_IND>
+      <AplAffiliateColl />
+      <TaxTranscriptRequest>
+        <PreviousAddress>
+          <MAR_ADDR_TYPE />
+          <MAR_ADDR_OTHER_DESC />
+          <MAR_ADDRESS1 />
+          <MAR_ADDRESS2 />
+          <MAR_CITY />
+          <MAR_STATE_CD />
+          <MAR_ZIP />
+          <MAR_COUNTY />
+        </PreviousAddress>
+        <TaxForm>1040</TaxForm>
+        <EndOfFiscalYear>
+          <string>12/31/2016</string>
+          <string>12/31/2015</string>
+          <string />
+        </EndOfFiscalYear>
+        <SignerTitle />
+        <Attestation>true</Attestation>
+        <IncludeSpouse>true</IncludeSpouse>
+        <SwitchedEntityOrder>false</SwitchedEntityOrder>
+        <DataEntryRequired>false</DataEntryRequired>
+        <DownloadRequired>false</DownloadRequired>
+        <FileUploaded>false</FileUploaded>
+        <SubmitOffline>false</SubmitOffline>
+        <SignatureRequired>false</SignatureRequired>
+        <FileName />
+      </TaxTranscriptRequest>
+    </Applicants>
+    <Applicants>
+      <AppId>25361</AppId>
+      <ApplicantId>18851</ApplicantId>
+      <ApplicantType>Coapplicant</ApplicantType>
+      <APL_FIRST_NAME>Joint</APL_FIRST_NAME>
+      <APL_MIDDLE_NAME />
+      <APL_LAST_NAME>Applicant</APL_LAST_NAME>
+      <APL_SUFFIX />
+      <APL_SSN>457556867</APL_SSN>
+      <APL_DOB>11/11/1999</APL_DOB>
+      <APL_BIRTH_PLACE />
+      <APL_MARITAL_STATUS>MARRIED</APL_MARITAL_STATUS>
+      <APL_RELATION_TYPE>SPOUSE</APL_RELATION_TYPE>
+      <APL_RELATION_OTHER />
+      <APL_FAMILY_SIZE>2</APL_FAMILY_SIZE>
+      <APL_SBA_EMPLOYEE>N</APL_SBA_EMPLOYEE>
+      <APL_SELF_EMPLOYED>N</APL_SELF_EMPLOYED>
+      <MailingAddress>
+        <MAR_ADDR_TYPE />
+        <MAR_ADDR_OTHER_DESC />
+        <MAR_ADDRESS1>13221 WOODLAND PARK ROAD</MAR_ADDRESS1>
+        <MAR_ADDRESS2>VERY VERY VERY VERY VERY VERY VERY VERY LONG SUITE</MAR_ADDRESS2>
+        <MAR_CITY>HERNDON</MAR_CITY>
+        <MAR_STATE_CD>VA</MAR_STATE_CD>
+        <MAR_ZIP>20171</MAR_ZIP>
+        <MAR_COUNTY />
+      </MailingAddress>
+      <APL_CONTACT_METHOD>HOME_PHONE</APL_CONTACT_METHOD>
+      <APL_PRIM_PHONE>7034878100</APL_PRIM_PHONE>
+      <APL_WORK_PHONE />
+      <APL_ALT_PHONE />
+      <APL_FAX />
+      <APL_EMAIL />
+      <APL_OTHER_CONTACT />
+      <APL_REL_NAME />
+      <APL_REL_PHONE />
+      <APL_ORG_TYPE_CD>IND</APL_ORG_TYPE_CD>
+      <APL_LEGAL_NAME />
+      <APL_EIN_NBR />
+      <APL_BUS_TRADE_NAME />
+      <APL_BUS_ACTIVITY />
+      <APL_NO_EMPL />
+      <APL_DATE_ESTD />
+      <APL_DATE_CURR_MGMT />
+      <APL_TITLEOFFICE />
+      <APL_PER_OWNERSHIP />
+      <APL_CITIZEN_IND>Y</APL_CITIZEN_IND>
+      <NotEmployed>true</NotEmployed>
+      <AplWageColl />
+      <NoOtherIncome>true</NoOtherIncome>
+      <AplOtherIncomeColl />
+      <APL_AFFILIATE_IND>N</APL_AFFILIATE_IND>
+      <AplAffiliateColl />
+      <TaxTranscriptRequest>
+        <PreviousAddress>
+          <MAR_ADDR_TYPE />
+          <MAR_ADDR_OTHER_DESC />
+          <MAR_ADDRESS1 />
+          <MAR_ADDRESS2 />
+          <MAR_CITY />
+          <MAR_STATE_CD />
+          <MAR_ZIP />
+          <MAR_COUNTY />
+        </PreviousAddress>
+        <TaxForm />
+        <EndOfFiscalYear>
+          <string />
+          <string />
+          <string />
+        </EndOfFiscalYear>
+        <SignerTitle />
+        <Attestation>false</Attestation>
+        <IncludeSpouse>true</IncludeSpouse>
+        <SwitchedEntityOrder>false</SwitchedEntityOrder>
+        <DataEntryRequired>false</DataEntryRequired>
+        <DownloadRequired>false</DownloadRequired>
+        <FileUploaded>true</FileUploaded>
+        <SubmitOffline>false</SubmitOffline>
+        <SignatureRequired>true</SignatureRequired>
+        <FileName />
+      </TaxTranscriptRequest>
+    </Applicants>
+  </ApplicantColl><DmgPropertyColl>
+    <Dmg_Properties>
+      <AppId>25361</AppId>
+      <DmgPropertyId>1</DmgPropertyId>
+      <MailingAddress>
+        <MAR_ADDR_TYPE />
+        <MAR_ADDR_OTHER_DESC />
+        <MAR_ADDRESS1>13221 WOODLAND PARK ROAD</MAR_ADDRESS1>
+        <MAR_ADDRESS2>VERY VERY VERY VERY VERY VERY VERY VERY LONG SUITE</MAR_ADDRESS2>
+        <MAR_CITY>HERNDON</MAR_CITY>
+        <MAR_STATE_CD>VA</MAR_STATE_CD>
+        <MAR_ZIP>20171</MAR_ZIP>
+        <MAR_COUNTY>Fairfax</MAR_COUNTY>
+      </MailingAddress>
+      <DPO_PRIMARY_IND>Y</DPO_PRIMARY_IND>
+      <DPO_OWN_IND>HOME_OWNER_ODA</DPO_OWN_IND>
+      <DPO_HOME_RE>true</DPO_HOME_RE>
+      <DPO_HOME_PP>false</DPO_HOME_PP>
+      <DPO_HOME_AUTO>false</DPO_HOME_AUTO>
+      <DPO_NO_INSURANCE_IND>false</DPO_NO_INSURANCE_IND>
+      <DpoInsuranceColl>
+        <Dpo_Insurances>
+          <DmgPropertyId>1</DmgPropertyId>
+          <InsuranceId>1</InsuranceId>
+          <DPI_TYPE>HOMEOWNERS</DPI_TYPE>
+          <DPI_INS_COMPANYNAME>Insurance Co</DPI_INS_COMPANYNAME>
+          <DPI_INS_AGENTNAME />
+          <DPI_AGENT_PHONE>3253465657</DPI_AGENT_PHONE>
+          <DPI_POLICY_NBR>32534653464</DPI_POLICY_NBR>
+          <DPI_AMT_RECVD>1234.00</DPI_AMT_RECVD>
+        </Dpo_Insurances>
+      </DpoInsuranceColl>
+    </Dmg_Properties>
+  </DmgPropertyColl><DpoDupBenefitColl>
+    <Dpo_DupBenefits>
+      <DupBenefitsId>1</DupBenefitsId>
+      <DOB_AGENCY_NAME>FEMA</DOB_AGENCY_NAME>
+      <DOB_AMT_RECVD>1.00</DOB_AMT_RECVD>
+      <DOB_OTHER_DESC />
+    </Dpo_DupBenefits>
+    <Dpo_DupBenefits>
+      <DupBenefitsId>2</DupBenefitsId>
+      <DOB_AGENCY_NAME>STATE</DOB_AGENCY_NAME>
+      <DOB_AMT_RECVD>2.00</DOB_AMT_RECVD>
+      <DOB_OTHER_DESC />
+    </Dpo_DupBenefits>
+  </DpoDupBenefitColl><Assets>
+    <APO_CASH_AMT>1.00</APO_CASH_AMT>
+    <APO_IRA_AMT>2.00</APO_IRA_AMT>
+    <APO_STOCK_AMT>3.00</APO_STOCK_AMT>
+    <APO_GOODS_AMT>4.00</APO_GOODS_AMT>
+    <APO_PRIMARY_RE_DESC>13221 WOODLAND PARK ROAD, VERY VERY VERY VERY VERY VERY VERY VERY LONG SUITE, HERNDON, VA 20171</APO_PRIMARY_RE_DESC>
+    <APO_PRIMARY_RE_AMT>5.00</APO_PRIMARY_RE_AMT>
+    <APO_OTHER_RE1_DESC>Second House</APO_OTHER_RE1_DESC>
+    <APO_OTHER_RE1_AMT>123456.00</APO_OTHER_RE1_AMT>
+    <APO_OTHER_RE2_DESC />
+    <APO_OTHER_RE2_AMT />
+    <APO_OTHER_RE3_DESC />
+    <APO_OTHER_RE3_AMT />
+    <APO_OTHER1_DESC>REC_VEHICLE</APO_OTHER1_DESC>
+    <APO_OTHER1_AMT>6.00</APO_OTHER1_AMT>
+    <APO_OTHER2_DESC />
+    <APO_OTHER2_AMT />
+  </Assets><Debts>
+    <NoDebts>false</NoDebts>
+    <RentedProperty>
+      <ARE_LANDLORD_NAME />
+      <MailingAddress>
+        <MAR_ADDR_TYPE />
+        <MAR_ADDR_OTHER_DESC />
+        <MAR_ADDRESS1 />
+        <MAR_ADDRESS2 />
+        <MAR_CITY />
+        <MAR_STATE_CD />
+        <MAR_ZIP />
+        <MAR_COUNTY />
+      </MailingAddress>
+      <ARE_RENTLEASE_AMT />
+    </RentedProperty>
+    <MortgageColl>
+      <ARE_Mortgages>
+        <MortgageId>1</MortgageId>
+        <ARM_HOLDER_NAME>Mortgage Co</ARM_HOLDER_NAME>
+        <MailingAddress>
+          <MAR_ADDR_TYPE />
+          <MAR_ADDR_OTHER_DESC />
+          <MAR_ADDRESS1 />
+          <MAR_ADDRESS2 />
+          <MAR_CITY />
+          <MAR_STATE_CD />
+          <MAR_ZIP />
+          <MAR_COUNTY />
+        </MailingAddress>
+        <ARM_PAY_AMT>123.00</ARM_PAY_AMT>
+        <ARM_BALANCE_AMT>123456.00</ARM_BALANCE_AMT>
+      </ARE_Mortgages>
+      <ARE_Mortgages>
+        <MortgageId>2</MortgageId>
+        <ARM_HOLDER_NAME />
+        <MailingAddress>
+          <MAR_ADDR_TYPE />
+          <MAR_ADDR_OTHER_DESC />
+          <MAR_ADDRESS1 />
+          <MAR_ADDRESS2 />
+          <MAR_CITY />
+          <MAR_STATE_CD />
+          <MAR_ZIP />
+          <MAR_COUNTY />
+        </MailingAddress>
+        <ARM_PAY_AMT />
+        <ARM_BALANCE_AMT />
+      </ARE_Mortgages>
+    </MortgageColl>
+    <RealEstateTax>
+      <Amount>12.00</Amount>
+      <Frequency>MONTHLY</Frequency>
+    </RealEstateTax>
+    <HazardInsurance>
+      <Amount>3.00</Amount>
+      <Frequency>MONTHLY</Frequency>
+    </HazardInsurance>
+    <CondoHoaFee>
+      <Amount>4.00</Amount>
+      <Frequency>MONTHLY</Frequency>
+    </CondoHoaFee>
+    <OtherDebtColl>
+      <OtherDebt>
+        <OtherDebtId>1</OtherDebtId>
+        <APB_CREDITOR_NAME>Creditor 1</APB_CREDITOR_NAME>
+        <APB_LIABILITY_TYPE_CD>CREDIT_CARD_ODA</APB_LIABILITY_TYPE_CD>
+        <APB_PMT_AMT>11.00</APB_PMT_AMT>
+        <APB_BALANCE_AMT>123.00</APB_BALANCE_AMT>
+        <APB_SECURED_INFO />
+      </OtherDebt>
+    </OtherDebtColl>
+  </Debts><ExtraExpenseColl>
+    <Apl_Ext_Expense>
+      <ExtraOrdExpenseId>0</ExtraOrdExpenseId>
+      <AEE_AMOUNT>12.00</AEE_AMOUNT>
+      <AEE_DESCRIPTION>D_ODA</AEE_DESCRIPTION>
+    </Apl_Ext_Expense>
+  </ExtraExpenseColl><Final_Questions>
+    <FQS_SBALOAN_IND>N</FQS_SBALOAN_IND>
+    <FQS_SBA_LOCATION />
+    <FQS_SBA_ACC_NBR />
+    <FQS_FEDLOAN_IND>N</FQS_FEDLOAN_IND>
+    <FQS_FED_AGENCY_NAME />
+    <FQS_FED_LOCATION />
+    <FQS_FED_ACC_NBR />
+    <FQS_FEDDEL_IND>N</FQS_FEDDEL_IND>
+    <FQS_DEL_AGENCY_NAME />
+    <FQS_DEL_LOCATION />
+    <FQS_DEL_ACC_NBR />
+    <FQS_BKRPY_IND>N</FQS_BKRPY_IND>
+    <FQS_BKRPY_DESC />
+    <FQS_JDGMT_IND>N</FQS_JDGMT_IND>
+    <FQS_JDGMT_COMMENTS />
+    <FQS_FELONY_IND>N</FQS_FELONY_IND>
+    <FQS_FELONY_ID>0</FQS_FELONY_ID>
+    <FQS_FELONY_DETAILS />
+    <FQS_912_IND>N</FQS_912_IND>
+    <FQS_912_NAME1_ID>0</FQS_912_NAME1_ID>
+    <FQS_912_DTLS />
+    <FQS_DEBAR_IND>N</FQS_DEBAR_IND>
+    <FQS_DEBAR_DESC />
+    <FQS_CITIZEN_IND>Y</FQS_CITIZEN_IND>
+    <FQS_CITIZEN_DTLS />
+    <FQS_DISCUSS_MIT_IND>false</FQS_DISCUSS_MIT_IND>
+    <FQS_LR_IND>N</FQS_LR_IND>
+    <FQS_LR_NAME />
+    <FQS_LR_COMPANY />
+    <FQS_LR_PHONE />
+    <MailingAddress>
+      <MAR_ADDR_TYPE />
+      <MAR_ADDR_OTHER_DESC />
+      <MAR_ADDRESS1 />
+      <MAR_ADDRESS2 />
+      <MAR_CITY />
+      <MAR_STATE_CD />
+      <MAR_ZIP />
+      <MAR_COUNTY />
+    </MailingAddress>
+    <FQS_LR_FEE />
+    <FQS_LR_DISCUSS>false</FQS_LR_DISCUSS>
+    <FQS_EMP_IND />
+    <FQS_EMP_NAME1_ID>0</FQS_EMP_NAME1_ID>
+    <FQS_AGREE_IND>true</FQS_AGREE_IND>
+    <FQS_FINALCOMMENTS>Additional information is here</FQS_FINALCOMMENTS>
+  </Final_Questions><RegUser>
+    <USR_USER_ID>126</USR_USER_ID>
+    <USR_USER_NAME>jwmarkov</USR_USER_NAME>
+    <USR_FIRST_NAME>Jeff</USR_FIRST_NAME>
+    <USR_LAST_NAME>Markovitz</USR_LAST_NAME>
+    <USR_MIDDLE_NAME />
+    <USR_SUFFIX />
+    <USR_SSN>111111111</USR_SSN>
+    <USR_ADDRESS1>13221 Woodland Park Road 200</USR_ADDRESS1>
+    <USR_ADDRESS2>6th Floor</USR_ADDRESS2>
+    <USR_CITY>Herndon</USR_CITY>
+    <USR_STATE_CD>VA</USR_STATE_CD>
+    <USR_ZIP>20171</USR_ZIP>
+    <USR_COUNTY />
+    <USR_PRIM_PHONE>7034388100</USR_PRIM_PHONE>
+    <USR_ALT_PHONE>7034388100</USR_ALT_PHONE>
+    <USR_EMAIL>jeffrey.markovitz@sba.gov</USR_EMAIL>
+  </RegUser></ns0:Application>

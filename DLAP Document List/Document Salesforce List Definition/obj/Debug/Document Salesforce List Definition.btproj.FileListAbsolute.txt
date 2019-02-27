@@ -1,0 +1,8 @@
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document Salesforce List Definition\bin\Debug\DLAPDocumentListSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document Salesforce List Definition\bin\Debug\DLAPDocumentListSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document Salesforce List Definition\obj\Debug\DLAPDocumentListSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Document List\Document Salesforce List Definition\obj\Debug\DLAPDocumentListSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document Salesforce List Definition\bin\Debug\DLAPDocumentListSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document Salesforce List Definition\bin\Debug\DLAPDocumentListSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document Salesforce List Definition\obj\Debug\DLAPDocumentListSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document List\Document Salesforce List Definition\obj\Debug\DLAPDocumentListSalesforceDefinition.pdb

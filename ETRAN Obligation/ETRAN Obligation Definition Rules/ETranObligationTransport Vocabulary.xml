@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<brl xmlns="http://schemas.microsoft.com/businessruleslanguage/2002">
+  <vocabulary id="b7002492-dc36-417e-b310-42aae01e41a4" name="ETran Obligation Transport" uri="" description="">
+    <version major="1" minor="1" description="" modifiedby="SBA\RSKozlin" date="2018-07-31T03:13:31.9836404-04:00" />
+    <version major="1" minor="0" description="" modifiedby="SBA\RSKozlin" date="2018-07-31T03:14:12.7686562-04:00" />
+    <vocabularydefinition id="4221bed5-1fe1-4c18-9754-4bbbdc61d417" name="Set Password" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='Password' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" fieldalias="Password" type="string">
+          <documentinfo schema="C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd" documenttype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" selector="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" selectoralias="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" instance="0" />
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set Password {0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="1f7e4bdd-d0bc-4873-926a-6a488edc637d" name="Set SecurityMode" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='SecurityMode' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" fieldalias="SecurityMode" type="string">
+          <documentinfo schema="C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd" documenttype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" selector="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" selectoralias="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" instance="0" />
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set SecurityMode {0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="c16c04cd-35f0-4c5c-8dce-78c359301b15" name="Set UserName" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='UserName' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" fieldalias="UserName" type="string">
+          <documentinfo schema="C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd" documenttype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" selector="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" selectoralias="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" instance="0" />
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set UserName {0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="f9991bfa-1762-4787-bee4-853819133416" name="Set TransportClientCredentialType" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='TransportClientCredentialType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" fieldalias="TransportClientCredentialType" type="string">
+          <documentinfo schema="C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd" documenttype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" selector="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" selectoralias="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" instance="0" />
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set TransportClientCredentialType {0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="298fc140-bae5-4dc4-9524-27fadbb63e73" name="Set EnableBTAuditPayloadLog" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='EnableBTAuditPayloadLog' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" fieldalias="EnableBTAuditPayloadLog" type="boolean">
+          <documentinfo schema="C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd" documenttype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" selector="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" selectoralias="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" instance="0" />
+          <argument position="0">
+            <valuedefinitionliteral type="boolean">
+              <boolean>false</boolean>
+            </valuedefinitionliteral>
+          </argument>
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set EnableBTAuditPayloadLog {0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="boolean">
+            <boolean>false</boolean>
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="3f017983-4175-4441-a7bf-a8c8914dc9fa" name="Set Address" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='Address' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" fieldalias="Address" type="string">
+          <documentinfo schema="C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd" documenttype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" selector="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Port' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" selectoralias="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Port' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" instance="0" />
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set Address {0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="8bc94e4f-7d9c-495a-80c0-c058e98b7a0e" name="Set MessageClientCredentialType" description="">
+      <bindingdefinition>
+        <documentelementbindingdefinition field="*[local-name()='MessageClientCredentialType' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" fieldalias="MessageClientCredentialType" type="string">
+          <documentinfo schema="C:\CodeAlt\dcms2-integ-dev-2.02\ETRAN Obligation\ETRAN Obligation Definition Rules\ETranObligationTransport.xsd" documenttype="SBA.ETRANObligation.Definition.Rules.ETranObligationTransport" selector="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" selectoralias="/*[local-name()='ETranObligationTransport' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']/*[local-name()='Message' and namespace-uri()='http://SBA.gov/ETRANObligation/Definition/Rules/ETranObligationTransport/']" instance="0" />
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </documentelementbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set MessageClientCredentialType {0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+  </vocabulary>
+</brl>

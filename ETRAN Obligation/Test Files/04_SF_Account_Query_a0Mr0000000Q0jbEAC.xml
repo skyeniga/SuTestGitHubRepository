@@ -1,0 +1,4 @@
+<ns0:Request xmlns:ns0="http://SBA.gov/Salesforce/Query/Test/">
+	<ns0:SQLCommand>SELECT DISTINCT a.Id AccountId, c.Id ContactId, apl.Id ApplicantId, a.Business_Type__c, a.Trade_Name__c, a.Phone, a.ShippingStreet, a.ShippingCity, a.ShippingState, a.ShippingPostalCode FROM Account a, Contact c, Applicant__c apl WHERE (apl.Application__c=@ApplicationId) AND ( (a.Id=apl.Account__c AND (a.Id=c.AccountId OR c.Id IS NULL)) OR (a.Id=c.AccountId AND (a.Id=apl.Account__c OR apl.Id IS NULL)) )</ns0:SQLCommand>
+	<ns0:ApplicationId>a0Mr0000000Q0jbEAC</ns0:ApplicationId>
+</ns0:Request>

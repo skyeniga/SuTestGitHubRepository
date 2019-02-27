@@ -1,0 +1,7 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Logic\bin\Debug\DLAPDocumentRetrievalLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Logic\bin\Debug\DLAPDocumentRetrievalLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Logic\bin\Debug\DLAPDocumentRetrievalDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Logic\bin\Debug\DLAPDocumentRetrievalSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Logic\bin\Debug\SBA.BizTalk.Shared.MessageHelper.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Logic\obj\Debug\DLAPDocumentRetrievalLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Logic\obj\Debug\DLAPDocumentRetrievalLogic.pdb

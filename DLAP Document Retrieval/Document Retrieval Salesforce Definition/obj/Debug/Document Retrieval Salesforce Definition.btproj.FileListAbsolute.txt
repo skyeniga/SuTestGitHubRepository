@@ -1,0 +1,4 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Salesforce Definition\bin\Debug\DLAPDocumentRetrievalSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Salesforce Definition\bin\Debug\DLAPDocumentRetrievalSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Salesforce Definition\obj\Debug\DLAPDocumentRetrievalSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Salesforce Definition\obj\Debug\DLAPDocumentRetrievalSalesforceDefinition.pdb

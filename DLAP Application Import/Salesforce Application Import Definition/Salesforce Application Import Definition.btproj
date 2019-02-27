@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA7B66CD-8B80-4842-9F52-8674611C6230}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>Salesforce_Application_Import_Definition</RootNamespace>
+    <AssemblyName>DLAPApplicationImportSalesforceDefinition</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DLAPApplicationImport.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Versioning\AssemblyInfoShared.cs">
+      <Link>Properties\AssemblyInfoShared.cs</Link>
+    </Compile>
+    <Compile Include="Account\CDataServiceAccount.xsd.cs">
+      <DependentUpon>CDataServiceAccount.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Event_Request__c\RestEventRequestQuery.xsd">
+      <TypeName>RestEventRequestQuery</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition.Event_Request__c</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Event_Request__c\RestEventResponse.xsd">
+      <TypeName>RestEventResponse</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition.Event_Request__c</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Event_Request__c\RestEventRequest.xsd">
+      <TypeName>RestEventRequest</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition.Event_Request__c</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Account\CDataServiceAccount.xsd">
+      <SubType>Task</SubType>
+      <TypeName>CDataServiceAccount</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition.Account</Namespace>
+    </Schema>
+    <Schema Include="Contact\CDataServiceContact.xsd">
+      <TypeName>CDataServiceContact</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Application__c\CDataServiceApplication__c.xsd">
+      <TypeName>CDataServiceApplication__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Applicant__c\CDataServiceApplicant__c.xsd">
+      <TypeName>CDataServiceApplicant__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Insurance__c\CDataServiceInsurance__c.xsd">
+      <TypeName>CDataServiceInsurance__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Debts_Expenses__c\CDataServiceDebts_Expenses__c.xsd">
+      <TypeName>CDataServiceDebts_Expenses__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Mortgage__c\CDataServiceMortgage__c.xsd">
+      <TypeName>CDataServiceMortgage__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Property__c\CDataServiceProperty__c.xsd">
+      <TypeName>CDataServiceDamaged_Property__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="IRS_Transcripts__c\CDataServiceIRS_Transcripts__c.xsd">
+      <TypeName>CDataServiceIRS_Transcripts__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Application__c\Disaster__c\CDataServiceDisasterLookup.xsd">
+      <TypeName>CDataServiceDisasterLookup</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Applicant__c\CDataService_RecordType.xsd">
+      <TypeName>CDataService_RecordType</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Asset_Incomes__c\CDataService_Asset_Incomes__c.xsd">
+      <TypeName>CDataService_Asset_Incomes__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Applicant__c\CDataServiceUpdateApplicant__c.xsd">
+      <TypeName>CDataServiceUpdateApplicant__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Additional_Contact__c\CDataService_Additional_Contact__c.xsd">
+      <TypeName>CDataService_Additional_Contact__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Other_Assistance__c\CDataServiceOther_Assistance__c.xsd">
+      <TypeName>CDataServiceOther_Assistance__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Decline_Withdrawal_Code__c\CDataService_Decline_Withdrawal_Code__c.xsd">
+      <SubType>Task</SubType>
+      <TypeName>CDataService_Decline_Withdrawal_Code__c</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition_XSD</Namespace>
+    </Schema>
+    <Schema Include="Application__c\RestDisaster__c\RestDisasterLookupResponse.xsd">
+      <TypeName>RestDisasterLookupResponse</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition.Application__c.RestDisaster__c</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Application__c\RestDisaster__c\RestDisasterLookupRequest.xsd">
+      <TypeName>RestDisasterLookupRequest</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition.Application__c.RestDisaster__c</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Application__c\RestDisaster__c\RestDisasterLookupRequestPropertySchema.xsd">
+      <TypeName>RestDisasterLookupRequestPropertySchema</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition.Application__c.RestDisaster__c</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Application__c\RestApplication__c\RestApplicationQuery.xsd">
+      <SubType>Task</SubType>
+      <TypeName>RestApplicationQuery</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition.Application__c.RestApplication__c</Namespace>
+    </Schema>
+    <Schema Include="Application__c\RestApplication__c\RestApplicationQueryPropertySchema.xsd">
+      <TypeName>RestApplicationQueryPropertySchema</TypeName>
+      <Namespace>Salesforce_Application_Import_Definition.Application__c.RestApplication__c</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <None Include="DLAPApplicationImport.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="File\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application Import Definition\Application Import Definition.btproj">
+      <Project>{2db1d498-00e6-4b1a-bd73-1371b3f87f2d}</Project>
+      <Name>Application Import Definition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

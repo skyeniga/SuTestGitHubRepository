@@ -1,0 +1,185 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document List Definition", "Document List Definition\Document List Definition.btproj", "{826A098E-0DA0-494B-85AC-FAF61D56A618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document List Logic", "Document List Logic\Document List Logic.btproj", "{CFA28759-FF85-4712-A85E-8E9CDF7C51E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document Salesforce List Definition", "Document Salesforce List Definition\Document Salesforce List Definition.btproj", "{120BEBC7-AE1D-4C21-9A8A-810BEE6B02F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\BizTalk Code Review Check List - DLAP Document List.docx = Deployment\BizTalk Code Review Check List - DLAP Document List.docx
+		Deployment\DLAPDocumentList_Deployment_Instructions.docx = Deployment\DLAPDocumentList_Deployment_Instructions.docx
+		Deployment\DocumentList-soapui-project.xml = Deployment\DocumentList-soapui-project.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning", "Versioning", "{D6ADE189-A9B5-4BB1-844C-A1A111C5B0CF}"
+	ProjectSection(SolutionItems) = preProject
+		Versioning\AssemblyInfoShared.cs = Versioning\AssemblyInfoShared.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.0", "2.0.0.0", "{40BB1A8F-18BE-42D0-B888-809E3D9DD4E5}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.0\DLAP Document List 2.0.0.0.msi = Deployment\2.0.0.0\DLAP Document List 2.0.0.0.msi
+		Deployment\2.0.0.0\DLAP Document List.BindingInfo 2.0.0.0.xml = Deployment\2.0.0.0\DLAP Document List.BindingInfo 2.0.0.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0.0.0", "1.0.0.0", "{E7964D31-8FC0-404F-83CD-7C6C581399FF}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\1.0.0.0\DLAP Document List.BindingInfo.xml = Deployment\1.0.0.0\DLAP Document List.BindingInfo.xml
+		Deployment\1.0.0.0\DLAP Document List.msi = Deployment\1.0.0.0\DLAP Document List.msi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.1", "2.0.0.1", "{92D9F02D-F644-4074-8DCE-3F482967AD65}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.1\DLAP Document List 2.0.0.1.msi = Deployment\2.0.0.1\DLAP Document List 2.0.0.1.msi
+		Deployment\2.0.0.1\DLAP Document List.BindingInfo 2.0.0.1.xml = Deployment\2.0.0.1\DLAP Document List.BindingInfo 2.0.0.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.2", "2.0.0.2", "{23E9605A-19EE-41EE-8496-BA767FEC6936}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.2\DLAP Document List 2.0.0.2.msi = Deployment\2.0.0.2\DLAP Document List 2.0.0.2.msi
+		Deployment\2.0.0.2\DLAP Document List.BindingInfo 2.0.0.2.xml = Deployment\2.0.0.2\DLAP Document List.BindingInfo 2.0.0.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.3", "2.0.0.3", "{7A36F600-E91F-4331-9444-93FCBA83AAF5}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.3\DLAP Document List 2.0.0.3.msi = Deployment\2.0.0.3\DLAP Document List 2.0.0.3.msi
+		Deployment\2.0.0.3\DLAP Document List.BindingInfo 2.0.0.3.xml = Deployment\2.0.0.3\DLAP Document List.BindingInfo 2.0.0.3.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.4", "2.0.0.4", "{D8195AB1-80B5-4B07-B9E4-9687B1A705C8}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.4\DLAP Document List 2.0.0.4.msi = Deployment\2.0.0.4\DLAP Document List 2.0.0.4.msi
+		Deployment\2.0.0.4\DLAP Document List.BindingInfo 2.0.0.4.xml = Deployment\2.0.0.4\DLAP Document List.BindingInfo 2.0.0.4.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.5", "2.0.0.5", "{6ECABC43-BD94-46CE-819C-91C73881F289}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.5\DLAP Document List 2.0.0.5.msi = Deployment\2.0.0.5\DLAP Document List 2.0.0.5.msi
+		Deployment\2.0.0.5\DLAP Document List.BindingInfo 2.0.0.5.xml = Deployment\2.0.0.5\DLAP Document List.BindingInfo 2.0.0.5.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.0.6", "2.0.0.6", "{D80676A8-02AA-4C41-B0AD-B323BC3B4D33}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.0.6\DLAP Document List 2.0.0.6.msi = Deployment\2.0.0.6\DLAP Document List 2.0.0.6.msi
+		Deployment\2.0.0.6\DLAP Document List.BindingInfo 2.0.0.6.xml = Deployment\2.0.0.6\DLAP Document List.BindingInfo 2.0.0.6.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.1.0", "2.0.1.0", "{9DF94699-B0B2-4172-9A8E-04B92E92BEB2}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.1.0\DLAP Document List 2.0.1.0.msi = Deployment\2.0.1.0\DLAP Document List 2.0.1.0.msi
+		Deployment\2.0.1.0\DLAP Document List.BindingInfo 2.0.1.0.xml = Deployment\2.0.1.0\DLAP Document List.BindingInfo 2.0.1.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.1.1", "2.0.1.1", "{62ED9777-A264-4F30-A105-66F01868E7F3}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.1.1\DLAP Document List 2.0.1.1.msi = Deployment\2.0.1.1\DLAP Document List 2.0.1.1.msi
+		Deployment\2.0.1.1\DLAP Document List.BindingInfo 2.0.1.1.xml = Deployment\2.0.1.1\DLAP Document List.BindingInfo 2.0.1.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.1.2", "2.0.1.2", "{F02B6948-CAFC-4C4F-92F9-9B1C8261B7B2}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.1.2\DLAP Document List 2.0.1.2.msi = Deployment\2.0.1.2\DLAP Document List 2.0.1.2.msi
+		Deployment\2.0.1.2\DLAP Document List.BindingInfo 2.0.1.2.xml = Deployment\2.0.1.2\DLAP Document List.BindingInfo 2.0.1.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.2.0", "2.0.2.0", "{26621258-2CBE-4018-9A73-B2DF5342416D}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.2.0\DLAP Document List 2.0.2.0.msi = Deployment\2.0.2.0\DLAP Document List 2.0.2.0.msi
+		Deployment\2.0.2.0\DLAP Document List.BindingInfo 2.0.2.0.xml = Deployment\2.0.2.0\DLAP Document List.BindingInfo 2.0.2.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.4.0", "2.0.4.0", "{360B7C2B-3F85-4A20-8047-8CAE9FAC2773}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.4.0\DLAP Document List 2.0.4.0.msi = Deployment\2.0.4.0\DLAP Document List 2.0.4.0.msi
+		Deployment\2.0.4.0\DLAP Document List.BindingInfo 2.0.4.0.xml = Deployment\2.0.4.0\DLAP Document List.BindingInfo 2.0.4.0.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.4.5", "2.0.4.5", "{71A06330-8DF7-4945-B1F4-01D1CDAE0B1D}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.4.5\DLAP Document List 2.0.4.5.msi = Deployment\2.0.4.5\DLAP Document List 2.0.4.5.msi
+		Deployment\2.0.4.5\DLAP Document List.BindingInfo 2.0.4.5.xml = Deployment\2.0.4.5\DLAP Document List.BindingInfo 2.0.4.5.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.8.1", "2.0.8.1", "{72D9D1E1-4FF3-462A-BAF6-26514378A775}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.8.1\DLAP Document List 2.0.8.1.msi = Deployment\2.0.8.1\DLAP Document List 2.0.8.1.msi
+		Deployment\2.0.8.1\DLAP Document List.BindingInfo 2.0.8.1.xml = Deployment\2.0.8.1\DLAP Document List.BindingInfo 2.0.8.1.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Local", "Local", "{3EA45A18-4A6E-416F-87FF-9091BFECA8D0}"
+	ProjectSection(SolutionItems) = preProject
+		Local\DLAP Document List 2.0.9.5 DEV.msi = Local\DLAP Document List 2.0.9.5 DEV.msi
+		Local\DLAP Document List DEV 2.0.8.1.msi = Local\DLAP Document List DEV 2.0.8.1.msi
+		Local\DLAP Document List.BindingInfo 2.0.8.1 DEV.xml = Local\DLAP Document List.BindingInfo 2.0.8.1 DEV.xml
+		Local\DLAP Document List.BindingInfo 2.0.9.5 DEV.xml = Local\DLAP Document List.BindingInfo 2.0.9.5 DEV.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0.9.5", "2.0.9.5", "{729C03E3-6C65-4936-9792-A69B89999656}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\2.0.9.5\DLAP Document List 2.0.9.5 .msi = Deployment\2.0.9.5\DLAP Document List 2.0.9.5 .msi
+		Deployment\2.0.9.5\DLAP Document List.BindingInfo 2.0.9.5.xml = Deployment\2.0.9.5\DLAP Document List.BindingInfo 2.0.9.5.xml
+	EndProjectSection
+EndProject
+Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "BizTalkDLAPDocumentList", "BizTalkDLAPDocumentList\BizTalkDLAPDocumentList.btaproj", "{FB842DB0-1E8D-4714-A3E4-A1D00D908B4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebDeploy", "WebDeploy", "{01D2BE42-F73D-48C1-BEED-036570F2E360}"
+	ProjectSection(SolutionItems) = preProject
+		WebDeploy\DLAPDocumentList.zip = WebDeploy\DLAPDocumentList.zip
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{826A098E-0DA0-494B-85AC-FAF61D56A618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826A098E-0DA0-494B-85AC-FAF61D56A618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826A098E-0DA0-494B-85AC-FAF61D56A618}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{826A098E-0DA0-494B-85AC-FAF61D56A618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826A098E-0DA0-494B-85AC-FAF61D56A618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{826A098E-0DA0-494B-85AC-FAF61D56A618}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CFA28759-FF85-4712-A85E-8E9CDF7C51E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA28759-FF85-4712-A85E-8E9CDF7C51E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA28759-FF85-4712-A85E-8E9CDF7C51E2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CFA28759-FF85-4712-A85E-8E9CDF7C51E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA28759-FF85-4712-A85E-8E9CDF7C51E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA28759-FF85-4712-A85E-8E9CDF7C51E2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{120BEBC7-AE1D-4C21-9A8A-810BEE6B02F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{120BEBC7-AE1D-4C21-9A8A-810BEE6B02F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{120BEBC7-AE1D-4C21-9A8A-810BEE6B02F7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{120BEBC7-AE1D-4C21-9A8A-810BEE6B02F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{120BEBC7-AE1D-4C21-9A8A-810BEE6B02F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{120BEBC7-AE1D-4C21-9A8A-810BEE6B02F7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FB842DB0-1E8D-4714-A3E4-A1D00D908B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB842DB0-1E8D-4714-A3E4-A1D00D908B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB842DB0-1E8D-4714-A3E4-A1D00D908B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB842DB0-1E8D-4714-A3E4-A1D00D908B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{40BB1A8F-18BE-42D0-B888-809E3D9DD4E5} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{E7964D31-8FC0-404F-83CD-7C6C581399FF} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{92D9F02D-F644-4074-8DCE-3F482967AD65} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{23E9605A-19EE-41EE-8496-BA767FEC6936} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{7A36F600-E91F-4331-9444-93FCBA83AAF5} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{D8195AB1-80B5-4B07-B9E4-9687B1A705C8} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{6ECABC43-BD94-46CE-819C-91C73881F289} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{D80676A8-02AA-4C41-B0AD-B323BC3B4D33} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{9DF94699-B0B2-4172-9A8E-04B92E92BEB2} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{62ED9777-A264-4F30-A105-66F01868E7F3} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{F02B6948-CAFC-4C4F-92F9-9B1C8261B7B2} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{26621258-2CBE-4018-9A73-B2DF5342416D} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{360B7C2B-3F85-4A20-8047-8CAE9FAC2773} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{71A06330-8DF7-4945-B1F4-01D1CDAE0B1D} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{72D9D1E1-4FF3-462A-BAF6-26514378A775} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+		{729C03E3-6C65-4936-9792-A69B89999656} = {6BAEAF94-DC8F-4C7D-9070-214E262EEC1A}
+	EndGlobalSection
+EndGlobal

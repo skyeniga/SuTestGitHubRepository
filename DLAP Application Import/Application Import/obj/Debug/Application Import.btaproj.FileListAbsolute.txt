@@ -1,0 +1,25 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\Binding.xml
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\BizTalkServerInventory.json
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\Application Import.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\Application Import.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportDocumentCoordinatorLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportRecordTypeValues.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\SBA.BizTalk.Shared.MessageHelper.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\SBA.BizTalk.Shared.Salesforce.Documents.Logic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportRecordTypeValues.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportDocumentCoordinatorLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportOracleDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\bin\Debug\DLAPApplicationImportSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\obj\Debug\Application Import.btaprojResolveAssemblyReference.cache
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\obj\Debug\Application Import.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Application Import\obj\Debug\Application Import.pdb

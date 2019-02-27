@@ -1,0 +1,3 @@
+﻿<ns0:notificationsResponse xmlns:ns0="http://soap.sforce.com/2005/09/outbound" xmlns:ns1="urn:sobject.enterprise.soap.sforce.com" xmlns:ns2="urn:enterprise.soap.sforce.com">
+  <ns0:Ack>true</ns0:Ack>
+</ns0:notificationsResponse>

@@ -1,0 +1,5 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Salesforce Application Import Definition\bin\Debug\DLAPApplicationImportSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Salesforce Application Import Definition\bin\Debug\DLAPApplicationImportSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Salesforce Application Import Definition\bin\Debug\DLAPApplicationImportDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Salesforce Application Import Definition\obj\Debug\DLAPApplicationImportSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Salesforce Application Import Definition\obj\Debug\DLAPApplicationImportSalesforceDefinition.pdb

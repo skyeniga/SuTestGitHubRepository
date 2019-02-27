@@ -1,0 +1,45 @@
+{
+  "SchemaVersion": "1.0.0.0",
+  "ApplicationVersion": "1.0.0.0",
+  "BizTalkAssemblies": [
+    {
+      "Name": "SBA.ETRANObligation.Definition",
+      "Path": "bin\\SBA.ETRANObligation.Definition.dll"
+    },
+    {
+      "Name": "SBA.ETRANObligation.Definition.ETRAN",
+      "Path": "bin\\SBA.ETRANObligation.Definition.ETRAN.dll"
+    },
+    {
+      "Name": "SBA.ETRANObligation.Definition.Rules",
+      "Path": "bin\\SBA.ETRANObligation.Definition.Rules.dll"
+    },
+    {
+      "Name": "SBA.ETRANObligation.Definition.Salesforce",
+      "Path": "bin\\SBA.ETRANObligation.Definition.Salesforce.dll"
+    },
+    {
+      "Name": "SBA.ETRANObligation.Logic",
+      "Path": "bin\\SBA.ETRANObligation.Logic.dll"
+    }
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "Binding",
+      "Path": "bindings\\Binding.xml"
+    }
+  ],
+  "Assemblies": [],
+  "PreProcessingScripts": [],
+  "PostProcessingScripts": [],
+  "Files": [],
+  "Tokens": [],
+  "DeploymentSequence": [
+    "SBA.ETRANObligation.Definition",
+    "SBA.ETRANObligation.Definition.ETRAN",
+    "SBA.ETRANObligation.Definition.Rules",
+    "SBA.ETRANObligation.Definition.Salesforce",
+    "SBA.ETRANObligation.Logic",
+    "Binding"
+  ]
+}

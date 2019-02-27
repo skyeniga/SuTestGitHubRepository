@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EECB81D-92FB-4BE6-B940-F03C785D8624}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\ETRAN Obligation CData SF Queries.txt = Solution Items\ETRAN Obligation CData SF Queries.txt
+		Solution Items\ETRAN Obligation Entity Fields.txt = Solution Items\ETRAN Obligation Entity Fields.txt
+		Solution Items\ETranObligation_SF_Mapping_Spreadsheet.xlsx = Solution Items\ETranObligation_SF_Mapping_Spreadsheet.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{49CAEF8D-F891-4161-AE9E-B28750C6C1AB}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\Deploy Instructions.txt = Deployment\Deploy Instructions.txt
+		Deployment\ETRAN Obligation Bindings v2.0.10.2 For Lower Env.xml = Deployment\ETRAN Obligation Bindings v2.0.10.2 For Lower Env.xml
+		Deployment\ETRAN Obligation Bindings v2.0.10.2 For Production.xml = Deployment\ETRAN Obligation Bindings v2.0.10.2 For Production.xml
+		Deployment\ETran Obligation Legal Org Type Policy.xml = Deployment\ETran Obligation Legal Org Type Policy.xml
+		Deployment\ETran Obligation Legal Org Type Vocabulary.xml = Deployment\ETran Obligation Legal Org Type Vocabulary.xml
+		Deployment\ETRAN Obligation v2.0.10.2 NoPolicy.msi = Deployment\ETRAN Obligation v2.0.10.2 NoPolicy.msi
+		Deployment\ETRAN Obligation v2.0.10.2.msi = Deployment\ETRAN Obligation v2.0.10.2.msi
+		Deployment\ETRANObligation-soapui-project.xml = Deployment\ETRANObligation-soapui-project.xml
+		Deployment\ETranObligationTransport Get Bindings Policy.xml = Deployment\ETranObligationTransport Get Bindings Policy.xml
+		Deployment\ETranObligationTransport Vocabulary.xml = Deployment\ETranObligationTransport Vocabulary.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LocalDeploy", "LocalDeploy", "{B0693AE9-B85B-4173-909A-96BE0F0B22AF}"
+	ProjectSection(SolutionItems) = preProject
+		LocalDeploy\ETRAN Obligation Bindings Dev v2.0.10.2.xml = LocalDeploy\ETRAN Obligation Bindings Dev v2.0.10.2.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Versioning", "Versioning", "{9D097D43-D668-4161-8864-C6CC7E0CB1D9}"
+	ProjectSection(SolutionItems) = preProject
+		Versioning\AssemblyInfoShared.cs = Versioning\AssemblyInfoShared.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETRAN Obligation Definition Salesforce", "ETRAN Obligation Definition Salesforce\ETRAN Obligation Definition Salesforce.btproj", "{FE7385A9-9899-401D-8B1A-1F03D0733DA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETRAN Obligation Definition ETRAN", "ETRAN Obligation Definition ETRAN\ETRAN Obligation Definition ETRAN.btproj", "{9A3601EF-1718-4EB7-BC33-B56DE31EE7A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETRAN Obligation Logic", "ETRAN Obligation Logic\ETRAN Obligation Logic.btproj", "{5B12E22B-CF63-480A-AF70-3B892DB8E243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETRAN Obligation Definition", "ETRAN Obligation Definition\ETRAN Obligation Definition.btproj", "{E83A8F25-011A-4DE2-9597-0C0D52AD79FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test Files", "Test Files", "{081ACD2C-917B-40B1-87DA-ACC8D912E2EA}"
+	ProjectSection(SolutionItems) = preProject
+		Test Files\01_SF_Application__c_Query_777111001.xml = Test Files\01_SF_Application__c_Query_777111001.xml
+		Test Files\02_SF_Property__c_Query_a0Mr0000000Q0jbEAC.xml = Test Files\02_SF_Property__c_Query_a0Mr0000000Q0jbEAC.xml
+		Test Files\03_SF_Applicant__c_Query_a0Mr0000000Q0jbEAC.xml = Test Files\03_SF_Applicant__c_Query_a0Mr0000000Q0jbEAC.xml
+		Test Files\04_SF_Account_Query_a0Mr0000000Q0jbEAC.xml = Test Files\04_SF_Account_Query_a0Mr0000000Q0jbEAC.xml
+		Test Files\05_SF_Contact_Query_a0Mr0000000Q0jbEAC.xml = Test Files\05_SF_Contact_Query_a0Mr0000000Q0jbEAC.xml
+		Test Files\06_SF_Loan__c_Query_a0mr0000000W9oPAAS.xml = Test Files\06_SF_Loan__c_Query_a0mr0000000W9oPAAS.xml
+		Test Files\07_SF_Disaster__c_Query_a0mr0000000W9oPAAS.xml = Test Files\07_SF_Disaster__c_Query_a0mr0000000W9oPAAS.xml
+		Test Files\08_ETRAN_Originate_777111001.xml = Test Files\08_ETRAN_Originate_777111001.xml
+		Test Files\09_SF_Loan__c_Update_a0mr0000000W9oPAAS.xml = Test Files\09_SF_Loan__c_Update_a0mr0000000W9oPAAS.xml
+		Test Files\XX_SF_ ENTITY _Query_a0Mr0000000Q0jbEAC.xml = Test Files\XX_SF_ ENTITY _Query_a0Mr0000000Q0jbEAC.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETRAN Obligation Definition Rules", "ETRAN Obligation Definition Rules\ETRAN Obligation Definition Rules.btproj", "{38A63874-786E-4012-A534-55AC24D03050}"
+EndProject
+Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "BizTalkEtranObligation", "BizTalkEtranObligation\BizTalkEtranObligation.btaproj", "{EE353B4F-A086-4205-817A-0AF504E62C29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE7385A9-9899-401D-8B1A-1F03D0733DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7385A9-9899-401D-8B1A-1F03D0733DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7385A9-9899-401D-8B1A-1F03D0733DA1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FE7385A9-9899-401D-8B1A-1F03D0733DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7385A9-9899-401D-8B1A-1F03D0733DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE7385A9-9899-401D-8B1A-1F03D0733DA1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9A3601EF-1718-4EB7-BC33-B56DE31EE7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3601EF-1718-4EB7-BC33-B56DE31EE7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3601EF-1718-4EB7-BC33-B56DE31EE7A0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9A3601EF-1718-4EB7-BC33-B56DE31EE7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3601EF-1718-4EB7-BC33-B56DE31EE7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A3601EF-1718-4EB7-BC33-B56DE31EE7A0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5B12E22B-CF63-480A-AF70-3B892DB8E243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B12E22B-CF63-480A-AF70-3B892DB8E243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B12E22B-CF63-480A-AF70-3B892DB8E243}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5B12E22B-CF63-480A-AF70-3B892DB8E243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B12E22B-CF63-480A-AF70-3B892DB8E243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B12E22B-CF63-480A-AF70-3B892DB8E243}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E83A8F25-011A-4DE2-9597-0C0D52AD79FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83A8F25-011A-4DE2-9597-0C0D52AD79FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83A8F25-011A-4DE2-9597-0C0D52AD79FD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E83A8F25-011A-4DE2-9597-0C0D52AD79FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83A8F25-011A-4DE2-9597-0C0D52AD79FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83A8F25-011A-4DE2-9597-0C0D52AD79FD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{38A63874-786E-4012-A534-55AC24D03050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A63874-786E-4012-A534-55AC24D03050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A63874-786E-4012-A534-55AC24D03050}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{38A63874-786E-4012-A534-55AC24D03050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A63874-786E-4012-A534-55AC24D03050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A63874-786E-4012-A534-55AC24D03050}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EE353B4F-A086-4205-817A-0AF504E62C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE353B4F-A086-4205-817A-0AF504E62C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE353B4F-A086-4205-817A-0AF504E62C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE353B4F-A086-4205-817A-0AF504E62C29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

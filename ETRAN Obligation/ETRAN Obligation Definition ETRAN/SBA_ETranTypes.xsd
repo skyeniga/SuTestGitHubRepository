@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!--
+	Publication Date: 12/12/2016. 
+
+	These are the datatype definitions that are unique to ETran, and wouldn't be used by other SBA systems. For example, 
+	other systems at the SBA which allow XML updates might have use for SBA_BusPerInd, SBA_TaxId and even loan related 
+	types such as SBA_FixVarInd. It promotes sharing more if potentially sharable types are in SBA_SimpleTypes, not here. 
+
+	The following are alphabetical by name. A type is explained only if it isn't obvious. 
+	-->
+	<xs:simpleType name="SBA_1416Control"><!-- Uniquely indentifies a disbursement. -->
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{1,10}_\d{1,3}"/><!-- LoanAppNmb, _, disbursment sequence number -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ActionsLoanServicing">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="6"/>
+			<xs:maxLength value="9"/>
+			<xs:enumeration value="cancel"/>
+			<xs:enumeration value="reinstate"/>
+			<xs:enumeration value="update"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ActionsLocate"><!-- (May be moved to SBA_SimpleTypes if needed by other systems.) -->
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="locate"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ActionsLocateOrUpdate"><!-- (May be moved to SBA_SimpleTypes if needed by other systems.) -->
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="locate"/>
+			<xs:enumeration value="update"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ActionsInsertOrDelete"><!-- (May be moved to SBA_SimpleTypes if needed by other systems.) -->
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="insert"/>
+			<xs:enumeration value="delete"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ActionsInsertDeleteOrDeleteAllIfUpdatingAnExistingApp"><!-- Current name, used by 5.0+. See next simpleType. -->
+		<!--
+		This action attribute type is used in complexTypes where all subelements are prime keys (which disallows update). 
+		Also, there would be no way to specify both the prime key to be updated and also its new value. 
+		-->
+		<xs:restriction base="xs:string">
+			<!-- In all Origination web services (Originate3, OrigScore, OrigUpdate or Underwriting), insert may be given: -->
+			<xs:enumeration value="insert"/>
+			<!-- Only in updating web services (OrigUpdate or Underwriting) may delete or deleteall be given: -->
+			<xs:enumeration value="delete"/>
+			<!--
+			If given, "deleteall" must be in only the first occurrence of the complexType within the App element, 
+			and all remaining occurrences of the same complexType must specify action="insert". 
+			-->
+			<xs:enumeration value="deleteall"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ActionsInsertOrDeleteIfUpdatingAnExistingApp"><!-- Original name, used by 4.0. See previous simpleType. -->
+		<!--
+		This action attribute type is used in complexTypes where all subelements are prime keys (which disallows update). 
+		Also, there would be no way to specify both the prime key to be updated and also its new value. 
+		-->
+		<xs:restriction base="xs:string">
+			<!-- In all Origination web services (Originate3, OrigScore, OrigUpdate or Underwriting), insert may be given: -->
+			<xs:enumeration value="insert"/>
+			<!-- Only in updating web services (OrigUpdate or Underwriting) may delete or deleteall be given: -->
+			<xs:enumeration value="delete"/>
+			<!--
+			If given, "deleteall" must be in only the first occurrence of the complexType within the App element, 
+			and all remaining occurrences of the same complexType must specify action="insert". 
+			-->
+			<xs:enumeration value="deleteall"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ActionsInsertOrUpdateIfUpdatingAnExistingApp">
+		<!-- This action attribute type is used in complexTypes that must exist for the app to be valid (presently, only LoanApplication). -->
+		<xs:restriction base="xs:string">
+			<!-- In all Origination web services (Originate3, OrigScore, OrigUpdate or Underwriting), insert may be given: -->
+			<xs:enumeration value="insert"/>
+			<!-- Only in updating web services (OrigUpdate or Underwriting) may update be given: -->
+			<xs:enumeration value="update"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ActionsInsertUpdateDeleteOrDeleteAllIfUpdatingAnExistingApp">
+		<xs:restriction base="xs:string">
+			<!-- In all Origination web services (Originate3, OrigScore, OrigUpdate or Underwriting), insert may be given: -->
+			<xs:enumeration value="insert"/>
+			<!-- Only in updating web services (OrigUpdate or Underwriting) may update, delete or deleteall be given: -->
+			<xs:enumeration value="update"/>
+			<xs:enumeration value="delete"/>
+			<!--
+			If given, "deleteall" must be in only the first occurrence of the complexType within the App element, 
+			and all remaining occurrences of the same complexType must specify action="insert". 
+			-->
+			<xs:enumeration value="deleteall"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ActionsInsertUpdateOrDeleteIfUpdatingAnExistingApp">
+		<xs:restriction base="xs:string">
+			<!-- In all Origination web services (Originate3, OrigScore, OrigUpdate or Underwriting), insert may be given: -->
+			<xs:enumeration value="insert"/>
+			<!-- Only in updating web services (OrigUpdate or Underwriting) may update or delete be given: -->
+			<xs:enumeration value="update"/>
+			<xs:enumeration value="delete"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_DisbClosingCode">
+		<xs:restriction base="xs:int">
+			<xs:enumeration value="1"/><!-- Initial Full.-->
+			<xs:enumeration value="2"/><!-- Initial Partial.-->
+			<xs:enumeration value="3"/><!-- Subsequent Partial.-->
+			<xs:enumeration value="4"/><!-- Subsequent Full.-->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ETranVersions">
+		<!--
+		The SBA's XML parser can handle multiple formats, with no loss of performance.  Support for the 2001 WDDX format 
+		and for version 1.0/1.3 has been discontinued. Currently plans are to support only 2 major versions: current 3.0/3.2/3.3, 
+		and previous 2.0/2.3. It is your choice as to which format you implement within your system. However SBA recommends 
+		that all new implementation efforts utilize <SBA_ETran version="3.3">. 
+		-->
+		<xs:restriction base="xs:string">
+			<!-- <xs:enumeration value="1.0"/> -->
+			<!-- Original 22 table tags version, structured on isolating independent multiple relationships, discontinued. -->
+			<xs:enumeration value="2.0"/>
+			<!--
+			Starting with 2.0 business and person elements were eliminated, resulting in a 20 table tags version of SBA_ETran. 
+			As of 2.0, business and person data is passed with the borrower, guarantor or principal elements, along with the 
+			tag: <BusPerInd>B</BusPerInd> or <BusPerInd>P</BusPerInd>. This element replaces the prior tags BorrBusPerInd, 
+			GuarBusPerInd and PrinBusPerInd. The other change is simplifying the address elements to remove the prefix 'Bus' 
+			or 'Per'. For example, BusPhyAddrStCd is now PhyAddrStCd. This can now be inferred from BusPerInd. 
+			-->
+			<xs:enumeration value="2.3"/>
+			<!--
+			2.3 further simplifies SBA_ETran, through the use of more English-like names. Otherwise, it's the same as 2.0. 
+			-->
+			<xs:enumeration value="3.0"/>
+			<!--
+			For Loan Origination, 3.0 is the same as 2.3. But 3.0 is significant in that it's the first version that supports 
+			Loan Servicing. In Loan Servicing, there are more actions allowed a new table for Disbursement, and some behavioral 
+			differences: When action="update", not coding an element means "keep its value the same", but coding <tag></tag> 
+			means "erase its data" (in database terminology, NULL). For data elements that don't allow NULL, the Loan Servicing 
+			XSD uses SBA_Mand datatypes to prevent <tag></tag>. 
+			
+			Since the SBA_ETran version attribute's default ("fixed") is 1.0, Loan Servicing E-Tran XML must specify the 
+			version attribute in the root element SBA_ETran, and that version must be at least 3.0. 
+			-->
+			<xs:enumeration value="3.2"/>
+			<!--
+			3.2 simplifies the XML somewhat by moving BusinessPrincipal data to Principal. Recommended for all new development. 
+			-->
+			<xs:enumeration value="3.3"/>
+			<!--
+			3.3 makes it clearer which participants are persons, adds a new type of particpant (Associate) to Loan 
+			Servicing and adds 3 new international address elements (country code, postal code and state name). The 
+			international address elements were originally for persons only. But with version 3.4's added support for 
+			international address elements for business, this restriction was relaxed in 3.3. Now international address 
+			elements may be given for both businesses and persons in 3.3. Also only in Servicing, for borrowers, guarantors 
+			and principals (but not associates), there are new outlaw code and description elements. Also only in Servicing, 
+			the Loan element now allows action="locate", meaning that the Loan element is being used only to identify which 
+			loan other changes apply to. (That is, you're not trying to update financial information associated with the 
+			loan.) When action="locate" is given, the only allowable subelements are LoanApplicNmb (SBA application number) 
+			or LoanNmb (SBA loan number). If both are given, they must match the same loan (optional safeguard technique). 
+			-->
+			<xs:enumeration value="3.3x"/>
+			<!--
+			Servicing type for 503 Pool Loans. Colson feed only. Not for use by lenders. 
+			-->
+			<xs:enumeration value="3.4"/>
+			<!--
+			3.4 adds an element for whether or not the lender is allowed to make loans outside of the their area of 
+			operations, ARC reasons for ARC loans in Loan Orignination, DUNS numbers for businesses, and international 
+			address fields (country code, postal code and state name) for both businesses and persons. (As a result, 
+			international address elements are now allowed for both businesses and persons in version 3.3 as well.) 
+			-->
+			<xs:enumeration value="3.4c"/>
+			<xs:enumeration value="3.4i"/>
+			<xs:enumeration value="3.4p"/>
+			<!--
+			3.4c ("credit"), 3.4i ("internal") and 3.4p ("pool") are mostly the same as 3.4, but are used in SBA 
+			internal processes only. Not for use by lenders. Version specifics: 
+			3.4c	a superset of 3.4 that adds 6 credit scoring elements for 3.4 submissions that originate 
+					from within the SBA. 
+			3.4i	a subset of 3.4 that represent permitted optional changes that may be applied at the time 
+					as an SBA underwriting decision is made. 
+			3.4p	a very small subset of 3.4 for 503 pooled loans. 
+			-->
+			<xs:enumeration value="3.5"/>
+			<!--
+			Makes certain lender-related elements optional for direct loan applications (processing methods where the SBA 
+			is the lender). The same elements remain mandatory for lenders and other processing methods. Adds support for 
+			multiple eligibility questions, change of asset ownership, Community Advantage Initiative and a more generalized 
+			way to specify reasons. (LoanReason elements are required for restricted processing methods to specify why that 
+			processing method is being used and/or justified for a given loan application, as sometimes defined by Congress.) 
+			-->
+			<xs:enumeration value="3.6"/>
+			<!--
+			Fixes an orphaned complexType for change of asset ownership. Redefines Comments from multiple occurrences with 
+			maxLength="255" (SBA_Str255) into one big xs:string without any xs:restriction. This eliminates the previous 
+			need to have a sequence number, which has been removed in 3.6. 
+			-->
+			<xs:enumeration value="3.7"/>
+			<!--
+			Changes to allow 2 phases of interest: LoanApplication.InterestStructureCd, Loan.InterestStructureCd, Interest 
+			element and subelements of Interest. Removal of old single-phase elements in LoanApplication and Loan. 
+			Addition of new elements: Collateral.CollateralSubtypCd, Guarantor.GuaranteeTypCd, Principal.VetCertInd and 
+			LoanApplication.LimitExemptionInd. 
+			For details, see SBA_ETran.3.7.orig.xsd and SBA_ETran.3.7.serv.xsd. 
+			-->
+			<xs:enumeration value="3.8"/>
+			<!--
+			Adds LoanApplication.UnderwritingBy element to allow a lenders to renounce direct authority to approve an application. 
+			For use with any origination XML interface except OrigBypass, OrigUpdate or Underwriting. 
+			-->
+			<xs:enumeration value="3.8i"/>
+			<!--
+			For use with the OrigUpdate and Underwriting Web Services. Contains fewer elements than 3.8. 
+			-->
+			<xs:enumeration value="3.9"/>
+			<!--
+			When entering the ChangeOfOwnership element, the qualifications of the business appraiser have now been moved to a 
+			separate BusAppr element to represent a database-driven one-to-many relationship. Also, 3.9 contains the first 
+			documentation of the BorrowerRace element (for disaster loan applications only). 
+			Added new element LoanApplication.AgentInvolved. 
+			-->
+			<xs:enumeration value="4.0"/>
+			<!--
+			This version is not yet officially supported. It represents the "grand unification" version that will be usable by ALL 
+			Origination web services. It's capable of being used by "new app" web services (currently, Originate3 and OrigScore), 
+			but can also be used by "existing app" web services (currently, OrigUpdate and Underwriting). The same XML version now 
+			supports them all. This implies coding differences by submission context that will be very familiar to users of the 
+			Servicing web services for existing loans. 
+
+			CODING DIFFERENCES ASSOCIATED WITH SUBMISSION CONTEXT AND VERSION: 
+			(1)	Because Underwriting may use 4.0, 4.0 must allow LiquidCredit elements (LiquidCreditScore, CreditReport and CreditScore). 
+				But those elements may be given ONLY by SBA Reviewers. Anyone who submits 4.0 XML with any LiquidCredit element, but 
+				who is NOT an SBA Reviewer, will get an error. 
+			(2)	Because "new app" web services may use 4.0, 4.0 must allow ProcessingMethodCd, PartnerInformation and LocationId. But 
+				once an app exists, they cannot be changed (neither in web pages, nor by XML). Therefore, "existing app" web services 
+				may not give those 3 elements. Doing so will result in an error. 
+			(3)	Regardless of whether due to web page or web service processing, once a lender has elected to have an app underwritten 
+				by the SBA, that election is irrevocable for that app. Therefore, existing app web services may not contain the 
+				UnderwritingBy element with the value LNDR once the app is marked as SBA underwritten. (It may, however, be given with 
+				the value SBA.) 
+			(4)	All group elements other than LoanApplication: "New app" web services never need to give action="insert" on those group 
+				elements (for example, Borrower, UseOfProceeds, etc), because action="insert" was assumed. That was also true of 
+				"existing app" web services using previous XML versions. (Those same group elements were predeleted to allow reinsertion 
+				from scratch.) But as of version 4.0, all group elements other than LoanApplication have "prime keys", a database term 
+				for data elements that uniquely specify which row in the database is to be processed. As a result, such group elements 
+				are NOT predeleted and, in most cases, may specify action="update" or action="delete". This is the most significant 
+				coding difference introduced in version 4.0. Only users of "existing app" web services who switch to version 4.0 are 
+				affected. 
+			(5)	If all elements in a group element (complexType) are part of the prime key, there's no way to accomplish action="update", 
+				so that action has to be disallowed. BorrowerRace, BusAppr, PrincipalRace, SpecialPurpose and UnderservedMarket fall 
+				into that category. That's because you can't give the same code element twice, once as a prime key and then again with a 
+				different value for it to contain. For those 5 complexTypes, you must give 2 instances of the complexType: Use 
+				action="delete" on the instance with the old code value and use action="insert" on the instance with the new code value. 
+			(6)	BorrPhnNmb is eliminated. (It was an old Borrower element that was made redundant by the PrimaryPhone element introduced 
+				in version 3.5 for Borrower, Guarantor and Principal.) This is a "breaking change". BorrPhnNmb may no longer be given. 
+			-->
+			<xs:enumeration value="5.0"/>
+			<!--
+			Changes documented in SBA_ETranTypes.xsd (this file): 
+			(1)	Added a new enumeration value "AD" to SBA_OrigStatCd (part of the SBA_Etran_Response). 
+			(2)	Added a new enumeration value "deleteall" to 2 of the SBA_Actions simpleTypes (allowing "delete-and-insert logic"). 
+				Only useful when updating an existing app (OrigUpdate and Underwriting web services). 
+			Changes documented in SBA_ETran.5.0.orig.xsd (Origination): 
+			(2)	Added many new child elements to LoanApplication, Borrower, Collateral, Guarantor, Injection, Principal and UseOfProceeds. 
+				Added new element StandbyAgreement with 8 child elements. 
+				Added new child element ControlInterestType to Borrower and Principal. 
+			(3)	Removed AffiliatedInd child elements from Borrower, Guarantor and Principal. 
+				Removed long-deprecated (for 3 years) child elements associated with street addresses (all ending in "StrtNmb" and "SuffixName"). 
+			(4)	Renamed all existing Collateral child elements with "Collateral" prefix to remove that prefix, except CollateralSequenceNmb. 
+				(CollateralSequenceNmb is needed to establish the link between a Collateral item and its CollateralLiens, so it must retain prefix.) 
+				Shortened some other Collateral child element names with abbreviations, both for consistency and to lessen XML overhead. 
+				Renamed Guarantor.GuaranteeTypCd to Guarantor.GntyTypCd,                both for consistency and to lessen XML overhead. 
+			(5)	Better organized all container elements with child elements to list prime key elements first, then data elements alphabetically. 
+				Better documented how some data      elements are mandatory when action="insert" but optional  when action="update" or action="delete". 
+				Better documented how some prime key elements are ignored   when action="insert" but mandatory when action="update" or action="delete". 
+				Better documented how SequenceNmb elements are allocated (sequentially, starting from 1) when they become prime keys after insert. 
+			-->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_FreqCode">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="1"/>
+			<xs:enumeration value=""/><!-- That is, optional. -->
+			<xs:enumeration value="A"/><!-- Annual -->
+			<xs:enumeration value="M"/><!-- Manual -->
+			<xs:enumeration value="Q"/><!-- Quarterly -->
+			<xs:enumeration value="S"/><!-- Semi-annually -->
+			<xs:enumeration value="X"/><!-- Other, SBA_FreqSchedule defines which months. -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_FreqSchedule">
+		<xs:restriction base="xs:decimal">
+			<xs:pattern value="(0[1-9]){0,9}(1[0-2]){0,3}"/>
+			<!-- Months of the year (01 through 12), in ascending order, when payment is scheduled. -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_GntyFee">
+		<xs:restriction base="xs:decimal">
+			<xs:pattern value="\d{0,5}[.]{0,1}\d{0,2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_OrigStatCd">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2"/>
+			<xs:enumeration value="AD"/><!-- Awaiting Documents -->
+			<xs:enumeration value="AP"/><!-- Approved Pending Funds -->
+			<xs:enumeration value="FD"/><!-- Funded -->
+			<xs:enumeration value="IP"/><!-- In-Process -->
+			<xs:enumeration value="R1"/><!-- Reviewer 1 -->
+			<xs:enumeration value="R2"/><!-- Reviewer 2 -->
+			<xs:enumeration value="R3"/><!-- Reviewer 3 -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ServResultInd">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="1"/>
+			<xs:enumeration value="F"/><!-- Failure -->
+			<xs:enumeration value="S"/><!-- Success -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_ServSchedNmbValue">
+		<xs:restriction base="xs:int"/>
+	</xs:simpleType>
+	<!--
+	<xs:complexType name="SBA_ServSchedNmb">
+		<xs:simpleContent>
+			<xs:extension base="SBA_ServSchedNmbValue">
+				<xs:attribute name="type" type="SBA_MandPaymentType"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	-->
+	<xs:simpleType name="SBA_ServStatCd">
+		<xs:restriction base="xs:decimal">
+			<xs:pattern value="\d[.]\d"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SBA_TermStartType">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="1"/>
+			<xs:enumeration value=""/><!-- That is, optional. -->
+			<xs:enumeration value="F"/><!-- Loan term starts at first disbursement date. -->
+			<xs:enumeration value="N"/><!-- Loan term starts at loan note date. -->
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

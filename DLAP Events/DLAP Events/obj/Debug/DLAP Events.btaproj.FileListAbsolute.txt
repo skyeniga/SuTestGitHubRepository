@@ -1,0 +1,38 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAPEventsBindingInfo.xml
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\BizTalkServerInventory.json
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAP Events.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAP Events.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\obj\Debug\DLAP Events.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\obj\Debug\DLAP Events.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAPEventsLogic.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAPEventsDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAPEventsLogic.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAPEventsOracleDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\bin\Debug\DLAPEventsSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events\obj\Debug\DLAP Events.btaprojResolveAssemblyReference.cache
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAPEventsBindingInfo.xml
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\BizTalkServerInventory.json
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAP Events.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAP Events.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAPEventsDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAPEventsLogic.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\Microsoft.XLANGs.BizTalk.Engine.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\Microsoft.XLANGs.Engine.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAPEventsDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAPEventsLogic.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAPEventsOracleDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\bin\Debug\DLAPEventsSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\obj\Debug\DLAP Events.btaprojResolveAssemblyReference.cache
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\obj\Debug\DLAP Events.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events\obj\Debug\DLAP Events.pdb

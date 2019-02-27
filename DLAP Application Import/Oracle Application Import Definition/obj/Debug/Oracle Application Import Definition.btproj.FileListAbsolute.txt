@@ -1,0 +1,4 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Oracle Application Import Definition\bin\Debug\DLAPApplicationImportOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Oracle Application Import Definition\bin\Debug\DLAPApplicationImportOracleDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Oracle Application Import Definition\obj\Debug\DLAPApplicationImportOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Application Import\Oracle Application Import Definition\obj\Debug\DLAPApplicationImportOracleDefinition.pdb

@@ -1,0 +1,4 @@
+<ns0:Request xmlns:ns0="http://SBA.gov/Salesforce/Query/Test/">
+	<ns0:SQLCommand>SELECT c.Id ContactId, apl.Id ApplicantId, c.Birthdate, c.FirstName, c.LastName, c.MiddleName, c.Suffix, c.Phone, c.MobilePhone, c.Work_Phone__c, c.MailingStreet, c.MailingCity, c.MailingState, c.MailingPostalCode FROM Contact c INNER JOIN Applicant__c apl ON c.Id=apl.Contact__c WHERE apl.Application__c=@ApplicationId</ns0:SQLCommand>
+	<ns0:ApplicationId>a0Mr0000000Q0jbEAC</ns0:ApplicationId>
+</ns0:Request>

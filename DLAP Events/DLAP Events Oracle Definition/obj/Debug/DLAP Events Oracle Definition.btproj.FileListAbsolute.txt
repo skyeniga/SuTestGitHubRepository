@@ -1,0 +1,12 @@
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Oracle Definition\bin\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Oracle Definition\bin\Debug\DLAPEventsOracleDefinition.pdb
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Oracle Definition\obj\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Oracle Definition\obj\Debug\DLAPEventsOracleDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Oracle Definition\bin\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Oracle Definition\bin\Debug\DLAPEventsOracleDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Oracle Definition\obj\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Oracle Definition\obj\Debug\DLAPEventsOracleDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Oracle Definition\bin\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Oracle Definition\bin\Debug\DLAPEventsOracleDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Oracle Definition\obj\Debug\DLAPEventsOracleDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Oracle Definition\obj\Debug\DLAPEventsOracleDefinition.pdb

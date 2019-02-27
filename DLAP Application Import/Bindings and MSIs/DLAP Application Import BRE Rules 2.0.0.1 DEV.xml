@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<brl xmlns="http://schemas.microsoft.com/businessruleslanguage/2002">
+  <vocabulary id="ef011e3d-23bd-4254-a559-c37b463ed7c7" name="DLAP Record Type Values" uri="" description="">
+    <version major="2" minor="1" description="" modifiedby="SBA\Apudota" date="2018-03-01T16:26:11.9342423-05:00" />
+    <vocabularydefinition id="0129f439-a24b-459f-8bbd-84ed2b6848d6" name="New_Read_Only_Applicant" description="">
+      <bindingdefinition>
+        <classmemberbindingdefinition member="set_New_Read_Only_Applicant" type="void">
+          <classinfo class="RecordTypeValues" instance="0">
+            <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+            <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+            <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+          </classinfo>
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </classmemberbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set New_Read_Only_Applicant To{0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="b2f4016d-51b2-41b9-825a-c781628eac76" name="Default_Applicant" description="">
+      <bindingdefinition>
+        <classmemberbindingdefinition member="set_Default_Applicant" type="void">
+          <classinfo class="RecordTypeValues" instance="0">
+            <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+            <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+            <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+          </classinfo>
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </classmemberbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set Default_Applicant To{0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="005f9437-111e-43eb-b3e6-c9fa66e6676b" name="Affiliate_Applicant" description="">
+      <bindingdefinition>
+        <classmemberbindingdefinition member="set_Affiliate_Applicant" type="void">
+          <classinfo class="RecordTypeValues" instance="0">
+            <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+            <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+            <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+          </classinfo>
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </classmemberbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set Affiliate_Applicant To{0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="e2295cac-96e6-48bd-9616-18eaf3db1fab" name="Business_Owner_Applicant" description="">
+      <bindingdefinition>
+        <classmemberbindingdefinition member="set_Business_Owner_Applicant" type="void">
+          <classinfo class="RecordTypeValues" instance="0">
+            <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+            <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+            <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+          </classinfo>
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </classmemberbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set Business_Owner_Applicant To{0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="ffe82dd3-022e-4459-b7ed-9508a48f0f88" name="Home_Loan_Application" description="">
+      <bindingdefinition>
+        <classmemberbindingdefinition member="set_Home_Loan_Application" type="void">
+          <classinfo class="RecordTypeValues" instance="0">
+            <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+            <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+            <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+          </classinfo>
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </classmemberbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set Home_Loan_Application To{0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="8a48f88d-9ac8-4909-8dda-e62ac20f11d4" name="Business_Entity_Applicant" description="">
+      <bindingdefinition>
+        <classmemberbindingdefinition member="set_Business_Entity_Applicant" type="void">
+          <classinfo class="RecordTypeValues" instance="0">
+            <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+            <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+            <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+          </classinfo>
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </classmemberbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set Business_Entity_Applicant To{0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="27f27941-b48b-4ea6-ad7d-bb14eac27749" name="Business_Loan_Application" description="">
+      <bindingdefinition>
+        <classmemberbindingdefinition member="set_Business_Loan_Application" type="void">
+          <classinfo class="RecordTypeValues" instance="0">
+            <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+            <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+            <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+          </classinfo>
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </classmemberbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set Business_Loan_Application To{0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="3da62c23-488d-4d6d-b81e-6c6ba27ab6d0" name="New_Read_Only_Application" description="">
+      <bindingdefinition>
+        <classmemberbindingdefinition member="set_New_Read_Only_Application" type="void">
+          <classinfo class="RecordTypeValues" instance="0">
+            <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+            <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+            <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+          </classinfo>
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </classmemberbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set New_Read_Only_Application To{0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+    <vocabularydefinition id="59ea1b9f-67b6-4528-80ff-0dceef5dcd7f" name="EIDL_Application" description="">
+      <bindingdefinition>
+        <classmemberbindingdefinition member="set_EIDL_Application" type="void">
+          <classinfo class="RecordTypeValues" instance="0">
+            <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+            <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+            <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+          </classinfo>
+          <argument position="0">
+            <valuedefinitionliteral type="string">
+              <string />
+            </valuedefinitionliteral>
+          </argument>
+        </classmemberbindingdefinition>
+      </bindingdefinition>
+      <formatstring language="en-US" string="Set EIDL_Application To{0}" delimiter="{[0-9]+}">
+        <argument position="0">
+          <valuedefinitionliteral type="string">
+            <string />
+          </valuedefinitionliteral>
+        </argument>
+      </formatstring>
+    </vocabularydefinition>
+  </vocabulary>
+  <ruleset name="Set DLAP RecordType Values">
+    <version major="2" minor="1" description="" modifiedby="SBA\Apudota" date="2018-03-01T16:34:34.7228625-05:00" />
+    <configuration />
+    <bindings>
+      <class ref="RecordTypeValues" class="RecordTypeValues" instance="0" instances="16" selectivity="1">
+        <assembly>DLAPApplicationImportRecordTypeValues, Version=2.0.0.1, Culture=neutral, PublicKeyToken=e88caed7579907c1</assembly>
+        <!--C:\Windows\Microsoft.Net\assembly\GAC_MSIL\DLAPApplicationImportRecordTypeValues\v4.0_2.0.0.1__e88caed7579907c1\DLAPApplicationImportRecordTypeValues.dll-->
+        <namespace>DLAPApplicationImportRecordTypeValues</namespace>
+      </class>
+    </bindings>
+    <rule name="Set Salesforce Id Values" priority="0" active="true">
+      <if>
+        <compare operator="equal">
+          <vocabularylink uri="3f0e9bcc-6212-4e6a-853c-e517f157a626" element="05703dd9-1111-40b8-890d-ad7bfc45a925" />
+          <lhs>
+            <constant>
+              <string>1</string>
+            </constant>
+          </lhs>
+          <rhs>
+            <constant>
+              <string>1</string>
+            </constant>
+          </rhs>
+        </compare>
+      </if>
+      <then>
+        <function>
+          <vocabularylink uri="ef011e3d-23bd-4254-a559-c37b463ed7c7" element="7e8c4d66-5e06-46bc-af19-1e208faa8e3f" />
+          <classmember member="set_Affiliate_Applicant" sideeffects="true">
+            <classref ref="RecordTypeValues" />
+            <argument>
+              <constant>
+                <string>012r00000005mbVAAQ</string>
+              </constant>
+            </argument>
+          </classmember>
+        </function>
+        <function>
+          <vocabularylink uri="ef011e3d-23bd-4254-a559-c37b463ed7c7" element="2b4ecc4d-ff3c-440f-8805-509972a5ec82" />
+          <classmember member="set_Business_Entity_Applicant" sideeffects="true">
+            <classref ref="RecordTypeValues" />
+            <argument>
+              <constant>
+                <string>012r00000005mbWAAQ</string>
+              </constant>
+            </argument>
+          </classmember>
+        </function>
+        <function>
+          <vocabularylink uri="ef011e3d-23bd-4254-a559-c37b463ed7c7" element="4fc10eef-6f87-46d0-808f-023388e75e91" />
+          <classmember member="set_Business_Owner_Applicant" sideeffects="true">
+            <classref ref="RecordTypeValues" />
+            <argument>
+              <constant>
+                <string>012r00000005oBjAAI</string>
+              </constant>
+            </argument>
+          </classmember>
+        </function>
+        <function>
+          <vocabularylink uri="ef011e3d-23bd-4254-a559-c37b463ed7c7" element="afabf73e-ff28-4b32-9819-e4d8e0571364" />
+          <classmember member="set_Default_Applicant" sideeffects="true">
+            <classref ref="RecordTypeValues" />
+            <argument>
+              <constant>
+                <string>012r00000005YmeAAE</string>
+              </constant>
+            </argument>
+          </classmember>
+        </function>
+        <function>
+          <vocabularylink uri="ef011e3d-23bd-4254-a559-c37b463ed7c7" element="e0f05755-f40c-4fbc-9c97-f4f5a58f3868" />
+          <classmember member="set_New_Read_Only_Applicant" sideeffects="true">
+            <classref ref="RecordTypeValues" />
+            <argument>
+              <constant>
+                <string>012r00000005YmfAAE</string>
+              </constant>
+            </argument>
+          </classmember>
+        </function>
+        <function>
+          <vocabularylink uri="ef011e3d-23bd-4254-a559-c37b463ed7c7" element="cbb80c13-d3d5-4230-9741-682ae2118540" />
+          <classmember member="set_Business_Loan_Application" sideeffects="true">
+            <classref ref="RecordTypeValues" />
+            <argument>
+              <constant>
+                <string>012r00000005DkSAAU</string>
+              </constant>
+            </argument>
+          </classmember>
+        </function>
+        <function>
+          <vocabularylink uri="ef011e3d-23bd-4254-a559-c37b463ed7c7" element="614fbfea-69eb-4269-860d-8466f65537f3" />
+          <classmember member="set_EIDL_Application" sideeffects="true">
+            <classref ref="RecordTypeValues" />
+            <argument>
+              <constant>
+                <string>012r00000005DkTAAU</string>
+              </constant>
+            </argument>
+          </classmember>
+        </function>
+        <function>
+          <vocabularylink uri="ef011e3d-23bd-4254-a559-c37b463ed7c7" element="d1fbb2ed-b398-4899-802e-559df4d6fd18" />
+          <classmember member="set_Home_Loan_Application" sideeffects="true">
+            <classref ref="RecordTypeValues" />
+            <argument>
+              <constant>
+                <string>012r00000005DkUAAU</string>
+              </constant>
+            </argument>
+          </classmember>
+        </function>
+        <function>
+          <vocabularylink uri="ef011e3d-23bd-4254-a559-c37b463ed7c7" element="60e9f377-2064-49e7-9dae-3f2685de0bd7" />
+          <classmember member="set_New_Read_Only_Application" sideeffects="true">
+            <classref ref="RecordTypeValues" />
+            <argument>
+              <constant>
+                <string>012r00000005YmgAAE</string>
+              </constant>
+            </argument>
+          </classmember>
+        </function>
+      </then>
+    </rule>
+  </ruleset>
+</brl>

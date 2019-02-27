@@ -1,0 +1,252 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="2ab55a14-6b8f-4cc7-a144-e94589959eb7" LowerBound="1.1" HigherBound="48.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="43e30315-803d-4a06-bbe2-21395a0a4fdb" ParentLink="Module_ServiceDeclaration" LowerBound="19.1" HigherBound="47.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CallSalesForceIRS_Transcripts__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="48c464fd-1773-45e1-acb3-cbeb0a9950b0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AfterIRSTranscriptCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9c1570fe-eaf8-4fb9-bb5b-2a81b3faf0b4" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="24.1" HigherBound="25.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementRequestIRS_Transcripts__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateIRS_Transcript__cRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="df904d1d-136f-46cf-b08b-cf56a49aeb74" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementResponseIRS_Transcripts__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateIRS_Transcript__cResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="a3e4b6f5-c830-4e27-9432-73dea3761332" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageDeclaration" OID="25a72f19-cbd4-46b2-b39a-426b38bc55ef" ParentLink="ServiceBody_Declaration" LowerBound="27.15" HigherBound="27.114">
+                    <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ParamDirection" Value="Ref" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ApplicationCanonical" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="6109d690-c05b-4df5-af80-6c5d470b8a5a" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="45.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Create Request" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="8fe72710-5abc-4287-b189-d6aaa62474ec" ParentLink="ComplexStatement_Statement" LowerBound="29.1" HigherBound="35.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct Create Account Message" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="fff50cb5-e914-4026-a9ff-62478f59d4cd" ParentLink="Construct_MessageRef" LowerBound="30.23" HigherBound="30.53">
+                            <om:Property Name="Ref" Value="CreateIRS_Transcript__cRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Transform" OID="f2e54f5d-9f0d-4587-b6c4-339907a0aa54" ParentLink="ComplexStatement_Statement" LowerBound="32.1" HigherBound="34.1">
+                            <om:Property Name="ClassName" Value="Application_Import_Logic.IRS_Transcripts__c.MakeIRS_Transcripts__cRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Map to Create Account" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="4e097644-26be-4e1a-bd50-5b8edc583e04" ParentLink="Transform_InputMessagePartRef" LowerBound="33.148" HigherBound="33.168">
+                                <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="73427182-95b3-4722-8640-99689257a9f1" ParentLink="Transform_OutputMessagePartRef" LowerBound="33.28" HigherBound="33.69">
+                                <om:Property Name="MessageRef" Value="CreateIRS_Transcript__cRequest" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="ac8192e3-f399-4592-9e86-a3fe91d1a8a5" ParentLink="ComplexStatement_Statement" LowerBound="35.1" HigherBound="37.1">
+                        <om:Property Name="Expression" Value="AfterIRSTranscriptCount = xpath(CreateIRS_Transcript__cRequest.parameters,&quot;count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/IRS_Transcripts__c']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/IRS_Transcripts__c']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/IRS_Transcripts__c'])&quot;);" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Count IRS Transcripts" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="56fe4fa1-775e-4f6d-9a3a-19e2614f0f1a" ParentLink="ComplexStatement_Statement" LowerBound="37.1" HigherBound="45.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="IRSTranscripts Exists" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="610057c3-3e35-4fe7-9c68-c6e8587a0854" ParentLink="ReallyComplexStatement_Branch" LowerBound="38.13" HigherBound="45.1">
+                            <om:Property Name="Expression" Value="AfterIRSTranscriptCount &gt; 0" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="IRSTranscripts" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Send" OID="5fef0222-a8fe-410f-a9ba-6cc15bba804e" ParentLink="ComplexStatement_Statement" LowerBound="40.1" HigherBound="42.1">
+                                <om:Property Name="PortName" Value="CallSalesForceIRS_Transcrpts__cPort" />
+                                <om:Property Name="MessageName" Value="CreateIRS_Transcript__cRequest" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="9ed3a942-cbac-48c0-8b16-24995c6346e3" ParentLink="ComplexStatement_Statement" LowerBound="42.1" HigherBound="44.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="CallSalesForceIRS_Transcrpts__cPort" />
+                                <om:Property Name="MessageName" Value="CreateIRS_Transcript__cResponse" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Receive_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="3a982488-9882-42cf-bf76-556663dd13d3" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="fedc1df6-ec99-402c-837a-0b759b96c189" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="22.1" HigherBound="24.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="16" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.CDataServiceSelectIRS_Transcripts__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CallSalesForceIRS_Transcrpts__cPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="2a3b4a6c-6140-4701-931f-be725937f3cb" ParentLink="PortDeclaration_CLRAttribute" LowerBound="22.1" HigherBound="23.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="cad8dedd-2c69-461d-a6e7-c239fefbaf31" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementResponseIRS_Transcripts__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="3189c163-660b-4945-b52c-eab7d3b8a450" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceIRS_Transcripts__c.table" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="0cf1f0ce-64b9-4af1-aa9b-ac5e6ccc25c5" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementRequestIRS_Transcripts__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="c7b11b21-b456-419d-9f8b-ed76f68b3f6c" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceIRS_Transcripts__c.parameters" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="7200d00e-fc0a-4f18-885f-ac75753ea59f" ParentLink="Module_PortType" LowerBound="12.1" HigherBound="19.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="CDataServiceSelectIRS_Transcripts__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="22d32f6b-8e02-47ce-a6bb-8d3aee949982" ParentLink="PortType_OperationDeclaration" LowerBound="14.1" HigherBound="18.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="statement" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="40c098fd-a52d-425f-9efe-680950b80c09" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="16.49" HigherBound="16.84">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementResponseIRS_Transcripts__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="e92c1917-f567-43b9-980e-668ca1a1ec13" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="16.13" HigherBound="16.47">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementRequestIRS_Transcripts__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    public messagetype StatementResponseIRS_Transcripts__c
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceIRS_Transcripts__c.table parameters;
+    };
+    public messagetype StatementRequestIRS_Transcripts__c
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceIRS_Transcripts__c.parameters parameters;
+    };
+    public porttype CDataServiceSelectIRS_Transcripts__c
+    {
+        requestresponse statement
+        {
+            StatementRequestIRS_Transcripts__c, StatementResponseIRS_Transcripts__c
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service CallSalesForceIRS_Transcripts__c
+    {
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses CDataServiceSelectIRS_Transcripts__c CallSalesForceIRS_Transcrpts__cPort;
+        message StatementRequestIRS_Transcripts__c CreateIRS_Transcript__cRequest;
+        message StatementResponseIRS_Transcripts__c CreateIRS_Transcript__cResponse;
+        System.Int32 AfterIRSTranscriptCount;
+        body (ref message Application_Import_Definition.HomeDisasterLoanApplicationCanonical ApplicationCanonical)
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8fe72710-5abc-4287-b189-d6aaa62474ec")]
+            construct CreateIRS_Transcript__cRequest
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("f2e54f5d-9f0d-4587-b6c4-339907a0aa54")]
+                transform (CreateIRS_Transcript__cRequest.parameters) = Application_Import_Logic.IRS_Transcripts__c.MakeIRS_Transcripts__cRequest (ApplicationCanonical);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ac8192e3-f399-4592-9e86-a3fe91d1a8a5")]
+            AfterIRSTranscriptCount = xpath(CreateIRS_Transcript__cRequest.parameters,"count(/*[local-name()='parameters' and namespace-uri()='http://sba-oda/DLAP/IRS_Transcripts__c']/*[local-name()='sync' and namespace-uri()='http://sba-oda/DLAP/IRS_Transcripts__c']/*[local-name()='after' and namespace-uri()='http://sba-oda/DLAP/IRS_Transcripts__c'])");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("56fe4fa1-775e-4f6d-9a3a-19e2614f0f1a")]
+            if (AfterIRSTranscriptCount > 0)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("5fef0222-a8fe-410f-a9ba-6cc15bba804e")]
+                send (CallSalesForceIRS_Transcrpts__cPort.statement, CreateIRS_Transcript__cRequest);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9ed3a942-cbac-48c0-8b16-24995c6346e3")]
+                receive (CallSalesForceIRS_Transcrpts__cPort.statement, CreateIRS_Transcript__cResponse);
+            }
+        }
+    }
+}
+

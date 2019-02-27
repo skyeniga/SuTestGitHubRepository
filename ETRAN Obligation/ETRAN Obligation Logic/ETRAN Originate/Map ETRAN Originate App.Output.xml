@@ -1,0 +1,102 @@
+﻿<SBA_ETran version="3.9">
+  <App>
+    <LoanApplication action="insert">
+      <CollateralInd>N</CollateralInd>
+      <DisasterCntrlNmb>126506</DisasterCntrlNmb>
+      <DisasterApplicNmb>2000003812</DisasterApplicNmb>
+      <LoanTermMnths>84.0</LoanTermMnths>
+      <InterestStructureCd>F</InterestStructureCd>
+      <NetEarningsClause>N</NetEarningsClause>
+      <ProcessingMethodCd>DPB</ProcessingMethodCd>
+      <ProjectCityName>CAMBRIA</ProjectCityName>
+      <ProjectStrtName1>733 ARDATH</ProjectStrtName1>
+      <ProjectStCd>CA</ProjectStCd>
+      <ProjectZipCd>93428</ProjectZipCd>
+      <ProjectZip4Cd>1004</ProjectZip4Cd>
+      <PymtAmt>325.0</PymtAmt>
+      <RequestedAmt>20000.0</RequestedAmt>
+      <SBAServicingOffice>9030</SBAServicingOffice>
+    </LoanApplication>
+    <Interest action="insert">
+      <BaseIntrstRatePct>7.35</BaseIntrstRatePct>
+      <BaseRateSourcTypCd>DSR</BaseRateSourcTypCd>
+      <IntrstTypInd>F</IntrstTypInd>
+      <Phase>1</Phase>
+    </Interest>
+    <Borrower action="insert">
+      <BusinessName>BARBARA WILLEMSEN</BusinessName>
+      <BusinessPersonInd>B</BusinessPersonInd>
+      <LegalOrgnztnCd>3</LegalOrgnztnCd>
+      <PhysStrtName1>733 ARDATH</PhysStrtName1>
+      <PhysCityName>CAMBRIA</PhysCityName>
+      <PhysCountryCd>US</PhysCountryCd>
+      <PhysStCd>CA</PhysStCd>
+      <PhysZipCd>93428</PhysZipCd>
+      <PrimaryBusinessInd>Y</PrimaryBusinessInd>
+      <PrimaryPhone>8059276113</PrimaryPhone>
+      <PriorSBALoanInd>N</PriorSBALoanInd>
+      <TaxId>0666295782</TaxId>
+    </Borrower>
+    <BorrowerRace action="insert">
+      <BusinessPersonInd>B</BusinessPersonInd>
+      <TaxId>0666295782</TaxId>
+      <RaceCd>6</RaceCd>
+    </BorrowerRace>
+    <Borrower action="insert">
+      <BusinessName>Guilliman Trust Account</BusinessName>
+      <BusinessPersonInd>B</BusinessPersonInd>
+      <LegalOrgnztnCd>7</LegalOrgnztnCd>
+      <PhysStrtName1>123 Macragge Way</PhysStrtName1>
+      <PhysCityName>Macragge</PhysCityName>
+      <PhysCountryCd>US</PhysCountryCd>
+      <PhysStCd>MI</PhysStCd>
+      <PhysZipCd>48335</PhysZipCd>
+      <PhysZip4Cd>1001</PhysZip4Cd>
+      <PrimaryBusinessInd>N</PrimaryBusinessInd>
+      <PrimaryPhone>7778901212</PrimaryPhone>
+      <PriorSBALoanInd>N</PriorSBALoanInd>
+      <TaxId>0808661212</TaxId>
+    </Borrower>
+    <BorrowerRace action="insert">
+      <BusinessPersonInd>B</BusinessPersonInd>
+      <TaxId>0808661212</TaxId>
+      <RaceCd>6</RaceCd>
+    </BorrowerRace>
+    <Principal action="insert">
+      <BusinessName>BARBARA WILLEMSEN</BusinessName>
+      <BusinessPersonInd>P</BusinessPersonInd>
+      <BusinessTaxID>0666295782</BusinessTaxID>
+      <EthnicCd>UN</EthnicCd>
+      <ExtrnlCreditScorInd>N</ExtrnlCreditScorInd>
+      <FirstName>BARBARA</FirstName>
+      <GndrCd>U</GndrCd>
+      <LastName>WILLEMSEN</LastName>
+      <OwnrshpInBusinessPct>100.0</OwnrshpInBusinessPct>
+      <PhysStrtName1>733 ARDATH</PhysStrtName1>
+      <PhysCityName>CAMBRIA</PhysCityName>
+      <PhysCountryCd>US</PhysCountryCd>
+      <PhysStCd>CA</PhysStCd>
+      <PhysZipCd>93428</PhysZipCd>
+      <TaxId>1626295782</TaxId>
+      <VetCd>5</VetCd>
+    </Principal>
+    <PrincipalRace action="insert">
+      <BusinessPersonInd>P</BusinessPersonInd>
+      <TaxId>1626295782</TaxId>
+      <RaceCd>6</RaceCd>
+    </PrincipalRace>
+    <SpecialPurpose action="insert">
+      <SpcPurpsLoanCd>NOSP</SpcPurpsLoanCd>
+    </SpecialPurpose>
+    <UseOfProceeds action="insert">
+      <LoanProceedTypCd>05</LoanProceedTypCd>
+      <ProceedTypCd>D</ProceedTypCd>
+      <ProceedAmt>20000.0</ProceedAmt>
+    </UseOfProceeds>
+    <UseOfProceeds action="insert">
+      <LoanProceedTypCd>04</LoanProceedTypCd>
+      <ProceedTypCd>D</ProceedTypCd>
+      <ProceedAmt>0</ProceedAmt>
+    </UseOfProceeds>
+  </App>
+</SBA_ETran>

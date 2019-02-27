@@ -1,0 +1,147 @@
+namespace Salesforce_Application_Import_Definition_XSD {
+    using Microsoft.XLANGs.BaseTypes;
+    
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [SchemaType(SchemaTypeEnum.Document)]
+    [System.SerializableAttribute()]
+    [SchemaRoots(new string[] {@"parameters", @"table"})]
+    public sealed class CDataServiceDisasterLookup : Microsoft.XLANGs.BaseTypes.SchemaBase {
+        
+        [System.NonSerializedAttribute()]
+        private static object _rawSchema;
+        
+        [System.NonSerializedAttribute()]
+        private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
+<xs:schema xmlns=""http://sba-oda/DLAP/DisasterLookup"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" attributeFormDefault=""unqualified"" elementFormDefault=""qualified"" targetNamespace=""http://sba-oda/DLAP/DisasterLookup"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+  <xs:element name=""parameters"">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name=""APP_PRO_ID"" type=""xs:string"" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name=""table"">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs=""0"" maxOccurs=""unbounded"" name=""row"">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name=""Id"">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base=""xs:string"">
+                      <xs:attribute name=""IsNull"" type=""xs:boolean"" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name=""AffectedRows"" type=""xs:int"" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>";
+        
+        public CDataServiceDisasterLookup() {
+        }
+        
+        public override string XmlContent {
+            get {
+                return _strSchema;
+            }
+        }
+        
+        public override string[] RootNodes {
+            get {
+                string[] _RootElements = new string [2];
+                _RootElements[0] = "parameters";
+                _RootElements[1] = "table";
+                return _RootElements;
+            }
+        }
+        
+        protected override object RawSchema {
+            get {
+                return _rawSchema;
+            }
+            set {
+                _rawSchema = value;
+            }
+        }
+        
+        [Schema(@"http://sba-oda/DLAP/DisasterLookup",@"parameters")]
+        [System.SerializableAttribute()]
+        [SchemaRoots(new string[] {@"parameters"})]
+        public sealed class parameters : Microsoft.XLANGs.BaseTypes.SchemaBase {
+            
+            [System.NonSerializedAttribute()]
+            private static object _rawSchema;
+            
+            public parameters() {
+            }
+            
+            public override string XmlContent {
+                get {
+                    return _strSchema;
+                }
+            }
+            
+            public override string[] RootNodes {
+                get {
+                    string[] _RootElements = new string [1];
+                    _RootElements[0] = "parameters";
+                    return _RootElements;
+                }
+            }
+            
+            protected override object RawSchema {
+                get {
+                    return _rawSchema;
+                }
+                set {
+                    _rawSchema = value;
+                }
+            }
+        }
+        
+        [Schema(@"http://sba-oda/DLAP/DisasterLookup",@"table")]
+        [System.SerializableAttribute()]
+        [SchemaRoots(new string[] {@"table"})]
+        public sealed class table : Microsoft.XLANGs.BaseTypes.SchemaBase {
+            
+            [System.NonSerializedAttribute()]
+            private static object _rawSchema;
+            
+            public table() {
+            }
+            
+            public override string XmlContent {
+                get {
+                    return _strSchema;
+                }
+            }
+            
+            public override string[] RootNodes {
+                get {
+                    string[] _RootElements = new string [1];
+                    _RootElements[0] = "table";
+                    return _RootElements;
+                }
+            }
+            
+            protected override object RawSchema {
+                get {
+                    return _rawSchema;
+                }
+                set {
+                    _rawSchema = value;
+                }
+            }
+        }
+    }
+}

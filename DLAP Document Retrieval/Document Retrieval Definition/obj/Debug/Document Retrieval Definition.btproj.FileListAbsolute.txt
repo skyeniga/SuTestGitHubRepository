@@ -1,0 +1,4 @@
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Definition\bin\Debug\DLAPDocumentRetrievalDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Definition\bin\Debug\DLAPDocumentRetrievalDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Definition\obj\Debug\DLAPDocumentRetrievalDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Document Retrieval\Document Retrieval Definition\obj\Debug\DLAPDocumentRetrievalDefinition.pdb

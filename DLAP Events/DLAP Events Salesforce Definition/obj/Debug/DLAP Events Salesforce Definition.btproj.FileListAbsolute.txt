@@ -1,0 +1,12 @@
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Salesforce Definition\bin\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Salesforce Definition\bin\Debug\DLAPEventsSalesforceDefinition.pdb
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Salesforce Definition\obj\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Desktop\BTInterfaceSourceCode\DLAP Events\DLAP Events Salesforce Definition\obj\Debug\DLAPEventsSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Salesforce Definition\bin\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Salesforce Definition\bin\Debug\DLAPEventsSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Salesforce Definition\obj\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\Biztalk\DLAP Events\DLAP Events Salesforce Definition\obj\Debug\DLAPEventsSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Salesforce Definition\bin\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Salesforce Definition\bin\Debug\DLAPEventsSalesforceDefinition.pdb
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Salesforce Definition\obj\Debug\DLAPEventsSalesforceDefinition.dll
+C:\Users\skyeniga\Source\Repos\BizTalk Test Project\DLAP Events\DLAP Events Salesforce Definition\obj\Debug\DLAPEventsSalesforceDefinition.pdb

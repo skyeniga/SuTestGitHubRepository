@@ -1,0 +1,1543 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="0c6f63cc-835d-4412-a09e-1da32200e246" LowerBound="1.1" HigherBound="345.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="MultipartMessageType" OID="055650f7-6b57-474e-aab7-06ef00216be0" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ApplicationMsgType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="24febeda-aac9-4e6b-a37f-774f9ffb4088" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Application_Import_Definition.HomeDisasterLoanApplication" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Application" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="4de75d5d-bd99-43a6-bab1-63042c51db5d" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OracleUpdateSubmittedApplicationsStatusRequestType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="fbf82d57-ce3e-46ac-b9f5-7d53bc1b4523" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2.Update" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="093a5c44-3da0-4e13-a1c6-3ec473e5f655" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OracleUpdateSubmittedApplicationsStatusResponseType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="3501ecb4-b1e0-4e7b-b8e3-9385183dbb40" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2.UpdateResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="84f6e09d-88d0-4a10-84b5-befeac189c73" ParentLink="Module_ServiceDeclaration" LowerBound="48.1" HigherBound="344.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DLAP_Application_Import" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="edac00a8-823a-440a-af0e-b2a8fc6b0072" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="63.1" HigherBound="64.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Guid" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OrchestrationInstanceID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="7819c6fd-4487-4c74-8e50-fd1eb239c06e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="64.1" HigherBound="65.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Status" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="61ac6973-0e15-495b-a9f4-a1391e3439ab" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="65.1" HigherBound="66.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Stage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="6494348c-91aa-4cc3-a647-03ef90011e55" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="66.1" HigherBound="67.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ApplicationNumber" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5240ac2f-4f88-473f-b111-12980ff580c0" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="67.1" HigherBound="68.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceObjectName" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="150aac5b-da76-4222-97e5-c8cc67ae849d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="68.1" HigherBound="69.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceObjectID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="384923e5-5729-43be-9e23-3058ae801f0f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="69.1" HigherBound="70.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="dcbb277c-6922-4f08-abd0-a06cd431dd1b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="70.1" HigherBound="71.1">
+                <om:Property Name="InitialValue" Value="@&quot;DLAP Application Import:\nThis application {0} {1} during the {2} Process Step.\n&quot; " />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessageTemplate" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="8ab0daa6-05fc-434d-b4a4-9fceece8b0d1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="71.1" HigherBound="72.1">
+                <om:Property Name="InitialValue" Value="&quot;DLAP Application Import Initialization&quot;" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ProcessStep" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c53b22d2-0111-48b2-97d1-a05115dc5788" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="72.1" HigherBound="73.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.SystemException" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ExceptionContainer" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e4efa14d-388f-45a6-9efe-6183e8e49d1b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="73.1" HigherBound="74.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="DLAPApplicationImportRecordTypeValues.RecordTypeValues" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetRecordTypeValues" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0c1fb140-d222-4d91-bdca-88ce54239f2f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="74.1" HigherBound="75.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InsuranceCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="aa9adabc-f6c1-4db3-a1ec-7edb39af35be" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="75.1" HigherBound="76.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MortgagesCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="da8179dd-dc4a-4007-97ab-1a40a51b54bd" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="76.1" HigherBound="77.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="AutoDeclineReason" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="CorrelationDeclaration" OID="73aaa978-d57c-493b-b82c-d609fc752ce2" ParentLink="ServiceDeclaration_CorrelationDeclaration" LowerBound="57.1" HigherBound="58.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.DocumentUploadCorrelationType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentUploadCorrelationSet" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="StatementRef" OID="929d90f4-43bc-4301-9cfb-775638bea3aa" ParentLink="CorrelationDeclaration_StatementRef" LowerBound="288.103" HigherBound="288.142">
+                    <om:Property Name="Initializes" Value="True" />
+                    <om:Property Name="Ref" Value="ed7dfe3b-d829-4999-8c2a-a1349dcc34ba" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="StatementRef_1" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0b21f567-6e06-483e-83aa-776efcc39382" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="58.1" HigherBound="59.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.ApplicationMsgType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Application" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a4ec457d-3437-487a-81b5-4aede68adf13" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="59.1" HigherBound="60.1">
+                <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="93e08c75-99f4-499a-bde5-f73f5e20fa46" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="60.1" HigherBound="61.1">
+                <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentUploadTriggerMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0c53fa7f-afa1-476b-9307-6b919e5de328" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="61.1" HigherBound="62.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.OracleUpdateSubmittedApplicationsStatusRequestType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OracleUpdateSubmittedApplicationsStatusRequestMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="746558c4-4075-4e86-9d0b-2351ca723c85" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="62.1" HigherBound="63.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.OracleUpdateSubmittedApplicationsStatusResponseType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OracleUpdateSubmittedApplicationsStatusResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="6c407ecf-d230-45dc-a778-ae73082d9aea" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="c5d67012-32c1-47b4-ae71-9dd29b52957d" ParentLink="ServiceBody_Statement" LowerBound="79.1" HigherBound="92.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="DLAPApplicationImport" />
+                    <om:Property Name="MessageName" Value="Application" />
+                    <om:Property Name="OperationName" Value="Operation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Application" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="94d27917-0551-447a-af2e-637722567319" ParentLink="ServiceBody_Statement" LowerBound="92.1" HigherBound="342.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="DLAP ELA Application Processing" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="VariableAssignment" OID="b87dca6a-52af-40d0-b295-947a9e3bf84f" ParentLink="ComplexStatement_Statement" LowerBound="92.1" HigherBound="125.1">
+                        <om:Property Name="Expression" Value="Status = &quot;Success&quot;;&#xD;&#xA;SalesForceObjectName = &quot;Application&quot;;&#xD;&#xA;if (! System.String.IsNullOrEmpty(Application.Application.APP_ELA_REFERENCE_NBR))&#xD;&#xA;{&#xD;&#xA;     ApplicationNumber  = Application.Application.APP_ELA_REFERENCE_NBR;&#xD;&#xA;} &#xD;&#xA;&#xD;&#xA;if ((! System.String.IsNullOrEmpty(Application.Application.APP_SUMMARY_DECLINE_CODE))&amp;&amp;(Application.Application.APP_SUMMARY_DECLINE_CODE !=&quot;PASS&quot;))&#xD;&#xA;{&#xD;&#xA;    Stage  = &quot;Received Application Summary Decline&quot;;&#xD;&#xA;    Message = Application.Application.APP_SUMMARY_DECLINE_CODE;&#xD;&#xA;    AutoDeclineReason = Application.Application.APP_SUMMARY_DECLINE_CODE;&#xD;&#xA;} &#xD;&#xA;else&#xD;&#xA;{Stage = &quot;Received Application&quot;;&#xD;&#xA;Message = &quot;DLAP Application Import, Application has been successfully submitted to SalesForce&quot;;}&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;OrchestrationInstanceID = Microsoft.XLANGs.Core.Service.RootService.InstanceId; &#xD;&#xA;&#xD;&#xA;//BRE Rules Initialization&#xD;&#xA;&#xD;&#xA;GetRecordTypeValues = new DLAPApplicationImportRecordTypeValues.RecordTypeValues();&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Set Variables" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Scope" OID="1109c81f-3a2b-40a7-a937-c9840aae793e" ParentLink="ComplexStatement_Statement" LowerBound="125.1" HigherBound="317.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Handle Exceptions" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="CallRules" OID="f4e5d76b-0084-4601-b720-9a29ff4aec92" ParentLink="ComplexStatement_Statement" LowerBound="130.1" HigherBound="146.1">
+                            <om:Property Name="PolicyName" Value="Set DLAP RecordType Values" />
+                            <om:Property Name="PolicyVersion" Value="-1" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Call Set DLAP Record Type Values Rules" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="RulesParameterRef" OID="1196c713-a45c-4073-b12f-85183e3bbbe2" ParentLink="CallRules_RulesParameterRef">
+                                <om:Property Name="Reference" Value="GetRecordTypeValues" />
+                                <om:Property Name="Alias" Value="DLAPApplicationImportRecordTypeValues.RecordTypeValues" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="RulesParameterRef_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="c91f9189-4ca4-4189-9dd6-d7b28245e52f" ParentLink="ComplexStatement_Statement" LowerBound="146.1" HigherBound="149.1">
+                            <om:Property Name="Expression" Value="ProcessStep = &quot;Map to Canonical&quot;;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Set process step" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="91804920-74e2-4af9-8f1b-b9606c85cfd0" ParentLink="ComplexStatement_Statement" LowerBound="149.1" HigherBound="175.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Construct Application Canonical" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="5dbbceb3-fbe7-4868-9596-045f24fbabfd" ParentLink="ComplexStatement_Statement" LowerBound="152.1" HigherBound="154.1">
+                                <om:Property Name="ClassName" Value="Application_Import_Logic.MakeCanonicalApplication" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Map to Canonical" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="821ceef7-bce7-4f10-b171-30cd362c2a61" ParentLink="Transform_InputMessagePartRef" LowerBound="153.114" HigherBound="153.137">
+                                    <om:Property Name="MessageRef" Value="Application" />
+                                    <om:Property Name="PartRef" Value="Application" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="77d4f39c-d5b3-46fa-985e-2d168284f54c" ParentLink="Transform_OutputMessagePartRef" LowerBound="153.36" HigherBound="153.59">
+                                    <om:Property Name="MessageRef" Value="ApplicationCanonicalMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="a894bf10-3034-4d4e-a84a-7363105a069a" ParentLink="ComplexStatement_Statement" LowerBound="154.1" HigherBound="174.1">
+                                <om:Property Name="Expression" Value="ApplicationCanonicalMsg.OrchestrationID = Microsoft.XLANGs.Core.Service.RootService.InstanceId.ToString(); &#xD;&#xA;&#xD;&#xA;ApplicationCanonicalMsg.Record_SF_Business_Loan_Application = GetRecordTypeValues.Business_Loan_Application;&#xD;&#xA;&#xD;&#xA;ApplicationCanonicalMsg.Record_SF_EIDL_Application = GetRecordTypeValues.EIDL_Application;&#xD;&#xA;&#xD;&#xA;ApplicationCanonicalMsg.Record_SF_Home_Loan_Application = GetRecordTypeValues.Home_Loan_Application;&#xD;&#xA;&#xD;&#xA;ApplicationCanonicalMsg.Record_SF_New_Read_Only_Application = GetRecordTypeValues.New_Read_Only_Application;&#xD;&#xA;&#xD;&#xA;ApplicationCanonicalMsg.Record_SF_Default_Applicant = GetRecordTypeValues.Default_Applicant;&#xD;&#xA;&#xD;&#xA;ApplicationCanonicalMsg.Record_SF_New_Read_Only_Applicant = GetRecordTypeValues.New_Read_Only_Applicant;&#xD;&#xA;&#xD;&#xA;ApplicationCanonicalMsg.Record_SF_Affiliate_Applicant = GetRecordTypeValues.Affiliate_Applicant;&#xD;&#xA;&#xD;&#xA;ApplicationCanonicalMsg.Record_SF_Business_Entity_Applicant = GetRecordTypeValues.Business_Entity_Applicant;&#xD;&#xA;&#xD;&#xA;ApplicationCanonicalMsg.Record_SF_Business_Owner_Applicant = GetRecordTypeValues.Business_Owner_Applicant;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Assign Values" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="25a30aed-6096-44e1-9bd5-885369eb2ba8" ParentLink="Construct_MessageRef" LowerBound="150.31" HigherBound="150.54">
+                                <om:Property Name="Ref" Value="ApplicationCanonicalMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="db21e5c0-c67d-40db-8aca-9dffa6d5ac43" ParentLink="ComplexStatement_Statement" LowerBound="175.1" HigherBound="178.1">
+                            <om:Property Name="Expression" Value="SalesForceObjectID = ApplicationCanonicalMsg.SalesForceApplication__cID;&#xD;&#xA;&#xD;&#xA;" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Assign Status Variables" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="927c3c8d-5fb6-4a20-9967-cf5005a9fdf7" ParentLink="ComplexStatement_Statement" LowerBound="178.1" HigherBound="184.1">
+                            <om:Property Name="Expression" Value="ProcessStep = &quot;Calling Application create&quot;;&#xD;&#xA;&#xD;&#xA;InsuranceCount = xpath(ApplicationCanonicalMsg, &quot;count(/*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']/*[local-name()='DmgPropertyColl' and namespace-uri()='']/*[local-name()='Dmg_Properties' and namespace-uri()='']/*[local-name()='DpoInsuranceColl' and namespace-uri()='']/*[local-name()='Dpo_Insurances' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;MortgagesCount = xpath(ApplicationCanonicalMsg, &quot;count(/*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']/*[local-name()='Debts' and namespace-uri()='']/*[local-name()='MortgageColl' and namespace-uri()='']/*[local-name()='ARE_Mortgages' and namespace-uri()=''])&quot;);" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Set process step" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Call" OID="653f4ff0-5cb2-4331-ae41-ffdd14593257" ParentLink="ComplexStatement_Statement" LowerBound="184.1" HigherBound="186.1">
+                            <om:Property Name="Identifier" Value="CallOrchestration_1" />
+                            <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesForceApplication__c" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Call Application" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Parameter" OID="7cbb6a2f-433a-4175-8b77-05cf4a6a249e" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="Ref" />
+                                <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="1e2aad43-7e0c-48d9-ab42-e122a2b945d9" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="Ref" />
+                                <om:Property Name="Name" Value="Status" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="Parameter" OID="99088a6d-892e-41f4-a7d5-780299695acf" ParentLink="InvokeStatement_Parameter">
+                                <om:Property Name="Direction" Value="Ref" />
+                                <om:Property Name="Name" Value="Message" />
+                                <om:Property Name="Type" Value="System.String" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="d5f239e9-72c1-473e-84c0-59c021ba9d9d" ParentLink="ComplexStatement_Statement" LowerBound="186.1" HigherBound="194.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="40ab2ff1-fc9e-4fe0-a5a8-687e62d24e1f" ParentLink="ReallyComplexStatement_Branch" LowerBound="187.21" HigherBound="194.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="f68f9792-39c5-425b-b34a-55a55756a855" ParentLink="ComplexStatement_Statement" LowerBound="189.1" HigherBound="191.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Addtional Contact&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="735322d9-b74a-49af-b8cf-a7936767d819" ParentLink="ComplexStatement_Statement" LowerBound="191.1" HigherBound="193.1">
+                                    <om:Property Name="Identifier" Value="Call_Addtional_Contact" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallAddtionalContact" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call Addtional Contact" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Parameter" OID="1a89b0a5-13a9-4cc8-897b-6870d839cd36" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="c076cf7d-c91c-47c3-9f8e-9c211f264dd8" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="3a7d3166-1f6a-490a-a75d-0861ee55bfe0" ParentLink="ComplexStatement_Statement" LowerBound="194.1" HigherBound="202.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="13372ea7-65df-4183-ac40-0878ae490434" ParentLink="ReallyComplexStatement_Branch" LowerBound="195.21" HigherBound="202.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="26aed432-3be6-43e8-a6ad-dd381e6c8f62" ParentLink="ComplexStatement_Statement" LowerBound="197.1" HigherBound="199.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Account create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="dee70cd9-b3e8-437d-9980-7837ab1af0a5" ParentLink="ComplexStatement_Statement" LowerBound="199.1" HigherBound="201.1">
+                                    <om:Property Name="Identifier" Value="CallAccount" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesforceAccount" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call Account" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Parameter" OID="f3b48dfa-5ba3-430d-ab4d-b17efb367c06" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Ref" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="1e07c549-fffc-4d8e-8f97-89a5781e49cc" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="5ad6edc1-7f0b-495e-a8c0-ea5bb80a15bc" ParentLink="ComplexStatement_Statement" LowerBound="202.1" HigherBound="210.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="e552d452-0753-481f-961b-805e5c934952" ParentLink="ReallyComplexStatement_Branch" LowerBound="203.21" HigherBound="210.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="f303f26b-8ba5-46f2-84be-1747da0a6dd5" ParentLink="ComplexStatement_Statement" LowerBound="205.1" HigherBound="207.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Property create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="ee522655-25b3-45dc-ba60-eed2d01c0cb4" ParentLink="ComplexStatement_Statement" LowerBound="207.1" HigherBound="209.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration_6" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesForceProperty__c" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call Property" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Parameter" OID="7bff7c55-8b2b-46c3-8931-a9682be648e3" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Ref" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="1bac2aa9-88e0-420e-a7ee-8c8e106d7884" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="419b7ae7-e003-4d5c-93d7-0ca10c52d933" ParentLink="ComplexStatement_Statement" LowerBound="210.1" HigherBound="218.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="702a5ddb-2b27-405c-aa34-38fc2a2cc703" ParentLink="ReallyComplexStatement_Branch" LowerBound="211.21" HigherBound="218.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="c882a370-6713-4842-8973-273067cbc2ee" ParentLink="ComplexStatement_Statement" LowerBound="213.1" HigherBound="215.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Contact create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="7ded9ef9-5d13-4aa8-be67-3c3a82146da2" ParentLink="ComplexStatement_Statement" LowerBound="215.1" HigherBound="217.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration_2" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesForceContact" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call Contact" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Parameter" OID="d0634b7b-faad-4275-8e3a-3874bcf5fb7e" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Ref" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="c6fecfa9-838a-4aa6-9a3d-cca0e8de1f8e" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="788badcb-ede4-4471-a015-9286ce0d602e" ParentLink="ComplexStatement_Statement" LowerBound="218.1" HigherBound="226.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="3a004e08-8808-4ad0-b65c-8033a8f97a36" ParentLink="ReallyComplexStatement_Branch" LowerBound="219.21" HigherBound="226.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="97c81dfc-d814-42bb-a80a-25b35514615d" ParentLink="ComplexStatement_Statement" LowerBound="221.1" HigherBound="223.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Applicant create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="12e0ed76-cbf5-4292-9108-67130ba41e36" ParentLink="ComplexStatement_Statement" LowerBound="223.1" HigherBound="225.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration_3" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesForceApplicant" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call Applicant" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Parameter" OID="b7c1bd35-7a41-4604-bb58-0a1a8ddeedf4" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Ref" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="95c2c07a-61e4-4b71-bf8d-c1ec39a8d902" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="94d3b058-c41d-4b4d-9bab-5fa82e709a40" ParentLink="ComplexStatement_Statement" LowerBound="226.1" HigherBound="234.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="d1a3d9e6-122b-48fb-90e1-9cc06391eac2" ParentLink="ReallyComplexStatement_Branch" LowerBound="227.21" HigherBound="234.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot; &amp;&amp; InsuranceCount &gt; 0" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="17c93eac-849a-40f2-9180-3a8a5505eefa" ParentLink="ComplexStatement_Statement" LowerBound="229.1" HigherBound="231.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Insurance create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="24aea121-bf41-4b9f-93f6-497cb8e6eeae" ParentLink="ComplexStatement_Statement" LowerBound="231.1" HigherBound="233.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration_4" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesForceInsurance" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call Insurance" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Parameter" OID="2e681c49-ecb6-4144-b6b9-2d92b496f7a6" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Ref" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="fb8c5361-76d7-43ed-b437-33c6d8c0c27b" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="705c3f87-c325-48b0-a527-fec7d683175b" ParentLink="ComplexStatement_Statement" LowerBound="234.1" HigherBound="242.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="7038ab12-552a-44ba-b916-8daf3ab5d63d" ParentLink="ReallyComplexStatement_Branch" LowerBound="235.21" HigherBound="242.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot; &amp;&amp; InsuranceCount &gt; 0" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="VariableAssignment" OID="20c4f78c-bf1c-4a5d-9dfd-c0c0341001da" ParentLink="ComplexStatement_Statement" LowerBound="237.1" HigherBound="239.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Other Assistance create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="9fa5f89f-5817-450f-a15b-2c6047d34371" ParentLink="ComplexStatement_Statement" LowerBound="239.1" HigherBound="241.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration_11" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesforceOther_Assistance__c" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call Other Assistance" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Parameter" OID="fb228ea0-e21b-4410-9271-c50d92707148" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Ref" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="5e134968-6c9a-4954-ad38-ae18854cebcf" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="f5e249fb-e561-4e1e-b465-29efe4396232" ParentLink="ComplexStatement_Statement" LowerBound="242.1" HigherBound="250.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="699763bb-39dd-497e-8810-eb140681118c" ParentLink="ReallyComplexStatement_Branch" LowerBound="243.21" HigherBound="250.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="c977b30f-7474-4e60-b2a2-f42dc0f65d30" ParentLink="ComplexStatement_Statement" LowerBound="245.1" HigherBound="247.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Insurance create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="146ea40f-c643-42dc-b9e5-7dac9955941a" ParentLink="ComplexStatement_Statement" LowerBound="247.1" HigherBound="249.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration_8" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesForceAssetIncomes" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call AssetIncomes" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Parameter" OID="d2fe93da-3ba1-41bc-8053-fb9d12decd2c" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Ref" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="87fde7fd-21bf-4ec0-af03-2522011c9538" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="b49e0a74-e161-4b9e-97b3-be6bccdefc17" ParentLink="ComplexStatement_Statement" LowerBound="250.1" HigherBound="258.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="af91a610-251c-4aa7-889d-b1ec1422ff45" ParentLink="ReallyComplexStatement_Branch" LowerBound="251.21" HigherBound="258.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="e90247e1-9115-4249-9dff-de55e1c25dd1" ParentLink="ComplexStatement_Statement" LowerBound="253.1" HigherBound="255.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Debts and Expenses create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="ae9a1cc7-bcb5-46f3-a422-6b3b6f12a55b" ParentLink="ComplexStatement_Statement" LowerBound="255.1" HigherBound="257.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration10" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesForceDebts_Expenses__c" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call DebtsExpenses__c" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Parameter" OID="ae03f242-d940-4975-903b-f5d592222d6c" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="In" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="0b914bc4-a263-4481-91e1-f9b966af917b" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="3f84502f-4c59-4053-b3b4-cd98bceb5aa0" ParentLink="ComplexStatement_Statement" LowerBound="258.1" HigherBound="266.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="2271de41-4572-4d69-8e33-c647e65b8ccf" ParentLink="ReallyComplexStatement_Branch" LowerBound="259.21" HigherBound="266.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;&amp;&amp; MortgagesCount &gt; 0" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="acd3c2d4-57f9-4ba9-8a17-0a1ff53d953b" ParentLink="ComplexStatement_Statement" LowerBound="261.1" HigherBound="263.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call Mortage create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="bac05c20-3400-4a91-a4a3-8a2c4a21da35" ParentLink="ComplexStatement_Statement" LowerBound="263.1" HigherBound="265.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration_9" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesForceMortgage__c" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call Mortgage" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="Parameter" OID="18cf218d-2b68-4cab-87d8-751c83d2bc73" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Ref" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="cf584ff6-0b2c-4f61-a1e6-bc4182f766c7" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="26614705-7e85-46b5-a0f4-6cab2f78e7d4" ParentLink="ComplexStatement_Statement" LowerBound="266.1" HigherBound="274.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="f7d28a96-56a1-460d-a548-e3d82cb91bf0" ParentLink="ReallyComplexStatement_Branch" LowerBound="267.21" HigherBound="274.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="VariableAssignment" OID="4de747d3-ecc4-4b2a-8939-da7211805733" ParentLink="ComplexStatement_Statement" LowerBound="269.1" HigherBound="271.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Call IRS Transcipts create&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Call" OID="6fec3daf-0cd1-4d65-ac27-fdfef564b830" ParentLink="ComplexStatement_Statement" LowerBound="271.1" HigherBound="273.1">
+                                    <om:Property Name="Identifier" Value="CallOrchestration_7" />
+                                    <om:Property Name="Invokee" Value="Application_Import_Logic.CallSalesForceIRS_Transcripts__c" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Call IRS Transcripts" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="Parameter" OID="4f6004f1-6db6-4f37-a54a-56ef77ee588b" ParentLink="InvokeStatement_Parameter">
+                                        <om:Property Name="Direction" Value="Ref" />
+                                        <om:Property Name="Name" Value="ApplicationCanonicalMsg" />
+                                        <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="fa5a05fd-1847-4b7b-aa02-be80214b83f5" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Decision" OID="778e7ada-3599-4edd-a11d-7908de903d4a" ParentLink="ComplexStatement_Statement" LowerBound="274.1" HigherBound="290.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success?" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="DecisionBranch" OID="55fbf2ff-8511-48a3-a4c7-fcc224d4ac38" ParentLink="ReallyComplexStatement_Branch" LowerBound="275.21" HigherBound="290.1">
+                                <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Yes" />
+                                <om:Property Name="Signal" Value="False" />
+                                <om:Element Type="Construct" OID="2e57e1bf-78f2-4daa-9758-9c596b843e86" ParentLink="ComplexStatement_Statement" LowerBound="277.1" HigherBound="285.1">
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Construct Document Trigger" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessageAssignment" OID="9d49aedb-d4da-44fd-b04f-4fd0791dc7cb" ParentLink="ComplexStatement_Statement" LowerBound="280.1" HigherBound="284.1">
+                                        <om:Property Name="Expression" Value="DocumentUploadTriggerMsg = ApplicationCanonicalMsg;&#xD;&#xA;DocumentUploadTriggerMsg(*) = ApplicationCanonicalMsg(*);&#xD;&#xA;DocumentUploadTriggerMsg(Application_Import_Definition.DocumentUpload) = true;&#xD;&#xA;" />
+                                        <om:Property Name="ReportToAnalyst" Value="False" />
+                                        <om:Property Name="Name" Value="Assign Trigger Message" />
+                                        <om:Property Name="Signal" Value="True" />
+                                    </om:Element>
+                                    <om:Element Type="MessageRef" OID="b392d87b-0d31-4268-9472-cc0fca0394d9" ParentLink="Construct_MessageRef" LowerBound="278.35" HigherBound="278.59">
+                                        <om:Property Name="Ref" Value="DocumentUploadTriggerMsg" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="VariableAssignment" OID="3ef2d339-af45-499a-95d0-a173c62f67d4" ParentLink="ComplexStatement_Statement" LowerBound="285.1" HigherBound="287.1">
+                                    <om:Property Name="Expression" Value="ProcessStep = &quot;Calling document upload&quot;;" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Set process step" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                                <om:Element Type="Send" OID="ed7dfe3b-d829-4999-8c2a-a1349dcc34ba" ParentLink="ComplexStatement_Statement" LowerBound="287.1" HigherBound="289.1">
+                                    <om:Property Name="PortName" Value="DocumentUploadPort" />
+                                    <om:Property Name="MessageName" Value="DocumentUploadTriggerMsg" />
+                                    <om:Property Name="OperationName" Value="DocumentUploadSendTrigger" />
+                                    <om:Property Name="OperationMessageName" Value="DocumentUploadTrigger" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="SendTriggerMessage" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="DecisionBranch" OID="8eecd464-fd5c-463d-a6af-41badb1fdfc0" ParentLink="ReallyComplexStatement_Branch">
+                                <om:Property Name="IsGhostBranch" Value="True" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Else" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Catch" OID="b470b70b-3699-44c8-a635-e59c5cbac3f5" ParentLink="Scope_Catch" LowerBound="293.1" HigherBound="315.1">
+                            <om:Property Name="ExceptionName" Value="Ex" />
+                            <om:Property Name="ExceptionType" Value="System.SystemException" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Catch Exception" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="8644bd84-3b79-413e-9645-b0988028d9bb" ParentLink="Catch_Statement" LowerBound="296.1" HigherBound="302.1">
+                                <om:Property Name="Expression" Value="Status = &quot;Failure&quot;;&#xD;&#xA;Message = &quot;An exception has occured&quot;;&#xD;&#xA;ExceptionContainer = Ex;&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;DLAP Application Import Exception&quot;, Ex.Message);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Assign Variables" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Construct" OID="1574ca2b-37ff-4d2c-aedd-effeae4f4bbc" ParentLink="Catch_Statement" LowerBound="302.1" HigherBound="308.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct Oracle Exception Status Request" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="61968f73-2013-43ce-9122-fa5067dbbc0c" ParentLink="ComplexStatement_Statement" LowerBound="305.1" HigherBound="307.1">
+                                    <om:Property Name="ClassName" Value="Application_Import_Logic.MakeOracleErrorStatusRequest" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Make Oracle Exception Status Request" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="MessagePartRef" OID="4332aa16-e5ed-476a-9d2a-f305b2027ec2" ParentLink="Transform_InputMessagePartRef" LowerBound="306.160" HigherBound="306.183">
+                                        <om:Property Name="MessageRef" Value="Application" />
+                                        <om:Property Name="PartRef" Value="Application" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_7" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="c1868a8a-0a51-421e-8385-bcd7e39f4bf4" ParentLink="Transform_OutputMessagePartRef" LowerBound="306.40" HigherBound="306.101">
+                                        <om:Property Name="MessageRef" Value="OracleUpdateSubmittedApplicationsStatusRequestMsg" />
+                                        <om:Property Name="PartRef" Value="MessagePart" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_8" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="58c6410b-5d07-48fb-8ac3-a2b6896f7feb" ParentLink="Construct_MessageRef" LowerBound="303.35" HigherBound="303.84">
+                                    <om:Property Name="Ref" Value="OracleUpdateSubmittedApplicationsStatusRequestMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="f8d027aa-9b2b-4fcd-9377-8f2eed9281f1" ParentLink="Catch_Statement" LowerBound="308.1" HigherBound="310.1">
+                                <om:Property Name="PortName" Value="OracleUpdateSubmittedApplicationsStatusPort" />
+                                <om:Property Name="MessageName" Value="OracleUpdateSubmittedApplicationsStatusRequestMsg" />
+                                <om:Property Name="OperationName" Value="Operation" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send Update Status" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="bb2b6285-9b9a-4d6b-b2e7-855157011832" ParentLink="Catch_Statement" LowerBound="310.1" HigherBound="312.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="OracleUpdateSubmittedApplicationsStatusPort" />
+                                <om:Property Name="MessageName" Value="OracleUpdateSubmittedApplicationsStatusResponseMsg" />
+                                <om:Property Name="OperationName" Value="Operation" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Receive Update Response" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Call" OID="baf2043d-de23-493c-9add-dfdfa9e461d3" ParentLink="Catch_Statement" LowerBound="312.1" HigherBound="314.1">
+                                <om:Property Name="Identifier" Value="CallOrchestration_10" />
+                                <om:Property Name="Invokee" Value="Application_Import_Logic.Error_Analyzer" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="CallOrchestration_10" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Parameter" OID="b918ff23-0b41-4c7f-9928-282b5cdc67af" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="MessageTemplate" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="eec38979-e906-4492-9ca1-c359b6c345a4" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="ApplicationNumber" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="73f21de9-3c45-485d-9507-49f26e9a4597" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="ProcessStep" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="abfba3b9-3c95-414f-9b48-59d2540a76b7" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="Ref" />
+                                    <om:Property Name="Name" Value="Message" />
+                                    <om:Property Name="Type" Value="System.String" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="Parameter" OID="1002edcd-df6a-4160-ac46-c18293ae72e0" ParentLink="InvokeStatement_Parameter">
+                                    <om:Property Name="Direction" Value="In" />
+                                    <om:Property Name="Name" Value="ExceptionContainer" />
+                                    <om:Property Name="Type" Value="System.SystemException" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Decision" OID="0a853415-448b-4cc7-a313-219e3bde658d" ParentLink="ComplexStatement_Statement" LowerBound="317.1" HigherBound="336.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Success or Error?" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="696e564c-7742-4062-acac-b743336727d7" ParentLink="ReallyComplexStatement_Branch" LowerBound="318.13" HigherBound="327.1">
+                            <om:Property Name="Expression" Value="Status == &quot;Success&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Success" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="ea1a38a7-bc02-4b76-8d94-374a2628b7e3" ParentLink="ComplexStatement_Statement" LowerBound="320.1" HigherBound="326.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct Oracle Success Status Request" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="0a91af85-9fca-4b86-8885-57998c9d0925" ParentLink="ComplexStatement_Statement" LowerBound="323.1" HigherBound="325.1">
+                                    <om:Property Name="ClassName" Value="Application_Import_Logic.MakeOracleSuccessStatusRequest" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Make Oracle Success Status Request" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="6a16d96a-7581-455c-9967-e6f3df70026b" ParentLink="Transform_InputMessagePartRef" LowerBound="324.154" HigherBound="324.177">
+                                        <om:Property Name="MessageRef" Value="Application" />
+                                        <om:Property Name="PartRef" Value="Application" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_3" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="5ab9373c-54c1-406c-a60f-df24c1914b40" ParentLink="Transform_OutputMessagePartRef" LowerBound="324.32" HigherBound="324.93">
+                                        <om:Property Name="MessageRef" Value="OracleUpdateSubmittedApplicationsStatusRequestMsg" />
+                                        <om:Property Name="PartRef" Value="MessagePart" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_4" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="642f233b-0270-4222-badb-0bce994cc89f" ParentLink="Construct_MessageRef" LowerBound="321.27" HigherBound="321.76">
+                                    <om:Property Name="Ref" Value="OracleUpdateSubmittedApplicationsStatusRequestMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="c652d424-0b53-446a-9955-643a311a8670" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Error" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="3277ddd8-93de-4082-ba48-d443a0ce2957" ParentLink="ComplexStatement_Statement" LowerBound="329.1" HigherBound="335.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct Oracle Error Status Request" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="4759d307-8f71-4f6d-962f-0c3683f21ed4" ParentLink="ComplexStatement_Statement" LowerBound="332.1" HigherBound="334.1">
+                                    <om:Property Name="ClassName" Value="Application_Import_Logic.MakeOracleErrorStatusRequest" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Make Oracle Error Status Request" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="bf802a4d-25b0-410e-afcb-cf81a9eca0b6" ParentLink="Transform_InputMessagePartRef" LowerBound="333.152" HigherBound="333.175">
+                                        <om:Property Name="MessageRef" Value="Application" />
+                                        <om:Property Name="PartRef" Value="Application" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_5" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="e886503b-b71d-4c02-ae1e-8408dab05c0a" ParentLink="Transform_OutputMessagePartRef" LowerBound="333.32" HigherBound="333.93">
+                                        <om:Property Name="MessageRef" Value="OracleUpdateSubmittedApplicationsStatusRequestMsg" />
+                                        <om:Property Name="PartRef" Value="MessagePart" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_6" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="d1c635fc-31ce-4bbc-8796-4bbf9b20993a" ParentLink="Construct_MessageRef" LowerBound="330.27" HigherBound="330.76">
+                                    <om:Property Name="Ref" Value="OracleUpdateSubmittedApplicationsStatusRequestMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="4d56807a-5522-40cd-9d94-412938f5b52b" ParentLink="ComplexStatement_Statement" LowerBound="336.1" HigherBound="338.1">
+                        <om:Property Name="PortName" Value="OracleUpdateSubmittedApplicationsStatusPort" />
+                        <om:Property Name="MessageName" Value="OracleUpdateSubmittedApplicationsStatusRequestMsg" />
+                        <om:Property Name="OperationName" Value="Operation" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send Update Status" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="a1a33a65-254c-4e18-9a82-7c33d0c0df68" ParentLink="ComplexStatement_Statement" LowerBound="338.1" HigherBound="340.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="OracleUpdateSubmittedApplicationsStatusPort" />
+                        <om:Property Name="MessageName" Value="OracleUpdateSubmittedApplicationsStatusResponseMsg" />
+                        <om:Property Name="OperationName" Value="Operation" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive Update Response" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Call" OID="b92c881a-d03e-48ac-abf3-a90ae226d105" ParentLink="ComplexStatement_Statement" LowerBound="340.1" HigherBound="342.1">
+                        <om:Property Name="Identifier" Value="CallOrchestration_5" />
+                        <om:Property Name="Invokee" Value="SBA.BizTalk.Shared.Salesforce.EventLogging.Logic.SendEventToSalesForce" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Call Event Create" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="Parameter" OID="1ab7e02e-0f6b-46a8-9aa8-153dc5e6c5cc" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="In" />
+                            <om:Property Name="Name" Value="OrchestrationInstanceID" />
+                            <om:Property Name="Type" Value="System.Guid" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Parameter" OID="0c710f81-13a6-4725-8dff-da9a4cc39274" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="In" />
+                            <om:Property Name="Name" Value="Status" />
+                            <om:Property Name="Type" Value="System.String" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Parameter" OID="a102ba4a-f210-4eeb-9962-1c3414f2ad74" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="In" />
+                            <om:Property Name="Name" Value="Stage" />
+                            <om:Property Name="Type" Value="System.String" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Parameter" OID="01516a94-f382-4810-8ef5-9a20da59082c" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="In" />
+                            <om:Property Name="Name" Value="ApplicationNumber" />
+                            <om:Property Name="Type" Value="System.String" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Parameter" OID="a479ec84-d6f5-4436-8ff9-f38bbecda784" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="In" />
+                            <om:Property Name="Name" Value="SalesForceObjectName" />
+                            <om:Property Name="Type" Value="System.String" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Parameter" OID="cdd03dc0-a7bf-4f16-a1ba-5a9e21eb7f26" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="In" />
+                            <om:Property Name="Name" Value="SalesForceObjectID" />
+                            <om:Property Name="Type" Value="System.String" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Parameter" OID="f7712f45-840d-4e60-8adb-e1d749ad147e" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="In" />
+                            <om:Property Name="Name" Value="Message" />
+                            <om:Property Name="Type" Value="System.String" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Parameter" OID="91a2a939-eaa6-4119-9d81-59615210329f" ParentLink="InvokeStatement_Parameter">
+                            <om:Property Name="Direction" Value="In" />
+                            <om:Property Name="Name" Value="AutoDeclineReason" />
+                            <om:Property Name="Type" Value="System.String" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="4e0ccefe-108c-4d17-869a-13f17ef37723" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="51.1" HigherBound="53.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.DLAPSingleApplicationImportPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DLAPApplicationImport" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="fa546d6b-eaa7-4b14-9ddd-79ffd26c51ff" ParentLink="PortDeclaration_CLRAttribute" LowerBound="51.1" HigherBound="52.1">
+                    <om:Property Name="PartnerPort" Value="DLAPSingleApplicationImportPort" />
+                    <om:Property Name="PartnerService" Value="Application_Import_Logic.OracleMultpleApplicationsDebatcherLogic" />
+                    <om:Property Name="DirectBindingType" Value="PartnerPort" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="c9da0b88-fdb9-4b79-b71f-6e15e6b16ff8" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="53.1" HigherBound="55.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="212" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.DocumentUploadPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentUploadPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="70017f8a-b7da-4aa1-9df6-43f418e8edef" ParentLink="PortDeclaration_CLRAttribute" LowerBound="53.1" HigherBound="54.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="edef2a31-33e1-4422-ac43-7fee5b9f3082" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="55.1" HigherBound="57.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="354" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.OracleUpdateSubmittedApplicationsStatusPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OracleUpdateSubmittedApplicationsStatusPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="1fd74d72-80c0-4392-ae2a-099c8d3dbe82" ParentLink="PortDeclaration_CLRAttribute" LowerBound="55.1" HigherBound="56.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="e0168fa4-2273-4507-8b23-916b6c5aae12" ParentLink="Module_PortType" LowerBound="16.1" HigherBound="23.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveApplicationPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="47e54586-c92c-44e2-bf8f-608932719833" ParentLink="PortType_OperationDeclaration" LowerBound="18.1" HigherBound="22.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Notify" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="728fe61c-c424-4a8f-959e-b25891526a2d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="20.13" HigherBound="20.31">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.ApplicationMsgType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="b28006c7-130b-4830-8e78-2484ff91b974" ParentLink="Module_PortType" LowerBound="23.1" HigherBound="30.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DocumentUploadPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="3e5de52e-ad8b-47a1-83cf-2bea3da1656e" ParentLink="PortType_OperationDeclaration" LowerBound="25.1" HigherBound="29.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DocumentUploadSendTrigger" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="5b6090e4-13fa-478f-acb7-aea9adddeb2c" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="27.13" HigherBound="27.79">
+                    <om:Property Name="Ref" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="DocumentUploadTrigger" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="fff28146-63bc-40ad-b2a6-c23a364ec3c9" ParentLink="Module_PortType" LowerBound="30.1" HigherBound="37.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DebugSendInflightFromCallerPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f0cf76a4-db6c-4569-9aed-d6c4dcaa93eb" ParentLink="PortType_OperationDeclaration" LowerBound="32.1" HigherBound="36.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="05980b46-69ae-48a1-9e64-aba8c9ca8e9f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="34.13" HigherBound="34.79">
+                    <om:Property Name="Ref" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="9f4f8a87-67c7-4964-bb1c-26a058131544" ParentLink="Module_PortType" LowerBound="37.1" HigherBound="44.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OracleUpdateSubmittedApplicationsStatusPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="c8feb3ad-6aaa-4314-a993-7d6e841337b6" ParentLink="PortType_OperationDeclaration" LowerBound="39.1" HigherBound="43.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="3154a388-d850-4e8d-9fd8-7cae302bb8c9" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="41.13" HigherBound="41.63">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.OracleUpdateSubmittedApplicationsStatusRequestType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="3fa188fa-dbab-4292-b94f-5c1ae9fee51a" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="41.65" HigherBound="41.116">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.OracleUpdateSubmittedApplicationsStatusResponseType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="CorrelationType" OID="8dfa1465-44cc-49bb-b807-9072c44ad9af" ParentLink="Module_CorrelationType" LowerBound="44.1" HigherBound="48.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="DocumentUploadCorrelationType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PropertyRef" OID="70d56650-4606-47f8-b644-1acbb8f9fea4" ParentLink="CorrelationType_PropertyRef" LowerBound="46.9" HigherBound="46.53">
+                <om:Property Name="Ref" Value="Application_Import_Definition.DocumentUpload" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PropertyRef_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    internal messagetype ApplicationMsgType
+    {
+        body Application_Import_Definition.HomeDisasterLoanApplication Application;
+    };
+    internal messagetype OracleUpdateSubmittedApplicationsStatusRequestType
+    {
+        body Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2.Update MessagePart;
+    };
+    internal messagetype OracleUpdateSubmittedApplicationsStatusResponseType
+    {
+        body Oracle_Application_Import_Definition.DLAPOracle_UPDATE_SUBMITTED_APPLICATIONS_STATUS_DCMS2.UpdateResponse MessagePart;
+    };
+    internal porttype ReceiveApplicationPortType
+    {
+        oneway Notify
+        {
+            ApplicationMsgType
+        };
+    };
+    internal porttype DocumentUploadPortType
+    {
+        oneway DocumentUploadSendTrigger
+        {
+            Application_Import_Definition.HomeDisasterLoanApplicationCanonical
+        };
+    };
+    internal porttype DebugSendInflightFromCallerPortType
+    {
+        oneway Operation_1
+        {
+            Application_Import_Definition.HomeDisasterLoanApplicationCanonical
+        };
+    };
+    internal porttype OracleUpdateSubmittedApplicationsStatusPortType
+    {
+        requestresponse Operation
+        {
+            OracleUpdateSubmittedApplicationsStatusRequestType, OracleUpdateSubmittedApplicationsStatusResponseType
+        };
+    };
+    internal correlationtype DocumentUploadCorrelationType
+    {
+        Application_Import_Definition.DocumentUpload
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service DLAP_Application_Import
+    {
+        [Microsoft.XLANGs.BaseTypes.DirectBinding(typeof(Application_Import_Logic.OracleMultpleApplicationsDebatcherLogic), "DLAPSingleApplicationImportPort")]
+        port implements DLAPSingleApplicationImportPortType DLAPApplicationImport;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses DocumentUploadPortType DocumentUploadPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses OracleUpdateSubmittedApplicationsStatusPortType OracleUpdateSubmittedApplicationsStatusPort;
+        correlation DocumentUploadCorrelationType DocumentUploadCorrelationSet;
+        message ApplicationMsgType Application;
+        message Application_Import_Definition.HomeDisasterLoanApplicationCanonical ApplicationCanonicalMsg;
+        message Application_Import_Definition.HomeDisasterLoanApplicationCanonical DocumentUploadTriggerMsg;
+        message OracleUpdateSubmittedApplicationsStatusRequestType OracleUpdateSubmittedApplicationsStatusRequestMsg;
+        message OracleUpdateSubmittedApplicationsStatusResponseType OracleUpdateSubmittedApplicationsStatusResponseMsg;
+        System.Guid OrchestrationInstanceID;
+        System.String Status;
+        System.String Stage;
+        System.String ApplicationNumber;
+        System.String SalesForceObjectName;
+        System.String SalesForceObjectID;
+        System.String Message;
+        System.String MessageTemplate;
+        System.String ProcessStep;
+        System.SystemException ExceptionContainer;
+        DLAPApplicationImportRecordTypeValues.RecordTypeValues GetRecordTypeValues;
+        System.Int32 InsuranceCount;
+        System.Int32 MortgagesCount;
+        System.String AutoDeclineReason;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("c5d67012-32c1-47b4-ae71-9dd29b52957d")]
+            activate receive (DLAPApplicationImport.Operation, Application);
+            Status = "";
+            Stage = "";
+            ApplicationNumber = "";
+            SalesForceObjectName = "";
+            SalesForceObjectID = "";
+            Message = "";
+            MessageTemplate = @"DLAP Application Import:\nThis application {0} {1} during the {2} Process Step.\n" ;
+            ProcessStep = "DLAP Application Import Initialization";
+            ExceptionContainer = new System.SystemException();
+            GetRecordTypeValues = new DLAPApplicationImportRecordTypeValues.RecordTypeValues();
+            AutoDeclineReason = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b87dca6a-52af-40d0-b295-947a9e3bf84f")]
+            Status = "Success";
+            SalesForceObjectName = "Application";
+            if (! System.String.IsNullOrEmpty(Application.Application.APP_ELA_REFERENCE_NBR))
+            {
+                 ApplicationNumber  = Application.Application.APP_ELA_REFERENCE_NBR;
+            } 
+            
+            if ((! System.String.IsNullOrEmpty(Application.Application.APP_SUMMARY_DECLINE_CODE))&&(Application.Application.APP_SUMMARY_DECLINE_CODE !="PASS"))
+            {
+                Stage  = "Received Application Summary Decline";
+                Message = Application.Application.APP_SUMMARY_DECLINE_CODE;
+                AutoDeclineReason = Application.Application.APP_SUMMARY_DECLINE_CODE;
+            } 
+            else
+            {Stage = "Received Application";
+            Message = "DLAP Application Import, Application has been successfully submitted to SalesForce";}
+             
+            
+            
+            
+            OrchestrationInstanceID = Microsoft.XLANGs.Core.Service.RootService.InstanceId; 
+            
+            //BRE Rules Initialization
+            
+            GetRecordTypeValues = new DLAPApplicationImportRecordTypeValues.RecordTypeValues();
+            
+            
+            
+            
+            
+            
+            
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1109c81f-3a2b-40a7-a937-c9840aae793e")]
+            scope
+            {
+                body
+                {
+
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f4e5d76b-0084-4601-b720-9a29ff4aec92")]
+                    scope
+                    {
+                        Microsoft.RuleEngine.Policy  policy_3__;
+
+                        body
+                        {
+                            
+                            policy_3__ = new Microsoft.RuleEngine.Policy("Set DLAP RecordType Values");
+                            policy_3__.Execute(
+                                GetRecordTypeValues);
+
+                            policy_3__.Dispose();
+                        }
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("c91f9189-4ca4-4189-9dd6-d7b28245e52f")]
+                    ProcessStep = "Map to Canonical";
+                    
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("91804920-74e2-4af9-8f1b-b9606c85cfd0")]
+                    construct ApplicationCanonicalMsg
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("5dbbceb3-fbe7-4868-9596-045f24fbabfd")]
+                        transform (ApplicationCanonicalMsg) = Application_Import_Logic.MakeCanonicalApplication (Application.Application);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("a894bf10-3034-4d4e-a84a-7363105a069a")]
+                        ApplicationCanonicalMsg.OrchestrationID = Microsoft.XLANGs.Core.Service.RootService.InstanceId.ToString(); 
+                        
+                        ApplicationCanonicalMsg.Record_SF_Business_Loan_Application = GetRecordTypeValues.Business_Loan_Application;
+                        
+                        ApplicationCanonicalMsg.Record_SF_EIDL_Application = GetRecordTypeValues.EIDL_Application;
+                        
+                        ApplicationCanonicalMsg.Record_SF_Home_Loan_Application = GetRecordTypeValues.Home_Loan_Application;
+                        
+                        ApplicationCanonicalMsg.Record_SF_New_Read_Only_Application = GetRecordTypeValues.New_Read_Only_Application;
+                        
+                        ApplicationCanonicalMsg.Record_SF_Default_Applicant = GetRecordTypeValues.Default_Applicant;
+                        
+                        ApplicationCanonicalMsg.Record_SF_New_Read_Only_Applicant = GetRecordTypeValues.New_Read_Only_Applicant;
+                        
+                        ApplicationCanonicalMsg.Record_SF_Affiliate_Applicant = GetRecordTypeValues.Affiliate_Applicant;
+                        
+                        ApplicationCanonicalMsg.Record_SF_Business_Entity_Applicant = GetRecordTypeValues.Business_Entity_Applicant;
+                        
+                        ApplicationCanonicalMsg.Record_SF_Business_Owner_Applicant = GetRecordTypeValues.Business_Owner_Applicant;
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("db21e5c0-c67d-40db-8aca-9dffa6d5ac43")]
+                    SalesForceObjectID = ApplicationCanonicalMsg.SalesForceApplication__cID;
+                    
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("927c3c8d-5fb6-4a20-9967-cf5005a9fdf7")]
+                    ProcessStep = "Calling Application create";
+                    
+                    InsuranceCount = xpath(ApplicationCanonicalMsg, "count(/*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']/*[local-name()='DmgPropertyColl' and namespace-uri()='']/*[local-name()='Dmg_Properties' and namespace-uri()='']/*[local-name()='DpoInsuranceColl' and namespace-uri()='']/*[local-name()='Dpo_Insurances' and namespace-uri()=''])");
+                    
+                    MortgagesCount = xpath(ApplicationCanonicalMsg, "count(/*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']/*[local-name()='Debts' and namespace-uri()='']/*[local-name()='MortgageColl' and namespace-uri()='']/*[local-name()='ARE_Mortgages' and namespace-uri()=''])");
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("653f4ff0-5cb2-4331-ae41-ffdd14593257")]
+                    call Application_Import_Logic.CallSalesForceApplication__c (ref ApplicationCanonicalMsg, ref Status, ref Message);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d5f239e9-72c1-473e-84c0-59c021ba9d9d")]
+                    if (Status == "Success")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f68f9792-39c5-425b-b34a-55a55756a855")]
+                        ProcessStep = "Call Addtional Contact";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("735322d9-b74a-49af-b8cf-a7936767d819")]
+                        call Application_Import_Logic.CallAddtionalContact (ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3a7d3166-1f6a-490a-a75d-0861ee55bfe0")]
+                    if (Status == "Success")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("26aed432-3be6-43e8-a6ad-dd381e6c8f62")]
+                        ProcessStep = "Call Account create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("dee70cd9-b3e8-437d-9980-7837ab1af0a5")]
+                        call Application_Import_Logic.CallSalesforceAccount (ref ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("5ad6edc1-7f0b-495e-a8c0-ea5bb80a15bc")]
+                    if (Status == "Success")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f303f26b-8ba5-46f2-84be-1747da0a6dd5")]
+                        ProcessStep = "Call Property create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ee522655-25b3-45dc-ba60-eed2d01c0cb4")]
+                        call Application_Import_Logic.CallSalesForceProperty__c (ref ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("419b7ae7-e003-4d5c-93d7-0ca10c52d933")]
+                    if (Status == "Success")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c882a370-6713-4842-8973-273067cbc2ee")]
+                        ProcessStep = "Call Contact create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7ded9ef9-5d13-4aa8-be67-3c3a82146da2")]
+                        call Application_Import_Logic.CallSalesForceContact (ref ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("788badcb-ede4-4471-a015-9286ce0d602e")]
+                    if (Status == "Success")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("97c81dfc-d814-42bb-a80a-25b35514615d")]
+                        ProcessStep = "Call Applicant create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("12e0ed76-cbf5-4292-9108-67130ba41e36")]
+                        call Application_Import_Logic.CallSalesForceApplicant (ref ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("94d3b058-c41d-4b4d-9bab-5fa82e709a40")]
+                    if (Status == "Success" && InsuranceCount > 0)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("17c93eac-849a-40f2-9180-3a8a5505eefa")]
+                        ProcessStep = "Call Insurance create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("24aea121-bf41-4b9f-93f6-497cb8e6eeae")]
+                        call Application_Import_Logic.CallSalesForceInsurance (ref ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("705c3f87-c325-48b0-a527-fec7d683175b")]
+                    if (Status == "Success" && InsuranceCount > 0)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("20c4f78c-bf1c-4a5d-9dfd-c0c0341001da")]
+                        ProcessStep = "Call Other Assistance create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9fa5f89f-5817-450f-a15b-2c6047d34371")]
+                        call Application_Import_Logic.CallSalesforceOther_Assistance__c (ref ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f5e249fb-e561-4e1e-b465-29efe4396232")]
+                    if (Status == "Success")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("c977b30f-7474-4e60-b2a2-f42dc0f65d30")]
+                        ProcessStep = "Call Insurance create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("146ea40f-c643-42dc-b9e5-7dac9955941a")]
+                        call Application_Import_Logic.CallSalesForceAssetIncomes (ref ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b49e0a74-e161-4b9e-97b3-be6bccdefc17")]
+                    if (Status == "Success")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e90247e1-9115-4249-9dff-de55e1c25dd1")]
+                        ProcessStep = "Call Debts and Expenses create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ae9a1cc7-bcb5-46f3-a422-6b3b6f12a55b")]
+                        call Application_Import_Logic.CallSalesForceDebts_Expenses__c (ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("3f84502f-4c59-4053-b3b4-cd98bceb5aa0")]
+                    if (Status == "Success"&& MortgagesCount > 0)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("acd3c2d4-57f9-4ba9-8a17-0a1ff53d953b")]
+                        ProcessStep = "Call Mortage create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("bac05c20-3400-4a91-a4a3-8a2c4a21da35")]
+                        call Application_Import_Logic.CallSalesForceMortgage__c (ref ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("26614705-7e85-46b5-a0f4-6cab2f78e7d4")]
+                    if (Status == "Success")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("4de747d3-ecc4-4b2a-8939-da7211805733")]
+                        ProcessStep = "Call IRS Transcipts create";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6fec3daf-0cd1-4d65-ac27-fdfef564b830")]
+                        call Application_Import_Logic.CallSalesForceIRS_Transcripts__c (ref ApplicationCanonicalMsg);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("778e7ada-3599-4edd-a11d-7908de903d4a")]
+                    if (Status == "Success")
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("2e57e1bf-78f2-4daa-9758-9c596b843e86")]
+                        construct DocumentUploadTriggerMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9d49aedb-d4da-44fd-b04f-4fd0791dc7cb")]
+                            DocumentUploadTriggerMsg = ApplicationCanonicalMsg;
+                            DocumentUploadTriggerMsg(*) = ApplicationCanonicalMsg(*);
+                            DocumentUploadTriggerMsg(Application_Import_Definition.DocumentUpload) = true;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("3ef2d339-af45-499a-95d0-a173c62f67d4")]
+                        ProcessStep = "Calling document upload";
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("ed7dfe3b-d829-4999-8c2a-a1349dcc34ba")]
+                        send (DocumentUploadPort.DocumentUploadSendTrigger, DocumentUploadTriggerMsg, initialize DocumentUploadCorrelationSet);
+                    }
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("b470b70b-3699-44c8-a635-e59c5cbac3f5")]
+                    catch (System.SystemException Ex)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8644bd84-3b79-413e-9645-b0988028d9bb")]
+                        Status = "Failure";
+                        Message = "An exception has occured";
+                        ExceptionContainer = Ex;
+                        
+                        System.Diagnostics.EventLog.WriteEntry("DLAP Application Import Exception", Ex.Message);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("1574ca2b-37ff-4d2c-aedd-effeae4f4bbc")]
+                        construct OracleUpdateSubmittedApplicationsStatusRequestMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("61968f73-2013-43ce-9122-fa5067dbbc0c")]
+                            transform (OracleUpdateSubmittedApplicationsStatusRequestMsg.MessagePart) = Application_Import_Logic.MakeOracleErrorStatusRequest (Application.Application);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f8d027aa-9b2b-4fcd-9377-8f2eed9281f1")]
+                        send (OracleUpdateSubmittedApplicationsStatusPort.Operation, OracleUpdateSubmittedApplicationsStatusRequestMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("bb2b6285-9b9a-4d6b-b2e7-855157011832")]
+                        receive (OracleUpdateSubmittedApplicationsStatusPort.Operation, OracleUpdateSubmittedApplicationsStatusResponseMsg);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("baf2043d-de23-493c-9add-dfdfa9e461d3")]
+                        call Application_Import_Logic.Error_Analyzer (MessageTemplate, ApplicationNumber, ProcessStep, ref Message, ExceptionContainer);
+                    }
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0a853415-448b-4cc7-a313-219e3bde658d")]
+            if (Status == "Success")
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("ea1a38a7-bc02-4b76-8d94-374a2628b7e3")]
+                construct OracleUpdateSubmittedApplicationsStatusRequestMsg
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("0a91af85-9fca-4b86-8885-57998c9d0925")]
+                    transform (OracleUpdateSubmittedApplicationsStatusRequestMsg.MessagePart) = Application_Import_Logic.MakeOracleSuccessStatusRequest (Application.Application);
+                }
+            }
+            else 
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("3277ddd8-93de-4082-ba48-d443a0ce2957")]
+                construct OracleUpdateSubmittedApplicationsStatusRequestMsg
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("4759d307-8f71-4f6d-962f-0c3683f21ed4")]
+                    transform (OracleUpdateSubmittedApplicationsStatusRequestMsg.MessagePart) = Application_Import_Logic.MakeOracleErrorStatusRequest (Application.Application);
+                }
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4d56807a-5522-40cd-9d94-412938f5b52b")]
+            send (OracleUpdateSubmittedApplicationsStatusPort.Operation, OracleUpdateSubmittedApplicationsStatusRequestMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a1a33a65-254c-4e18-9a82-7c33d0c0df68")]
+            receive (OracleUpdateSubmittedApplicationsStatusPort.Operation, OracleUpdateSubmittedApplicationsStatusResponseMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b92c881a-d03e-48ac-abf3-a90ae226d105")]
+            call SBA.BizTalk.Shared.Salesforce.EventLogging.Logic.SendEventToSalesForce (OrchestrationInstanceID, Status, Stage, ApplicationNumber, SalesForceObjectName, SalesForceObjectID, Message, AutoDeclineReason);
+        }
+    }
+}
+

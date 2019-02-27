@@ -1,0 +1,745 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="95d9ef54-451e-4155-8cfb-b022d1f5b5f4" LowerBound="1.1" HigherBound="145.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Application_Import_Logic" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="3cee8f4d-520c-4b21-a1c0-9daa3d03100a" ParentLink="Module_ServiceDeclaration" LowerBound="42.1" HigherBound="144.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CallSalesForceApplication__c" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="75192247-73b8-4c3a-9f9e-287bc8509cca" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="57.1" HigherBound="58.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="strXpath" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="f6fa036a-612d-4fef-94a2-caf0f9ceb72f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="58.1" HigherBound="59.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DisasterLookupValue" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2580fc2e-aa37-4067-9121-574ac1cf79d9" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="59.1" HigherBound="60.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SalesForceApplication__cID" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="57839229-b4db-466d-914b-eceefcd5cfff" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="60.1" HigherBound="61.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="External_Id_DMS_Number__Value" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2d51b9fa-69e0-4990-a21e-deaeca3fa6a7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="61.1" HigherBound="62.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="External_Id_DMS_Number_SOQL_QUERY" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0670c6b7-6521-4671-94b9-ed996a93c231" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="50.1" HigherBound="51.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementRequestApplication__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateApplication__cMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f6e73fcb-8f96-453a-aed4-bf9033743024" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="51.1" HigherBound="52.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementResponseApplication__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateApplication__cResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="b8921a60-7586-4bb2-a0d8-79f72a846926" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="52.1" HigherBound="53.1">
+                <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TempApplicationCanonical" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="45f2ed97-2621-4052-bc23-736f726427c2" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="53.1" HigherBound="54.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementRequestDisasterLookup" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateLookupDisasterMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d8601f84-24cf-437c-aa99-295c7949164e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="54.1" HigherBound="55.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.StatementResponseDisasterLookup" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CreateLookupDisasterResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="cda7e3e5-6cdb-42ff-9bf9-432be70dad5e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="55.1" HigherBound="56.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.RestStatementDisasterLookupRequest" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestCreateDisasterLookupRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="9241072c-07f6-4ab1-9988-709ed1f5a3d1" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="56.1" HigherBound="57.1">
+                <om:Property Name="Type" Value="Application_Import_Logic.RestStatementDisasterLookupResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestCreateDisasterLookupResponse" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="eca9553f-33db-4878-98ce-40a030241cd0" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageDeclaration" OID="a6deaa50-061c-46dc-8cb4-654546e79601" ParentLink="ServiceBody_Declaration" LowerBound="62.15" HigherBound="62.114">
+                    <om:Property Name="Type" Value="Application_Import_Definition.HomeDisasterLoanApplicationCanonical" />
+                    <om:Property Name="ParamDirection" Value="Ref" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ApplicationCanonical" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="fc286169-d241-454f-90e3-10d38ff7abfc" ParentLink="ServiceBody_Declaration" LowerBound="62.116" HigherBound="62.145">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="Ref" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="EventStatus" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableDeclaration" OID="99d73698-93c3-43db-8b95-933ce90a3a24" ParentLink="ServiceBody_Declaration" LowerBound="62.147" HigherBound="62.177">
+                    <om:Property Name="UseDefaultConstructor" Value="False" />
+                    <om:Property Name="Type" Value="System.String" />
+                    <om:Property Name="ParamDirection" Value="Ref" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="EventMessage" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Task" OID="a8297db2-8ad7-4d10-81b3-8ded4c9325de" ParentLink="ServiceBody_Statement" LowerBound="68.1" HigherBound="104.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Lookup Disaster" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="301f239e-bd60-40a6-ae39-bac472da9e4f" ParentLink="ComplexStatement_Statement" LowerBound="68.1" HigherBound="85.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="CreateLookupDisasterMsg" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="9743a50b-35e5-4302-b51d-0ac4a765da75" ParentLink="ComplexStatement_Statement" LowerBound="71.1" HigherBound="73.1">
+                            <om:Property Name="ClassName" Value="Application_Import_Logic.MakeRestDisasterLookupRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Make Rest Disaster Lookup Request" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="MessagePartRef" OID="d4a47fa3-a73a-4c9b-b983-9bdad7aa7597" ParentLink="Transform_InputMessagePartRef" LowerBound="72.131" HigherBound="72.151">
+                                <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_9" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="d4dfcb32-4248-4499-9d7f-96ceef6ded1c" ParentLink="Transform_OutputMessagePartRef" LowerBound="72.28" HigherBound="72.71">
+                                <om:Property Name="MessageRef" Value="RestCreateDisasterLookupRequest" />
+                                <om:Property Name="PartRef" Value="MessagePart" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_10" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageAssignment" OID="2d338aaf-077e-4ad6-a7b0-0e9fcf89961c" ParentLink="ComplexStatement_Statement" LowerBound="73.1" HigherBound="84.1">
+                            <om:Property Name="Expression" Value="External_Id_DMS_Number__Value = xpath(ApplicationCanonical, &quot;string(/*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']/*[local-name()='APP_PRO_ID' and namespace-uri()=''])&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//SOQL Query For Rest&#xD;&#xA;&#xD;&#xA;External_Id_DMS_Number_SOQL_QUERY = @&quot;Select Id,External_Id_DMS_Number__c from Disaster__c where External_Id_DMS_Number__c IN &quot;+&quot;(&quot;+&quot;'&quot;+External_Id_DMS_Number__Value+&quot;'&quot;+&quot;)&quot; +&quot;AND External_Id_DMS_Number__c&quot; +&quot;!=&quot;+&quot;null&quot;;&#xD;&#xA;&#xD;&#xA;RestCreateDisasterLookupRequest(Salesforce_Application_Import_Definition.Application__c.RestDisaster__c.External_Id_DMS_Number__c) = External_Id_DMS_Number_SOQL_QUERY;" />
+                            <om:Property Name="ReportToAnalyst" Value="False" />
+                            <om:Property Name="Name" Value="Make Disater Lookup Query Request" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="dae415ce-82f7-4190-941a-5aec76f2b279" ParentLink="Construct_MessageRef" LowerBound="69.23" HigherBound="69.54">
+                            <om:Property Name="Ref" Value="RestCreateDisasterLookupRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Send" OID="6f4372aa-2f5a-47cb-b139-ba8b2c48b7c6" ParentLink="ComplexStatement_Statement" LowerBound="85.1" HigherBound="87.1">
+                        <om:Property Name="PortName" Value="RestDisasterLookupPort" />
+                        <om:Property Name="MessageName" Value="RestCreateDisasterLookupRequest" />
+                        <om:Property Name="OperationName" Value="Operation" />
+                        <om:Property Name="OperationMessageName" Value="Request" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Send Request" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Receive" OID="6fda9810-5115-4c71-a99a-30b442f6078f" ParentLink="ComplexStatement_Statement" LowerBound="87.1" HigherBound="89.1">
+                        <om:Property Name="Activate" Value="False" />
+                        <om:Property Name="PortName" Value="RestDisasterLookupPort" />
+                        <om:Property Name="MessageName" Value="RestCreateDisasterLookupResponse" />
+                        <om:Property Name="OperationName" Value="Operation" />
+                        <om:Property Name="OperationMessageName" Value="Response" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Receive Response" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="Construct" OID="b1e11ef9-be12-4f7c-a35f-44baef453507" ParentLink="ComplexStatement_Statement" LowerBound="89.1" HigherBound="95.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Construct SF Response Message" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Transform" OID="570bb6e5-9bed-4c5b-98d6-2199d07e0ac5" ParentLink="ComplexStatement_Statement" LowerBound="92.1" HigherBound="94.1">
+                            <om:Property Name="ClassName" Value="Application_Import_Logic.MakeSalesforceDisasterLookupResponse" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Make Salesforce Disaster Lookup Response" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="bcdcc7cb-aa06-4d18-b694-64f5d0a31886" ParentLink="Transform_InputMessagePartRef" LowerBound="93.137" HigherBound="93.181">
+                                <om:Property Name="MessageRef" Value="RestCreateDisasterLookupResponse" />
+                                <om:Property Name="PartRef" Value="MessagePart" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_3" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="46be2c30-8845-4c7c-b8c8-0f7da4a4911e" ParentLink="Transform_OutputMessagePartRef" LowerBound="93.28" HigherBound="93.70">
+                                <om:Property Name="MessageRef" Value="CreateLookupDisasterResponseMsg" />
+                                <om:Property Name="PartRef" Value="parameters" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="MessageRef" OID="f762223a-6a18-4bf1-955c-bb3923fc5fa0" ParentLink="Construct_MessageRef" LowerBound="90.23" HigherBound="90.54">
+                            <om:Property Name="Ref" Value="CreateLookupDisasterResponseMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="700a9139-6944-4020-a1f9-37657b7e2ff3" ParentLink="ComplexStatement_Statement" LowerBound="95.1" HigherBound="97.1">
+                        <om:Property Name="Expression" Value="DisasterLookupValue = System.Convert.ToInt32(xpath(CreateLookupDisasterResponseMsg.parameters, &quot;count(/*[local-name()='table' and namespace-uri()='http://sba-oda/DLAP/DisasterLookup']/*[local-name()='row' and namespace-uri()='http://sba-oda/DLAP/DisasterLookup']/*[local-name()='Id' and namespace-uri()='http://sba-oda/DLAP/DisasterLookup']/text())&quot;));" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Extract SF Response" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Decision" OID="f3558208-66f8-4fe8-856d-894a9d9ac9a2" ParentLink="ComplexStatement_Statement" LowerBound="97.1" HigherBound="104.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Check for empty response" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="4b37838b-d111-4933-9acb-a6751d2e95ab" ParentLink="ReallyComplexStatement_Branch" LowerBound="98.13" HigherBound="104.1">
+                            <om:Property Name="Expression" Value="DisasterLookupValue == 0" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Is response empty?" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="VariableAssignment" OID="2b3c95f2-af35-4b9d-b256-160950644aa2" ParentLink="ComplexStatement_Statement" LowerBound="100.1" HigherBound="103.1">
+                                <om:Property Name="Expression" Value="EventStatus = &quot;Failure&quot;;&#xD;&#xA;EventMessage = &quot;Disaster lookup failed, disaster does not exist in SalesForce&quot;;" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Set Variables" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="3a2c1a65-0dbb-4f3b-ac94-87999cd22cd6" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Task" OID="e45db35d-8686-489b-a24e-93269d394426" ParentLink="ServiceBody_Statement" LowerBound="104.1" HigherBound="121.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Create Application" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Decision" OID="ebcd6caa-3c9e-4d1f-8dac-34c3dd82f902" ParentLink="ComplexStatement_Statement" LowerBound="104.1" HigherBound="121.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Success?" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="7682f49b-5a43-4168-b6ee-26be616c4182" ParentLink="ReallyComplexStatement_Branch" LowerBound="105.13" HigherBound="121.1">
+                            <om:Property Name="Expression" Value="EventStatus == &quot;Success&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Yes" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Construct" OID="54396ec1-3d32-44a2-af72-6b34dcfea824" ParentLink="ComplexStatement_Statement" LowerBound="107.1" HigherBound="113.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct Create Application__c Message" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="ca014f8e-b3ac-4fc7-aa02-47accbf7a626" ParentLink="ComplexStatement_Statement" LowerBound="110.1" HigherBound="112.1">
+                                    <om:Property Name="ClassName" Value="Application_Import_Logic.Application__c.MakeSalesForceApplication__cMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Create Request Message" />
+                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Element Type="MessagePartRef" OID="211d57cf-809d-4923-86a8-ae6b181f7e3e" ParentLink="Transform_InputMessagePartRef" LowerBound="111.143" HigherBound="111.163">
+                                        <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_1" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="a0806b57-957c-4863-b4dd-b8f81aa5eadb" ParentLink="Transform_InputMessagePartRef" LowerBound="111.165" HigherBound="111.207">
+                                        <om:Property Name="MessageRef" Value="CreateLookupDisasterResponseMsg" />
+                                        <om:Property Name="PartRef" Value="parameters" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_8" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="d3d8c07d-6bf3-49ec-885c-c2dfbe1454b4" ParentLink="Transform_OutputMessagePartRef" LowerBound="111.32" HigherBound="111.66">
+                                        <om:Property Name="MessageRef" Value="CreateApplication__cMsg" />
+                                        <om:Property Name="PartRef" Value="parameters" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_2" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="110559eb-5ca6-42bd-a1dd-4200cc57fa87" ParentLink="Construct_MessageRef" LowerBound="108.27" HigherBound="108.50">
+                                    <om:Property Name="Ref" Value="CreateApplication__cMsg" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="7ccea02b-d07e-44a3-bc07-f7374d77176c" ParentLink="ComplexStatement_Statement" LowerBound="113.1" HigherBound="115.1">
+                                <om:Property Name="PortName" Value="CallSalesForceApplication__cPort" />
+                                <om:Property Name="MessageName" Value="CreateApplication__cMsg" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send Create Application__c Request" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Receive" OID="32362c41-d5ab-405b-b641-7e93f4c31a4e" ParentLink="ComplexStatement_Statement" LowerBound="115.1" HigherBound="117.1">
+                                <om:Property Name="Activate" Value="False" />
+                                <om:Property Name="PortName" Value="CallSalesForceApplication__cPort" />
+                                <om:Property Name="MessageName" Value="CreateApplication__cResponseMsg" />
+                                <om:Property Name="OperationName" Value="statement" />
+                                <om:Property Name="OperationMessageName" Value="Response" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Receive Create Application__c Response" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="VariableAssignment" OID="70cfda92-8667-47a8-8af1-c6151815b053" ParentLink="ComplexStatement_Statement" LowerBound="117.1" HigherBound="120.1">
+                                <om:Property Name="Expression" Value="strXpath = &quot;string(/*[local-name()='table' and namespace-uri()='http://sba-oda/DLAP/Application__c']/*[local-name()='row' and namespace-uri()='http://sba-oda/DLAP/Application__c']/*[local-name()='Id' and namespace-uri()='http://sba-oda/DLAP/Application__c']/text())&quot;;&#xD;&#xA;SalesForceApplication__cID=xpath(CreateApplication__cResponseMsg.parameters, strXpath);" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Assign SalesForce ID" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="64d44a37-8ac9-45b5-9d05-0cc12d6b4fcc" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Task" OID="48924b25-8107-4c30-a5e4-be356a4b8541" ParentLink="ServiceBody_Statement" LowerBound="121.1" HigherBound="142.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Recreate Canonical" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Decision" OID="8326dc22-a115-42f7-aab4-9e256f1b11fc" ParentLink="ComplexStatement_Statement" LowerBound="121.1" HigherBound="142.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Success?" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="DecisionBranch" OID="6fc30417-51f1-41fd-a484-6dec9d72cc4d" ParentLink="ReallyComplexStatement_Branch" LowerBound="122.13" HigherBound="142.1">
+                            <om:Property Name="Expression" Value="EventStatus == &quot;Success&quot;" />
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Yes" />
+                            <om:Property Name="Signal" Value="False" />
+                            <om:Element Type="Construct" OID="7a36675e-da57-4103-a702-e6d899f7cf24" ParentLink="ComplexStatement_Statement" LowerBound="124.1" HigherBound="131.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Construct Temp Message" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="e9250d76-25a0-47ed-82f2-ff7d0d00c3e5" ParentLink="Construct_MessageRef" LowerBound="125.27" HigherBound="125.51">
+                                    <om:Property Name="Ref" Value="TempApplicationCanonical" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="d805e2a4-6d37-480e-930a-f0bc97bdd949" ParentLink="ComplexStatement_Statement" LowerBound="127.1" HigherBound="130.1">
+                                    <om:Property Name="Expression" Value="TempApplicationCanonical=ApplicationCanonical;&#xD;&#xA;TempApplicationCanonical(*)=ApplicationCanonical(*);" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="Assign Temp" />
+                                    <om:Property Name="Signal" Value="True" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Construct" OID="73d08a69-765c-45c9-bb6b-11fed3581b52" ParentLink="ComplexStatement_Statement" LowerBound="131.1" HigherBound="141.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Re-construct canonical" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="Transform" OID="e1569da9-747d-48fa-b2da-26a55ece090d" ParentLink="ComplexStatement_Statement" LowerBound="134.1" HigherBound="136.1">
+                                    <om:Property Name="ClassName" Value="Application_Import_Logic.RecreateCanonical" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="Recreate Canonical" />
+                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Element Type="MessagePartRef" OID="d807edfd-a314-45de-a5a7-9644f3d09d63" ParentLink="Transform_InputMessagePartRef" LowerBound="135.100" HigherBound="135.124">
+                                        <om:Property Name="MessageRef" Value="TempApplicationCanonical" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_5" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="89a8b7da-3b6d-4e33-81e5-017a8020b7f2" ParentLink="Transform_InputMessagePartRef" LowerBound="135.126" HigherBound="135.168">
+                                        <om:Property Name="MessageRef" Value="CreateLookupDisasterResponseMsg" />
+                                        <om:Property Name="PartRef" Value="parameters" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_6" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                    <om:Element Type="MessagePartRef" OID="a1e65bff-57ed-4f33-91fa-fcc6f508071c" ParentLink="Transform_OutputMessagePartRef" LowerBound="135.32" HigherBound="135.52">
+                                        <om:Property Name="MessageRef" Value="ApplicationCanonical" />
+                                        <om:Property Name="ReportToAnalyst" Value="True" />
+                                        <om:Property Name="Name" Value="MessagePartReference_7" />
+                                        <om:Property Name="Signal" Value="False" />
+                                    </om:Element>
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="fd9ec0fe-2d91-4e46-a6ae-43b863d490e6" ParentLink="ComplexStatement_Statement" LowerBound="136.1" HigherBound="138.1">
+                                    <om:Property Name="Expression" Value="ApplicationCanonical(*)=TempApplicationCanonical(*);&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="Assign Canonical" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="afbeb0ce-5085-4522-9967-71e7b090649d" ParentLink="ComplexStatement_Statement" LowerBound="138.1" HigherBound="140.1">
+                                    <om:Property Name="Expression" Value="ApplicationCanonical.SalesForceApplication__cID=SalesForceApplication__cID;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="Assign Application__c" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="719eb67b-a9a4-4759-95a7-e0afcef08a62" ParentLink="Construct_MessageRef" LowerBound="132.27" HigherBound="132.47">
+                                    <om:Property Name="Ref" Value="ApplicationCanonical" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="DecisionBranch" OID="1869722e-94c2-4318-958c-8c701dfb0898" ParentLink="ReallyComplexStatement_Branch">
+                            <om:Property Name="IsGhostBranch" Value="True" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Else" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="eda4f86f-193f-4a91-80c9-280c1a49d15c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="45.1" HigherBound="48.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="7" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="Transmitted" />
+                <om:Property Name="Type" Value="Application_Import_Logic.RestDisasterLookupPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RestDisasterLookupPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="88dc199e-6817-46be-8721-33796705a56d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="45.1" HigherBound="46.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="b26a0177-7694-4976-b565-3275911056fb" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="48.1" HigherBound="50.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="33" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Application_Import_Logic.CDataServiceSelectApplication__c" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CallSalesForceApplication__cPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="eabad158-054b-4e46-a416-2b9479995879" ParentLink="PortDeclaration_CLRAttribute" LowerBound="48.1" HigherBound="49.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="a0b41cc3-e67a-46a6-95a5-49e9d7656072" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementRequestDisasterLookup" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="0b5b92d6-0c99-42af-a462-00782f46dd56" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceDisasterLookup.parameters" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="f066ef43-54ec-46e5-af88-f8c2e0a14d89" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementResponseDisasterLookup" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="aa52d638-a055-4598-8fd3-51fca920f906" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceDisasterLookup.table" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="27699b85-983f-40a1-86aa-3fa0a3419619" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementResponseApplication__c" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="4bfc7da7-cd7e-4250-b0b6-4b09547fe1ac" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceApplication__c.table" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="af564812-c6fe-4666-aa27-528ea0a7f10b" ParentLink="Module_MessageType" LowerBound="16.1" HigherBound="20.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata message type: " />
+            <om:Property Name="Name" Value="StatementRequestApplication__c" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="a20e9ea9-83b5-49eb-b60e-7263a6ba8324" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition_XSD.CDataServiceApplication__c.parameters" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata message part: " />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="2d0196cb-3fb9-4f84-8649-93df3d27e8ad" ParentLink="Module_MessageType" LowerBound="20.1" HigherBound="24.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestStatementDisasterLookupRequest" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="b8dc6c6c-32e2-408e-b0c9-68686f0660ee" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="22.1" HigherBound="23.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition.Application__c.RestDisaster__c.RestDisasterLookupRequest" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="6e74bd58-4aa0-4104-b855-44ddeda218e5" ParentLink="Module_MessageType" LowerBound="24.1" HigherBound="28.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RestStatementDisasterLookupResponse" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="e8c9458b-5109-4dc3-88a2-a5df5265fde2" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="ClassName" Value="Salesforce_Application_Import_Definition.Application__c.RestDisaster__c.RestDisasterLookupResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="MessagePart" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d63b544e-aead-4b9e-87b2-7157fc652521" ParentLink="Module_PortType" LowerBound="28.1" HigherBound="35.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="RestDisasterLookupPortType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="8e9d5051-8f9f-4beb-8c21-0f8bf1de64a7" ParentLink="PortType_OperationDeclaration" LowerBound="30.1" HigherBound="34.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="Operation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="229dff2c-79b8-40cf-8582-cb8d5785f630" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="32.49" HigherBound="32.84">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.RestStatementDisasterLookupResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="882c89e4-b16b-438f-8cff-830bfe1b28b1" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="32.13" HigherBound="32.47">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.RestStatementDisasterLookupRequest" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="a7378fae-a0c0-4b95-9dda-e41a97b40e89" ParentLink="Module_PortType" LowerBound="35.1" HigherBound="42.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="Adapter metadata port type: " />
+            <om:Property Name="Name" Value="CDataServiceSelectApplication__c" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="d57d939b-326d-4084-ba77-ddcd0f1ef830" ParentLink="PortType_OperationDeclaration" LowerBound="37.1" HigherBound="41.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="Adapter metadata operation: " />
+                <om:Property Name="Name" Value="statement" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e444a558-a7bc-4826-b955-cc7bd412355e" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="39.45" HigherBound="39.76">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementResponseApplication__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="7cd709ae-24c9-4a1e-81e4-60a77e4c1dac" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="39.13" HigherBound="39.43">
+                    <om:Property Name="Ref" Value="Application_Import_Logic.StatementRequestApplication__c" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="Adapter metadata operation message: " />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Application_Import_Logic
+{
+    public messagetype StatementRequestDisasterLookup
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceDisasterLookup.parameters parameters;
+    };
+    public messagetype StatementResponseDisasterLookup
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceDisasterLookup.table parameters;
+    };
+    public messagetype StatementResponseApplication__c
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceApplication__c.table parameters;
+    };
+    public messagetype StatementRequestApplication__c
+    {
+        body Salesforce_Application_Import_Definition_XSD.CDataServiceApplication__c.parameters parameters;
+    };
+    internal messagetype RestStatementDisasterLookupRequest
+    {
+        body Salesforce_Application_Import_Definition.Application__c.RestDisaster__c.RestDisasterLookupRequest MessagePart;
+    };
+    internal messagetype RestStatementDisasterLookupResponse
+    {
+        body Salesforce_Application_Import_Definition.Application__c.RestDisaster__c.RestDisasterLookupResponse MessagePart;
+    };
+    public porttype RestDisasterLookupPortType
+    {
+        requestresponse Operation
+        {
+            RestStatementDisasterLookupRequest, RestStatementDisasterLookupResponse
+        };
+    };
+    public porttype CDataServiceSelectApplication__c
+    {
+        requestresponse statement
+        {
+            StatementRequestApplication__c, StatementResponseApplication__c
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service CallSalesForceApplication__c
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        [Microsoft.XLANGs.BaseTypes.DeliveryNotification(Microsoft.XLANGs.BaseTypes.DeliveryNotification.NotificationLevel.Transmitted)]
+        port uses RestDisasterLookupPortType RestDisasterLookupPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses CDataServiceSelectApplication__c CallSalesForceApplication__cPort;
+        message StatementRequestApplication__c CreateApplication__cMsg;
+        message StatementResponseApplication__c CreateApplication__cResponseMsg;
+        message Application_Import_Definition.HomeDisasterLoanApplicationCanonical TempApplicationCanonical;
+        message StatementRequestDisasterLookup CreateLookupDisasterMsg;
+        message StatementResponseDisasterLookup CreateLookupDisasterResponseMsg;
+        message RestStatementDisasterLookupRequest RestCreateDisasterLookupRequest;
+        message RestStatementDisasterLookupResponse RestCreateDisasterLookupResponse;
+        System.String strXpath;
+        System.Int32 DisasterLookupValue;
+        System.String SalesForceApplication__cID;
+        System.String External_Id_DMS_Number__Value;
+        System.String External_Id_DMS_Number_SOQL_QUERY;
+        body (ref message Application_Import_Definition.HomeDisasterLoanApplicationCanonical ApplicationCanonical, ref System.String EventStatus, ref System.String EventMessage)
+        {
+            strXpath = "";
+            SalesForceApplication__cID = "";
+            External_Id_DMS_Number__Value = "";
+            External_Id_DMS_Number_SOQL_QUERY = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("301f239e-bd60-40a6-ae39-bac472da9e4f")]
+            construct RestCreateDisasterLookupRequest
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("9743a50b-35e5-4302-b51d-0ac4a765da75")]
+                transform (RestCreateDisasterLookupRequest.MessagePart) = Application_Import_Logic.MakeRestDisasterLookupRequest (ApplicationCanonical);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2d338aaf-077e-4ad6-a7b0-0e9fcf89961c")]
+                External_Id_DMS_Number__Value = xpath(ApplicationCanonical, "string(/*[local-name()='Application' and namespace-uri()='http://SBA.ODA.Gov/CanonicalApplication']/*[local-name()='APP_PRO_ID' and namespace-uri()=''])");
+                
+                
+                
+                
+                //SOQL Query For Rest
+                
+                External_Id_DMS_Number_SOQL_QUERY = @"Select Id,External_Id_DMS_Number__c from Disaster__c where External_Id_DMS_Number__c IN "+"("+"'"+External_Id_DMS_Number__Value+"'"+")" +"AND External_Id_DMS_Number__c" +"!="+"null";
+                
+                RestCreateDisasterLookupRequest(Salesforce_Application_Import_Definition.Application__c.RestDisaster__c.External_Id_DMS_Number__c) = External_Id_DMS_Number_SOQL_QUERY;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6f4372aa-2f5a-47cb-b139-ba8b2c48b7c6")]
+            send (RestDisasterLookupPort.Operation, RestCreateDisasterLookupRequest);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6fda9810-5115-4c71-a99a-30b442f6078f")]
+            receive (RestDisasterLookupPort.Operation, RestCreateDisasterLookupResponse);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b1e11ef9-be12-4f7c-a35f-44baef453507")]
+            construct CreateLookupDisasterResponseMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("570bb6e5-9bed-4c5b-98d6-2199d07e0ac5")]
+                transform (CreateLookupDisasterResponseMsg.parameters) = Application_Import_Logic.MakeSalesforceDisasterLookupResponse (RestCreateDisasterLookupResponse.MessagePart);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("700a9139-6944-4020-a1f9-37657b7e2ff3")]
+            DisasterLookupValue = System.Convert.ToInt32(xpath(CreateLookupDisasterResponseMsg.parameters, "count(/*[local-name()='table' and namespace-uri()='http://sba-oda/DLAP/DisasterLookup']/*[local-name()='row' and namespace-uri()='http://sba-oda/DLAP/DisasterLookup']/*[local-name()='Id' and namespace-uri()='http://sba-oda/DLAP/DisasterLookup']/text())"));
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f3558208-66f8-4fe8-856d-894a9d9ac9a2")]
+            if (DisasterLookupValue == 0)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2b3c95f2-af35-4b9d-b256-160950644aa2")]
+                EventStatus = "Failure";
+                EventMessage = "Disaster lookup failed, disaster does not exist in SalesForce";
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ebcd6caa-3c9e-4d1f-8dac-34c3dd82f902")]
+            if (EventStatus == "Success")
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("54396ec1-3d32-44a2-af72-6b34dcfea824")]
+                construct CreateApplication__cMsg
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("ca014f8e-b3ac-4fc7-aa02-47accbf7a626")]
+                    transform (CreateApplication__cMsg.parameters) = Application_Import_Logic.Application__c.MakeSalesForceApplication__cMsg (ApplicationCanonical, CreateLookupDisasterResponseMsg.parameters);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("7ccea02b-d07e-44a3-bc07-f7374d77176c")]
+                send (CallSalesForceApplication__cPort.statement, CreateApplication__cMsg);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("32362c41-d5ab-405b-b641-7e93f4c31a4e")]
+                receive (CallSalesForceApplication__cPort.statement, CreateApplication__cResponseMsg);
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("70cfda92-8667-47a8-8af1-c6151815b053")]
+                strXpath = "string(/*[local-name()='table' and namespace-uri()='http://sba-oda/DLAP/Application__c']/*[local-name()='row' and namespace-uri()='http://sba-oda/DLAP/Application__c']/*[local-name()='Id' and namespace-uri()='http://sba-oda/DLAP/Application__c']/text())";
+                SalesForceApplication__cID=xpath(CreateApplication__cResponseMsg.parameters, strXpath);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8326dc22-a115-42f7-aab4-9e256f1b11fc")]
+            if (EventStatus == "Success")
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("7a36675e-da57-4103-a702-e6d899f7cf24")]
+                construct TempApplicationCanonical
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("d805e2a4-6d37-480e-930a-f0bc97bdd949")]
+                    TempApplicationCanonical=ApplicationCanonical;
+                    TempApplicationCanonical(*)=ApplicationCanonical(*);
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("73d08a69-765c-45c9-bb6b-11fed3581b52")]
+                construct ApplicationCanonical
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e1569da9-747d-48fa-b2da-26a55ece090d")]
+                    transform (ApplicationCanonical) = Application_Import_Logic.RecreateCanonical (TempApplicationCanonical, CreateLookupDisasterResponseMsg.parameters);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("fd9ec0fe-2d91-4e46-a6ae-43b863d490e6")]
+                    ApplicationCanonical(*)=TempApplicationCanonical(*);
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("afbeb0ce-5085-4522-9967-71e7b090649d")]
+                    ApplicationCanonical.SalesForceApplication__cID=SalesForceApplication__cID;
+                }
+            }
+        }
+    }
+}
+
